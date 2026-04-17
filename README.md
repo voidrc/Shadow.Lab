@@ -62,8 +62,8 @@ Shadow.Lab operates in the **Grey Hat** space — skilled researchers who unders
 
 ---
 
-## <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_white_RGB.svg" width="24" height="24" alt="Discord" style="vertical-align:middle"/> Discord Server
+## <img src="https://cdn.simpleicons.org/discord/5865F2" width="22" height="22" alt="Discord" style="vertical-align:middle"/> Discord Server
 
 Join the Shadow.Lab community — share findings, ask questions, and collaborate with the team.
 
-[![Discord](https://img.shields.io/discord/FpdPbJU6JE?logo=discord&logoColor=white&color=5865F2)](https://discord.gg/FpdPbJU6JE)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Shadow.Lab-5865F2?logo=discord&logoColor=white)](https://discord.gg/FpdPbJU6JE)
