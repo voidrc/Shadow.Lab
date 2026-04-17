@@ -1,8 +1,10 @@
 # Shadow.Lab
 
+[![Discord Notify](https://github.com/voidrc/Shadow.Lab/actions/workflows/discord-notify.yml/badge.svg)](https://github.com/voidrc/Shadow.Lab/actions/workflows/discord-notify.yml)
+
 > _See. Understand. Control._
 
-A comprehensive knowledge base for the **Shadow** security research team. This repo is the single source of truth for techniques, tools, and resources across **Red Teaming**, **Blue Teaming**, and the foundational disciplines that underpin them.
+A comprehensive knowledge base for the **Shadow.Lab** security research team. This repo is the single source of truth for techniques, tools, and resources across **Red Teaming**, **Blue Teaming**, and the foundational disciplines that underpin them.
 
 Shadow.Lab operates in the **Grey Hat** space — skilled researchers who understand both sides of the fence: how attackers think and operate, and how defenders detect, respond, and harden systems.
 
@@ -58,32 +60,15 @@ Shadow.Lab operates in the **Grey Hat** space — skilled researchers who unders
 4. Use consistent Markdown formatting
 5. Submit a PR and tag a teammate for review
 
+> **CI:** Every push to `main` automatically sends a Discord embed to the team server.  
+> Repo admins must add a `DISCORD_WEBHOOK_URL` secret under **Settings → Secrets and variables → Actions**.
+
 ---
 
-## 📚 External Resources
+## <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_white_RGB.svg" width="24" height="24" alt="Discord" style="vertical-align:middle"/> Discord Server
 
-### Red Team
+Join the Shadow.Lab community — share findings, ask questions, and collaborate with the team.
 
-- [HackTheBox](https://hackthebox.com) — machines, pro labs, and red team simulations
-- [TryHackMe](https://tryhackme.com) — guided red/blue team learning paths
-- [PortSwigger Web Security Academy](https://portswigger.net/web-security) — free web exploitation labs
-- [pwn.college](https://pwn.college) — binary exploitation curriculum
-- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — attack payload reference
-- [HackTricks](https://book.hacktricks.xyz) — comprehensive pentesting reference
+[![Discord](https://img.shields.io/discord/FpdPbJU6JE?label=Shadow.Lab&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/FpdPbJU6JE)
 
-### Blue Team
-
-- [Blue Team Labs Online](https://blueteamlabs.online) — defensive security challenges
-- [LetsDefend](https://letsdefend.io) — SOC analyst training platform
-- [Splunk BOTS](https://bots.splunk.com) — boss of the SOC CTF-style SIEM challenges
-- [MITRE ATT&CK](https://attack.mitre.org) — adversary tactics and techniques knowledge base
-- [Sigma Rules](https://github.com/SigmaHQ/sigma) — generic SIEM detection rules
-- [DFIR.training](https://www.dfir.training) — digital forensics and IR resource library
-
-### Research & Intel
-
-- [CVEDetails](https://www.cvedetails.com) — CVE database and vulnerability statistics
-- [Exploit-DB](https://www.exploit-db.com) — public exploit archive
-- [VulnHub](https://www.vulnhub.com) — vulnerable-by-design VMs
-- [CryptoHack](https://cryptohack.org) — cryptography research challenges
-- [OSINT Framework](https://osintframework.com) — intelligence gathering tool map
+👉 **[discord.gg/FpdPbJU6JE](https://discord.gg/FpdPbJU6JE)**
