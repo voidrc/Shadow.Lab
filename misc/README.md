@@ -1,6 +1,8 @@
 # 🎲 Miscellaneous
 
-> Everything that doesn't fit neatly elsewhere — scripting puzzles, esoteric languages, programming challenges, and odd formats.
+> Research utilities, scripting, unusual encodings, and everything that doesn't fit neatly elsewhere.
+
+> **Grey Hat context:** Scripting and automation are force multipliers for both red and blue teams — from automating recon pipelines to building custom detection parsers. Esoteric encoding knowledge is useful in malware analysis and threat intel.
 
 ---
 

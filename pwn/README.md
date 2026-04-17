@@ -1,6 +1,8 @@
-# 💥 Binary Exploitation (PWN)
+# 💥 Binary Exploitation & Exploit Development
 
 > Break binaries, take control of execution. Start with the basics and work up to heap kung-fu.
+
+> **Grey Hat context:** Binary exploitation is at the heart of vulnerability research, zero-day discovery, and exploit development. These skills are used in both offensive security research and in understanding real-world CVEs for defensive purposes.
 
 ---
 

@@ -1,6 +1,8 @@
-# 🖼️ Steganography
+# 🖼️ Steganography & Covert Channels
 
 > Data hidden in plain sight — inside images, audio, video, and text.
+
+> **Grey Hat context:** Understanding steganography and covert channels is relevant to both sides: red teamers use covert channels to exfiltrate data under the radar; blue teamers need to detect them during incident investigations and threat hunting.
 
 ---
 

@@ -1,81 +1,104 @@
 # Shadow.Lab
 > *See. Understand. Control.*
 
-A comprehensive roadmap and guide repository for the **Shadow** CTF team. This repo is the single source of truth for techniques, tools, and resources across all major CTF categories.
+A comprehensive knowledge base for the **Shadow** security research team. This repo is the single source of truth for techniques, tools, and resources across **Red Teaming**, **Blue Teaming**, and the foundational disciplines that underpin them.
+
+Shadow.Lab operates in the **Grey Hat** space — skilled researchers who understand both sides of the fence: how attackers think and operate, and how defenders detect, respond, and harden systems.
 
 ---
 
 ## 🗺️ Roadmap
 
-### Beginner Path
-1. Start with **[Tools & Setup](tools/README.md)** — get your environment ready
-2. Learn **[Cryptography](crypto/README.md)** basics — encoding, classic ciphers, hashing
-3. Explore **[Forensics](forensics/README.md)** — file analysis, memory dumps, traffic captures
-4. Try **[Steganography](stego/README.md)** — hidden data in images/audio
-5. Work through **[OSINT](osint/README.md)** — research & intelligence gathering
-6. Study **[Web Exploitation](web/README.md)** — the most common category in CTFs
+### Foundation Path (Start Here)
+1. **[Tools & Setup](tools/README.md)** — build your offensive and defensive toolkit
+2. **[Cryptography](crypto/README.md)** — encoding, ciphers, hashing, and modern crypto attacks
+3. **[Networking & OSINT](osint/README.md)** — recon, domain/IP intelligence, passive reconnaissance
+4. **[Web Application Security](web/README.md)** — the attack surface everyone has
 
-### Intermediate Path
-7. Dive into **[Reverse Engineering](rev/README.md)** — understand compiled binaries
-8. Tackle **[Binary Exploitation / PWN](pwn/README.md)** — memory corruption & exploitation
+### Red Team Path (Offensive Security)
+5. **[Red Teaming](red-team/README.md)** — network exploitation, AD attacks, post-exploitation, C2, evasion
+6. **[Binary Exploitation / PWN](pwn/README.md)** — memory corruption, ROP, heap exploitation
+7. **[Reverse Engineering](rev/README.md)** — static/dynamic analysis, malware reversing, vuln research
 
-### Advanced / Specialty
-- **[Miscellaneous](misc/README.md)** — everything that doesn't fit elsewhere
+### Blue Team Path (Defensive Security)
+8. **[Blue Teaming](blue-team/README.md)** — threat detection, SIEM, incident response, threat hunting
+9. **[Forensics](forensics/README.md)** — file analysis, memory forensics, network forensics, log analysis
+10. **[Steganography](stego/README.md)** — hidden data, covert channels, artefact analysis
+
+### Research & Specialty
+- **[Miscellaneous](misc/README.md)** — scripting, unusual encodings, research tooling
 
 ---
 
-## 📂 Categories
+## 📂 Knowledge Base
 
-| Category | Description |
+### 🔴 Red Team — Offensive Security
+| Area | Description |
 |---|---|
-| [🌐 Web](web/README.md) | SQL injection, XSS, SSRF, LFI/RFI, deserialization, auth bypass |
-| [💥 PWN](pwn/README.md) | Buffer overflows, ROP chains, heap exploitation, shellcoding |
-| [🔬 Reverse Engineering](rev/README.md) | Static/dynamic analysis, decompiling, patching, anti-debug |
-| [🔐 Cryptography](crypto/README.md) | Classical ciphers, modern crypto attacks, hash cracking |
+| [🎯 Red Teaming](red-team/README.md) | Network pentesting, AD attacks, post-exploitation, C2, phishing, evasion |
+| [🌐 Web Application Security](web/README.md) | SQLi, XSS, SSRF, LFI/RFI, deserialization, auth bypass |
+| [💥 Binary Exploitation](pwn/README.md) | Buffer overflows, ROP chains, heap exploitation, shellcoding |
+| [🔬 Reverse Engineering](rev/README.md) | Static/dynamic analysis, decompiling, patching, anti-debug, malware RE |
+
+### 🔵 Blue Team — Defensive Security
+| Area | Description |
+|---|---|
+| [🛡️ Blue Teaming](blue-team/README.md) | Threat detection, SIEM, incident response, malware analysis, threat hunting |
 | [🔍 Forensics](forensics/README.md) | File carving, memory forensics, network forensics, log analysis |
-| [👁️ OSINT](osint/README.md) | Metadata, geolocation, social engineering research |
-| [🖼️ Steganography](stego/README.md) | Image/audio stego, LSB, hidden data extraction |
+| [🖼️ Steganography](stego/README.md) | Covert channel analysis, image/audio stego, hidden data extraction |
+
+### 🔩 Foundations
+| Area | Description |
+|---|---|
+| [🔐 Cryptography](crypto/README.md) | Classical ciphers, modern crypto attacks, hash cracking, protocol weaknesses |
+| [👁️ OSINT & Recon](osint/README.md) | Passive recon, metadata, geolocation, threat intelligence |
 | [🛠️ Tools & Setup](tools/README.md) | Environment setup, essential tools, cheatsheets |
-| [🎲 Miscellaneous](misc/README.md) | Scripting, esoteric languages, puzzles, everything else |
+| [🎲 Miscellaneous](misc/README.md) | Scripting, unusual encodings, research utilities |
 
 ---
 
-## 🏁 Quick Reference
+## 🔘 Grey Hat Principles
 
-### General CTF Tips
-- Read the challenge description carefully — the flag format is usually given (e.g., `flag{...}`)
-- Always check file metadata: `file`, `strings`, `exiftool`, `binwalk`
-- When stuck, Google the challenge name or error message — it's not cheating, it's OSINT
-- Document your findings as you go; it helps teammates and future you
-- Work in a VM or isolated container to stay safe
-
-### Flag Formats
-Common formats seen in CTFs:
-```
-flag{...}
-CTF{...}
-TEAM{...}
-picoCTF{...}
-```
+- **Understand both sides** — the best defenders think like attackers; the best attackers understand defenses
+- **Responsible disclosure** — report vulnerabilities through proper channels; do not cause harm
+- **Authorised scope only** — never test systems you do not have explicit written permission to test
+- **Document everything** — reproducible findings, clear timelines, and clean write-ups matter
+- **Continuous learning** — the threat landscape evolves; so must you
+- **Operate ethically** — Grey Hat does not mean lawless; it means deeply informed
 
 ---
 
 ## 🤝 Contributing
 
 1. Branch off `main` and add your guide or improvement
-2. Keep guides practical — commands, examples, and real challenge references
-3. Use consistent Markdown formatting
-4. Submit a PR and tag a teammate for review
+2. Keep guides practical — commands, real-world examples, and tool references
+3. Tag content as `[RED]`, `[BLUE]`, or `[BOTH]` where the context isn't obvious
+4. Use consistent Markdown formatting
+5. Submit a PR and tag a teammate for review
 
 ---
 
 ## 📚 External Resources
 
-- [CTFtime.org](https://ctftime.org) — upcoming CTF events and team rankings
-- [PicoCTF](https://picoctf.org) — beginner-friendly practice challenges
-- [HackTheBox](https://hackthebox.com) — machines and web challenges
-- [TryHackMe](https://tryhackme.com) — guided learning paths
+### Red Team
+- [HackTheBox](https://hackthebox.com) — machines, pro labs, and red team simulations
+- [TryHackMe](https://tryhackme.com) — guided red/blue team learning paths
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security) — free web exploitation labs
 - [pwn.college](https://pwn.college) — binary exploitation curriculum
-- [CryptoHack](https://cryptohack.org) — cryptography challenges
-- [CTF101](https://ctf101.org) — category overviews and basics
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — attack payload reference
+- [HackTricks](https://book.hacktricks.xyz) — comprehensive pentesting reference
+
+### Blue Team
+- [Blue Team Labs Online](https://blueteamlabs.online) — defensive security challenges
+- [LetsDefend](https://letsdefend.io) — SOC analyst training platform
+- [Splunk BOTS](https://bots.splunk.com) — boss of the SOC CTF-style SIEM challenges
+- [MITRE ATT&CK](https://attack.mitre.org) — adversary tactics and techniques knowledge base
+- [Sigma Rules](https://github.com/SigmaHQ/sigma) — generic SIEM detection rules
+- [DFIR.training](https://www.dfir.training) — digital forensics and IR resource library
+
+### Research & Intel
+- [CVEDetails](https://www.cvedetails.com) — CVE database and vulnerability statistics
+- [Exploit-DB](https://www.exploit-db.com) — public exploit archive
+- [VulnHub](https://www.vulnhub.com) — vulnerable-by-design VMs
+- [CryptoHack](https://cryptohack.org) — cryptography research challenges
+- [OSINT Framework](https://osintframework.com) — intelligence gathering tool map

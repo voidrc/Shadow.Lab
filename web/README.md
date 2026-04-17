@@ -1,6 +1,8 @@
-# 🌐 Web Exploitation
+# 🌐 Web Application Security
 
-> Web is typically the largest category in CTFs. Master the classics and stay curious.
+> Web vulnerabilities are the most prevalent attack surface in real-world pentests and bug bounty programmes. Master the classics and stay curious.
+
+> **Grey Hat context:** The techniques here apply directly to authorised web application penetration testing, bug bounty hunting, and red team initial access. Always operate within defined scope and with written authorisation.
 
 ---
 

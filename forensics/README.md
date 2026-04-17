@@ -1,6 +1,8 @@
-# 🔍 Forensics
+# 🔍 Forensics & DFIR
 
 > Recover, reconstruct, and reveal. Forensics covers file analysis, memory dumps, network captures, and log examination.
+
+> **Grey Hat context:** Digital forensics and incident response (DFIR) is the core of Blue Team work. These skills are used to investigate breaches, analyse malware, and support incident response. They also inform Red Teamers on which artefacts their operations leave behind.
 
 ---
 

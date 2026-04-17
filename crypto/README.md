@@ -2,6 +2,8 @@
 
 > Break ciphers, crack hashes, and abuse math. Know your encoding from your encryption.
 
+> **Grey Hat context:** Cryptography knowledge is essential for both sides. Red teamers crack weak creds, break poorly-implemented crypto, and abuse JWT/TLS weaknesses. Blue teamers use it to understand encrypted C2 channels, analyse ransomware, and harden authentication systems.
+
 ---
 
 ## Encoding ≠ Encryption

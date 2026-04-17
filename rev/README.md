@@ -1,6 +1,8 @@
-# 🔬 Reverse Engineering
+# 🔬 Reverse Engineering & Malware Analysis
 
 > Static and dynamic analysis of compiled binaries. Read what machines read.
+
+> **Grey Hat context:** Reverse engineering is foundational to both vulnerability research (finding bugs in closed-source software) and malware analysis (understanding what malicious code does). Blue teamers use it to analyse samples; red teamers use it to understand defences and find attack surface.
 
 ---
 

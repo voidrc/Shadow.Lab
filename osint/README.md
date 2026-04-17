@@ -1,6 +1,8 @@
-# 👁️ OSINT
+# 👁️ OSINT & Reconnaissance
 
 > Open Source Intelligence — gather information from publicly available sources.
+
+> **Grey Hat context:** OSINT is the foundation of every red team engagement (passive recon before touching the target) and is also central to threat intelligence and Blue Team operations (profiling threat actors, pivoting on IOCs, investigating incidents).
 
 ---
 

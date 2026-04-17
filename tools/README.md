@@ -1,18 +1,118 @@
 # 🛠️ Tools & Setup
 
-> Get your CTF environment up and running.
+> Build your offensive and defensive security environment.
 
 ---
 
 ## Environment
 
-A dedicated Linux VM or WSL2 setup keeps your host system clean and lets you run potentially unsafe binaries safely.
+A dedicated Linux VM or WSL2 setup keeps your host system clean and lets you run potentially unsafe binaries safely. For malware analysis, use a fully isolated internal-only VM with no host network access.
 
-**Recommended OS:** Kali Linux, Parrot OS, or Ubuntu 22.04+
+**Recommended OS:**
+- **Red Team / General:** Kali Linux, Parrot OS
+- **Blue Team / DFIR:** REMnux, Ubuntu 22.04+ with Sysmon + Elastic/Splunk
+- **Malware Analysis:** FlareVM (Windows), REMnux (Linux)
 
 ---
 
-## Essential Tools by Category
+## 🔴 Red Team Tools
+
+### Reconnaissance & OSINT
+| Tool | Purpose | Install |
+|---|---|---|
+| `nmap` | Network port scanner | `apt install nmap` |
+| `masscan` | Fast mass port scanner | `apt install masscan` |
+| `subfinder` | Passive subdomain enumeration | `go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` |
+| `amass` | Subdomain enumeration and mapping | `apt install amass` |
+| `theHarvester` | Email/domain OSINT | `apt install theharvester` |
+| `sherlock` | Username search across platforms | `pip install sherlock-project` |
+
+### Web Exploitation
+| Tool | Purpose | Install |
+|---|---|---|
+| Burp Suite Pro | HTTP proxy, scanner, intruder | [portswigger.net](https://portswigger.net/burp/pro) |
+| `ffuf` | Web fuzzing | `go install github.com/ffuf/ffuf/v2@latest` |
+| `sqlmap` | SQL injection automation | `apt install sqlmap` |
+| `nuclei` | Template-based vulnerability scanner | `go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest` |
+| `nikto` | Web vulnerability scanner | `apt install nikto` |
+
+### Active Directory & Network Attacks
+| Tool | Purpose | Install |
+|---|---|---|
+| `impacket` | AD/SMB attack suite (psexec, secretsdump, etc.) | `pip install impacket` |
+| `bloodhound-python` | BloodHound data collection | `pip install bloodhound` |
+| BloodHound | AD attack path visualisation | [GitHub](https://github.com/BloodHoundAD/BloodHound) |
+| `evil-winrm` | WinRM shell | `gem install evil-winrm` |
+| `responder` | LLMNR/NBT-NS poisoning | `apt install responder` |
+| `crackmapexec` | AD Swiss-army knife | `apt install crackmapexec` |
+| `kerbrute` | Kerberos user enumeration and bruteforce | [GitHub](https://github.com/ropnop/kerbrute) |
+
+### Post-Exploitation & C2
+| Tool | Purpose | Install |
+|---|---|---|
+| Metasploit | Exploitation and post-exploitation framework | `apt install metasploit-framework` |
+| [Sliver](https://github.com/BishopFox/sliver) | Open-source C2 framework | GitHub releases |
+| `msfvenom` | Payload generation | bundled with Metasploit |
+| `chisel` | TCP/UDP tunnel over HTTP | `go install github.com/jpillora/chisel@latest` |
+| `ligolo-ng` | Tunneling for pivoting | [GitHub](https://github.com/nicocha30/ligolo-ng) |
+
+### Privilege Escalation
+| Tool | Purpose | Install |
+|---|---|---|
+| `linpeas` | Linux privilege escalation enumeration | [GitHub](https://github.com/carlospolop/PEASS-ng) |
+| `winpeas` | Windows privilege escalation enumeration | [GitHub](https://github.com/carlospolop/PEASS-ng) |
+| `mimikatz` | Windows credential dumping | [GitHub](https://github.com/gentilkiwi/mimikatz) |
+| `Rubeus` | Kerberos manipulation | [GitHub](https://github.com/GhostPack/Rubeus) |
+
+---
+
+## 🔵 Blue Team Tools
+
+### SIEM & Log Analysis
+| Tool | Purpose | Install |
+|---|---|---|
+| [Elastic Stack (ELK)](https://www.elastic.co) | Log ingestion, search, and visualisation | Docker / APT |
+| [Splunk Free](https://www.splunk.com/en_us/download.html) | SIEM with 500MB/day free tier | Installer |
+| [Wazuh](https://wazuh.com) | Open-source SIEM + HIDS | [Install guide](https://documentation.wazuh.com/) |
+| `sigma` | Convert generic detection rules to SIEM queries | `pip install sigma-cli` |
+
+### Endpoint Detection & Forensics
+| Tool | Purpose | Install |
+|---|---|---|
+| [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) | Detailed Windows event logging | Windows |
+| [Velociraptor](https://github.com/Velocidex/velociraptor) | DFIR and endpoint monitoring | GitHub releases |
+| [Volatility 3](https://github.com/volatilityfoundation/volatility3) | Memory forensics | `pip install volatility3` |
+| [Eric Zimmerman Tools](https://ericzimmerman.github.io) | Windows forensics utilities (PECmd, MFTECmd, etc.) | Windows |
+| `autopsy` | Digital forensics GUI | [autopsy.com](https://www.autopsy.com/) |
+
+### Network Monitoring & Analysis
+| Tool | Purpose | Install |
+|---|---|---|
+| [Zeek (Bro)](https://zeek.org) | Network traffic analysis and logging | `apt install zeek` |
+| [Suricata](https://suricata.io) | Network IDS/IPS | `apt install suricata` |
+| Wireshark / `tshark` | PCAP analysis | `apt install wireshark` |
+| `zeek-cut` | Zeek log field extractor | bundled with Zeek |
+
+### Malware Analysis
+| Tool | Purpose | Install |
+|---|---|---|
+| [REMnux](https://remnux.org) | Linux malware analysis distro | VM download |
+| [FlareVM](https://github.com/mandiant/flare-vm) | Windows malware analysis toolkit | Windows setup script |
+| `FLOSS` | Extract obfuscated strings from malware | `pip install flare-floss` |
+| `pestudio` | PE file static analysis | [winitor.com](https://www.winitor.com/) |
+| `YARA` | Pattern-matching for malware detection | `apt install yara` |
+| [Any.run](https://app.any.run) | Interactive online sandbox | Browser |
+| [Hybrid-Analysis](https://www.hybrid-analysis.com) | Automated online sandbox | Browser |
+
+### Threat Intelligence
+| Tool | Purpose | Install |
+|---|---|---|
+| [MISP](https://www.misp-project.org) | Threat intel sharing platform | [Install guide](https://www.misp-project.org/download/) |
+| [OpenCTI](https://www.opencti.io) | Threat intel management | Docker |
+
+---
+
+## General Security Tools by Category
 
 ### General
 | Tool | Purpose | Install |
@@ -95,31 +195,38 @@ A dedicated Linux VM or WSL2 setup keeps your host system clean and lets you run
 # Update and install base tools
 sudo apt update && sudo apt install -y \
   binwalk exiftool foremost p7zip-full \
-  curl wget gobuster sqlmap nikto \
+  curl wget gobuster sqlmap nikto nmap masscan amass \
   wireshark tshark gdb strace ltrace \
   radare2 steghide outguess audacity \
-  john hashcat patchelf
+  john hashcat patchelf suricata zeek \
+  yara responder
 
 # Python tools
-pip install pwntools ROPgadget
+pip install pwntools ROPgadget impacket bloodhound sigma-cli volatility3 flare-floss
 
 # Ruby tools
-gem install one_gadget zsteg
+gem install one_gadget zsteg evil-winrm
+
+# Go tools
+go install github.com/ffuf/ffuf/v2@latest
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+go install github.com/jpillora/chisel@latest
 ```
 
 ---
 
-## CTF Workflow Checklist
+## Security Workflow Checklist
 
 ```
-[ ] Read the challenge description fully
-[ ] Note the flag format (flag{...}, CTF{...}, etc.)
-[ ] Run `file` on any attachment
+Initial Assessment:
+[ ] Identify the target/asset type
+[ ] Run `file` on any attachment or sample
 [ ] Run `strings` and look for obvious clues
-[ ] Run `exiftool` on images/documents
+[ ] Run `exiftool` on files with metadata
 [ ] Run `binwalk` on binaries/archives
-[ ] Check if it's a known CTF challenge (Google the title)
-[ ] Document all findings in notes
+[ ] Check known hash reputation (VirusTotal, MalwareBazaar)
+[ ] Document all findings with timestamps
 [ ] Ask a teammate before spending more than 1 hour stuck
 ```
 
