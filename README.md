@@ -1,6 +1,4 @@
-# Shadow.Lab
-
-[![Discord Notify](https://github.com/voidrc/Shadow.Lab/actions/workflows/discord-notify.yml/badge.svg)](https://github.com/voidrc/Shadow.Lab/actions/workflows/discord-notify.yml)
+# Shadow.Wiki
 
 > _See. Understand. Control._
 
@@ -39,6 +37,8 @@ Shadow.Lab operates in the **Grey Hat** space — skilled researchers who unders
 | [💻 Programming Languages](languages/README.md) | C, Python, Bash, PowerShell, Assembly, Rust, Go, JS, Java — exploit dev & tooling |
 | [🎲 Miscellaneous](misc/README.md)              | Scripting, unusual encodings, research utilities                                  |
 
+> 💡 New here or haven't set up your environment yet? Start with [🛠️ Tools & Setup](tools/README.md).
+
 ---
 
 ## 🔘 Grey Hat Principles
@@ -58,10 +58,7 @@ Shadow.Lab operates in the **Grey Hat** space — skilled researchers who unders
 2. Keep guides practical — commands, real-world examples, and tool references
 3. Tag content as `[RED]`, `[BLUE]`, or `[BOTH]` where the context isn't obvious
 4. Use consistent Markdown formatting
-5. Submit a PR and tag a teammate for review
-
-> **CI:** Every push to `main` automatically sends a Discord embed to the team server.  
-> Repo admins must add a `DISCORD_WEBHOOK_URL` secret under **Settings → Secrets and variables → Actions**.
+5. Submit a PR
 
 ---
 
@@ -69,6 +66,4 @@ Shadow.Lab operates in the **Grey Hat** space — skilled researchers who unders
 
 Join the Shadow.Lab community — share findings, ask questions, and collaborate with the team.
 
-[![Discord](https://img.shields.io/discord/FpdPbJU6JE?label=Shadow.Lab&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/FpdPbJU6JE)
-
-👉 **[discord.gg/FpdPbJU6JE](https://discord.gg/FpdPbJU6JE)**
+[![Discord](https://img.shields.io/discord/FpdPbJU6JE?logo=discord&logoColor=white&color=5865F2)](https://discord.gg/FpdPbJU6JE)
