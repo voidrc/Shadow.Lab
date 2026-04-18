@@ -1,3 +1,9 @@
+# Starter Tools
+
+> **Previous:** [Lab Environment Setup](README.md)
+
+---
+
 #### System essentials — core tools every developer and security person needs
 
 ```bash
@@ -60,3 +66,13 @@ pip install pwntools requests beautifulsoup4 scapy impacket
 echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.zshrc
 source ~/.zshrc
 ```
+
+---
+
+## What to Read Next
+
+| You want to...                   | Go here                                            |
+| -------------------------------- | -------------------------------------------------- |
+| Browse the full security toolkit | [General Security Tools](GeneralSecurity-Tools.md) |
+| Run lab services in containers   | [Docker Setup](Docker.md)                          |
+| Harden and tune your Arch host   | [Arch Quality of Life](Arch-QOL.md)                |

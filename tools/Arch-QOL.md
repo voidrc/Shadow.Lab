@@ -181,3 +181,12 @@ UUID=<UUID>  /media/<youruser>  btrfs  defaults,noatime,compress=zstd  0  2
 
 > Consider adding a Snapper config for the mount point as a safety net.
 
+---
+
+## What to Read Next
+
+| You want to...            | Go here                         |
+| ------------------------- | ------------------------------- |
+| Encrypt files and backups | [GPG](GPG.md)                   |
+| Back up your setup        | [Backups](BackUps.md)           |
+| Tune your VM              | [VM Quality of Life](QOL-VM.md) |

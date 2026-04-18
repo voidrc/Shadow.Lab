@@ -59,3 +59,12 @@ Disable the soft lock layer:
 ### Kali Tweaks
 
 For everything else, open **Kali Tweaks**.
+
+---
+
+## What to Read Next
+
+| You want to...           | Go here                             |
+| ------------------------ | ----------------------------------- |
+| Install your first tools | [Starter Tools](Starter-Tools.md)   |
+| Tune your Arch host      | [Arch Quality of Life](Arch-QOL.md) |

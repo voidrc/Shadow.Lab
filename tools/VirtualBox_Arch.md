@@ -76,11 +76,11 @@ sudo VBoxManage extpack install Oracle_VirtualBox_Extension_Pack*.vbox-extpack
 
 ## Common Arch Quirks
 
-| Issue | Fix |
-|-------|-----|
-| Kernel mismatch after update | `sudo dkms autoinstall` |
-| Modules blocked at boot | Disable Secure Boot or sign the modules |
-| UI glitches on Wayland | Launch under X11: `DISPLAY=:0 virtualbox` |
+| Issue                        | Fix                                       |
+| ---------------------------- | ----------------------------------------- |
+| Kernel mismatch after update | `sudo dkms autoinstall`                   |
+| Modules blocked at boot      | Disable Secure Boot or sign the modules   |
+| UI glitches on Wayland       | Launch under X11: `DISPLAY=:0 virtualbox` |
 
 ---
 
@@ -89,3 +89,13 @@ sudo VBoxManage extpack install Oracle_VirtualBox_Extension_Pack*.vbox-extpack
 ```bash
 sudo vboxmanage hostonlyif create
 ```
+
+---
+
+## What to Read Next
+
+| You want to...                    | Go here                           |
+| --------------------------------- | --------------------------------- |
+| Higher performance virtualization | [QEMU/KVM Setup](Qemu.md)         |
+| Tune your VM after setup          | [VM Quality of Life](QOL-VM.md)   |
+| Install your first tools          | [Starter Tools](Starter-Tools.md) |

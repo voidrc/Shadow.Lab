@@ -6,13 +6,13 @@ A resilient operator maintains at least two backup layers. Working with exploits
 
 ## Approaches
 
-| Method | Tools | Best For |
-|--------|-------|----------|
-| Snapshots | Snapper, Timeshift, ZFS | Instant OS rollbacks |
-| Encrypted backups | BorgBackup, Restic, Duplicity | Long-term secure storage |
-| GUI helpers | Pika-Backup, KBackup, Déjà Dup | Beginner-friendly workflows |
-| Cloud / sync | Syncthing, Nextcloud, Rclone | Multi-device resilience |
-| Disk imaging | Clonezilla, Rescuezilla, dd | Full forensic clones |
+| Method            | Tools                          | Best For                    |
+| ----------------- | ------------------------------ | --------------------------- |
+| Snapshots         | Snapper, Timeshift, ZFS        | Instant OS rollbacks        |
+| Encrypted backups | BorgBackup, Restic, Duplicity  | Long-term secure storage    |
+| GUI helpers       | Pika-Backup, KBackup, Déjà Dup | Beginner-friendly workflows |
+| Cloud / sync      | Syncthing, Nextcloud, Rclone   | Multi-device resilience     |
+| Disk imaging      | Clonezilla, Rescuezilla, dd    | Full forensic clones        |
 
 ---
 
@@ -149,3 +149,12 @@ Last-resort recovery: clone an entire disk bit by bit.
 - Combine at least two layers (e.g., snapshots + encrypted backup).
 - Test restores regularly — an untested backup is not a backup.
 - Store encrypted backup keys separately from the backup itself.
+
+---
+
+## Related Guides
+
+|                      | Guide                               |
+| -------------------- | ----------------------------------- |
+| Encrypt your backups | [GPG](GPG.md)                       |
+| Back to host setup   | [Arch Quality of Life](Arch-QOL.md) |

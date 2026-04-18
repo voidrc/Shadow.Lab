@@ -16,13 +16,13 @@ gpg --full-generate-key
 
 When prompted:
 
-| Prompt | Recommended value |
-|--------|-------------------|
-| Key type | `RSA and RSA` (default) |
-| Key size | `4096` |
-| Expiration | `0` (never) |
-| Name / Email | your alias |
-| Passphrase | strong and memorized |
+| Prompt       | Recommended value       |
+| ------------ | ----------------------- |
+| Key type     | `RSA and RSA` (default) |
+| Key size     | `4096`                  |
+| Expiration   | `0` (never)             |
+| Name / Email | your alias              |
+| Passphrase   | strong and memorized    |
 
 ---
 
@@ -90,3 +90,11 @@ gpg --verify file.txt.sig file.txt
 - Even if your files are stolen, they are unreadable without the private key.
 - Store key backups offline (USB + printed copy as last resort).
 - Practice encrypting and decrypting dummy files until it is second nature.
+
+---
+
+## What to Read Next
+
+| You want to...           | Go here               |
+| ------------------------ | --------------------- |
+| Set up encrypted backups | [Backups](BackUps.md) |

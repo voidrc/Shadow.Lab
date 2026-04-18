@@ -1,5 +1,6 @@
-
 ### SIEM & Log Analysis
+
+> **Previous:** [General Security Tools](GeneralSecurity-Tools.md)
 
 | Tool                                                      | Purpose                                         | Install                                           |
 | --------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
@@ -45,3 +46,13 @@
 | ------------------------------------ | ----------------------------- | ------------------------------------------------------- |
 | [MISP](https://www.misp-project.org) | Threat intel sharing platform | [Install guide](https://www.misp-project.org/download/) |
 | [OpenCTI](https://www.opencti.io)    | Threat intel management       | Docker                                                  |
+
+---
+
+## Related Guides
+
+|                            | Guide                                              |
+| -------------------------- | -------------------------------------------------- |
+| Offensive tooling          | [Red Team Tools](RedTeam-Tools.md)                 |
+| Run services in containers | [Docker Setup](Docker.md)                          |
+| Full tool reference        | [General Security Tools](GeneralSecurity-Tools.md) |

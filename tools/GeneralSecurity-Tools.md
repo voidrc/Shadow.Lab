@@ -1,5 +1,7 @@
 ## General
 
+> **Previous:** [Starter Tools](Starter-Tools.md)
+
 | Tool              | Purpose                                  | Install                                                       |
 | ----------------- | ---------------------------------------- | ------------------------------------------------------------- |
 | `file`            | Identify file type                       | built-in                                                      |
@@ -77,3 +79,13 @@
 | `outguess`  | Stego in JPEG                      | `apt install outguess`                                                        |
 | `audacity`  | Audio spectrogram analysis         | `apt install audacity`                                                        |
 | `sox`       | Audio processing CLI               | `apt install sox`                                                             |
+
+---
+
+## Explore Further
+
+| Path                    | Guide                                |
+| ----------------------- | ------------------------------------ |
+| Offensive security      | [Red Team Tools](RedTeam-Tools.md)   |
+| Defensive security      | [Blue Team Tools](BlueTeam-Tools.md) |
+| Run tools in containers | [Docker Setup](Docker.md)            |

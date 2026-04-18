@@ -83,16 +83,16 @@ source ~/.zshrc
 
 ## Key Bindings
 
-| Key | Action |
-|-----|--------|
-| `x` | Open command menu for selected item |
-| `e` | Open config/compose file in editor |
-| `[` / `]` | Switch panels |
-| `enter` | View logs / inspect |
-| `d` | Remove container or image |
-| `u` | Pull latest image |
-| `R` | Restart container |
-| `q` | Quit |
+| Key       | Action                              |
+| --------- | ----------------------------------- |
+| `x`       | Open command menu for selected item |
+| `e`       | Open config/compose file in editor  |
+| `[` / `]` | Switch panels                       |
+| `enter`   | View logs / inspect                 |
+| `d`       | Remove container or image           |
+| `u`       | Pull latest image                   |
+| `R`       | Restart container                   |
+| `q`       | Quit                                |
 
 ---
 
@@ -101,3 +101,13 @@ source ~/.zshrc
 - The `docker` group grants root-equivalent access to the host. Only add trusted users.
 - `docker-compose` is included in the `docker` package on Arch (v2 plugin, use `docker compose`).
 - lazydocker reads the Docker socket at `/var/run/docker.sock` — no extra config needed.
+
+---
+
+## What to Read Next
+
+| You want to...         | Go here                             |
+| ---------------------- | ----------------------------------- |
+| Tune your Arch host    | [Arch Quality of Life](Arch-QOL.md) |
+| Encrypt sensitive data | [GPG](GPG.md)                       |
+| Back up your lab       | [Backups](BackUps.md)               |
