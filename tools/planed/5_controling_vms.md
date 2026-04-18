@@ -10,7 +10,7 @@ A practical reference for day-to-day QEMU/KVM operations using Fedora Server as 
 
 Complete QEMU/KVM host setup first:
 
-- [QEMU/KVM setup](4_QEMU_KVM.md)
+- [QEMU/KVM setup](Qemu.md)
 
 Check host status:
 
@@ -57,7 +57,7 @@ sudo virt-install \
   --cpu host-passthrough \
   --disk path=images/fedora-lab-01.qcow2,size=25,format=qcow2,bus=virtio \
   --os-variant fedora43 \
-  --network network=lab-net,model=virtio \
+  --network network=NAT,model=virtio \
   --graphics none \
   --console pty,target_type=serial \
   --serial pty \
@@ -117,27 +117,27 @@ virsh net-list --all
 Inspect a network:
 
 ```bash
-virsh net-info lab-net
-virsh net-dumpxml lab-net
+virsh net-info NAT
+virsh net-dumpxml NAT
 ```
 
 Start/stop network:
 
 ```bash
-sudo virsh net-start lab-net
-sudo virsh net-destroy lab-net
+sudo virsh net-start NAT
+sudo virsh net-destroy NAT
 ```
 
 Enable autostart:
 
 ```bash
-sudo virsh net-autostart lab-net
+sudo virsh net-autostart NAT
 ```
 
 Check DHCP leases:
 
 ```bash
-sudo virsh net-dhcp-leases lab-net
+sudo virsh net-dhcp-leases NAT
 ```
 
 Find VM IP:
@@ -253,7 +253,7 @@ VM does not start:
 
 No network inside VM:
 
-- verify `lab-net` is active
+- verify `NAT` is active
 - check DHCP leases
 - restart guest network service
 

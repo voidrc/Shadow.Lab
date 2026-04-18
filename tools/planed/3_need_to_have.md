@@ -78,7 +78,7 @@ log out and back in for this to take effect.
 
 ## next-step
 
-- [QEMU/KVM setup](4_QEMU_KVM.md)
+- [QEMU/KVM setup](Qemu.md)
 
 optional reference:
 - [Shadow.Lab map](Shadow.Lab/README.md)

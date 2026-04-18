@@ -11,10 +11,14 @@
             "id": "25f837a9d4351872",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "tools/VM-QOL.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "VM-QOL"
             }
           }
         ]
@@ -165,9 +169,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "25f837a9d4351872",
+  "active": "5433c0565572f945",
   "lastOpenFiles": [
+    "tools/GeneralSecurity-Tools.md",
+    "tools/BlueTeam-Tools.md",
+    "tools/planed/3_need_to_have.md",
+    "tools/Qemu.md",
+    "tools/VirtualBox_Arch.md",
     "tools/README.md",
+    "tools/VM-QOL.md",
     "README.md",
     "languages/Languages.md",
     "tools/planed/GPG.md",
@@ -180,21 +190,15 @@
     "tools/planed/SSH-setup.md",
     "tools/planed/Shadow.Lab",
     "tools/planed/5_controling_vms.md",
-    "tools/planed/4_QEMU_KVM.md",
-    "tools/planed/3_need_to_have.md",
     "tools/planed",
     "tools/planed/Shadow.Lab/5_controling_vms.md",
     "tools/planed/Shadow.Lab/4_QEMU_KVM.md",
     "tools/planed/Shadow.Lab/3_need_to_have.md",
-    "tools/GeneralSecurity-Tools.md",
-    "tools/BlueTeam-Tools.md",
     "tools/RedTeam-Tools.md",
     "tools/Starter-Tools.md",
     "Shadow.Lab/1_distros.md",
     "Shadow.Lab/2_distro_instalation.md",
     "Shadow.Lab/3_need_to_have.md",
-    "SysAdmin/5_file_manipulation.md",
-    "SysAdmin/6_file_manipulation.md",
     "Yeet/Linux",
     "Shadow.Lab/inventory/lazykvm.sh",
     "Shadow.Lab/inventory/kvm.sh",
