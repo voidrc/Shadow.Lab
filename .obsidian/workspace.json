@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/GeneralSecurity-Tools.md",
+                "file": "tools/Qemu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GeneralSecurity-Tools"
+              "title": "Qemu"
             }
           }
         ]
@@ -171,6 +171,8 @@
   },
   "active": "25f837a9d4351872",
   "lastOpenFiles": [
+    "linux",
+    "tools/GeneralSecurity-Tools.md",
     "tools/QOL.md",
     "tools/Arch-QOL.md",
     "tools/Tips.md",
@@ -178,7 +180,6 @@
     "tools/planed/BackUps.md",
     "tools/Docker.md",
     "tools/GPG.md",
-    "tools/GeneralSecurity-Tools.md",
     "tools/VM-QOL.md",
     "tools/QOL-VM.md",
     "tools/BlueTeam-Tools.md",
@@ -197,7 +198,6 @@
     "tools/planed/BackUp_Options.md",
     "tools/planed/SSH-setup.md",
     "tools/planed/Shadow.Lab",
-    "tools/planed/5_controling_vms.md",
     "tools/planed",
     "Yeet/Linux",
     "Shadow.Lab/inventory/lazykvm.sh",
