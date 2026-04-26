@@ -106,9 +106,9 @@ source ~/.zshrc
 
 ## What to Read Next
 
-| You want to...                 | Go here                                           |
-| ------------------------------ | ------------------------------------------------- |
-| Spin up vulnerable lab targets | [Vulnerable Lab Containers](Docker-Containers.md) |
-| Tune your Arch host            | [Arch Quality of Life](Arch-QOL.md)               |
-| Encrypt sensitive data         | [GPG](GPG.md)                                     |
-| Back up your lab               | [Backups](BackUps.md)                             |
+| You want to...                 | Go here                             |
+| ------------------------------ | ----------------------------------- |
+| Spin up vulnerable lab targets | [Targets](Targets.md)               |
+| Tune your Arch host            | [Arch Quality of Life](Arch-QOL.md) |
+| Encrypt sensitive data         | [GPG](GPG.md)                       |
+| Back up your lab               | [Backups](BackUps.md)               |

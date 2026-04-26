@@ -8,36 +8,23 @@ Shadow.Lab operates in the **Grey Hat** space — skilled researchers who unders
 
 ---
 
-## 📂 Knowledge Base
+## Start Here
 
-### 🔴 Red Team — Offensive Security
+New to Shadow.Wiki or building your lab for the first time, follow this path:
 
-| Area                                         | Description                                                              |
-| -------------------------------------------- | ------------------------------------------------------------------------ |
-| [🎯 Red Teaming](red-team/README.md)         | Network pentesting, AD attacks, post-exploitation, C2, phishing, evasion |
-| [🌐 Web Application Security](web/README.md) | SQLi, XSS, SSRF, LFI/RFI, deserialization, auth bypass                   |
-| [💥 Binary Exploitation](pwn/README.md)      | Buffer overflows, ROP chains, heap exploitation, shellcoding             |
-| [🔬 Reverse Engineering](rev/README.md)      | Static/dynamic analysis, decompiling, patching, anti-debug, malware RE   |
+| Step | Guide                                           | What you'll do                                       |
+| ---- | ----------------------------------------------- | ---------------------------------------------------- |
+| 1    | [🛠️ Tools & Setup](tools/README.md)            | Pick an OS, spin up a VM, install core tools         |
+| 2    | [🐧 Linux](linux/README.md)                     | Learn Linux fundamentals for easy use of prefered OS |
+| 3    | [💻 Programming Languages](languages/README.md) | Scripting foundations for exploit dev and tooling    |
+| 4    | [🔐 Cryptography](crypto/README.md)             | Core crypto concepts every security person needs     |
+| 5    | Pick a track                                    | Red, Blue, or both — see the Knowledge Base below    |
 
-### 🔵 Blue Team — Defensive Security
+Already have a lab? Jump straight to a domain:
 
-| Area                                   | Description                                                                 |
-| -------------------------------------- | --------------------------------------------------------------------------- |
-| [🛡️ Blue Teaming](blue-team/README.md) | Threat detection, SIEM, incident response, malware analysis, threat hunting |
-| [🔍 Forensics](forensics/README.md)    | File carving, memory forensics, network forensics, log analysis             |
-| [🖼️ Steganography](stego/README.md)    | Covert channel analysis, image/audio stego, hidden data extraction          |
-
-### 🔩 Foundations
-
-| Area                                            | Description                                                                       |
-| ----------------------------------------------- | --------------------------------------------------------------------------------- |
-| [🔐 Cryptography](crypto/README.md)             | Classical ciphers, modern crypto attacks, hash cracking, protocol weaknesses      |
-| [👁️ OSINT & Recon](osint/README.md)             | Passive recon, metadata, geolocation, threat intelligence                         |
-| [🛠️ Tools & Setup](tools/README.md)             | Environment setup, essential tools, cheatsheets                                   |
-| [💻 Programming Languages](languages/README.md) | C, Python, Bash, PowerShell, Assembly, Rust, Go, JS, Java — exploit dev & tooling |
-| [🎲 Miscellaneous](misc/README.md)              | Scripting, unusual encodings, research utilities                                  |
-
-> 💡 New here or haven't set up your environment yet? Start with [🛠️ Tools & Setup](tools/README.md).
+- **Offensive** → [Red Teaming](red-team/README.md) · [Web](web/README.md) · [Pwn](pwn/README.md) · [Rev](rev/README.md)
+- **Defensive** → [Blue Teaming](blue-team/README.md) · [Forensics](forensics/README.md) · [Stego](stego/README.md)
+- **Recon** → [OSINT](osint/README.md)
 
 ---
 

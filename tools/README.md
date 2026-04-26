@@ -8,15 +8,14 @@
 
 | #   | Guide                                                          | What it covers                                       |
 | --- | -------------------------------------------------------------- | ---------------------------------------------------- |
-| 1   | [Lab Environment Setup](README.md) ← you are here              | Pick an OS, set up a VM                              |
+| 1   | [Lab Environment Setup](tools/README.md) ← you are here        | Pick an OS, set up a VM                              |
 | 2   | [VirtualBox on Arch](VirtualBox_Arch.md) / [QEMU/KVM](Qemu.md) | Hypervisor setup on Arch                             |
 | 3   | [VM Quality of Life](QOL-VM.md)                                | Tune your VM                                         |
-| 4   | [Starter Tools](Starter-Tools.md)                              | Install core tools                                   |
-| 5   | [General Security Tools](GeneralSecurity-Tools.md)             | Full tool reference                                  |
+| 4   | [General Security Tools](GeneralSecurity-Tools.md)             | Full tool reference                                  |
 | 6   | [Red Team Tools](RedTeam-Tools.md)                             | Offensive tooling                                    |
 | 6   | [Blue Team Tools](BlueTeam-Tools.md)                           | Defensive tooling                                    |
 | 7   | [Docker Setup](Docker.md)                                      | Run lab services in containers                       |
-| 7.1 | [Vulnerable Lab Containers](Docker-Containers.md)              | Practice targets (Juice Shop, DVWA, Metasploitable…) |
+| 7.1 | [Targets](Targets.md)                                          | Practice targets (Juice Shop, DVWA, Metasploitable…) |
 | 8   | [Arch Quality of Life](Arch-QOL.md)                            | Tune your Arch host                                  |
 | 9   | [GPG](GPG.md)                                                  | Encrypt files and keys                               |
 | 10  | [Backups](BackUps.md)                                          | Protect your work                                    |
@@ -142,5 +141,5 @@ This updates all software before you start.
 | Set up VirtualBox on Arch      | [VirtualBox on Arch](VirtualBox_Arch.md) |
 | Use KVM for better performance | [QEMU/KVM Setup](Qemu.md)                |
 | Tune your VM after setup       | [VM Quality of Life](QOL-VM.md)          |
-| Install your first tools       | [Starter Tools](Starter-Tools.md)        |
+| Browse the full security toolkit | [General Security Tools](GeneralSecurity-Tools.md) |
 | Learn Linux fundamentals       | [Linux](../linux/README.md)              |

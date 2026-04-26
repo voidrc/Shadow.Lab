@@ -98,4 +98,4 @@ sudo vboxmanage hostonlyif create
 | --------------------------------- | --------------------------------- |
 | Higher performance virtualization | [QEMU/KVM Setup](Qemu.md)         |
 | Tune your VM after setup          | [VM Quality of Life](QOL-VM.md)   |
-| Install your first tools          | [Starter Tools](Starter-Tools.md) |
+| Browse the full security toolkit  | [General Security Tools](GeneralSecurity-Tools.md) |

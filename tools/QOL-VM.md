@@ -66,5 +66,5 @@ For everything else, open **Kali Tweaks**.
 
 | You want to...           | Go here                             |
 | ------------------------ | ----------------------------------- |
-| Install your first tools | [Starter Tools](Starter-Tools.md)   |
+| Browse the full security toolkit | [General Security Tools](GeneralSecurity-Tools.md) |
 | Tune your Arch host      | [Arch Quality of Life](Arch-QOL.md) |

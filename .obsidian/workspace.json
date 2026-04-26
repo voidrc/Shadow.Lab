@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/Qemu.md",
+                "file": "README.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Qemu"
+              "title": "README"
             }
           }
         ]
@@ -63,16 +64,6 @@
               "icon": "lucide-search",
               "title": "Search"
             }
-          },
-          {
-            "id": "493ab26a94734bdc",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
           }
         ]
       }
@@ -88,25 +79,6 @@
         "id": "0a9cfadc49e4e30c",
         "type": "tabs",
         "children": [
-          {
-            "id": "9cc53930596cc28a",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Linux/02. CLI.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 02. CLI"
-            }
-          },
           {
             "id": "342a99083e374be3",
             "type": "leaf",
@@ -137,18 +109,18 @@
             }
           },
           {
-            "id": "a816381f4700f544",
+            "id": "487396b00b6bfa7b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "VirtualBox/01. Installation.md",
+                "file": "tools/Arch-QOL II.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01. Installation"
+              "title": "Outline of Arch-QOL II"
             }
           }
         ]
@@ -163,52 +135,50 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "markdown-importer:Open format converter": false
     }
   },
   "active": "25f837a9d4351872",
   "lastOpenFiles": [
-    "linux",
-    "tools/GeneralSecurity-Tools.md",
-    "tools/QOL.md",
+    "linux/README.md",
+    "stego/README.md",
     "tools/Arch-QOL.md",
-    "tools/Tips.md",
     "tools/BackUps.md",
-    "tools/planed/BackUps.md",
-    "tools/Docker.md",
-    "tools/GPG.md",
-    "tools/VM-QOL.md",
-    "tools/QOL-VM.md",
     "tools/BlueTeam-Tools.md",
-    "tools/planed/3_need_to_have.md",
+    "tools/Docker.md",
+    "tools/GeneralSecurity-Tools.md",
     "tools/Qemu.md",
-    "tools/VirtualBox_Arch.md",
+    "tools/GPG.md",
+    "tools/QOL-VM.md",
     "tools/README.md",
+    "tools/RedTeam-Tools.md",
+    "tools/Targets.md",
+    "tools/VirtualBox_Arch.md",
     "README.md",
-    "languages/Languages.md",
-    "tools/planed/GPG.md",
-    "tools/planed/Dots.md",
-    "tools/planed/ip-plan.md",
-    "tools/planed/Upgrading Shell.md",
-    "tools/planed/static-IP.md",
-    "tools/planed/partitioning.md",
-    "tools/planed/BackUp_Options.md",
-    "tools/planed/SSH-setup.md",
-    "tools/planed/Shadow.Lab",
-    "tools/planed",
-    "Yeet/Linux",
-    "Shadow.Lab/inventory/lazykvm.sh",
-    "Shadow.Lab/inventory/kvm.sh",
-    "Shadow.Lab/inventory",
-    "Base.base",
-    "Yeet/TUI",
-    "Yeet/Scripts/RedLogs/transfer.sh",
-    "Yeet/Scripts/RedLogs/redlogs.sh",
-    "Yeet/Nihongo/hiragana-chart-by-tofugu.jpg",
+    "README.md.tmp.285189.1777230292232",
+    "tools/README.md.tmp.285189.1777230262672",
+    "tools/README.md.tmp.285189.1777230262645",
+    "tools/QOL-VM.md.tmp.285189.1777230246496",
+    "tools/Qemu.md.tmp.285189.1777230238163",
+    "tools/VirtualBox_Arch.md.tmp.285189.1777230237064",
+    "tools/GeneralSecurity-Tools.md.tmp.285189.1777230235592",
+    "tools/Starter-Tools.md",
+    "tools/Arch-QOL II.md",
+    "tools/Arch-QOL.md.tmp.277956.1777229323077",
     "Untitled.canvas",
+    "linux/CLI-tools.md",
+    "languages/README.md",
+    "languages/Languages.md",
+    "2026-04-19.md",
+    "linux/Files.md",
+    "linux/Filesystem.md",
+    "linux/Users.md",
+    "linux/History.md",
+    "linux/CLI.md",
+    "linux",
+    "tools/planed/Shadow.Lab",
+    "Yeet/Nihongo/hiragana-chart-by-tofugu.jpg",
     "templates/5_Structure/Canvases/How to Use Links with Templates.canvas",
     "templates/5_Structure/Canvases/About - 5_Structure Notes.canvas",
     "templates/5_Structure/Canvases/About - 4_Project Notes.canvas",

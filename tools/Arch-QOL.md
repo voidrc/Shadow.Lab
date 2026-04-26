@@ -183,6 +183,94 @@ UUID=<UUID>  /media/<youruser>  btrfs  defaults,noatime,compress=zstd  0  2
 
 ---
 
+## Zoxide
+
+A smarter `cd` that remembers your most visited directories — stop typing full paths.
+
+### Install and Setup
+
+```bash
+sudo pacman -S zoxide
+```
+
+Add to `~/.zshrc`:
+
+```bash
+eval "$(zoxide init zsh)"
+```
+
+Reload:
+
+```bash
+source ~/.zshrc
+```
+
+### Usage
+
+| Command       | Action                                                   |
+| ------------- | -------------------------------------------------------- |
+| `z <keyword>` | Jump to the best match for `<keyword>` (e.g., `z proj`) |
+| `zi`          | Interactive fuzzy picker (list all frequent dirs)        |
+| `z foo bar`   | Jump to a dir matching both "foo" and "bar"              |
+| `z -i`        | Interactive mode (manual selection)                      |
+
+> The more you use it, the smarter it gets — it learns your habits.
+
+---
+
+## Neovim Configuration
+
+### Quick Setup with LazyVim
+
+Easiest way to get a functional editor with plugins and themes pre-configured:
+
+```bash
+# Backup old config
+mv ~/.config/nvim ~/.config/nvim.bak
+# Clone LazyVim starter
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+# Remove the .git folder
+rm -rf ~/.config/nvim/.git
+```
+
+### Tokyo Night Theme (Manual)
+
+Add to `~/.config/nvim/lua/plugins/colorscheme.lua`:
+
+```lua
+return {
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = "storm", -- "night", "day", or "storm" (best for Hyprland)
+      transparent = true, -- required for Hyprland blur
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = {},
+        variables = {},
+      },
+      day_brightness = 0.3,
+      dim_inactive = false,
+      lualine_bold = false,
+      on_highlights = function(hl, c)
+        hl.CursorLine = { bg = "#24283b" }
+      end,
+    },
+    config = function(_, opts)
+      require("tokyonight").setup(opts)
+      vim.cmd.colorscheme("tokyonight")
+    end,
+  },
+}
+```
+
+> Requires a **Nerd Font** installed (e.g., `JetBrainsMono Nerd Font`) for icons to render correctly.
+
+---
+
 ## What to Read Next
 
 | You want to...            | Go here                         |

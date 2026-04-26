@@ -1,6 +1,6 @@
 ## General
 
-> **Previous:** [Starter Tools](Starter-Tools.md)
+> **Previous:** [VM Quality of Life](QOL-VM.md)
 
 | Tool              | Purpose                                  | Install                                                       |
 | ----------------- | ---------------------------------------- | ------------------------------------------------------------- |
