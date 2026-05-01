@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "tools/Arch-QOL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Arch-QOL"
             }
           }
         ]
@@ -85,12 +85,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VirtualBox/01. Installation.md",
+                "file": "tools/Arch-QOL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01. Installation"
+              "title": "Outgoing links from Arch-QOL"
             }
           },
           {
@@ -142,6 +142,8 @@
   "active": "25f837a9d4351872",
   "lastOpenFiles": [
     "linux/README.md",
+    "tools/README.md",
+    "README.md",
     "stego/README.md",
     "tools/Arch-QOL.md",
     "tools/BackUps.md",
@@ -151,11 +153,9 @@
     "tools/Qemu.md",
     "tools/GPG.md",
     "tools/QOL-VM.md",
-    "tools/README.md",
     "tools/RedTeam-Tools.md",
     "tools/Targets.md",
     "tools/VirtualBox_Arch.md",
-    "README.md",
     "README.md.tmp.285189.1777230292232",
     "tools/README.md.tmp.285189.1777230262672",
     "tools/README.md.tmp.285189.1777230262645",
