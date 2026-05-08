@@ -8,22 +8,22 @@
 
 Each `.md` file becomes **one deck**. Slides are generated from the heading structure:
 
-| Markdown element | → Slide result |
-|---|---|
-| `# H1` | Title card slide (centered, large, zoom transition) |
-| `## H2` | Section slide (title at top, content below) |
-| `### H3` | Treated as a sub-header bullet on the current slide |
-| ` ```code``` ` | Standalone code slide (dark bg, neon green mono text) |
-| `- item` / `* item` | Bullet points on the current section slide |
-| `\| table \|` | Each row → one bullet (`col1  ::  col2  ::  col3`) |
-| `> blockquote` | Subtitle text on the current slide |
-| Plain paragraph | Body text on the current slide |
+| Markdown element    | → Slide result                                        |
+| ------------------- | ----------------------------------------------------- |
+| `# H1`              | Title card slide (centered, large, zoom transition)   |
+| `## H2`             | Section slide (title at top, content below)           |
+| `### H3`            | Treated as a sub-header bullet on the current slide   |
+| ` ```code``` `      | Standalone code slide (dark bg, neon green mono text) |
+| `- item` / `* item` | Bullet points on the current section slide            |
+| `\| table \|`       | Each row → one bullet (`col1  ::  col2  ::  col3`)    |
+| `> blockquote`      | Subtitle text on the current slide                    |
+| Plain paragraph     | Body text on the current slide                        |
 
 ---
 
 ## File structure
 
-```
+````
 # Topic Title
 > Short description or tagline (becomes subtitle on title card)
 
@@ -47,7 +47,7 @@ Short intro paragraph (body text).
 \```bash
 nmap -sV -p- 10.10.10.1
 \```
-```
+````
 
 ---
 
@@ -87,7 +87,8 @@ nmap -sV -p- 10.10.10.1
   your code here
   ```
   ````
-- Each code block becomes its own slide, titled after the current section.
+- A `## Section` with **only a code block and nothing else** produces **1 slide** (the section title is reused as the code slide title).
+- A `## Section` that has text/bullets **before** a code block produces **2 slides** — one for the text content, one for the code.
 - If a section has **multiple code blocks**, each gets a separate slide.
 - Keep code blocks focused — long blocks get clipped on small screens.
 
@@ -115,11 +116,13 @@ All inline markdown is **stripped** during conversion — bold, italic, inline c
 
 ## Minimal working example
 
-```markdown
+````markdown
 # GPG Encryption
+
 > Encrypt, sign, and manage keys with GNU Privacy Guard
 
 ## What is GPG?
+
 GPG is an open-source implementation of the OpenPGP standard.
 
 - Asymmetric encryption using public/private key pairs
@@ -134,12 +137,12 @@ gpg --full-generate-key
 
 ## Key Management
 
-| Command | Action |
-|---|---|
-| gpg --list-keys | List all public keys |
-| gpg --list-secret-keys | List private keys |
-| gpg --delete-key NAME | Remove a public key |
-```
+| Command                | Action               |
+| ---------------------- | -------------------- |
+| gpg --list-keys        | List all public keys |
+| gpg --list-secret-keys | List private keys    |
+| gpg --delete-key NAME  | Remove a public key  |
+````
 
 This produces **5 slides**: title card + 3 section slides + 1 code slide.
 

@@ -210,19 +210,31 @@ class MdParser:
                     in_code = False
                     code = "\n".join(code_lines).strip()
                     if code:
-                        # If current slide already has code, make a new slide
+                        # If current slide already has code, push it and start fresh
                         if current and current.get("codeText"):
                             push(current)
                             current = default_slide({
                                 **CODE_SLIDE_THEME,
                                 "id": new_id(),
-                                "titleText":   current["titleText"],
+                                "titleText":    current["titleText"],
                                 "subtitleText": "",
                             })
                             pending_body.clear()
                             pending_bullets.clear()
-                        if current is None:
+                        elif current is None:
                             current = default_slide({**CODE_SLIDE_THEME, "id": new_id()})
+                        else:
+                            # Section slide with only a title and no other content →
+                            # reuse it as the code slide (avoids a wasted empty slide)
+                            slide_is_title_only = (
+                                not current.get("bodyText") and
+                                not current.get("bullets") and
+                                not current.get("subtitleText") and
+                                not pending_body and
+                                not pending_bullets
+                            )
+                            if slide_is_title_only:
+                                current.update(CODE_SLIDE_THEME)
                         flush_body_bullets(current)
                         current["codeText"] = code
                         current["codeLang"] = code_lang
