@@ -1,0 +1,257 @@
+{
+  "categories": {
+    "blue-team": [
+      {
+        "title": "🛡️ Blue Teaming",
+        "category": "blue-team",
+        "source": "blue-team/README.md",
+        "slides": 33,
+        "path": "blue-team/readme.json"
+      }
+    ],
+    "crypto": [
+      {
+        "title": "🔐 Cryptography",
+        "category": "crypto",
+        "source": "crypto/README.md",
+        "slides": 30,
+        "path": "crypto/readme.json"
+      }
+    ],
+    "forensics": [
+      {
+        "title": "🔍 Forensics & DFIR",
+        "category": "forensics",
+        "source": "forensics/README.md",
+        "slides": 16,
+        "path": "forensics/readme.json"
+      }
+    ],
+    "languages": [
+      {
+        "title": "Languages",
+        "category": "languages",
+        "source": "languages/Languages.md",
+        "slides": 37,
+        "path": "languages/languages.json"
+      },
+      {
+        "title": "💻 Programming Languages",
+        "category": "languages",
+        "source": "languages/README.md",
+        "slides": 43,
+        "path": "languages/readme.json"
+      }
+    ],
+    "linux": [
+      {
+        "title": "CLI Tools",
+        "category": "linux",
+        "source": "linux/CLI-tools.md",
+        "slides": 13,
+        "path": "linux/cli-tools.json"
+      },
+      {
+        "title": "The Terminal & Shell",
+        "category": "linux",
+        "source": "linux/CLI.md",
+        "slides": 10,
+        "path": "linux/cli.json"
+      },
+      {
+        "title": "File Manipulation",
+        "category": "linux",
+        "source": "linux/Files.md",
+        "slides": 15,
+        "path": "linux/files.json"
+      },
+      {
+        "title": "The Filesystem",
+        "category": "linux",
+        "source": "linux/Filesystem.md",
+        "slides": 6,
+        "path": "linux/filesystem.json"
+      },
+      {
+        "title": "Command History",
+        "category": "linux",
+        "source": "linux/History.md",
+        "slides": 8,
+        "path": "linux/history.json"
+      },
+      {
+        "title": "🐧 Linux",
+        "category": "linux",
+        "source": "linux/README.md",
+        "slides": 3,
+        "path": "linux/readme.json"
+      },
+      {
+        "title": "Users & Root",
+        "category": "linux",
+        "source": "linux/Users.md",
+        "slides": 8,
+        "path": "linux/users.json"
+      }
+    ],
+    "misc": [
+      {
+        "title": "🎲 Miscellaneous",
+        "category": "misc",
+        "source": "misc/README.md",
+        "slides": 22,
+        "path": "misc/readme.json"
+      }
+    ],
+    "network": [
+      {
+        "title": "🌐 Network",
+        "category": "network",
+        "source": "network/README.md",
+        "slides": 2,
+        "path": "network/readme.json"
+      }
+    ],
+    "osint": [
+      {
+        "title": "👁️ OSINT & Reconnaissance",
+        "category": "osint",
+        "source": "osint/README.md",
+        "slides": 14,
+        "path": "osint/readme.json"
+      }
+    ],
+    "pwn": [
+      {
+        "title": "💥 Binary Exploitation & Exploit Development",
+        "category": "pwn",
+        "source": "pwn/README.md",
+        "slides": 19,
+        "path": "pwn/readme.json"
+      }
+    ],
+    "red-team": [
+      {
+        "title": "🎯 Red Teaming",
+        "category": "red-team",
+        "source": "red-team/README.md",
+        "slides": 33,
+        "path": "red-team/readme.json"
+      }
+    ],
+    "rev": [
+      {
+        "title": "🔬 Reverse Engineering & Malware Analysis",
+        "category": "rev",
+        "source": "rev/README.md",
+        "slides": 24,
+        "path": "rev/readme.json"
+      }
+    ],
+    "stego": [
+      {
+        "title": "🖼️ Steganography & Covert Channels",
+        "category": "stego",
+        "source": "stego/README.md",
+        "slides": 24,
+        "path": "stego/readme.json"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Quality of Life — Arch / Arch-based",
+        "category": "tools",
+        "source": "tools/Arch-QOL.md",
+        "slides": 35,
+        "path": "tools/arch-qol.json"
+      },
+      {
+        "title": "Backups",
+        "category": "tools",
+        "source": "tools/BackUps.md",
+        "slides": 24,
+        "path": "tools/backups.json"
+      },
+      {
+        "title": "SIEM & Log Analysis",
+        "category": "tools",
+        "source": "tools/BlueTeam-Tools.md",
+        "slides": 6,
+        "path": "tools/blueteam-tools.json"
+      },
+      {
+        "title": "Docker",
+        "category": "tools",
+        "source": "tools/Docker.md",
+        "slides": 13,
+        "path": "tools/docker.json"
+      },
+      {
+        "title": "General",
+        "category": "tools",
+        "source": "tools/GeneralSecurity-Tools.md",
+        "slides": 8,
+        "path": "tools/generalsecurity-tools.json"
+      },
+      {
+        "title": "GPG",
+        "category": "tools",
+        "source": "tools/GPG.md",
+        "slides": 12,
+        "path": "tools/gpg.json"
+      },
+      {
+        "title": "QEMU/KVM — Virtualization Setup",
+        "category": "tools",
+        "source": "tools/Qemu.md",
+        "slides": 18,
+        "path": "tools/qemu.json"
+      },
+      {
+        "title": "VM Quality of Life",
+        "category": "tools",
+        "source": "tools/QOL-VM.md",
+        "slides": 11,
+        "path": "tools/qol-vm.json"
+      },
+      {
+        "title": "🛠️ Tools & Setup",
+        "category": "tools",
+        "source": "tools/README.md",
+        "slides": 9,
+        "path": "tools/readme.json"
+      },
+      {
+        "title": "Reconnaissance & OSINT",
+        "category": "tools",
+        "source": "tools/RedTeam-Tools.md",
+        "slides": 6,
+        "path": "tools/redteam-tools.json"
+      },
+      {
+        "title": "Vulnerable Lab Containers",
+        "category": "tools",
+        "source": "tools/Targets.md",
+        "slides": 17,
+        "path": "tools/targets.json"
+      },
+      {
+        "title": "VirtualBox on Arch",
+        "category": "tools",
+        "source": "tools/VirtualBox_Arch.md",
+        "slides": 12,
+        "path": "tools/virtualbox-arch.json"
+      }
+    ],
+    "web": [
+      {
+        "title": "🌐 Web Application Security",
+        "category": "web",
+        "source": "web/README.md",
+        "slides": 25,
+        "path": "web/readme.json"
+      }
+    ]
+  },
+  "total": 32
+}

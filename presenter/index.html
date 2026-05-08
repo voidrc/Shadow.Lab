@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>// PRESENTER :: ADMIN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="app-body">
+    <!-- ═══════════════════════════════════════════════════════════
+      TOP BAR
+  ════════════════════════════════════════════════════════════ -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="logo">// PRESENTER</span>
+        <input
+          id="pres-title"
+          class="pres-title-input"
+          type="text"
+          value="Untitled Presentation"
+          spellcheck="false"
+        />
+      </div>
+      <div class="topbar-right">
+        <button class="btn btn-ghost" id="btn-library">// Library</button>
+        <button class="btn btn-ghost" id="btn-new">New</button>
+        <button class="btn btn-ghost" id="btn-import">Import</button>
+        <button class="btn btn-ghost" id="btn-export">Export</button>
+        <button class="btn btn-primary" id="btn-present">[EXEC]</button>
+      </div>
+      <input
+        type="file"
+        id="file-import"
+        accept=".json"
+        style="display: none"
+      />
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════
+      MAIN LAYOUT
+  ════════════════════════════════════════════════════════════ -->
+    <div class="workspace">
+      <!-- Left: Slide list -->
+      <aside class="slide-panel" id="slide-panel">
+        <div class="slide-panel-header">
+          <span>Slides</span>
+          <button class="btn btn-sm btn-accent" id="btn-add-slide">
+            + Slide
+          </button>
+        </div>
+        <ul class="slide-list" id="slide-list"></ul>
+      </aside>
+
+      <!-- Center: Editor -->
+      <main class="editor-area">
+        <div class="canvas-wrapper">
+          <div class="slide-canvas" id="slide-canvas">
+            <div class="canvas-placeholder">Select or add a slide</div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right: Properties -->
+      <aside class="props-panel" id="props-panel">
+        <div class="props-header">Properties</div>
+        <div class="props-body" id="props-body">
+          <p class="props-hint">Select a slide to edit its properties.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+      PRESENTATION VIEWER (fullscreen overlay)
+  ════════════════════════════════════════════════════════════ -->
+    <div class="viewer-overlay hidden" id="viewer-overlay">
+      <div class="viewer-slide" id="viewer-slide"></div>
+
+      <!-- Thumbnail strip -->
+      <div class="viewer-strip" id="viewer-strip"></div>
+
+      <!-- Controls -->
+      <div class="viewer-controls">
+        <span class="viewer-counter" id="viewer-counter">1 / 1</span>
+        <button class="viewer-btn" id="v-prev">&#8592;</button>
+        <button class="viewer-btn" id="v-next">&#8594;</button>
+        <button class="viewer-btn" id="v-exit" title="Exit (Esc)">
+          &#x2715;
+        </button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+      DECK LIBRARY OVERLAY
+  ════════════════════════════════════════════════════════════ -->
+    <div class="library-overlay hidden" id="library-overlay">
+      <div class="library-panel">
+        <div class="library-header">
+          <span class="library-title">// SHADOW.WIKI :: DECK LIBRARY</span>
+          <button class="btn-icon" id="library-close">&#x2715;</button>
+        </div>
+        <div class="library-search-row">
+          <input
+            type="text"
+            id="library-search"
+            placeholder="search decks..."
+            spellcheck="false"
+          />
+        </div>
+        <div class="library-body" id="library-body">
+          <p class="props-hint">Loading decks...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+      MODAL (confirm / alert)
+  ════════════════════════════════════════════════════════════ -->
+    <div class="modal-backdrop hidden" id="modal-backdrop">
+      <div class="modal" id="modal">
+        <div class="modal-title" id="modal-title">Confirm</div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="modal-cancel">Cancel</button>
+          <button class="btn btn-danger" id="modal-ok">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
