@@ -52,7 +52,7 @@ function defaultSlide(overrides = {}) {
 
 // ─── Persistence ────────────────────────────────────────────────────────────
 const STORAGE_KEY = "presenter_data";
-const THEME_VERSION = "cyber-v1";
+const THEME_VERSION = "cyber-v2";
 const THEME_KEY = "presenter_theme_version";
 
 function saveToStorage() {
@@ -961,86 +961,27 @@ $("btn-library").addEventListener("click", openLibrary);
 $("library-close").addEventListener("click", closeLibrary);
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
-(function init() {
+(async function init() {
   const loaded = loadFromStorage();
   elPresTitle.value = STATE.title;
   document.title = `Presenter — ${STATE.title}`;
 
   if (!loaded || STATE.slides.length === 0) {
-    // Seed with a welcome presentation
-    STATE.slides = [
-      defaultSlide({
-        titleText: "// PRESENTER",
-        subtitleText: "browser-native slide deck engine :: v1.0.0",
-        bgType: "gradient",
-        bgGradient:
-          "linear-gradient(160deg,#020602 0%,#051505 40%,#020a02 100%)",
-        titleColor: "#00ff41",
-        subtitleColor: "#2a6b3a",
-        titleSize: 52,
-        fontFamily: "'Courier New', 'Fira Mono', monospace",
-        transition: "zoom",
-      }),
-      defaultSlide({
-        titleText: "> GETTING STARTED",
-        subtitleText: "",
-        showSubtitle: false,
-        showBullets: true,
-        bullets: [
-          '[+]  Click "+ Slide" to inject a new slide',
-          "[*]  Select a slide in the left panel to target it",
-          "[~]  Edit content & style in the right panel",
-          "[↕]  Drag slides to reorder the payload",
-          "[▶]  Press [EXEC] or F5 to deploy the presentation",
-          "[S]  Auto-saved to browser localStorage",
-        ],
-        bgType: "gradient",
-        bgGradient: "linear-gradient(160deg,#030803 0%,#061206 100%)",
-        titleColor: "#00ff41",
-        bodyColor: "#7ab87a",
-        textAlign: "left",
-        layout: "top",
-        fontFamily: "'Courier New', 'Fira Mono', monospace",
-        transition: "slide-r",
-      }),
-      defaultSlide({
-        titleText: "> KEYBINDINGS",
-        showSubtitle: false,
-        showBullets: true,
-        bullets: [
-          "← / →    ::  navigate slides",
-          "F5 / P   ::  exec presentation",
-          "Esc      ::  terminate viewer",
-          "Ctrl+N   ::  inject new slide",
-          "Ctrl+D   ::  clone slide",
-          "Delete   ::  purge selected slide",
-          "↑ / ↓   ::  traverse slide list",
-        ],
-        bgType: "gradient",
-        bgGradient: "linear-gradient(160deg,#030803 0%,#04100a 100%)",
-        titleColor: "#00ff41",
-        bodyColor: "#7ab87a",
-        textAlign: "left",
-        layout: "top",
-        fontFamily: "'Courier New', 'Fira Mono', monospace",
-        transition: "slide-r",
-      }),
-      defaultSlide({
-        titleText: "DEMO :: CODE SLIDE",
-        subtitleText: "syntax-highlighted terminal block",
-        showCode: true,
-        showBody: false,
-        codeText:
-          '#!/usr/bin/env python3\n# grey-hat recon script\nimport socket, sys\n\ntarget = sys.argv[1]\nports  = range(1, 1025)\n\nfor port in ports:\n    s = socket.socket()\n    s.settimeout(0.5)\n    if s.connect_ex((target, port)) == 0:\n        print(f"[OPEN]  {target}:{port}")\n    s.close()',
-        bgType: "gradient",
-        bgGradient: "linear-gradient(160deg,#020602 0%,#040d04 100%)",
-        titleColor: "#00ff41",
-        subtitleColor: "#2a6b3a",
-        fontFamily: "'Courier New', 'Fira Mono', monospace",
-        layout: "top",
-        transition: "fade",
-      }),
-    ];
+    try {
+      const res = await fetch("welcome.json");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      STATE.title = data.title || STATE.title;
+      STATE.slides = (data.slides || []).map((s) =>
+        Object.assign(defaultSlide(), s),
+      );
+      STATE.transition = data.transition || "fade";
+      elPresTitle.value = STATE.title;
+      document.title = `Presenter — ${STATE.title}`;
+    } catch (e) {
+      console.warn("[Presenter] Could not load welcome.json:", e.message);
+      STATE.slides = [defaultSlide()];
+    }
     STATE.activeIdx = 0;
     saveToStorage();
   } else {
