@@ -18,7 +18,7 @@
   --radius: 4px;
   --topbar-h: 54px;
   --panel-w: 224px;
-  --props-w: 272px;
+  --props-w: 320px;
   --slide-ratio: 56.25%; /* 16:9 */
 }
 
@@ -391,10 +391,12 @@ body::after {
   color: var(--accent-dim);
 }
 .props-body {
-  padding: 14px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
 }
 .props-hint {
   color: var(--text-muted);
@@ -852,6 +854,166 @@ body::after {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   PROPS PANEL — TABS
+════════════════════════════════════════════════════════ */
+.props-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+.props-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 9px 0;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+.props-tab:hover {
+  color: var(--text);
+}
+.props-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  text-shadow: var(--glow-sm);
+}
+.props-tab-body {
+  padding: 12px 14px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.props-tab-body::-webkit-scrollbar {
+  width: 4px;
+}
+.props-tab-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+/* ── Content tab field blocks ── */
+.field-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.field-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.field-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.field-input {
+  width: 100%;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text-bright);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 7px 9px;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.field-input:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+  box-shadow: var(--glow-sm);
+}
+.field-textarea {
+  width: 100%;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text-bright);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 8px 9px;
+  resize: vertical;
+  line-height: 1.55;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.field-textarea:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+  box-shadow: var(--glow-sm);
+}
+.field-code {
+  font-family: "Courier New", "Fira Mono", monospace !important;
+  font-size: 12px !important;
+  color: var(--accent) !important;
+  line-height: 1.5;
+}
+
+/* ── Toggle pill (show/hide checkbox) ── */
+.toggle-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--text-muted);
+  user-select: none;
+}
+.toggle-pill input[type="checkbox"] {
+  appearance: none;
+  width: 28px;
+  height: 14px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  position: relative;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+  flex-shrink: 0;
+}
+.toggle-pill input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition:
+    transform 0.15s,
+    background 0.15s;
+}
+.toggle-pill input[type="checkbox"]:checked {
+  background: #003b10;
+  border-color: var(--accent-dim);
+}
+.toggle-pill input[type="checkbox"]:checked::after {
+  transform: translateX(14px);
+  background: var(--accent);
+  box-shadow: 0 0 4px var(--accent);
 }
 
 /* ═══════════════════════════════════════════════════════

@@ -270,6 +270,8 @@ function renderSlideList() {
 }
 
 // ─── Properties panel ────────────────────────────────────────────────────────
+let _propsTab = "content"; // "content" | "style"
+
 function renderProps() {
   const slide = STATE.slides[STATE.activeIdx];
   if (!slide) {
@@ -278,141 +280,93 @@ function renderProps() {
     return;
   }
 
-  const html = `
-  <!-- Layout -->
+  const tab = _propsTab;
+
+  const contentHtml = `
+  <!-- Title -->
+  <div class="field-block">
+    <div class="field-label-row">
+      <span class="field-label">Title</span>
+      <label class="toggle-pill">
+        <input type="checkbox" id="p-showtitle" ${slide.showTitle ? "checked" : ""}/>
+        <span>show</span>
+      </label>
+    </div>
+    <input type="text" id="p-title" class="field-input" value="${escapeHtml(slide.titleText)}" placeholder="Slide title..." />
+  </div>
+
+  <!-- Subtitle -->
+  <div class="field-block">
+    <div class="field-label-row">
+      <span class="field-label">Subtitle</span>
+      <label class="toggle-pill">
+        <input type="checkbox" id="p-showsubtitle" ${slide.showSubtitle ? "checked" : ""}/>
+        <span>show</span>
+      </label>
+    </div>
+    <input type="text" id="p-subtitle" class="field-input" value="${escapeHtml(slide.subtitleText)}" placeholder="Subtitle or tagline..." />
+  </div>
+
+  <!-- Body -->
+  <div class="field-block">
+    <div class="field-label-row">
+      <span class="field-label">Body Text</span>
+      <label class="toggle-pill">
+        <input type="checkbox" id="p-showbody" ${slide.showBody ? "checked" : ""}/>
+        <span>show</span>
+      </label>
+    </div>
+    <textarea id="p-body" class="field-textarea" rows="4" placeholder="Paragraph text...">${escapeHtml(slide.bodyText)}</textarea>
+  </div>
+
+  <!-- Bullets -->
+  <div class="field-block">
+    <div class="field-label-row">
+      <span class="field-label">Bullet Points</span>
+      <label class="toggle-pill">
+        <input type="checkbox" id="p-showbullets" ${slide.showBullets ? "checked" : ""}/>
+        <span>show</span>
+      </label>
+    </div>
+    <textarea id="p-bullets" class="field-textarea" rows="6" placeholder="One bullet per line&#10;- Item one&#10;- Item two">${escapeHtml(slide.bullets.join("\n"))}</textarea>
+  </div>
+
+  <!-- Code -->
+  <div class="field-block">
+    <div class="field-label-row">
+      <span class="field-label">Code Block</span>
+      <label class="toggle-pill">
+        <input type="checkbox" id="p-showcode" ${slide.showCode ? "checked" : ""}/>
+        <span>show</span>
+      </label>
+    </div>
+    <textarea id="p-code" class="field-textarea field-code" rows="8" placeholder="Paste code here...">${escapeHtml(slide.codeText)}</textarea>
+  </div>
+
+  <!-- Image -->
+  <div class="field-block">
+    <div class="field-label-row">
+      <span class="field-label">Image URL</span>
+      <label class="toggle-pill">
+        <input type="checkbox" id="p-showimage" ${slide.showImage ? "checked" : ""}/>
+        <span>show</span>
+      </label>
+    </div>
+    <input type="text" id="p-imageurl" class="field-input" value="${escapeHtml(slide.imageUrl)}" placeholder="https://..." />
+  </div>
+  `;
+
+  const styleHtml = `
+  <!-- Layout & Align -->
   <div class="form-group">
     <label>Layout</label>
     <select id="p-layout">
       <option value="center" ${slide.layout === "center" ? "selected" : ""}>Center</option>
       <option value="top"    ${slide.layout === "top" ? "selected" : ""}>Top / Classic</option>
-      <option value="split"  ${slide.layout === "split" ? "selected" : ""}>Split (Text + Media)</option>
+      <option value="split"  ${slide.layout === "split" ? "selected" : ""}>Split</option>
       <option value="blank"  ${slide.layout === "blank" ? "selected" : ""}>Blank</option>
     </select>
   </div>
-
-  <hr class="sep" />
-
-  <!-- Background -->
-  <div class="form-group">
-    <label>Background Type</label>
-    <select id="p-bgtype">
-      <option value="solid"    ${slide.bgType === "solid" ? "selected" : ""}>Solid Color</option>
-      <option value="gradient" ${slide.bgType === "gradient" ? "selected" : ""}>Gradient</option>
-      <option value="image"    ${slide.bgType === "image" ? "selected" : ""}>Image URL</option>
-    </select>
-  </div>
-  <div class="form-group" id="p-bg-solid-row"   ${slide.bgType !== "solid" ? 'style="display:none"' : ""}>
-    <label>Background Color</label>
-    <input type="color" id="p-bgcolor" value="${slide.bgColor}" />
-  </div>
-  <div class="form-group" id="p-bg-gradient-row" ${slide.bgType !== "gradient" ? 'style="display:none"' : ""}>
-    <label>Gradient CSS</label>
-    <input type="text" id="p-bggradient" value="${escapeHtml(slide.bgGradient)}" placeholder="linear-gradient(...)"/>
-  </div>
-  <div class="form-group" id="p-bg-image-row" ${slide.bgType !== "image" ? 'style="display:none"' : ""}>
-    <label>Image URL</label>
-    <input type="text" id="p-bgimage" value="${escapeHtml(slide.bgImage)}" placeholder="https://..."/>
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Title -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="p-showtitle" ${slide.showTitle ? "checked" : ""}/>
-      Show Title
-    </label>
-    <input type="text" id="p-title" value="${escapeHtml(slide.titleText)}" />
-  </div>
-  <div class="form-row">
-    <div class="form-group">
-      <label>Color</label>
-      <input type="color" id="p-titlecolor" value="${slide.titleColor}" />
-    </div>
-    <div class="form-group">
-      <label>Size (px)</label>
-      <div class="slider-row">
-        <input type="range" id="p-titlesize" min="16" max="100" value="${slide.titleSize}" />
-        <span id="p-titlesize-val">${slide.titleSize}</span>
-      </div>
-    </div>
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Subtitle -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="p-showsubtitle" ${slide.showSubtitle ? "checked" : ""}/>
-      Show Subtitle
-    </label>
-    <input type="text" id="p-subtitle" value="${escapeHtml(slide.subtitleText)}" />
-  </div>
-  <div class="form-group">
-    <label>Subtitle Color</label>
-    <input type="color" id="p-subtitlecolor" value="${slide.subtitleColor}" />
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Body text -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="p-showbody" ${slide.showBody ? "checked" : ""}/>
-      Show Body Text
-    </label>
-    <textarea id="p-body">${escapeHtml(slide.bodyText)}</textarea>
-  </div>
-  <div class="form-row">
-    <div class="form-group">
-      <label>Color</label>
-      <input type="color" id="p-bodycolor" value="${slide.bodyColor}" />
-    </div>
-    <div class="form-group">
-      <label>Size (px)</label>
-      <div class="slider-row">
-        <input type="range" id="p-bodysize" min="10" max="60" value="${slide.bodySize}" />
-        <span id="p-bodysize-val">${slide.bodySize}</span>
-      </div>
-    </div>
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Bullets -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="p-showbullets" ${slide.showBullets ? "checked" : ""}/>
-      Show Bullet Points
-    </label>
-    <textarea id="p-bullets" placeholder="One bullet per line">${escapeHtml(slide.bullets.join("\n"))}</textarea>
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Code -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="p-showcode" ${slide.showCode ? "checked" : ""}/>
-      Show Code Block
-    </label>
-    <textarea id="p-code" placeholder="Paste code here..." style="font-family:monospace;font-size:12px">${escapeHtml(slide.codeText)}</textarea>
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Image -->
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="p-showimage" ${slide.showImage ? "checked" : ""}/>
-      Show Image
-    </label>
-    <input type="text" id="p-imageurl" value="${escapeHtml(slide.imageUrl)}" placeholder="https://..." />
-  </div>
-
-  <hr class="sep" />
-
-  <!-- Style -->
   <div class="form-group">
     <label>Text Align</label>
     <select id="p-align">
@@ -422,20 +376,16 @@ function renderProps() {
     </select>
   </div>
   <div class="form-group">
-    <label>Font Family</label>
+    <label>Font</label>
     <select id="p-font">
-      <option value="Segoe UI, system-ui, sans-serif"       ${slide.fontFamily.startsWith("Segoe") ? "selected" : ""}>System (Segoe UI)</option>
-      <option value="Georgia, serif"                        ${slide.fontFamily === "Georgia, serif" ? "selected" : ""}>Georgia (Serif)</option>
-      <option value="'Courier New', monospace"              ${slide.fontFamily.includes("Courier") ? "selected" : ""}>Courier (Mono)</option>
-      <option value="Impact, fantasy"                       ${slide.fontFamily === "Impact, fantasy" ? "selected" : ""}>Impact (Bold)</option>
+      <option value="Segoe UI, system-ui, sans-serif" ${slide.fontFamily.startsWith("Segoe") ? "selected" : ""}>System Sans</option>
+      <option value="Georgia, serif"                  ${slide.fontFamily === "Georgia, serif" ? "selected" : ""}>Georgia</option>
+      <option value="'Courier New', monospace"        ${slide.fontFamily.includes("Courier") ? "selected" : ""}>Courier Mono</option>
+      <option value="Impact, fantasy"                 ${slide.fontFamily === "Impact, fantasy" ? "selected" : ""}>Impact</option>
     </select>
   </div>
-
-  <hr class="sep" />
-
-  <!-- Transition -->
   <div class="form-group">
-    <label>Slide Transition</label>
+    <label>Transition</label>
     <select id="p-transition">
       <option value="fade"    ${slide.transition === "fade" ? "selected" : ""}>Fade</option>
       <option value="slide-r" ${slide.transition === "slide-r" ? "selected" : ""}>Slide Right</option>
@@ -444,9 +394,70 @@ function renderProps() {
       <option value="none"    ${slide.transition === "none" ? "selected" : ""}>None</option>
     </select>
   </div>
+
+  <hr class="sep"/>
+
+  <!-- Background -->
+  <div class="form-group">
+    <label>Background</label>
+    <select id="p-bgtype">
+      <option value="solid"    ${slide.bgType === "solid" ? "selected" : ""}>Solid Color</option>
+      <option value="gradient" ${slide.bgType === "gradient" ? "selected" : ""}>Gradient</option>
+      <option value="image"    ${slide.bgType === "image" ? "selected" : ""}>Image URL</option>
+    </select>
+  </div>
+  <div id="p-bg-solid-row"    ${slide.bgType !== "solid" ? 'style="display:none"' : ""}>
+    <div class="form-group"><label>Color</label><input type="color" id="p-bgcolor" value="${slide.bgColor}" /></div>
+  </div>
+  <div id="p-bg-gradient-row" ${slide.bgType !== "gradient" ? 'style="display:none"' : ""}>
+    <div class="form-group"><label>Gradient CSS</label><input type="text" id="p-bggradient" value="${escapeHtml(slide.bgGradient)}" placeholder="linear-gradient(...)"/></div>
+  </div>
+  <div id="p-bg-image-row"    ${slide.bgType !== "image" ? 'style="display:none"' : ""}>
+    <div class="form-group"><label>Image URL</label><input type="text" id="p-bgimage" value="${escapeHtml(slide.bgImage)}" placeholder="https://..."/></div>
+  </div>
+
+  <hr class="sep"/>
+
+  <!-- Colors & Sizes -->
+  <div class="form-row">
+    <div class="form-group"><label>Title color</label><input type="color" id="p-titlecolor" value="${slide.titleColor}" /></div>
+    <div class="form-group"><label>Title size</label>
+      <div class="slider-row">
+        <input type="range" id="p-titlesize" min="16" max="100" value="${slide.titleSize}" />
+        <span id="p-titlesize-val">${slide.titleSize}</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group"><label>Subtitle color</label><input type="color" id="p-subtitlecolor" value="${slide.subtitleColor}" /></div>
+    <div class="form-group"><label>Body color</label><input type="color" id="p-bodycolor" value="${slide.bodyColor}" /></div>
+  </div>
+  <div class="form-group"><label>Body size</label>
+    <div class="slider-row">
+      <input type="range" id="p-bodysize" min="10" max="60" value="${slide.bodySize}" />
+      <span id="p-bodysize-val">${slide.bodySize}</span>
+    </div>
+  </div>
   `;
 
-  elPropsBody.innerHTML = html;
+  elPropsBody.innerHTML = `
+    <div class="props-tabs">
+      <button class="props-tab ${tab === "content" ? "active" : ""}" data-tab="content">Content</button>
+      <button class="props-tab ${tab === "style" ? "active" : ""}" data-tab="style">Style</button>
+    </div>
+    <div class="props-tab-body">
+      ${tab === "content" ? contentHtml : styleHtml}
+    </div>
+  `;
+
+  // Tab switching (no full refresh — just re-render props)
+  elPropsBody.querySelectorAll(".props-tab").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      _propsTab = btn.dataset.tab;
+      renderProps();
+    });
+  });
+
   bindPropsEvents(slide);
 }
 
@@ -471,12 +482,64 @@ function bindPropsEvents(slide) {
     el.addEventListener("change", () => update(key, el.checked));
   };
 
-  wire("p-layout", "layout");
+  // Content tab
   wire("p-title", "titleText");
   wire("p-subtitle", "subtitleText");
   wire("p-body", "bodyText");
-  wire("p-code", "codeText");
   wire("p-imageurl", "imageUrl");
+  wireChk("p-showtitle", "showTitle");
+  wireChk("p-showsubtitle", "showSubtitle");
+  wireChk("p-showbody", "showBody");
+  wireChk("p-showbullets", "showBullets");
+  wireChk("p-showcode", "showCode");
+  wireChk("p-showimage", "showImage");
+
+  // Auto-enable section when user starts typing
+  const autoEnable = (inputId, checkId, stateKey) => {
+    const el = get(inputId);
+    const chk = get(checkId);
+    if (!el || !chk) return;
+    el.addEventListener("input", () => {
+      if (el.value.trim() && !chk.checked) {
+        chk.checked = true;
+        update(stateKey, true);
+      }
+    });
+  };
+  autoEnable("p-title", "p-showtitle", "showTitle");
+  autoEnable("p-subtitle", "p-showsubtitle", "showSubtitle");
+  autoEnable("p-body", "p-showbody", "showBody");
+  autoEnable("p-imageurl", "p-showimage", "showImage");
+
+  // Bullets textarea → array + auto-enable
+  const bulletsEl = get("p-bullets");
+  const bulletsChk = get("p-showbullets");
+  if (bulletsEl)
+    bulletsEl.addEventListener("input", () => {
+      const lines = bulletsEl.value.split("\n").filter((l) => l.trim());
+      STATE.slides[STATE.activeIdx].bullets = lines;
+      if (lines.length && bulletsChk && !bulletsChk.checked) {
+        bulletsChk.checked = true;
+        STATE.slides[STATE.activeIdx].showBullets = true;
+      }
+      refresh();
+    });
+
+  // Code textarea + auto-enable
+  const codeEl = get("p-code");
+  const codeChk = get("p-showcode");
+  if (codeEl)
+    codeEl.addEventListener("input", () => {
+      STATE.slides[STATE.activeIdx].codeText = codeEl.value;
+      if (codeEl.value.trim() && codeChk && !codeChk.checked) {
+        codeChk.checked = true;
+        STATE.slides[STATE.activeIdx].showCode = true;
+      }
+      refresh();
+    });
+
+  // Style tab
+  wire("p-layout", "layout");
   wire("p-bgcolor", "bgColor");
   wire("p-titlecolor", "titleColor");
   wire("p-subtitlecolor", "subtitleColor");
@@ -489,29 +552,11 @@ function bindPropsEvents(slide) {
   wire("p-titlesize", "titleSize", Number);
   wire("p-bodysize", "bodySize", Number);
 
-  wireChk("p-showtitle", "showTitle");
-  wireChk("p-showsubtitle", "showSubtitle");
-  wireChk("p-showbody", "showBody");
-  wireChk("p-showbullets", "showBullets");
-  wireChk("p-showcode", "showCode");
-  wireChk("p-showimage", "showImage");
-
-  // Bullets textarea → array
-  const bulletsEl = get("p-bullets");
-  if (bulletsEl)
-    bulletsEl.addEventListener("input", () => {
-      STATE.slides[STATE.activeIdx].bullets = bulletsEl.value
-        .split("\n")
-        .filter((l) => l.trim());
-      refresh();
-    });
-
   // Live slider labels
   const tsEl = get("p-titlesize");
   const tsVal = get("p-titlesize-val");
   if (tsEl && tsVal)
     tsEl.addEventListener("input", () => (tsVal.textContent = tsEl.value));
-
   const bsEl = get("p-bodysize");
   const bsVal = get("p-bodysize-val");
   if (bsEl && bsVal)
