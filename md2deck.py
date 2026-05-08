@@ -366,13 +366,15 @@ def convert_file(md_path: Path) -> dict | None:
 
 
 # ─── Write deck ───────────────────────────────────────────────────────────────
-def write_deck(deck: dict, md_path: Path) -> Path:
+def write_deck(deck: dict, md_path: Path) -> Path | None:
     rel = md_path.relative_to(WIKI_ROOT)
     parts = rel.parts
     category = parts[0] if len(parts) > 1 else "misc"
     out_dir = DECKS_DIR / category
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / (slug(md_path.stem) + ".json")
+    if out_file.exists():
+        return None  # already exists — do not overwrite
     out_file.write_text(json.dumps(deck, indent=2, ensure_ascii=False))
     return out_file
 
@@ -462,6 +464,10 @@ def main():
                 skipped += 1
                 continue
             out = write_deck(deck, md_path)
+            if out is None:
+                print(f"  [EXIST] {rel}  (skipped — deck already exists)")
+                skipped += 1
+                continue
             slide_count = len(deck["slides"])
             print(f"  [OK]  {rel}  →  {out.relative_to(WIKI_ROOT)}  ({slide_count} slides)")
             ok += 1
