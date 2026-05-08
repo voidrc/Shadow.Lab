@@ -14,7 +14,7 @@ New to Shadow.Wiki or building your lab for the first time, follow this path:
 
 | Step | Guide                                           | What you'll do                                       |
 | ---- | ----------------------------------------------- | ---------------------------------------------------- |
-| 1    | [🛠️ Tools & Setup](tools/README.md)            | Pick an OS, spin up a VM, install core tools         |
+| 1    | [🛠️ Tools & Setup](tools/README.md)             | Pick an OS, spin up a VM, install core tools         |
 | 2    | [🐧 Linux](linux/README.md)                     | Learn Linux fundamentals for easy use of prefered OS |
 | 3    | [💻 Programming Languages](languages/README.md) | Scripting foundations for exploit dev and tooling    |
 | 4    | [🔐 Cryptography](crypto/README.md)             | Core crypto concepts every security person needs     |
@@ -36,6 +36,18 @@ Already have a lab? Jump straight to a domain:
 - **Document everything** — reproducible findings, clear timelines, and clean write-ups matter
 - **Continuous learning** — the threat landscape evolves; so must you
 - **Operate ethically** — Grey Hat does not mean lawless; it means deeply informed
+
+---
+
+## 🖥️ Presenter
+
+Browse and present Shadow.Wiki knowledge as interactive slide decks — directly in your browser.
+
+[![Presenter](https://img.shields.io/badge/Presenter-Launch-00ff41?logo=github&logoColor=black)](https://voidrc.github.io/Shadow.Wiki/presenter/)
+
+> **https://voidrc.github.io/Shadow.Wiki/presenter/**
+
+Open the **`// Library`** panel to load any pre-built deck from the wiki, or create your own presentations from scratch.
 
 ---
 
