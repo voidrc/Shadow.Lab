@@ -3,9 +3,11 @@
 md2deck.py — Convert Shadow.Wiki Markdown notes into Presenter JSON slide decks.
 
 Usage:
-  python3 md2deck.py                        # convert ALL .md files in the wiki
+  python3 md2deck.py                        # convert ALL new .md files in the wiki
   python3 md2deck.py linux/CLI.md           # convert a single file
   python3 md2deck.py linux/ tools/          # convert specific folders
+  python3 md2deck.py --force linux/CLI.md   # overwrite existing deck
+  python3 md2deck.py --all --force          # regenerate every deck
 
 Output:
   presenter/decks/<category>/<name>.json    # one deck per .md file
@@ -22,6 +24,7 @@ Slide generation rules:
   plain text   → Body text
 """
 
+import argparse
 import json
 import re
 import sys
@@ -402,14 +405,14 @@ def convert_file(md_path: Path) -> dict | None:
 
 
 # ─── Write deck ───────────────────────────────────────────────────────────────
-def write_deck(deck: dict, md_path: Path) -> Path | None:
+def write_deck(deck: dict, md_path: Path, force: bool = False) -> Path | None:
     rel = md_path.relative_to(WIKI_ROOT)
     parts = rel.parts
     category = parts[0] if len(parts) > 1 else "misc"
     out_dir = DECKS_DIR / category
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / (slug(md_path.stem) + ".json")
-    if out_file.exists():
+    if out_file.exists() and not force:
         return None  # already exists — do not overwrite
     out_file.write_text(json.dumps(deck, indent=2, ensure_ascii=False))
     return out_file
@@ -480,14 +483,37 @@ def collect_md_files(targets: list[str]) -> list[Path]:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
-    targets = sys.argv[1:]
+    parser = argparse.ArgumentParser(
+        prog="md2deck.py",
+        description="Convert Shadow.Wiki Markdown files into Presenter JSON slide decks.",
+    )
+    parser.add_argument(
+        "paths",
+        nargs="*",
+        metavar="PATH",
+        help=".md files or directories to convert (omit to convert all new files)",
+    )
+    parser.add_argument(
+        "-f", "--force",
+        action="store_true",
+        help="overwrite existing decks instead of skipping them",
+    )
+    parser.add_argument(
+        "-a", "--all",
+        action="store_true",
+        help="convert all .md files in the wiki (same as omitting PATH arguments)",
+    )
+    args = parser.parse_args()
+
+    targets = [] if args.all else args.paths
     files = collect_md_files(targets)
 
     if not files:
         print("[!] No .md files found.")
         sys.exit(1)
 
-    print(f"[*] Converting {len(files)} file(s) → presenter/decks/\n")
+    force_label = "  [force=on]" if args.force else ""
+    print(f"[*] Converting {len(files)} file(s) → presenter/decks/{force_label}\n")
     ok = 0
     skipped = 0
 
@@ -499,9 +525,9 @@ def main():
                 print(f"  [SKIP] {rel}  (empty)")
                 skipped += 1
                 continue
-            out = write_deck(deck, md_path)
+            out = write_deck(deck, md_path, force=args.force)
             if out is None:
-                print(f"  [EXIST] {rel}  (skipped — deck already exists)")
+                print(f"  [EXIST] {rel}  (skipped — use --force to overwrite)")
                 skipped += 1
                 continue
             slide_count = len(deck["slides"])
