@@ -4,7 +4,7 @@
   "source": "tools/README.md",
   "slides": [
     {
-      "id": "4a84985d-eb5d-4365-8728-537f8b0647ac",
+      "id": "0d8261f9-58b6-431e-8f02-a1849c32f30a",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "4b918d98-17f0-4b56-a268-c9d6a6185bbf",
+      "id": "182997c2-0ae2-4a7f-bca9-ecc8e9f3acc3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -75,7 +75,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8691fbfb-cb55-4efb-be43-09d7f1d45c31",
+      "id": "0ff2e06c-2fef-4917-a92f-ca582366035c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -104,7 +104,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "62044180-6f8d-4626-b17e-4f58d3ecf2a8",
+      "id": "4869680c-60bb-42d5-a37d-6e0d762b91fd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -140,7 +140,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c7e08bd3-9e47-4818-b46d-74f530f23285",
+      "id": "f2129c2f-4f81-422f-8c29-d530df805a4e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -177,7 +177,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "3e9b8eb2-2438-4d90-ae23-563b4810c648",
+      "id": "4eb97e82-bdc0-44be-928f-8c577719be8f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -206,7 +206,7 @@
       "transition": "fade"
     },
     {
-      "id": "ee640b1d-4803-41f6-9406-74332bf7b6da",
+      "id": "1f3c1afc-3d3b-48f3-be09-880f06d5f769",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -245,7 +245,7 @@
       "transition": "fade"
     },
     {
-      "id": "80acce3c-90af-42b6-bca7-ebb655f0bdac",
+      "id": "7d1196be-009b-4ba0-9d78-ddec3c9afa54",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -279,7 +279,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "94e0f89a-e98d-4b99-9f9c-72734ca918a1",
+      "id": "e676663b-5c1f-4465-b898-81e6198829d2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

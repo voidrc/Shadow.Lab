@@ -4,7 +4,7 @@
   "source": "osint/README.md",
   "slides": [
     {
-      "id": "3695dbbf-b29e-4f8d-a8bd-1895a3a92cd0",
+      "id": "dcc3fa6c-93bb-4f0c-a98e-0d825130926d",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "b80b1103-52a6-4eff-8136-7aa68934520c",
+      "id": "2f38867a-927c-4772-a60a-2ab5ca1b417e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -67,11 +67,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "a8cac0a7-8497-4e8d-94ba-94f2d2e1b469",
+      "id": "30daaeac-4b44-4ca0-9c0c-0aed8347cb01",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Username & Identity",
       "titleColor": "#00ff41",
@@ -93,14 +93,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "2b1e8730-3045-4127-a10f-43a9e171bd7a",
+      "id": "566cbdd8-05d2-4726-ade0-0145bf791817",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Email Investigation",
       "titleColor": "#00ff41",
@@ -122,14 +122,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "7f3ed5ea-fa70-487b-8a78-64fb50d288a6",
+      "id": "6a6eb0be-9514-447d-8ecb-17af8aab0513",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Domain & IP Recon",
       "titleColor": "#00ff41",
@@ -151,14 +151,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "c18767fa-0d07-4a0c-a058-b1cb90d79d92",
+      "id": "a6f10919-85e7-4a0a-bc70-3a7e9634c6a3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Web & Content",
       "titleColor": "#00ff41",
@@ -180,14 +180,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e5f7d335-133a-4731-96fd-2b7c5fe455a9",
+      "id": "8ed8cf78-0e07-41bd-9ab7-92798ddbd7de",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Image & Geolocation",
       "titleColor": "#00ff41",
@@ -209,14 +209,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "309a7fbd-c2ef-4588-a1cd-b23bbcaa4fd0",
+      "id": "c74d2184-a30d-419a-b2fc-2fe13aaeef01",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Social Media Analysis",
       "titleColor": "#00ff41",
@@ -238,14 +238,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "9ed3d58b-0b4c-4a99-94e8-4f668b1a4b80",
+      "id": "d851f5bf-fa6a-4022-bb7e-e5909e525ef3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Document & File Metadata",
       "titleColor": "#00ff41",
@@ -267,14 +267,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "457cf4e8-aa61-4b09-99fe-568452ef5b4a",
+      "id": "9ee94b58-0c5b-4bdb-82e6-ce95c0cb916e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Breach Data & Credential Lookup",
       "titleColor": "#00ff41",
@@ -296,14 +296,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "af188a3a-bdf3-4905-97dc-394a421535c5",
+      "id": "a2e69002-6bee-4256-9a94-002d54aa4503",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "People Search",
       "titleColor": "#00ff41",
@@ -325,10 +325,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "14f30317-dff7-4229-929a-5cce1ce4991a",
+      "id": "1cb05e7d-ca54-4812-a816-79fbbd88ff95",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -359,7 +359,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "52720746-b521-4d07-b651-1efbf6b544e8",
+      "id": "6110c6e7-17a2-40bc-9924-12d581d214da",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -396,7 +396,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "711acea5-3d4c-464b-9a45-04c8215421d9",
+      "id": "178dba19-7370-4d97-94a2-b43cbffc750a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

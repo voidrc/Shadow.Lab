@@ -4,7 +4,7 @@
   "source": "linux/Filesystem.md",
   "slides": [
     {
-      "id": "39833498-b9ea-4f50-973a-995a0cf1d8ed",
+      "id": "0b537e84-a9d3-4215-97b9-a5e2dc4d47a9",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "549e65a6-3d5c-49c2-ad78-a3ff4203b919",
+      "id": "fa3e394e-9368-4199-ba04-932a5bf4102d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -67,7 +67,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "fc5d324a-6660-41c3-80cf-0dc4a53f3309",
+      "id": "ae535d1d-404b-4b85-9d7b-aa4f3196259b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -96,7 +96,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d8dc9fb3-21b1-48b5-a051-f5dc3ce0518d",
+      "id": "2927ae34-5c3d-4ee5-9aef-32c5e1b20164",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -128,7 +128,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8b319b9f-72fd-45ec-bbe3-a90435da89b1",
+      "id": "cc521917-1b50-45c9-be1d-88bd00011a6d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -178,7 +178,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "48fe2b57-b45f-4fe3-a858-a6ba1a0f93c9",
+      "id": "24c0ef57-ab32-4273-b59f-230121a482ad",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

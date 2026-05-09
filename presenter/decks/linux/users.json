@@ -4,7 +4,7 @@
   "source": "linux/Users.md",
   "slides": [
     {
-      "id": "16bb3099-46fd-4d95-a5d6-d5350645d8aa",
+      "id": "b9c03b8f-85fc-4943-867f-2bdce0cd4878",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "8f026876-896e-43c7-a86b-2422be0beb9e",
+      "id": "d9fc161b-aff9-4ed9-a5ec-5730cfaab69d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -66,7 +66,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b58685db-a2cb-4fe7-83ed-360f5cea74e8",
+      "id": "375632a2-2e82-4420-9a1e-94a8382b9465",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -99,7 +99,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "5b880395-1827-4b34-8a48-3633edb7ed62",
+      "id": "faa21a57-f9b4-4f10-bc0c-8098fbb7837c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -132,7 +132,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e8d762a8-c257-433f-a494-c98cce27c3fa",
+      "id": "89976e0f-3726-4a61-ae2d-9a1ea0f0bd11",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -161,7 +161,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e5b9e2c4-d503-4b13-bb9f-bdd3bdbfc5aa",
+      "id": "9aba710c-d2b2-475d-8946-d8d126a11022",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -190,7 +190,7 @@
       "transition": "fade"
     },
     {
-      "id": "b4768fb3-99f2-4ad1-9714-7755ea5c5ab4",
+      "id": "9402ab88-9401-476c-8fed-cebd17952108",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -225,7 +225,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "180f432b-e6ac-46e5-9283-3a26c4570751",
+      "id": "b2e6e115-6554-4238-9d20-4935f0b62100",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

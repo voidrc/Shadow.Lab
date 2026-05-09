@@ -4,7 +4,7 @@
   "source": "stego/README.md",
   "slides": [
     {
-      "id": "fde80443-46af-491e-9713-c25620e47e44",
+      "id": "b375be28-23e0-4fa8-a991-fd8c237654f7",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,11 +33,11 @@
       "transition": "zoom"
     },
     {
-      "id": "13a966c7-1a7f-46e4-b526-12eac493480c",
+      "id": "a0e70ae4-4c90-4817-bc14-e5e0408f45ac",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Initial Checks (Do These First)",
       "titleColor": "#00ff41",
@@ -59,10 +59,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "404aabdb-39de-4ba8-a565-a775e3058ea1",
+      "id": "a4c8a880-fc95-4895-8b7c-4e649094a80b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -91,11 +91,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "d42368d9-916a-4596-aab1-33fdd6edb928",
+      "id": "1283018e-717d-49ef-b363-5960f03aeebc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Colour & Bit Analysis",
       "titleColor": "#00ff41",
@@ -117,14 +117,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "2e159251-f503-4453-a461-a0ecf7cfde20",
+      "id": "b06ab0fb-d8d2-4ad8-9fda-4192e5ea3854",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Hidden Files Inside Images",
       "titleColor": "#00ff41",
@@ -146,14 +146,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "a2160468-afbb-44d1-b5c1-d8ec903f1492",
+      "id": "e1e4138b-1f51-4dfc-bb34-bfa2f16684a0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "steghide (JPEG / BMP)",
       "titleColor": "#00ff41",
@@ -175,14 +175,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "ef5e28bc-b676-4a7b-9b1d-70a3bc40a043",
+      "id": "7b664100-76b8-4791-86fd-abf6014cb9ee",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "outguess (JPEG)",
       "titleColor": "#00ff41",
@@ -204,10 +204,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e5926e49-e5da-460a-a2a6-b1e4429c20de",
+      "id": "23bd1c67-d329-48a6-9954-b477827f3341",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -239,7 +239,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "caf1790e-347b-4575-965e-eb1b89392008",
+      "id": "4e013bf3-ae6b-410d-8163-59b813886cd3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -268,7 +268,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "856fca1f-40f7-4902-b70f-18e95cf34b41",
+      "id": "7532816c-b71e-46ec-9a7b-751c9ff4dc49",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -297,7 +297,7 @@
       "transition": "fade"
     },
     {
-      "id": "33f8218f-02b8-40f9-ba26-233337ab65e9",
+      "id": "d3a3c697-42e2-46da-b328-b180cf901ee5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -326,11 +326,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "9e78f693-72f4-4257-9d01-cda915ae7a15",
+      "id": "ea36aa8b-3aa4-411b-80fd-8cc54e1821ea",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Spectrogram Analysis",
       "titleColor": "#00ff41",
@@ -352,14 +352,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "453cda68-df4d-4fb5-9696-3a2b56832897",
+      "id": "f7afba1d-84b9-4fcf-9907-40924cae8674",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "MP3 / WAV Stego Tools",
       "titleColor": "#00ff41",
@@ -381,14 +381,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "203237f3-6f4c-49e1-976f-5e95fb69d5c8",
+      "id": "ef864c21-4cc8-409c-8570-f68a97a9bccb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Morse Code in Audio",
       "titleColor": "#00ff41",
@@ -410,14 +410,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "786c0a44-5c6c-4cd5-b022-86d85e994894",
+      "id": "3b1aa989-d437-44e0-8ef5-94de3b814c51",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "DTMF Tones",
       "titleColor": "#00ff41",
@@ -439,14 +439,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "f378ad1a-d648-483b-9533-83ffc7143fa0",
+      "id": "2b45deb6-1d8f-43be-9940-c562c33617b6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Text / Whitespace Steganography",
       "titleColor": "#00ff41",
@@ -468,14 +468,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "24488693-43bc-4c28-b255-5b898feaaad9",
+      "id": "b02d0a2e-8c6f-4c69-acd6-2a9517c01954",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Video Steganography",
       "titleColor": "#00ff41",
@@ -497,14 +497,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "da307c43-f091-48a9-ba53-73972a5568c2",
+      "id": "97fe5b78-78cb-43fc-9930-0c5af852c5b9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "PDF & Document Stego",
       "titleColor": "#00ff41",
@@ -526,10 +526,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "efbc8f9c-c3d5-40a9-bd3d-f9c8dfc0057f",
+      "id": "34955ba2-324d-4d25-a093-fe5ec382f4df",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -558,11 +558,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "2e6e4b93-0dd0-49fb-9c95-057edb2708d3",
+      "id": "7b7ec3dc-71a3-4748-a6a3-46d5f3b6742c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "RGBA Alpha Channel",
       "titleColor": "#00ff41",
@@ -584,14 +584,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "a2a3831c-97fe-4e00-a57d-7dc5b895cb91",
+      "id": "3c9194e2-941a-48c8-b085-34b00b0f8cbc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Palette-Based (GIF / PNG)",
       "titleColor": "#00ff41",
@@ -613,10 +613,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "174c508a-bf7a-45bc-af3d-b17e95eeca90",
+      "id": "04857a93-c409-4289-a033-014060522b02",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -655,11 +655,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "1b4c4b8e-a358-495c-bf50-56c83532928c",
+      "id": "2c1e5513-6a80-45f8-a837-140dbe64b0fa",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Quick Checklist",
       "titleColor": "#00ff41",
@@ -681,10 +681,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "75c4476b-4654-4d0c-a090-53a5b2547f07",
+      "id": "8e6754c1-45f2-44f6-b812-d209b63a393f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

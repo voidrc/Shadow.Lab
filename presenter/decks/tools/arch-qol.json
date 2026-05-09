@@ -4,7 +4,7 @@
   "source": "tools/Arch-QOL.md",
   "slides": [
     {
-      "id": "b622c041-b526-465c-a7bb-dcb57017ada8",
+      "id": "e3f99ad0-fdf2-49e9-b61c-507c02d1cebb",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "8cd1d751-5adf-4d2c-a6b1-4ba965d7bb6c",
+      "id": "e4232676-c89b-4442-9734-572cf51a86db",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -62,7 +62,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2d72ccc2-6a2a-411e-b559-5bf8c50e4787",
+      "id": "1268b33b-17e4-4af2-80a1-cabdb2b8e9f2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -91,7 +91,7 @@
       "transition": "fade"
     },
     {
-      "id": "06244fd0-9f70-4107-9444-74741e2e9ae2",
+      "id": "5507f235-5f6b-4d81-a04f-984c7ca4dfb8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -120,7 +120,7 @@
       "transition": "fade"
     },
     {
-      "id": "c4b4ed40-e274-4cb7-b791-0edbbb17e949",
+      "id": "bc480ddc-7947-453b-8aac-1b0f443d2dc1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -149,7 +149,7 @@
       "transition": "fade"
     },
     {
-      "id": "35bdac07-6492-4264-9e4d-0e7efdbb9eb1",
+      "id": "a0a79c68-ca58-4229-b289-5442d5e495d9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -178,7 +178,7 @@
       "transition": "fade"
     },
     {
-      "id": "74b71218-87a9-4f14-9505-31140e043853",
+      "id": "fd1f345d-1608-4d28-abff-1cf8555b0f45",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -207,11 +207,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "f00ab170-af13-44b4-a61f-8aa8fabeeab5",
+      "id": "88d41eee-8cbe-4af4-8b8a-f44b3408e526",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Install and Enable",
       "titleColor": "#00ff41",
@@ -233,10 +233,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "51bf106f-ac86-45b7-83a8-2fe9c9368465",
+      "id": "1b74b3ae-0534-4fea-a7ed-52c0ddcb0f2d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -265,11 +265,11 @@
       "transition": "fade"
     },
     {
-      "id": "a308a682-1c66-4d3c-ac0a-05593bc9cb17",
+      "id": "b55771dc-8ec5-496b-8595-892f7454b397",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Copy Public Key to Server",
       "titleColor": "#00ff41",
@@ -291,14 +291,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "408e5520-b013-4a14-8196-dfa92dd2decf",
+      "id": "6e94024a-1f91-4068-8013-26a5e7e52598",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Test Passwordless Login",
       "titleColor": "#00ff41",
@@ -320,10 +320,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "1ef33197-d0b8-4fe9-bcf7-8cf87e58f4ef",
+      "id": "e7ac5299-9fe3-4480-a310-e663b2b3ce59",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -352,7 +352,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "45a6cec9-bb6c-447e-89c1-1d6541160a8d",
+      "id": "676017c7-51e7-43fd-b8b7-9d8a3bf0a991",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -381,7 +381,7 @@
       "transition": "fade"
     },
     {
-      "id": "0ba87541-b103-4d2a-8038-027370380c3e",
+      "id": "e8c93aaf-b62b-4e01-a46d-51b765dfcfcb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -410,11 +410,11 @@
       "transition": "fade"
     },
     {
-      "id": "25e8f23c-c72b-46e7-9755-8a6767957375",
+      "id": "95a73aea-de46-4727-b1f0-30854fe6e3e1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "SSH Host Alias",
       "titleColor": "#00ff41",
@@ -436,10 +436,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "f5a370b7-95e0-48d8-9b8a-3e05efcb64fd",
+      "id": "407d9800-4617-4f29-8eb4-86d90bd479ab",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -468,7 +468,7 @@
       "transition": "fade"
     },
     {
-      "id": "d28d12dd-0cc6-4b21-9961-c4f3d7fdd74e",
+      "id": "cfe3fe9c-8625-4a4f-97ee-79b5858aaf04",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -497,7 +497,7 @@
       "transition": "fade"
     },
     {
-      "id": "01cbd06e-8bd9-4124-bdb1-c6139ade36a2",
+      "id": "a9be54e8-d85e-43e6-9514-9cfca791b37c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -526,11 +526,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "5b12314a-719c-4e38-bd3c-2d325bd314e9",
+      "id": "ed4b6f51-ee0e-47ea-b043-7ed541e274ef",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Format the Drive",
       "titleColor": "#00ff41",
@@ -552,14 +552,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "6c9e3b41-2289-4f9b-bb53-971e0a1a317f",
+      "id": "17529ae5-5fd3-49a6-be84-1fda8936a127",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Mount",
       "titleColor": "#00ff41",
@@ -581,14 +581,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "6f4e5c5c-68b4-469f-8bd5-710fa5a8304a",
+      "id": "46b0ffe0-66cc-48d0-9f4e-0f2826bd20be",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Create Directories",
       "titleColor": "#00ff41",
@@ -610,14 +610,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e49059a6-4f32-44fb-bdf9-9a1a8e394070",
+      "id": "ed4178ad-028c-4ae2-ad45-433327bdf0ce",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Copy Data",
       "titleColor": "#00ff41",
@@ -639,14 +639,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "3a9cd070-6fb8-40a2-b611-f109d939c313",
+      "id": "fb99bbb9-43f4-44be-a68f-c8e59c5d93bc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Remove Old Directories",
       "titleColor": "#00ff41",
@@ -668,14 +668,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "a1af5a44-8449-4b32-aa28-a4da20bd7353",
+      "id": "d9eb1b5c-8917-46ab-9eab-b955d4aa9dc5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Symlink Back",
       "titleColor": "#00ff41",
@@ -697,10 +697,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "9d1242b7-151c-4042-9b0d-51931cf44068",
+      "id": "3c729d48-0fb8-40de-9e49-bef2f02a9864",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -729,7 +729,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d9421e35-5199-418e-9c6f-4aef76e32395",
+      "id": "c2e7e3f1-ee6d-4f18-add3-f1b21120429b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -758,7 +758,7 @@
       "transition": "fade"
     },
     {
-      "id": "0bdc0993-177a-459b-8977-11ddd76886cd",
+      "id": "2c794abe-adc5-47b1-82f6-e161529a60f7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -787,11 +787,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "2e724ae3-6e67-4632-a5c4-30e8a0051a17",
+      "id": "20bc7245-0562-4abb-be35-2d703416ee27",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Install and Setup",
       "titleColor": "#00ff41",
@@ -813,10 +813,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "b3617eaf-3d97-46fd-bb69-c8046ace9ebe",
+      "id": "d014b58d-d0df-4d3b-a0e9-3feba8038d6c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -845,7 +845,7 @@
       "transition": "fade"
     },
     {
-      "id": "d11af5a8-93dc-425b-a7de-bc3a0348ba4a",
+      "id": "677bf970-4b43-4cad-af72-3ca24d2308ad",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -874,7 +874,7 @@
       "transition": "fade"
     },
     {
-      "id": "a7f47233-a7f0-49a6-836b-0a8825af9451",
+      "id": "35a768c9-43b1-41df-9916-cd613dbbc915",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -909,7 +909,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "02d74c6d-b515-4864-9fa9-50a4d0e1ccb4",
+      "id": "05ff6b80-ed0e-464b-8e15-85f9aafcfe90",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -938,7 +938,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "76315900-f842-448b-9415-ba21027ad3b3",
+      "id": "24a28b93-e670-4934-8600-194f77818263",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -967,7 +967,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ab41eff0-839a-4106-9179-6579f0c137ab",
+      "id": "bcc6b42a-a5c4-426a-825a-2b902452a7b7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -996,7 +996,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6f8d5684-8218-4276-991b-df210cedfb0c",
+      "id": "fc43b14c-bab2-4baa-aa20-d5973757a184",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

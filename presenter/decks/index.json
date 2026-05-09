@@ -96,6 +96,13 @@
     ],
     "misc": [
       {
+        "title": "Shadow.Wiki — Markdown Format Guide",
+        "category": "misc",
+        "source": "MD-FORMAT.md",
+        "slides": 14,
+        "path": "misc/md-format.json"
+      },
+      {
         "title": "🎲 Miscellaneous",
         "category": "misc",
         "source": "misc/README.md",
@@ -253,5 +260,5 @@
       }
     ]
   },
-  "total": 32
+  "total": 33
 }

@@ -4,7 +4,7 @@
   "source": "linux/README.md",
   "slides": [
     {
-      "id": "38bd337c-4cff-4fb3-9140-67230b232792",
+      "id": "d1d827c6-c232-4e6a-ab14-29a6aa4b0ff8",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "0e3fd72f-a945-4056-aa4e-933ab457850a",
+      "id": "19b13d0c-b4c6-487c-a974-d6a6fd3de388",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -70,7 +70,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ac9d9ddc-2dc5-40dd-addd-eeb1890dda51",
+      "id": "cc99ec0e-b4ab-4b9b-821c-72f8f77b9b7c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

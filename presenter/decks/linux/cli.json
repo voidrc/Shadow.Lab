@@ -4,7 +4,7 @@
   "source": "linux/CLI.md",
   "slides": [
     {
-      "id": "fcb1e31b-3827-4882-b43c-ed93c0146e6a",
+      "id": "6b809140-aed2-4eb6-8b63-8bb6f95a735e",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -40,11 +40,11 @@
       "transition": "zoom"
     },
     {
-      "id": "a2a9d679-1ea3-4f28-a0c8-bd61da060fad",
+      "id": "2dd07152-9b17-4f0d-8ad8-f90f74256cbe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Command Structure",
       "titleColor": "#00ff41",
@@ -73,10 +73,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "83cace8e-f4ac-4bcd-9f73-4cc1d79e838a",
+      "id": "3266e008-3a1a-4968-85d3-de6ef16e0b25",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -105,11 +105,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "9f6ffdec-7a10-48b3-96b4-8aec8c0974f0",
+      "id": "b933610d-d874-423d-9ad8-5420a8dfacee",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "man — full manual",
       "titleColor": "#00ff41",
@@ -131,14 +131,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "c40ff655-f28f-46c3-84c1-b2e119593915",
+      "id": "0e1ec29f-d50d-4b15-903e-24d2217d81e0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "tldr — practical examples",
       "titleColor": "#00ff41",
@@ -160,14 +160,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "948b1925-e268-475c-8ce2-1fb5088549bb",
+      "id": "abedcf23-8685-4e1d-98fa-d320da8905d9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "--help — quick summary",
       "titleColor": "#00ff41",
@@ -189,14 +189,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "96a6ec05-61be-47c0-825a-78652fccbeca",
+      "id": "52ef87c0-d352-44c3-a69a-1a89c4733cc7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "help — shell built-ins",
       "titleColor": "#00ff41",
@@ -218,10 +218,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "feee43af-523b-4f29-a9dd-623588fe0280",
+      "id": "2b654321-73a9-443e-a9af-80aa571c2d06",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -250,7 +250,7 @@
       "transition": "fade"
     },
     {
-      "id": "261cb0ba-b254-4966-abdd-a7891c03c0ef",
+      "id": "4ee7fcea-6de3-48e7-b87c-6567c1329791",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -290,7 +290,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "5c7fa78b-df74-478d-997a-474594854469",
+      "id": "5f30c84b-8cef-44d5-b891-bfd21a403940",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

@@ -4,7 +4,7 @@
   "source": "linux/History.md",
   "slides": [
     {
-      "id": "971a87a7-aeb6-4364-945c-3bcc68dafa9b",
+      "id": "24280339-6f9f-46f4-a391-fef32d64275d",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "9534126e-503f-436b-a6dd-328661724c4d",
+      "id": "4a61fb78-e1c7-4e15-939c-327671c15997",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -70,7 +70,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f78f3982-f788-4435-a210-fda5e28366f0",
+      "id": "1970ff18-6e8c-4f02-a6b7-e4141cf62958",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -103,7 +103,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "bfa0288d-d62b-48cd-9481-803aed363e74",
+      "id": "9296862a-a35c-4be1-9e7b-20c98a41a9c0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -137,7 +137,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "afefe914-8ef0-44a4-9c5d-21b6a812af4f",
+      "id": "32085197-aca9-4023-bb02-95d0f210e641",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -166,7 +166,7 @@
       "transition": "fade"
     },
     {
-      "id": "c47fc977-42c9-4bc8-ab49-7f14be45abf3",
+      "id": "806628f4-c770-4623-bfa2-a10c117e828b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -195,7 +195,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d934337d-11d9-4140-9b00-403655e68d97",
+      "id": "feb58e87-2b60-4652-bd19-94d673ed4b3b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -224,7 +224,7 @@
       "transition": "fade"
     },
     {
-      "id": "c2af212c-3819-4d12-a943-d7bf73d861fe",
+      "id": "8b650461-753c-423f-b123-98a5bf5db27f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

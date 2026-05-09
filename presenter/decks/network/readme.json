@@ -4,7 +4,7 @@
   "source": "network/README.md",
   "slides": [
     {
-      "id": "b7d9a5cf-21c0-46f7-a901-f2b9f623dad0",
+      "id": "53820003-e80e-480c-97af-78f8775b4419",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "d5d05f92-e841-414e-b6d9-3035498b4302",
+      "id": "23529a4c-b4d8-44c3-993d-bf5dd21b4627",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

@@ -4,7 +4,7 @@
   "source": "tools/QOL-VM.md",
   "slides": [
     {
-      "id": "cd250e0e-c93e-455d-953f-b7e964404966",
+      "id": "30095914-5c56-4e2e-9a88-ed0110338285",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "1137df32-0f43-4fdd-8086-132d56774ed7",
+      "id": "4bfb5e4c-b06e-4789-a69d-1466bdda1305",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -62,7 +62,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "772c0e76-b290-42a9-a2f5-acc42add92a1",
+      "id": "878e7ce9-8b32-49fe-875d-2245e54f5750",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -91,7 +91,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4d26ed1e-b62b-4df5-a1a2-28cb4e1e79ab",
+      "id": "2dd2b093-8ea7-4ffe-87f7-7d79d172b52f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -120,7 +120,7 @@
       "transition": "fade"
     },
     {
-      "id": "00afeb6b-f27c-4264-848c-ea2b095ed6c9",
+      "id": "f8452e98-4918-4901-8f14-62bfaa96eb06",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -149,7 +149,7 @@
       "transition": "fade"
     },
     {
-      "id": "bf5a4129-f780-4bc4-97bb-2874c9f1a952",
+      "id": "8ab1fa9b-ee2e-4e2f-8f5a-f3489cd63933",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -178,7 +178,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c2859a22-0e87-41fe-99b7-26a8d502badb",
+      "id": "38c2b544-a19c-4c58-8c6d-b887d2c9e3e6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -207,7 +207,7 @@
       "transition": "fade"
     },
     {
-      "id": "1351fce1-d711-4379-90a1-35b5f0ffbb4a",
+      "id": "95ba7700-c1ec-4771-841b-55e11d1ee54d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -236,7 +236,7 @@
       "transition": "fade"
     },
     {
-      "id": "d4d1db7b-8077-45ce-8ea8-94dc888f54cd",
+      "id": "9499acbc-963e-4cd3-9956-dfd101b53c6a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -268,7 +268,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "994f0b0e-2dfc-47e1-8a2a-cc4f1dada8f5",
+      "id": "c7eaf26d-9aca-43d9-a081-2653b1b539f5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -297,7 +297,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "65a8dcce-4b17-4d25-bab8-a3df8a8b5316",
+      "id": "23ddfbd0-5aee-4006-b3f3-1504f0f254ce",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

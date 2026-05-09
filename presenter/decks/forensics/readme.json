@@ -4,7 +4,7 @@
   "source": "forensics/README.md",
   "slides": [
     {
-      "id": "a10c3e22-eb88-4118-b4a9-18067ede1288",
+      "id": "eba79325-ca9e-42f3-bb8f-92a64daea819",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,11 +33,11 @@
       "transition": "zoom"
     },
     {
-      "id": "5f211236-278b-4125-80b7-6607afb9cc91",
+      "id": "0e8a5b96-eead-46ac-8cae-be43cab0be52",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Initial Triage",
       "titleColor": "#00ff41",
@@ -59,10 +59,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "8aa89d3e-4137-4291-b413-fa44e2c73bbe",
+      "id": "f1765f98-ed36-473f-9715-3db5c23d3bdb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -102,11 +102,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "633ea362-5581-4d9e-a065-b083b1aa3ccb",
+      "id": "94f24f46-99a5-40ad-ad84-ecaa4942aa98",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "File Carving",
       "titleColor": "#00ff41",
@@ -128,14 +128,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "8038c294-f9b6-40b0-afb7-e54857b39d31",
+      "id": "f84648d6-df69-4842-9ec4-b82edaf2e2b6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Archive & Compression",
       "titleColor": "#00ff41",
@@ -157,14 +157,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "76f4b6e4-9479-43d0-9ace-f65b9969d3db",
+      "id": "41cc928f-f22c-4e66-969b-523c79898e62",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Image Forensics",
       "titleColor": "#00ff41",
@@ -186,14 +186,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "b214df3f-aa36-45a0-8b33-1ac5069e31ac",
+      "id": "fa78e4bc-f0fc-4e0f-914d-2f623b2dac0e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "JPEG Structure",
       "titleColor": "#00ff41",
@@ -215,10 +215,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "1e8c5f63-b251-4fcb-b982-4e53a7b21431",
+      "id": "b7ac3e08-b9bd-4a61-b9a8-a5f2d8c50674",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -247,11 +247,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "7ad4aca1-832d-4701-894b-92a9b0f54335",
+      "id": "caa85a31-4a3d-4dea-99a8-157549af9955",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Wireshark",
       "titleColor": "#00ff41",
@@ -273,14 +273,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e0c930f0-1415-484a-9e68-cebfc2ea60a2",
+      "id": "27c0a83c-e56e-4944-9d9a-aea4236db00d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "tshark (CLI)",
       "titleColor": "#00ff41",
@@ -302,14 +302,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "bd3527bb-195a-4c4b-a30b-af34383c0ed4",
+      "id": "29f53beb-7e5d-4849-8e54-2a284f737742",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "DNS Exfiltration",
       "titleColor": "#00ff41",
@@ -331,14 +331,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "f999176b-55c0-4ec1-8fc7-7af266eba7b1",
+      "id": "b6fb167e-e330-457f-aa2b-ce9449b22bbe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Memory Forensics (Volatility 3)",
       "titleColor": "#00ff41",
@@ -360,14 +360,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "d54ffcc8-ca9a-47da-8374-5471e8536030",
+      "id": "24cac175-7400-4af7-85ea-c1064a042f8d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Disk Image Forensics",
       "titleColor": "#00ff41",
@@ -389,14 +389,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "a5312a59-a3d7-4355-bda3-e1982ccc2a92",
+      "id": "09033843-34bb-44f4-a4b7-c3021bf5901a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Log Analysis",
       "titleColor": "#00ff41",
@@ -418,14 +418,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "43127a45-20c2-46d7-9b92-d885c76a404a",
+      "id": "70d0d792-93ca-431b-9fb2-a9ccd9dcd86e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Useful Python Snippets",
       "titleColor": "#00ff41",
@@ -447,10 +447,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "26b0b54b-0c9e-4780-a3c8-9b43243e5ebb",
+      "id": "fe261325-83dd-4e05-b4c8-4dd71096cf34",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

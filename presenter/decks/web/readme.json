@@ -4,7 +4,7 @@
   "source": "web/README.md",
   "slides": [
     {
-      "id": "3d90de31-d1a6-4a43-9df0-99d83ca77ad3",
+      "id": "0364d310-2fd8-46c4-9073-786837322d86",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "532b6a45-ee49-4839-bd82-5e3a3ccb1274",
+      "id": "b146a672-bdeb-4c3c-a980-83b4cc2c6a09",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -62,7 +62,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "caa41027-7c7a-496d-81e2-5bc88b922055",
+      "id": "6906e265-2fd0-4a5c-9389-c2a46b3291ef",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -91,11 +91,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "0e0e37d1-3d08-4e15-8c01-e35375679706",
+      "id": "385a7d70-1da6-4bd8-9eb2-36c02fed02d5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Manual Detection",
       "titleColor": "#00ff41",
@@ -117,14 +117,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "1ad64214-abeb-4ba5-bab8-2080e5a7058d",
+      "id": "89f1662b-5857-4281-8170-c50736c4d1ee",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Error-Based",
       "titleColor": "#00ff41",
@@ -146,14 +146,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "6528e8dc-9d12-4b2c-844a-6cad9723ce92",
+      "id": "517052bd-60e6-45ac-8a1c-4b93c22f2351",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Boolean-Based Blind",
       "titleColor": "#00ff41",
@@ -175,14 +175,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "f028c73d-b5f0-437e-be02-8b9e3dae8944",
+      "id": "493fe75a-abd5-425a-8d91-87dcdc700ae1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Time-Based Blind",
       "titleColor": "#00ff41",
@@ -204,14 +204,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "0c076f32-f729-4fdd-b532-bc3a495a3966",
+      "id": "47a52cc4-2da3-4661-8a2e-aa12be1d0da8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "UNION-Based",
       "titleColor": "#00ff41",
@@ -233,14 +233,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "97ab5447-c3c6-4987-8930-b69dcaaf085f",
+      "id": "2a78058c-fcbe-4f88-853c-a2481c88eead",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "sqlmap",
       "titleColor": "#00ff41",
@@ -262,10 +262,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "894b45c4-714b-4a3c-9114-d5a657d829e2",
+      "id": "03d15cca-c139-4da9-bfa9-1e0878cbd309",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -294,11 +294,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "e0faf90d-d2bd-4c07-833a-f62d655ad698",
+      "id": "59fd1797-8219-44ff-b22b-ff73595fbe82",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Basic Payloads",
       "titleColor": "#00ff41",
@@ -320,14 +320,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e93a7458-4d2f-4eb2-a0fb-cfc6de5c5375",
+      "id": "1012a992-a6cb-463c-9593-f56e7075c589",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Steal Cookies",
       "titleColor": "#00ff41",
@@ -349,14 +349,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "6d788f95-6be2-4697-bca7-9a25f412dde0",
+      "id": "a4f94a74-9602-49f7-bd70-adc20db2a4cc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Filter Bypass",
       "titleColor": "#00ff41",
@@ -378,14 +378,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "8da166ab-29ae-4d07-bc74-4466453f9b69",
+      "id": "c18f39f8-541f-4fd0-b8ff-41d0319e07db",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Local/Remote File Inclusion (LFI/RFI)",
       "titleColor": "#00ff41",
@@ -407,14 +407,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "f5c2f71d-2535-4d2c-bb5e-beba17ba87de",
+      "id": "7ee4e5e5-b9d3-4bd9-a584-d52da896ad7a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Server-Side Request Forgery (SSRF)",
       "titleColor": "#00ff41",
@@ -436,10 +436,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "37e5fbae-4123-4e47-be4b-8d8c958e3ca6",
+      "id": "61ef60c3-033f-468c-8ae9-5eef2aae58e5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -468,11 +468,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "068e4c15-e6f6-40f0-8b14-d5be3794db0f",
+      "id": "4b6ff170-57c6-4de9-9c4d-48920e5952a3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Default Credentials",
       "titleColor": "#00ff41",
@@ -494,14 +494,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "ee46930b-f39e-45e1-b004-26c8f8aba345",
+      "id": "8f754e9e-3885-4082-aa09-c8fbfc226b09",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "JWT Attacks",
       "titleColor": "#00ff41",
@@ -523,10 +523,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "108a05cc-6faf-4a06-9572-1f5928d214c6",
+      "id": "55a9458f-5194-49b2-828b-8f1f41c3655a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -559,11 +559,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "03079348-a32d-43d5-b4cc-2f2b72fc339f",
+      "id": "028242f8-18d0-4c45-9072-bfba13bc8059",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Command Injection",
       "titleColor": "#00ff41",
@@ -585,14 +585,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "2c0a2fde-b075-403c-992a-74fe6cba4ba6",
+      "id": "5115dfdf-bebc-4fc9-9d18-1f17410699b2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Path Traversal",
       "titleColor": "#00ff41",
@@ -614,10 +614,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "aba2a3b9-5175-4902-84da-e5bb4ea8eea6",
+      "id": "eed1065f-6254-47b1-b9a7-a3c84f56bd34",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -651,11 +651,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "1aef9581-e4fa-4afb-b8d8-029b3251f5f4",
+      "id": "7f833a41-0aae-463b-a274-d98fa00c6cf0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Common HTTP Headers to Manipulate",
       "titleColor": "#00ff41",
@@ -677,10 +677,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "88be6109-cd61-4628-8d66-6ef461495d07",
+      "id": "cadf43fa-7b87-4e01-a8df-b6615a138d08",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -716,7 +716,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "147d5696-05d8-44fb-99e1-57a978f19e06",
+      "id": "5c8d7059-0112-4af4-a9ed-b8ae9eb4e1bd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

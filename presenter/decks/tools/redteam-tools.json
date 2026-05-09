@@ -4,7 +4,7 @@
   "source": "tools/RedTeam-Tools.md",
   "slides": [
     {
-      "id": "a15a778b-828f-4594-a2b9-da07ffbd318a",
+      "id": "50f567a3-cae8-4265-94b2-85f62ff04385",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -41,7 +41,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2cf71eb9-d7e6-4f96-a211-3b03a1b9da30",
+      "id": "6c864b3f-1b8a-413e-8feb-e874bb6c1b58",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,7 +77,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "5991a039-3d86-462b-aab2-ea7d20c0250a",
+      "id": "a1e43a18-be08-4782-b1e0-54b9e64a2530",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -115,7 +115,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ed65fee1-c3a3-413b-8613-38612dbca540",
+      "id": "4d84d7c9-fedb-4be5-bde1-b0d84207f109",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -151,7 +151,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "eb2ac142-b99d-4f75-b92e-976942bde85a",
+      "id": "26b4d6a9-020c-4182-a05d-1e2b7dab9684",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -186,7 +186,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "670ebdbe-f438-4d76-a00d-bead01a48d50",
+      "id": "ac843181-1f2a-462d-9705-902fe278a609",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

@@ -4,7 +4,7 @@
   "source": "red-team/README.md",
   "slides": [
     {
-      "id": "c5acb999-166b-4eb7-894c-3ff11b28bd8a",
+      "id": "4b43edc6-cea4-4843-80ce-ca22145f2b3b",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "de848e11-5a89-4c1d-9903-89562ba8e1b0",
+      "id": "4286e89f-4ca4-4bb8-9707-546a8d514dbb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -62,11 +62,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "41484238-117a-4989-b2c3-9191c2be5130",
+      "id": "2d1769a0-7cc7-4e1d-877e-f8d9e2e9c694",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "🔴 Red Team Phases",
       "titleColor": "#00ff41",
@@ -88,10 +88,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "1fcd3ae8-e6dd-402f-9ae2-89f36ba3b66b",
+      "id": "7e10f422-517a-4d9e-a57a-e44dae11372c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -120,11 +120,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "34214564-4757-4fdb-b864-e8f3dea438db",
+      "id": "d16ccf90-0b25-408d-b39b-210c6f12bebb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Passive Recon (No Contact With Target)",
       "titleColor": "#00ff41",
@@ -146,14 +146,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "cb769ce7-d1bd-40f7-80a7-7b147d197f1c",
+      "id": "c582b3d4-d8e0-4d47-a576-a3c4ed23e3e1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Active Recon",
       "titleColor": "#00ff41",
@@ -175,14 +175,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "06d25d32-a96b-4a84-b3e4-d9a27eb2b387",
+      "id": "fc5ae7f4-494f-4319-9344-877f56b06ae3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Web Recon",
       "titleColor": "#00ff41",
@@ -204,10 +204,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "1d60aae0-f1ce-4892-bd7b-da5b5ff9e15c",
+      "id": "7dbebcf7-eed4-4ba4-b759-0223d6cc6d38",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -236,11 +236,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "52f11cea-b0b6-4f1a-bb8f-e57e266acce0",
+      "id": "5cd435db-d72d-45bc-aa93-b88ba2c10457",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Email Phishing",
       "titleColor": "#00ff41",
@@ -262,10 +262,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e36f4ac8-8a33-4a7b-9347-6e43c056581d",
+      "id": "5ad0c8e5-5c11-449f-9e9c-9175159ea829",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -300,11 +300,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "9269a58b-e6ce-4e87-9a3c-3590f93e323f",
+      "id": "b10f1116-48a4-4fb3-83a1-d9c60bba7bf4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Spear Phishing Checklist",
       "titleColor": "#00ff41",
@@ -326,10 +326,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "427afa3d-b242-4312-b3cb-dcdd16700290",
+      "id": "fe84c9e3-d044-466d-b479-0e937207e418",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -358,11 +358,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "c8160047-510d-4e04-923d-a63f972abfa0",
+      "id": "07408d35-1e29-49d8-aa38-4c475bb5feb3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Enumeration",
       "titleColor": "#00ff41",
@@ -384,14 +384,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "08e1e532-e2ac-4505-8079-e61f7f66c442",
+      "id": "047eea68-7cbb-4500-8e54-9ed274ea50f9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Kerberoasting",
       "titleColor": "#00ff41",
@@ -413,14 +413,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "0acac201-b38d-4d2c-93ee-8d7b87af3f9e",
+      "id": "a5036044-00f3-4f67-9190-3251cbd31251",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "AS-REP Roasting",
       "titleColor": "#00ff41",
@@ -442,14 +442,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "980a324a-42fe-48d5-96f0-c2ab8d3d2441",
+      "id": "96092a9f-6dd7-412a-a054-e9503e0f0966",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Pass-the-Hash / Pass-the-Ticket",
       "titleColor": "#00ff41",
@@ -471,14 +471,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "5461687c-4e9a-4d9b-945c-2aa2a072ee36",
+      "id": "acf76934-88ae-40da-92fb-9ff24f41add6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "DCSync (Domain Replication)",
       "titleColor": "#00ff41",
@@ -500,14 +500,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "b1fa3913-63e8-4484-9e49-f1e8495bf1b8",
+      "id": "6dede737-7464-4b91-a721-fa550b5ab236",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Golden / Silver Tickets",
       "titleColor": "#00ff41",
@@ -529,10 +529,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "e9fef59c-d9ac-4246-a812-458d4122d438",
+      "id": "a6ec4339-6ab0-4c5e-80a8-1ffcc9e281b7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -561,11 +561,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "a25d06f9-789f-446c-8963-c3004f26d950",
+      "id": "3be0635c-5581-4557-964f-6f16f14b793a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Linux",
       "titleColor": "#00ff41",
@@ -587,14 +587,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "b39c5368-9026-4985-86d7-0d07897cc07f",
+      "id": "c5b19b0c-3cc5-4548-9dee-c778953ea5a5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Windows",
       "titleColor": "#00ff41",
@@ -616,10 +616,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "029309a2-cbcb-48df-bf88-b8d3501f34cc",
+      "id": "f0e739b7-6bb4-4284-9e00-70dc83b63248",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -648,11 +648,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "c2c5c6d0-b4f9-4604-8698-484a1a5bc4ec",
+      "id": "1663c7ae-ada0-459d-974f-c4d3f6439e8e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "AV / EDR Evasion",
       "titleColor": "#00ff41",
@@ -674,14 +674,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "63e6e8c1-1067-4877-8317-bd694fae91b4",
+      "id": "4d880c46-1aab-4b0c-adfc-167d2544491b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "LOLBins Quick Reference",
       "titleColor": "#00ff41",
@@ -703,10 +703,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "421bf902-9640-4525-86f8-c22d0fade247",
+      "id": "9933c861-14d7-4022-b69a-8b26a55cbc58",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -735,7 +735,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e8ccfb6c-51ab-48c0-8f0f-a16d635311e5",
+      "id": "75d6e9f0-1ee8-4390-920c-fcc99f3f6930",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -772,11 +772,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "4aa3609c-cce4-42d8-9ef4-4e4a90ec0441",
+      "id": "b87141dd-bf97-465c-b935-4a3bff095766",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Metasploit Essentials",
       "titleColor": "#00ff41",
@@ -798,14 +798,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "7f9fa8a6-eab0-4a86-ae98-83d53551ebef",
+      "id": "c9aece8f-4691-445a-b989-0b520ad941d4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "🔄 Lateral Movement",
       "titleColor": "#00ff41",
@@ -827,14 +827,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "9907c82e-e8c7-4d2c-81f6-7a1a33383e6c",
+      "id": "88d27e18-667c-47e3-8c4c-4e3856b36dd2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "🗄️ Credential Access",
       "titleColor": "#00ff41",
@@ -856,10 +856,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "c10e981f-c6f1-4797-8a54-c7a855d42d22",
+      "id": "359f45e7-c3bf-4b6d-bca7-e731e67b25c5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -888,11 +888,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "86a748c2-d568-4753-b7a0-eabdd974a5c9",
+      "id": "486e6ea7-523d-4524-8a5a-36e219adadf6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Common Services",
       "titleColor": "#00ff41",
@@ -914,14 +914,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "f7e23a3d-3cf5-4bde-b583-905c5d76c07e",
+      "id": "709f7546-057d-4d51-81f9-01b5f1ecfc5b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "📋 Engagement Checklist",
       "titleColor": "#00ff41",
@@ -943,10 +943,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "470882a7-e05a-4f38-94fe-20521c169e10",
+      "id": "d82ead44-e6a0-4ff9-b8d7-ca8b97ab6441",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

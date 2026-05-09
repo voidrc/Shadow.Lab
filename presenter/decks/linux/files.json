@@ -4,7 +4,7 @@
   "source": "linux/Files.md",
   "slides": [
     {
-      "id": "00aae804-eeaf-4e7f-b27b-20703cb6ddf4",
+      "id": "46b6311b-358f-42b6-a190-31bcc8acfd81",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "590709dc-ecdb-4549-95f1-7b8a40bab302",
+      "id": "b1c9e058-ddf8-4c95-b508-1de676f722b7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -67,11 +67,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "072c0b80-f07c-4adc-8cb6-25c75e8f2794",
+      "id": "bcb858ca-9f8c-4c00-bc5a-706cd39d2ab7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Viewing Timestamps",
       "titleColor": "#00ff41",
@@ -93,10 +93,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "075ceae3-cb28-4e24-86dc-c9249d60c964",
+      "id": "cdc67201-2311-4c23-866f-00d3aa758741",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -125,7 +125,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a5059acc-ceae-4a96-b5ec-e29bc66b0125",
+      "id": "ac852f2e-002f-4d70-b02b-881d33c5458d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -154,7 +154,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6d3903b1-6671-4bcb-9c5c-91b762affb20",
+      "id": "da340c15-0129-4aef-aa18-ed9b7012bd3a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -192,7 +192,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b8f4640f-b7af-4bfe-a644-663d08ff5cb5",
+      "id": "eb904ba2-8580-4945-935a-fbc551d100a6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -228,7 +228,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0cdc1085-2afe-4eab-9342-a412f397927f",
+      "id": "dd369f4f-32ff-4392-ade8-6fe88bda9bf0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -273,7 +273,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0b5bf036-4f1a-4367-9992-db5239862c2a",
+      "id": "de4baf85-f638-4b69-b5fc-55295c2be36a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -302,11 +302,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "13f5fabf-eca9-4fbb-aeaf-cad9d8dd5c5b",
+      "id": "591408a4-6b05-4fd5-a0a6-4265a0147e06",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Create",
       "titleColor": "#00ff41",
@@ -328,14 +328,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "24b8e880-0f81-4f91-a6f3-f90d33ad52ef",
+      "id": "ef690ec7-360b-4fcc-ad1b-d5448d20cca5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Copy",
       "titleColor": "#00ff41",
@@ -357,14 +357,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "6fe11b3b-e797-4d79-9322-2ab8c93f0575",
+      "id": "bf8ec738-de84-436b-9eae-5a532f7e18b3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Move & Rename",
       "titleColor": "#00ff41",
@@ -386,14 +386,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "cc6ad748-4c22-4e39-a319-cdf848293fd5",
+      "id": "b3a5f456-d62f-4a4d-bb2c-caf4d5b36b4e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Remove",
       "titleColor": "#00ff41",
@@ -415,10 +415,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "b1181b8d-0fa1-4f5f-a443-a15fe284bae5",
+      "id": "e98f1142-bee6-45df-b1a9-5e4f363b0550",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -452,7 +452,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c15c7a51-6652-40ca-8f9a-6fbc99fee8fa",
+      "id": "b8b6237f-8da0-41e7-87e4-db5baf3d0618",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

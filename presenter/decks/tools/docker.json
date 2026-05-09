@@ -4,7 +4,7 @@
   "source": "tools/Docker.md",
   "slides": [
     {
-      "id": "58025abe-1697-4ebc-881d-d319a03c8a61",
+      "id": "7aef07d3-6cbf-4570-9b1e-38b0ef246ffb",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,11 +33,11 @@
       "transition": "zoom"
     },
     {
-      "id": "f3d16c18-36c4-4ec3-94dc-29ac8a9fcdcd",
+      "id": "b61a62ee-32ea-48a0-b86b-fadf62daa5fe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Step 1 — Install Docker",
       "titleColor": "#00ff41",
@@ -59,14 +59,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "324ab610-dfe7-4069-a2e1-bf4902be75af",
+      "id": "caacd99b-c790-4dec-b9c0-226b14d8fd22",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Step 2 — Enable and Start the Daemon",
       "titleColor": "#00ff41",
@@ -88,10 +88,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "2719b8bb-8fe0-4556-9b2a-fda77c6bd141",
+      "id": "9f1eb2e8-a423-4cda-a769-f9b23dbbfa5a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -120,7 +120,7 @@
       "transition": "fade"
     },
     {
-      "id": "990b5097-19e5-4586-bf35-b1102221c950",
+      "id": "d366342e-7944-48ef-81d1-a3d168d08761",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -149,7 +149,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b62158b7-741e-474c-91c5-e5de7bb9256c",
+      "id": "dd421aec-678c-4658-87ac-63f1fe5a7ba2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -178,7 +178,7 @@
       "transition": "fade"
     },
     {
-      "id": "bbcca99c-3653-4f04-978e-bc8f3c0f5fa6",
+      "id": "d6f2c722-63ae-4fb2-8a99-21dda1d630ac",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -207,7 +207,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8e07e76f-b195-49a6-a552-95e7c59725ef",
+      "id": "f7d17a85-4dc2-4bad-bc12-4fbb254e5394",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -236,11 +236,11 @@
       "transition": "fade"
     },
     {
-      "id": "e9b8dd99-be7a-400c-b919-f171b2956687",
+      "id": "c2c1760c-7ac3-4756-98ca-156fcc45a2d1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Step 5 — Launch lazydocker",
       "titleColor": "#00ff41",
@@ -262,10 +262,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "4707e942-bc1f-430e-bf1c-99c51b47b4bf",
+      "id": "0e5aef51-6232-4362-bc30-c41347d9ea58",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -294,7 +294,7 @@
       "transition": "fade"
     },
     {
-      "id": "bd15a08c-50c1-402e-b0bf-7dff0f576587",
+      "id": "28a18db7-8f80-4a81-af35-ef6cf71491de",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -333,7 +333,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2ea26765-a617-4b06-ad62-06a2ab9bc77c",
+      "id": "6e145e59-0d07-47ee-b13c-bac88db14c31",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -366,7 +366,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f07a3ebd-34ee-4c68-bb55-c24e7f18004b",
+      "id": "2b88105d-4796-4547-984c-422e800ef1d6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",

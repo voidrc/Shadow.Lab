@@ -4,7 +4,7 @@
   "source": "tools/VirtualBox_Arch.md",
   "slides": [
     {
-      "id": "8f0be920-9288-457e-961e-2a2a0b090949",
+      "id": "47175c82-7d1e-47a8-84a7-6249e4b9f282",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -33,7 +33,7 @@
       "transition": "zoom"
     },
     {
-      "id": "71bc547f-136c-4b9d-84e3-1368388a7bc7",
+      "id": "0a3f6d5c-7dc4-4ca1-a8de-4c5b4c9a4f05",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -62,7 +62,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a03719e6-654d-42f6-bc01-0d32e4f3fa4a",
+      "id": "d37a0817-5cb6-408f-b40e-318745560fc7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -91,7 +91,7 @@
       "transition": "fade"
     },
     {
-      "id": "51384787-3a6d-4be8-a5e0-47a980e31287",
+      "id": "eca091ad-d6f9-41bd-a3c0-d865ecf1f242",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -120,7 +120,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "91d99ebf-717d-47fd-98a2-3684fe9ee089",
+      "id": "659687ed-827e-4ba6-a99b-7d994e595c33",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -149,11 +149,11 @@
       "transition": "fade"
     },
     {
-      "id": "4e829e14-c403-487d-91c6-4c3b8c19c369",
+      "id": "18afc4a4-dcc8-4623-b573-77702e639c66",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Step 3 — Add User to vboxusers",
       "titleColor": "#00ff41",
@@ -175,14 +175,14 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "9b3de316-502c-4040-a8b1-bf78f97221df",
+      "id": "1d0a0c7f-8de9-486a-9630-7671fd54f204",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Step 4 — Verify Installation",
       "titleColor": "#00ff41",
@@ -204,10 +204,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "203a9244-00be-47b4-a1e9-0fec76950449",
+      "id": "dff34cd9-0bdb-409a-8018-d7ec71a57a75",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -236,7 +236,7 @@
       "transition": "fade"
     },
     {
-      "id": "374115a8-cc22-4bb2-98ba-23c036e6989e",
+      "id": "f40f638a-94bd-47d1-b589-0e0867d5075e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -265,7 +265,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "37f08692-dbb4-4073-b2b6-d39f862dffc6",
+      "id": "6c2472f3-33a1-4252-a6eb-8bdd04d4781d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -299,11 +299,11 @@
       "transition": "slide-r"
     },
     {
-      "id": "53fcc0b2-c1a8-4945-b6a2-ca1013a1d19b",
+      "id": "a3711696-ccc7-4b38-94d8-5067f8b1f84a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
       "bgImage": "",
       "titleText": "Optional — Host-Only Networking",
       "titleColor": "#00ff41",
@@ -325,10 +325,10 @@
       "showImage": false,
       "textAlign": "left",
       "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "slide-r"
+      "transition": "fade"
     },
     {
-      "id": "2ada32bb-08a1-4801-bcda-c933ffd918b3",
+      "id": "985618e9-6002-4791-a550-68640e2387bf",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
