@@ -4,7 +4,7 @@
   "source": "tools/Docker.md",
   "slides": [
     {
-      "id": "7aef07d3-6cbf-4570-9b1e-38b0ef246ffb",
+      "id": "4b48b971-3f63-4d4b-95a7-744c03d49fda",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "b61a62ee-32ea-48a0-b86b-fadf62daa5fe",
+      "id": "9da45416-4408-49b3-bf58-f04833712cff",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo pacman -S docker docker-compose",
       "codeLang": "bash",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "fade"
     },
     {
-      "id": "caacd99b-c790-4dec-b9c0-226b14d8fd22",
+      "id": "6e0ea484-9a43-4c4a-9e5c-1f892a3e3657",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo systemctl enable --now docker",
       "codeLang": "bash",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "fade"
     },
     {
-      "id": "9f1eb2e8-a423-4cda-a769-f9b23dbbfa5a",
+      "id": "75b565dc-d11d-42f7-bd77-613b973bb83f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo systemctl status docker",
       "codeLang": "bash",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "fade"
     },
     {
-      "id": "d366342e-7944-48ef-81d1-a3d168d08761",
+      "id": "6a31f07f-75d6-4a93-8146-6e38db446545",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo usermod -aG docker $USER",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "dd421aec-678c-4658-87ac-63f1fe5a7ba2",
+      "id": "76f3f0fd-2778-48d7-95b2-65435f50335e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -164,6 +189,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run --rm hello-world",
       "codeLang": "bash",
       "imageUrl": "",
@@ -171,6 +200,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +208,7 @@
       "transition": "fade"
     },
     {
-      "id": "d6f2c722-63ae-4fb2-8a99-21dda1d630ac",
+      "id": "91f5cc3b-199f-47ea-a84e-aabe6997193b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -193,6 +223,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "yay -S lazydocker\n# or\nparu -S lazydocker",
       "codeLang": "bash",
       "imageUrl": "",
@@ -200,6 +234,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -207,7 +242,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f7d17a85-4dc2-4bad-bc12-4fbb254e5394",
+      "id": "ba6d0346-cebf-42ab-877e-4dc207c933e6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -222,6 +257,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash",
       "codeLang": "bash",
       "imageUrl": "",
@@ -229,6 +268,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -236,7 +276,7 @@
       "transition": "fade"
     },
     {
-      "id": "c2c1760c-7ac3-4756-98ca-156fcc45a2d1",
+      "id": "810230b0-aaa0-4f99-8a10-43be1c16af5f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -251,6 +291,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "lazydocker",
       "codeLang": "bash",
       "imageUrl": "",
@@ -258,6 +302,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -265,7 +310,7 @@
       "transition": "fade"
     },
     {
-      "id": "0e5aef51-6232-4362-bc30-c41347d9ea58",
+      "id": "062daeeb-750d-44d8-a5e2-242f2498f58d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -280,6 +325,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "echo \"alias lzd='lazydocker'\" >> ~/.zshrc\nsource ~/.zshrc",
       "codeLang": "bash",
       "imageUrl": "",
@@ -287,6 +336,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -294,7 +344,7 @@
       "transition": "fade"
     },
     {
-      "id": "28a18db7-8f80-4a81-af35-ef6cf71491de",
+      "id": "400224e9-8e7a-4856-aed5-e0f7d86ac25d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -308,24 +358,55 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Key  ::  Action",
-        "x  ::  Open command menu for selected item",
-        "e  ::  Open config/compose file in editor",
-        "[ / ]  ::  Switch panels",
-        "enter  ::  View logs / inspect",
-        "d  ::  Remove container or image",
-        "u  ::  Pull latest image",
-        "R  ::  Restart container",
-        "q  ::  Quit"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Key",
+          "Action"
+        ],
+        "rows": [
+          [
+            "x",
+            "Open command menu for selected item"
+          ],
+          [
+            "e",
+            "Open config/compose file in editor"
+          ],
+          [
+            "[ / ]",
+            "Switch panels"
+          ],
+          [
+            "enter",
+            "View logs / inspect"
+          ],
+          [
+            "d",
+            "Remove container or image"
+          ],
+          [
+            "u",
+            "Pull latest image"
+          ],
+          [
+            "R",
+            "Restart container"
+          ],
+          [
+            "q",
+            "Quit"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -333,7 +414,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6e145e59-0d07-47ee-b13c-bac88db14c31",
+      "id": "a2c8e85a-a663-4b00-8a44-fe1062ebba69",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -352,6 +433,10 @@
         "docker-compose is included in the docker package on Arch (v2 plugin, use docker compose).",
         "lazydocker reads the Docker socket at /var/run/docker.sock — no extra config needed."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -359,6 +444,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -366,7 +452,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2b88105d-4796-4547-984c-422e800ef1d6",
+      "id": "fc99b5c9-73d4-40ee-b9c4-32b6d8bf46b2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -380,20 +466,39 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Spin up vulnerable lab targets  ::  Targets",
-        "Tune your Arch host  ::  Arch Quality of Life",
-        "Encrypt sensitive data  ::  GPG",
-        "Back up your lab  ::  Backups"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Spin up vulnerable lab targets",
+            "Targets"
+          ],
+          [
+            "Tune your Arch host",
+            "Arch Quality of Life"
+          ],
+          [
+            "Encrypt sensitive data",
+            "GPG"
+          ],
+          [
+            "Back up your lab",
+            "Backups"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

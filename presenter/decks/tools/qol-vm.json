@@ -4,7 +4,7 @@
   "source": "tools/QOL-VM.md",
   "slides": [
     {
-      "id": "30095914-5c56-4e2e-9a88-ed0110338285",
+      "id": "b41e9592-2723-4ab3-a3a1-4aee79167b87",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "4bfb5e4c-b06e-4789-a69d-1466bdda1305",
+      "id": "a2a8af55-969c-4d62-8acd-e42af19fdccb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "878e7ce9-8b32-49fe-875d-2245e54f5750",
+      "id": "8bfb317d-4971-4ded-851b-60cb4541564e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo vim /etc/default/grub",
       "codeLang": "bash",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2dd2b093-8ea7-4ffe-87f7-7d79d172b52f",
+      "id": "0f8fc40b-b287-4fab-b987-f9b1f879bc2d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "GRUB_TIMEOUT=0\nGRUB_TIMEOUT_STYLE=hidden",
       "codeLang": "ini",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "fade"
     },
     {
-      "id": "f8452e98-4918-4901-8f14-62bfaa96eb06",
+      "id": "235f24c7-4f72-430f-ac81-d6264c929b56",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo grub-mkconfig -o /boot/grub/grub.cfg",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "fade"
     },
     {
-      "id": "8ab1fa9b-ee2e-4e2f-8f5a-f3489cd63933",
+      "id": "feddfc93-d73b-42b4-a00c-7b0aac58c5a1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -164,6 +189,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo vim /etc/lightdm/lightdm.conf",
       "codeLang": "bash",
       "imageUrl": "",
@@ -171,6 +200,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +208,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "38c2b544-a19c-4c58-8c6d-b887d2c9e3e6",
+      "id": "3a00df6b-5820-4d08-9838-9389077197c9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -193,6 +223,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "[Seat:*]\nautologin-user=<login_user>\nautologin-user-timeout=0\nautologin-session=xfce",
       "codeLang": "ini",
       "imageUrl": "",
@@ -200,6 +234,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -207,7 +242,7 @@
       "transition": "fade"
     },
     {
-      "id": "95ba7700-c1ec-4771-841b-55e11d1ee54d",
+      "id": "a7ccd53f-6498-4637-98e4-fbf17e0f4177",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -222,6 +257,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo groupadd -r autologin 2>/dev/null\nsudo gpasswd -a $USER autologin",
       "codeLang": "bash",
       "imageUrl": "",
@@ -229,6 +268,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -236,7 +276,7 @@
       "transition": "fade"
     },
     {
-      "id": "9499acbc-963e-4cd3-9956-dfd101b53c6a",
+      "id": "539ece18-da3e-4796-9081-84d5f42206c3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -254,6 +294,10 @@
         "Settings → Power Manager",
         "Settings → Xfce Screensaver"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -261,6 +305,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -268,7 +313,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c7eaf26d-9aca-43d9-a081-2653b1b539f5",
+      "id": "002ab6e8-2e20-4c52-8212-281b8559d3a0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -283,6 +328,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -290,6 +339,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -297,7 +347,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "23ddfbd0-5aee-4006-b3f3-1504f0f254ce",
+      "id": "e8ae023a-ab3f-48b3-916a-c3a3358bdd89",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -311,18 +361,31 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Browse the full security toolkit  ::  General Security Tools",
-        "Tune your Arch host  ::  Arch Quality of Life"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Browse the full security toolkit",
+            "General Security Tools"
+          ],
+          [
+            "Tune your Arch host",
+            "Arch Quality of Life"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

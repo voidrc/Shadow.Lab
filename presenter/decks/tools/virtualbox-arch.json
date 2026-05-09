@@ -4,7 +4,7 @@
   "source": "tools/VirtualBox_Arch.md",
   "slides": [
     {
-      "id": "47175c82-7d1e-47a8-84a7-6249e4b9f282",
+      "id": "e34c8a2d-eb5f-4c40-81ec-06146b01a069",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "0a3f6d5c-7dc4-4ca1-a8de-4c5b4c9a4f05",
+      "id": "3a537c3f-bfe4-413e-96f3-8346db527bec",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo pacman -S virtualbox virtualbox-host-modules-arch",
       "codeLang": "bash",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d37a0817-5cb6-408f-b40e-318745560fc7",
+      "id": "ed5e7109-4bd0-414e-93e1-65626766f291",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo pacman -S virtualbox virtualbox-host-dkms dkms linux-headers",
       "codeLang": "bash",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "fade"
     },
     {
-      "id": "eca091ad-d6f9-41bd-a3c0-d865ecf1f242",
+      "id": "72ec35f5-d5e2-461c-a535-9582bc543c82",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo modprobe vboxdrv",
       "codeLang": "bash",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "659687ed-827e-4ba6-a99b-7d994e595c33",
+      "id": "9ca03771-b7d6-425e-8688-94106dbd433f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "echo -e \"vboxdrv\\nvboxnetflt\\nvboxnetadp\\nvboxpci\" | sudo tee /etc/modules-load.d/virtualbox.conf",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "fade"
     },
     {
-      "id": "18afc4a4-dcc8-4623-b573-77702e639c66",
+      "id": "91a909df-0948-4c63-a25d-21e1318b8172",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -164,6 +189,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo usermod -aG vboxusers $USER",
       "codeLang": "bash",
       "imageUrl": "",
@@ -171,6 +200,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +208,7 @@
       "transition": "fade"
     },
     {
-      "id": "1d0a0c7f-8de9-486a-9630-7671fd54f204",
+      "id": "ffcab349-4678-44c1-bc73-e2fe8ff6a2c3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -193,6 +223,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "VBoxManage --version",
       "codeLang": "bash",
       "imageUrl": "",
@@ -200,6 +234,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -207,7 +242,7 @@
       "transition": "fade"
     },
     {
-      "id": "dff34cd9-0bdb-409a-8018-d7ec71a57a75",
+      "id": "7a167818-3bd1-4aef-95c0-e1d628e9b532",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -222,6 +257,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "virtualbox",
       "codeLang": "bash",
       "imageUrl": "",
@@ -229,6 +268,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -236,7 +276,7 @@
       "transition": "fade"
     },
     {
-      "id": "f40f638a-94bd-47d1-b589-0e0867d5075e",
+      "id": "617dc3a7-3b1b-425c-94b5-ac979b6c6240",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -251,6 +291,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo VBoxManage extpack install Oracle_VirtualBox_Extension_Pack*.vbox-extpack",
       "codeLang": "bash",
       "imageUrl": "",
@@ -258,6 +302,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -265,7 +310,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6c2472f3-33a1-4252-a6eb-8bdd04d4781d",
+      "id": "33be8e98-27d3-421f-b84b-66cb3aab9fad",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -279,19 +324,35 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Issue  ::  Fix",
-        "Kernel mismatch after update  ::  sudo dkms autoinstall",
-        "Modules blocked at boot  ::  Disable Secure Boot or sign the modules",
-        "UI glitches on Wayland  ::  Launch under X11: DISPLAY=:0 virtualbox"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Issue",
+          "Fix"
+        ],
+        "rows": [
+          [
+            "Kernel mismatch after update",
+            "sudo dkms autoinstall"
+          ],
+          [
+            "Modules blocked at boot",
+            "Disable Secure Boot or sign the modules"
+          ],
+          [
+            "UI glitches on Wayland",
+            "Launch under X11: DISPLAY=:0 virtualbox"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -299,7 +360,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a3711696-ccc7-4b38-94d8-5067f8b1f84a",
+      "id": "ef18e2aa-dd5a-4619-ab18-78eb79962b05",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -314,6 +375,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo vboxmanage hostonlyif create",
       "codeLang": "bash",
       "imageUrl": "",
@@ -321,6 +386,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -328,7 +394,7 @@
       "transition": "fade"
     },
     {
-      "id": "985618e9-6002-4791-a550-68640e2387bf",
+      "id": "806e7f6f-d5e4-44e0-8ebc-c98f740eee19",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -342,19 +408,35 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Higher performance virtualization  ::  QEMU/KVM Setup",
-        "Tune your VM after setup  ::  VM Quality of Life",
-        "Browse the full security toolkit  ::  General Security Tools"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Higher performance virtualization",
+            "QEMU/KVM Setup"
+          ],
+          [
+            "Tune your VM after setup",
+            "VM Quality of Life"
+          ],
+          [
+            "Browse the full security toolkit",
+            "General Security Tools"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

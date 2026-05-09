@@ -4,7 +4,7 @@
   "source": "osint/README.md",
   "slides": [
     {
-      "id": "dcc3fa6c-93bb-4f0c-a98e-0d825130926d",
+      "id": "05e87dce-48da-499c-b8c3-e535dd20da64",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "2f38867a-927c-4772-a60a-2ab5ca1b417e",
+      "id": "0deee937-346b-496c-a6a4-1a100939cb43",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -53,6 +58,10 @@
         "Document everything — links, screenshots, timestamps",
         "Stay passive — do not interact with or alert the target"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -60,6 +69,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -67,7 +77,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "30daaeac-4b44-4ca0-9c0c-0aed8347cb01",
+      "id": "ce9f919c-c286-400d-82e7-865f98480136",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -82,6 +92,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Search username across many platforms\nsherlock username\nmaigret username\n\n# Manual checks\n# GitHub: https://github.com/username\n# Twitter/X: https://twitter.com/username\n# Instagram: https://instagram.com/username\n# Reddit: https://reddit.com/u/username\n# LinkedIn: search by name",
       "codeLang": "bash",
       "imageUrl": "",
@@ -89,6 +103,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -96,7 +111,7 @@
       "transition": "fade"
     },
     {
-      "id": "566cbdd8-05d2-4726-ade0-0145bf791817",
+      "id": "095b873b-805b-4489-88c5-cc41aafe8388",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -111,6 +126,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Validate if email exists (without sending)\nholehe email@example.com     # checks which sites the email is registered on\n\n# WHOIS lookup\nwhois example.com\n\n# Email header analysis (paste into)\n# https://mxtoolbox.com/EmailHeaders.aspx\n# https://toolbox.googleapps.com/apps/messageheader/\n\n# Find emails for a domain\ntheHarvester -d example.com -b all",
       "codeLang": "bash",
       "imageUrl": "",
@@ -118,6 +137,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -125,7 +145,7 @@
       "transition": "fade"
     },
     {
-      "id": "6a6eb0be-9514-447d-8ecb-17af8aab0513",
+      "id": "ce440968-23ef-4855-8552-6ea7b4f29aa5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -140,6 +160,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# WHOIS\nwhois example.com\nwhois 1.2.3.4\n\n# DNS records\nnslookup example.com\ndig example.com ANY +noall +answer\ndig @8.8.8.8 example.com MX\n\n# Reverse DNS\ndig -x 1.2.3.4\n\n# Subdomain discovery (passive)\nsubfinder -d example.com\namass enum -passive -d example.com\n# Online: https://dnsdumpster.com, https://crt.sh\n\n# Certificate transparency logs\ncurl \"https://crt.sh/?q=%.example.com&output=json\" | python3 -m json.tool\n\n# Shodan (indexed internet devices)\nshodan host 1.2.3.4         # requires API key\n# Online: https://shodan.io\n\n# Check historical DNS/WHOIS\n# https://securitytrails.com\n# https://viewdns.info",
       "codeLang": "bash",
       "imageUrl": "",
@@ -147,6 +171,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -154,7 +179,7 @@
       "transition": "fade"
     },
     {
-      "id": "a6f10919-85e7-4a0a-bc70-3a7e9634c6a3",
+      "id": "bb4bc3e6-2b80-45c6-903c-e8baee2d058e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -169,6 +194,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Wayback Machine — archived versions of websites\n# https://web.archive.org\nwaybackurls example.com     # extract all archived URLs\n\n# Google dorking\nsite:example.com filetype:pdf\nsite:example.com inurl:admin\nsite:example.com \"confidential\"\n\"@example.com\" site:pastebin.com\nintitle:\"index of\" \"backup\"\n\n# Find cached pages\ncache:example.com/page\n\n# GitHub dorking\n# https://github.com/search\norg:example filename:.env\norg:example \"password\"\norg:example \"api_key\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -176,6 +205,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -183,7 +213,7 @@
       "transition": "fade"
     },
     {
-      "id": "8ed8cf78-0e07-41bd-9ab7-92798ddbd7de",
+      "id": "3788b114-4783-479d-b151-e8e73aa31c63",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -198,6 +228,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Reverse image search\n# https://images.google.com  (drag & drop)\n# https://yandex.com/images   (often better for faces/locations)\n# https://tineye.com\n\n# Extract image metadata\nexiftool image.jpg           # GPS coords, camera model, software, dates\n\n# Convert GPS coords\n# DMS: 40°41'21.4\"N 74°2'40.2\"W\n# DD: 40.689278, -74.044500\n# → Paste in Google Maps or maps.google.com\n\n# Geolocate from clues in the image\n# - Street signs, language\n# - Architecture, vegetation\n# - Sun angle / shadows\n# - GeoGuessr practice helps",
       "codeLang": "bash",
       "imageUrl": "",
@@ -205,6 +239,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -212,7 +247,7 @@
       "transition": "fade"
     },
     {
-      "id": "c74d2184-a30d-419a-b2fc-2fe13aaeef01",
+      "id": "1ad11eda-8745-4eba-8bd5-ccc358fbf5c6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -227,6 +262,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Twitter/X advanced search\n# https://twitter.com/search-advanced\n# from:username, to:username, geocode:lat,lon,radius, since:2023-01-01\n\n# Facebook Graph Search (still partially works):\n# https://www.facebook.com/search/people/?q=John+Doe\n\n# Instagram location tags, tagged photos\n\n# LinkedIn — company employees, job history\n# Google dork: site:linkedin.com/in \"example company\" \"engineer\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -234,6 +273,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -241,7 +281,7 @@
       "transition": "fade"
     },
     {
-      "id": "d851f5bf-fa6a-4022-bb7e-e5909e525ef3",
+      "id": "7c92d76b-22ad-4c96-8d02-ca03cec16006",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -256,6 +296,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# PDF metadata\nexiftool document.pdf\npdfinfo document.pdf\nstrings document.pdf | grep -i \"author\\|creator\\|producer\"\n\n# Office documents (DOCX/XLSX)\nunzip document.docx -d doc_extracted\ncat doc_extracted/docProps/core.xml    # author, last modified by, dates\n\n# Image metadata\nexiftool image.jpg\n# Look for: GPS coords, camera serial, software used, original date",
       "codeLang": "bash",
       "imageUrl": "",
@@ -263,6 +307,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -270,7 +315,7 @@
       "transition": "fade"
     },
     {
-      "id": "9ee94b58-0c5b-4bdb-82e6-ce95c0cb916e",
+      "id": "fa743aa3-cca5-4f6d-a780-5f46ee14b21c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -285,6 +330,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Check if email appears in known breaches\n# https://haveibeenpwned.com\n# https://dehashed.com  (paid, more detail)\n# https://intelx.io\n\n# Paste sites\n# https://pastebin.com\n# https://paste.ee\n# https://ghostbin.com\n# Search: site:pastebin.com \"target name\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -292,6 +341,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -299,7 +349,7 @@
       "transition": "fade"
     },
     {
-      "id": "a2e69002-6bee-4256-9a94-002d54aa4503",
+      "id": "2d1add19-ddc6-4155-a6e9-ca4aba4559d5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -314,6 +364,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# USA\nhttps://www.whitepages.com\nhttps://www.spokeo.com\nhttps://pipl.com\n\n# Public records\nhttps://www.publicrecords.com\nCounty court records, property records, voter registration\n\n# LinkedIn Sales Navigator (profile URL trick)\nhttps://linkedin.com/in/username",
       "codeLang": "",
       "imageUrl": "",
@@ -321,6 +375,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -328,7 +383,7 @@
       "transition": "fade"
     },
     {
-      "id": "1cb05e7d-ca54-4812-a816-79fbbd88ff95",
+      "id": "0615e1cf-820e-4362-b4f7-3516c5cc9727",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -345,6 +400,10 @@
       "bullets": [
         "OSINT Framework — visual mind-map of tools by category"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -352,6 +411,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -359,7 +419,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6110c6e7-17a2-40bc-9924-12d581d214da",
+      "id": "1d9911e8-c436-458b-a4d4-39a102ab2778",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -382,6 +442,10 @@
         "Look at the page source and HTTP headers of challenge websites",
         "If given a real-world location clue, use Google Street View"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -389,6 +453,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -396,7 +461,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "178dba19-7370-4d97-94a2-b43cbffc750a",
+      "id": "df50843c-2892-44e5-b95e-432e861dab61",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -417,6 +482,10 @@
         "Trace Labs — OSINT CTFs with real-world missing persons cases",
         "Michael Bazzell's OSINT Podcast"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -424,6 +493,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

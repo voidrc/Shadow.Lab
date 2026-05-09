@@ -4,7 +4,7 @@
   "source": "crypto/README.md",
   "slides": [
     {
-      "id": "7b4a6811-bf1b-4f00-ac44-12febc7fc078",
+      "id": "42241bc9-8754-470e-ad0c-1cff80e44a01",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "5c94c663-f1a7-48fc-b5e4-39a70b8fb7f2",
+      "id": "b9c83ab0-421e-490c-b248-be636433f5db",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,19 +52,39 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Type  ::  Reversible Without Key?  ::  Example",
-        "Encoding  ::  Yes  ::  Base64, Hex, URL",
-        "Hashing  ::  No (one-way)  ::  MD5, SHA-256",
-        "Encryption  ::  Yes (with key)  ::  AES, RSA"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Type",
+          "Reversible Without Key?",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Encoding",
+            "Yes",
+            "Base64, Hex, URL"
+          ],
+          [
+            "Hashing",
+            "No (one-way)",
+            "MD5, SHA-256"
+          ],
+          [
+            "Encryption",
+            "Yes (with key)",
+            "AES, RSA"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -67,7 +92,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "bcce9468-af34-4b65-877e-d116f4352b63",
+      "id": "d87c3f71-31ee-409f-aeec-eeda0c02b3ca",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -82,6 +107,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Identify hash type\nhashid 'hash_here'\nhash-identifier   # interactive\n\n# Common hash lengths (hex chars)\n# MD5    → 32\n# SHA-1  → 40\n# SHA-256 → 64\n# SHA-512 → 128\n# bcrypt → starts with $2b$",
       "codeLang": "bash",
       "imageUrl": "",
@@ -89,6 +118,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -96,7 +126,7 @@
       "transition": "fade"
     },
     {
-      "id": "325e0a7e-a271-4328-a3b5-d4bf930192fe",
+      "id": "59c9ef06-ad46-48ba-b602-c94c2554a519",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -111,6 +141,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -118,6 +152,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -125,7 +160,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "fc8ef9fd-021b-477a-aea4-d4afe5242164",
+      "id": "a700be3d-4e09-433d-b3b6-44c7b994570f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -140,6 +175,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "echo \"SGVsbG8gV29ybGQ=\" | base64 -d\necho \"Hello World\" | base64",
       "codeLang": "bash",
       "imageUrl": "",
@@ -147,6 +186,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -154,7 +194,7 @@
       "transition": "fade"
     },
     {
-      "id": "cbea8891-7e8d-43d2-a6d9-8f50f90150fd",
+      "id": "4c888565-6a30-49cc-8444-5b97588f5633",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -169,6 +209,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "echo \"48656c6c6f\" | xxd -r -p\necho -n \"Hello\" | xxd -p\npython3 -c \"print(bytes.fromhex('48656c6c6f'))\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -176,6 +220,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -183,7 +228,7 @@
       "transition": "fade"
     },
     {
-      "id": "e073d098-80c6-4a47-9256-9cb0249262b8",
+      "id": "a1bb8eb7-ab3b-4e9e-b0e0-fd91dafd1ac3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -198,6 +243,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "%20 = space\n%3D = =\n%2F = /\n# Decode in CyberChef or:\npython3 -c \"import urllib.parse; print(urllib.parse.unquote('%48%65%6c%6c%6f'))\"",
       "codeLang": "",
       "imageUrl": "",
@@ -205,6 +254,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -212,7 +262,7 @@
       "transition": "fade"
     },
     {
-      "id": "5179a028-431c-41ca-9140-a801ba925f55",
+      "id": "f723070c-9964-4dfa-8869-2136b2687576",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -226,19 +276,35 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Encoded  ::  Decoded",
-        "SGVsbG8=  ::  Hello (Base64)",
-        "48656c6c6f  ::  Hello (Hex)",
-        "Uryyb  ::  Hello (ROT13)"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Encoded",
+          "Decoded"
+        ],
+        "rows": [
+          [
+            "SGVsbG8=",
+            "Hello (Base64)"
+          ],
+          [
+            "48656c6c6f",
+            "Hello (Hex)"
+          ],
+          [
+            "Uryyb",
+            "Hello (ROT13)"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -246,7 +312,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b3cbebf7-8674-4629-9060-870fdf4924e6",
+      "id": "46e40a88-6ef1-4489-9914-b0ee81c57f38",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -261,6 +327,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -268,6 +338,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -275,7 +346,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6c429201-6905-4635-8fa3-a0cb63b94cb2",
+      "id": "eac1f9ff-f5e7-4eba-b643-5368b24c4131",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -290,6 +361,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# ROT13 (shift 13)\necho \"Uryyb\" | tr 'A-Za-z' 'N-ZA-Mn-za-m'\n\n# Try all 25 shifts\npython3 -c \"\ns = 'Khoor'\nfor i in range(26):\n    print(i, ''.join(chr((ord(c)-65+i)%26+65) if c.isupper()\n                     else chr((ord(c)-97+i)%26+97) if c.islower()\n                     else c for c in s))\n\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -297,6 +372,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -304,7 +380,7 @@
       "transition": "fade"
     },
     {
-      "id": "579da01c-30a8-41b1-8e90-a53adf09ce44",
+      "id": "edbcc2a5-3b53-4f80-8420-f39347449e43",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -319,6 +395,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Online: https://www.dcode.fr/vigenere-cipher\n# Or use CyberChef \"Vigenère Decode\"\n\n# Manual decode\ndef vigenere_decrypt(ct, key):\n    pt = []\n    key = key.upper()\n    ki = 0\n    for c in ct:\n        if c.isalpha():\n            shift = ord(key[ki % len(key)]) - ord('A')\n            base  = ord('A') if c.isupper() else ord('a')\n            pt.append(chr((ord(c) - base - shift) % 26 + base))\n            ki += 1\n        else:\n            pt.append(c)\n    return ''.join(pt)",
       "codeLang": "python",
       "imageUrl": "",
@@ -326,6 +406,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -333,7 +414,7 @@
       "transition": "fade"
     },
     {
-      "id": "00a22365-52b6-4c06-bcc2-45719b0ff476",
+      "id": "ea8dff79-ad1f-4cf6-b04b-c6fa8e1f1368",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -351,6 +432,10 @@
         "Use frequency analysis — e, t, a are most common in English",
         "Tools: quipqiup.com, dcode.fr"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -358,6 +443,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -365,7 +451,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2e5bb4d2-a2d6-401d-b54c-fff9b0f6672a",
+      "id": "70554ee2-5f6d-48de-b71d-aa858cc01b68",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -380,6 +466,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# A↔Z, B↔Y, C↔X ...\ndef atbash(s):\n    return ''.join(chr(ord('Z')-(ord(c)-ord('A'))) if c.isupper()\n                   else chr(ord('z')-(ord(c)-ord('a'))) if c.islower()\n                   else c for c in s)",
       "codeLang": "python",
       "imageUrl": "",
@@ -387,6 +477,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -394,7 +485,7 @@
       "transition": "fade"
     },
     {
-      "id": "93cee398-ba2e-4873-8bd4-c4c94339cf9f",
+      "id": "829b8deb-a1f1-4231-9c5c-759228ee8eeb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -409,6 +500,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Identify hash\nhashid 'e10adc3949ba59abbe56e057f20f883e'\n\n# Crack with hashcat\nhashcat -m 0    hash.txt rockyou.txt   # MD5\nhashcat -m 100  hash.txt rockyou.txt   # SHA-1\nhashcat -m 1400 hash.txt rockyou.txt   # SHA-256\nhashcat -m 3200 hash.txt rockyou.txt   # bcrypt\n\n# Crack with john\njohn --wordlist=/usr/share/wordlists/rockyou.txt hash.txt\njohn --format=Raw-MD5 hash.txt\n\n# Online hash lookup\n# https://crackstation.net\n# https://hashes.com",
       "codeLang": "bash",
       "imageUrl": "",
@@ -416,6 +511,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -423,7 +519,7 @@
       "transition": "fade"
     },
     {
-      "id": "0a39a074-ca92-4c21-8488-8356f8b6f7aa",
+      "id": "65036506-4aea-4ee8-a79a-e0bcc7346f8f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -438,6 +534,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -445,6 +545,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -452,7 +553,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "398d83ec-427d-4847-975a-45d966357a4b",
+      "id": "7d4712ee-0a87-4738-abe5-ca09bf73a471",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -467,6 +568,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "n = p * q          (modulus, public)\ne = public exponent (usually 65537)\nd = private exponent (secret)\nct = pt^e mod n    (encrypt)\npt = ct^d mod n    (decrypt)",
       "codeLang": "",
       "imageUrl": "",
@@ -474,6 +579,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -481,7 +587,7 @@
       "transition": "fade"
     },
     {
-      "id": "b1cdda7f-ebfe-47e3-8197-bf6835506acb",
+      "id": "2343e87c-306f-4cdf-a3da-e269c856cad3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -496,6 +602,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# If n is small enough, factor it at https://factordb.com\n# or use sympy\nfrom sympy import factorint\nfactors = factorint(n)",
       "codeLang": "python",
       "imageUrl": "",
@@ -503,6 +613,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -510,7 +621,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4feb252c-eb19-4fa7-abd8-ee34f3f51207",
+      "id": "0ad59133-9263-4758-aa6f-6df3c79c08c7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -525,6 +636,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from math import gcd\np = gcd(n1, n2)   # if two n share a prime factor",
       "codeLang": "python",
       "imageUrl": "",
@@ -532,6 +647,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -539,7 +655,7 @@
       "transition": "fade"
     },
     {
-      "id": "1ebf89f4-72cf-4c47-a5b0-73774532c931",
+      "id": "94b43ac2-42d7-4b87-a28b-e58353e11b7c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -556,6 +672,10 @@
       "bullets": [
         "Use RsaCtfTool: python3 RsaCtfTool.py -n <n> -e <e> --attack wiener"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "import gmpy2\nct = ...\ne  = 3\npt, exact = gmpy2.iroot(ct, e)  # if no padding",
       "codeLang": "python",
       "imageUrl": "",
@@ -563,6 +683,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -570,7 +691,7 @@
       "transition": "fade"
     },
     {
-      "id": "94fcf15f-36a0-40d7-976e-08079696f025",
+      "id": "7b183afb-cc28-4ca1-a7b9-5fe0008e6976",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -585,6 +706,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "python3 RsaCtfTool.py -n <n> -e <e> --uncipher <ct>\npython3 RsaCtfTool.py --publickey pub.pem --uncipher ct.bin",
       "codeLang": "bash",
       "imageUrl": "",
@@ -592,6 +717,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -599,7 +725,7 @@
       "transition": "fade"
     },
     {
-      "id": "f8955543-e91e-4254-a11c-6ee4e9c6d168",
+      "id": "41c1bef9-8fc2-4b08-aa81-0fdc1e0292cd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -614,6 +740,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from Crypto.PublicKey import RSA\nfrom Crypto.Util.number import inverse, long_to_bytes\n\np = ...\nq = ...\ne = 65537\nn = p * q\nd = inverse(e, (p-1)*(q-1))\nct = ...\npt = pow(ct, d, n)\nprint(long_to_bytes(pt))",
       "codeLang": "python",
       "imageUrl": "",
@@ -621,6 +751,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -628,7 +759,7 @@
       "transition": "fade"
     },
     {
-      "id": "048c6cd4-3e8d-45e4-8727-672fca2c8771",
+      "id": "06afd56a-a31f-48a7-a72e-13fd622ea5b6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -643,6 +774,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -650,6 +785,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -657,7 +793,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "70b90521-49c8-4d75-a9fe-1c35dfde792b",
+      "id": "b1d7574b-79d1-4958-86d7-48c40f5c5e1e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -671,20 +807,39 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Mode  ::  Weakness",
-        "ECB  ::  Identical plaintext blocks → identical ciphertext blocks (penguin attack)",
-        "CBC  ::  Bit-flipping attack, padding oracle",
-        "CTR  ::  Nonce reuse → XOR keystreams",
-        "GCM  ::  Nonce reuse → authentication bypass"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Mode",
+          "Weakness"
+        ],
+        "rows": [
+          [
+            "ECB",
+            "Identical plaintext blocks → identical ciphertext blocks (penguin attack)"
+          ],
+          [
+            "CBC",
+            "Bit-flipping attack, padding oracle"
+          ],
+          [
+            "CTR",
+            "Nonce reuse → XOR keystreams"
+          ],
+          [
+            "GCM",
+            "Nonce reuse → authentication bypass"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -692,7 +847,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b304700c-b2b6-43e8-b978-4d4996c42a62",
+      "id": "73cf317e-cede-422e-b7ce-8b4291cd239d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -711,6 +866,10 @@
         "Pad input so target byte lands at block boundary",
         "Brute-force the unknown byte one at a time"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -718,6 +877,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -725,7 +885,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ca148771-5f39-45ce-806e-394b47af0203",
+      "id": "bfcc4457-77f2-4685-a14b-3b4f36163f52",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -740,6 +900,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "ct[i] ^= (original_byte ^ target_byte)",
       "codeLang": "",
       "imageUrl": "",
@@ -747,6 +911,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -754,7 +919,7 @@
       "transition": "fade"
     },
     {
-      "id": "73da47fa-b35e-463e-b5ef-22a5868056ec",
+      "id": "616104e0-6a16-40e6-975f-5428d04fbd5d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -772,6 +937,10 @@
         "If server tells you \"bad padding\" vs. other errors, you can decrypt ciphertext byte-by-byte",
         "Tool: padbuster, or implement manually"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -779,6 +948,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -786,7 +956,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9a0187bd-2e06-4591-afaa-99ed7984feaf",
+      "id": "cfb4607f-926c-43ea-91f0-fe7003682675",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -801,6 +971,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Single-byte XOR\nct = bytes([0x41, 0x2b, 0x3f])\nkey = 0x42\npt = bytes([b ^ key for b in ct])\n\n# Multi-byte XOR (repeating key)\nfrom itertools import cycle\nct  = b'...'\nkey = b'KEY'\npt  = bytes(c ^ k for c, k in zip(ct, cycle(key)))\n\n# If key length unknown → use index of coincidence to find key length\n# Then frequency analysis per position",
       "codeLang": "python",
       "imageUrl": "",
@@ -808,6 +982,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -815,7 +990,7 @@
       "transition": "fade"
     },
     {
-      "id": "b559c280-f824-408f-ae48-6948e2da3740",
+      "id": "a42f557c-ba7f-4e11-a592-e3ae2a1f79a4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -830,6 +1005,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "pip install pycryptodome    # Crypto.Cipher, Crypto.Util.number\npip install gmpy2           # fast big-integer math (iroot, invert, etc.)\npip install sympy           # symbolic math, factoring",
       "codeLang": "bash",
       "imageUrl": "",
@@ -837,6 +1016,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -844,7 +1024,7 @@
       "transition": "fade"
     },
     {
-      "id": "49551fae-1a22-46fb-be59-dad847bfb38e",
+      "id": "b921f289-0f24-427f-b843-257f8c951d43",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -859,6 +1039,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from Crypto.Util.number import long_to_bytes, bytes_to_long, inverse, getPrime\nfrom Crypto.Cipher import AES\nimport gmpy2",
       "codeLang": "python",
       "imageUrl": "",
@@ -866,6 +1050,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -873,7 +1058,7 @@
       "transition": "fade"
     },
     {
-      "id": "0ae7821e-05d5-418e-a422-3106750de873",
+      "id": "21c6d845-84a3-4e53-bc1a-90d8fc5e4bcb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -896,6 +1081,10 @@
         "FactorDB — integer factorization database",
         "Cryptopals — implementation-level crypto challenges"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -903,6 +1092,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

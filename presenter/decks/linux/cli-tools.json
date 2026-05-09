@@ -4,7 +4,7 @@
   "source": "linux/CLI-tools.md",
   "slides": [
     {
-      "id": "c95c8688-0f3a-48e4-bb8c-6c51cdd2754e",
+      "id": "6926e0a4-0ac8-4898-a03c-989a5dab6204",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "pacman -S ripgrep-all bat eza btop lazygit tldr zoxide\nyay -S lazydocker yazi",
       "codeLang": "bash",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "613e6a74-2b6c-49cd-887b-a3cd88f1de71",
+      "id": "d6d2ab41-8708-48c9-89c3-443def32df92",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "23e53326-b0cc-4259-a3ce-804f916777a7",
+      "id": "ddf5f67c-4462-4627-8c2b-1041fc8db9cb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "bat file.py\nbat --plain file.txt   # no decorations\nbat -A file            # show non-printable characters",
       "codeLang": "bash",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9fc5f39f-4c63-48b8-82f8-f79c2ca9a571",
+      "id": "f9ce22e9-c5ce-4dae-9402-9a45e3492930",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "eza -la                # long list, all files\neza --tree             # directory tree\neza -la --git          # show git status per file\neza --icons -la        # file-type icons (requires a Nerd Font)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c780ad2c-fbcf-4886-b3b6-5a6c9fffeb83",
+      "id": "86d685a1-8708-4ccd-bc65-a410c68ea108",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "rga \"password\" .            # search current directory recursively\nrga \"TODO\" src/             # search a specific path\nrga -i \"error\" logs/        # case-insensitive\nrga --type pdf \"keyword\"    # search only PDF files",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4c30feb3-7c4c-49c0-a25c-e6859328931e",
+      "id": "a7dd7eae-6696-440e-b7f2-a2cb241185ef",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -163,20 +188,39 @@
       "bodyText": "Interactive resource monitor: CPU, memory, disks, network, and processes in one view.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Key  ::  Action",
-        "q  ::  Quit",
-        "F2 / o  ::  Options menu",
-        "k  ::  Kill selected process",
-        "← / →  ::  Switch between views"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Key",
+          "Action"
+        ],
+        "rows": [
+          [
+            "q",
+            "Quit"
+          ],
+          [
+            "F2 / o",
+            "Options menu"
+          ],
+          [
+            "k",
+            "Kill selected process"
+          ],
+          [
+            "← / →",
+            "Switch between views"
+          ]
+        ]
+      },
       "codeText": "btop",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -184,7 +228,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7943e8f6-83f8-42be-b296-94c8c139516f",
+      "id": "bfd96cc3-d4cc-4a9d-8687-b9f28249beab",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -199,6 +243,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "tldr tar\ntldr git commit\ntldr --update           # refresh the local cache",
       "codeLang": "bash",
       "imageUrl": "",
@@ -206,6 +254,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -213,7 +262,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d3377249-ead5-4841-b205-e4b4f02b3725",
+      "id": "0a35567b-2bdf-4d83-b8b0-2fffc7bf3bdb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -228,6 +277,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Add to ~/.zshrc (or ~/.bashrc)\neval \"$(zoxide init zsh)\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -235,6 +288,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -242,7 +296,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e0b8269a-e75d-4a8d-8fa6-ffaf018413ee",
+      "id": "3c341489-90c6-4366-943e-491dfadd212c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -257,6 +311,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "z projects       # jump to the directory matching \"projects\"\nz dot conf       # multi-word match\nzi               # interactive fuzzy picker (requires fzf)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -264,6 +322,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -271,7 +330,7 @@
       "transition": "fade"
     },
     {
-      "id": "757900bd-ff4f-4c74-80c8-55d5ac71763f",
+      "id": "2ad355c4-2e92-435d-b4c6-7fe510bfc6fe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -285,24 +344,55 @@
       "bodyText": "Fast, async file manager with previews (images, text, archives) powered by bat, ffmpegthumbnailer, and others.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Key  ::  Action",
-        "h / l  ::  Navigate parent / enter",
-        "j / k  ::  Move down / up",
-        "Space  ::  Select file",
-        "y  ::  Yank (copy)",
-        "p  ::  Paste",
-        "d  ::  Delete",
-        "r  ::  Rename",
-        "q  ::  Quit"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Key",
+          "Action"
+        ],
+        "rows": [
+          [
+            "h / l",
+            "Navigate parent / enter"
+          ],
+          [
+            "j / k",
+            "Move down / up"
+          ],
+          [
+            "Space",
+            "Select file"
+          ],
+          [
+            "y",
+            "Yank (copy)"
+          ],
+          [
+            "p",
+            "Paste"
+          ],
+          [
+            "d",
+            "Delete"
+          ],
+          [
+            "r",
+            "Rename"
+          ],
+          [
+            "q",
+            "Quit"
+          ]
+        ]
+      },
       "codeText": "yazi",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -310,7 +400,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "3e937000-aeb3-41fe-86b9-4a04474b25ee",
+      "id": "dd757c26-2d68-4bc4-9f27-02f84b4b920e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -324,24 +414,55 @@
       "bodyText": "Full Git workflow — stage, commit, push, diff, branches, stash — without leaving the terminal.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Key  ::  Action",
-        "1–5  ::  Switch panels",
-        "Space  ::  Stage / unstage file",
-        "c  ::  Commit",
-        "P  ::  Push",
-        "p  ::  Pull",
-        "b  ::  Branch menu",
-        "?  ::  Keybinding help",
-        "q  ::  Quit"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Key",
+          "Action"
+        ],
+        "rows": [
+          [
+            "1–5",
+            "Switch panels"
+          ],
+          [
+            "Space",
+            "Stage / unstage file"
+          ],
+          [
+            "c",
+            "Commit"
+          ],
+          [
+            "P",
+            "Push"
+          ],
+          [
+            "p",
+            "Pull"
+          ],
+          [
+            "b",
+            "Branch menu"
+          ],
+          [
+            "?",
+            "Keybinding help"
+          ],
+          [
+            "q",
+            "Quit"
+          ]
+        ]
+      },
       "codeText": "lazygit",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -349,7 +470,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "939a9aef-7fa7-4c1f-a045-a26ea5a5a636",
+      "id": "830fcc26-fb59-414c-b901-e4d15b05fbc8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -363,22 +484,47 @@
       "bodyText": "Manage containers, images, volumes, and logs without typing docker commands.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Key  ::  Action",
-        "[ / ]  ::  Switch panels",
-        "Enter  ::  View logs / inspect",
-        "r  ::  Restart container",
-        "d  ::  Remove container or image",
-        "u  ::  Pull latest image",
-        "q  ::  Quit"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Key",
+          "Action"
+        ],
+        "rows": [
+          [
+            "[ / ]",
+            "Switch panels"
+          ],
+          [
+            "Enter",
+            "View logs / inspect"
+          ],
+          [
+            "r",
+            "Restart container"
+          ],
+          [
+            "d",
+            "Remove container or image"
+          ],
+          [
+            "u",
+            "Pull latest image"
+          ],
+          [
+            "q",
+            "Quit"
+          ]
+        ]
+      },
       "codeText": "lazydocker",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -386,7 +532,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "103ed779-5438-4de8-b9b0-c010c8a20a84",
+      "id": "d23ac4f2-e40f-42b9-9ff2-a29761aa121a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -400,18 +546,31 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Set up Docker  ::  Docker Setup",
-        "Go back to Linux fundamentals  ::  Linux"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Set up Docker",
+            "Docker Setup"
+          ],
+          [
+            "Go back to Linux fundamentals",
+            "Linux"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

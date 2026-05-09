@@ -4,7 +4,7 @@
   "source": "tools/Targets.md",
   "slides": [
     {
-      "id": "e9ab8e74-d20d-4168-819c-a540632a8bf7",
+      "id": "48741bc2-218f-43d9-a7ba-7ce35935bbf0",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "4856f99a-8935-4a9e-a69a-0107fca1eee6",
+      "id": "2b569fb4-0c65-44b2-a619-28deae7fb3cd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8347b2ff-f8c4-4350-a587-1bcf5d30f6e7",
+      "id": "ac2be2bb-8370-4e1b-9535-bf07bd19df6b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run -d -p 3000:3000 bkimminich/juice-shop",
       "codeLang": "bash",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "3a66e978-1d47-4279-81ac-40b113b6042a",
+      "id": "3c15b007-7166-466f-973a-908aa0fddf35",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run -d -p 80:80 vulnerables/web-dvwa",
       "codeLang": "bash",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "dae0cb13-1a51-4b78-bad9-e4bee04188fe",
+      "id": "3e093e3b-7d35-4e46-943d-2d848c23af03",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run -d -p 8080:8080 -p 9090:9090 webgoat/goat-and-wolf",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7ac1cc9c-69ec-41b1-accc-6bad2dbc6793",
+      "id": "08b4f5f3-a996-4d97-a28c-de1ebbc30f8d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -164,6 +189,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run -d -p 80:80 raesene/bwapp",
       "codeLang": "bash",
       "imageUrl": "",
@@ -171,6 +200,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +208,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ec16c562-7d8e-48c6-928f-dafd35c76b54",
+      "id": "4f3dae09-3ce0-45cf-88e6-59e2edcfae9d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -193,6 +223,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run -d -p 80:80 -p 443:443 owasp/security-shepherd",
       "codeLang": "bash",
       "imageUrl": "",
@@ -200,6 +234,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -207,7 +242,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0eb13aa2-5613-4bd0-b652-4a3435b646e7",
+      "id": "be8c0ac4-6407-40eb-a737-b17ebf8c8aee",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -222,6 +257,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -229,6 +268,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -236,7 +276,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "5fc65b08-44ba-442e-bcf7-dd307e873f51",
+      "id": "161f53d9-5060-49ef-bba6-e575fa4d201f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -251,6 +291,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run -d -p 22:22 -p 80:80 -p 445:445 tleemcjr/metasploitable2",
       "codeLang": "bash",
       "imageUrl": "",
@@ -258,6 +302,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -265,7 +310,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "12d9d138-1a16-4f75-a842-3b247e5de160",
+      "id": "30fcdfca-08f9-4225-a624-1234dae2892e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -280,6 +325,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -287,6 +336,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -294,7 +344,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "235a37b4-668a-4d26-a634-2f4580cdc381",
+      "id": "2f8012c3-d104-406a-a5bc-1f333a941c30",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -309,6 +359,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -316,6 +370,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -323,7 +378,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ff1dc56a-1797-4f04-8dbf-3628ce3b542c",
+      "id": "518831e5-bc23-435a-b992-277e8e3cbb59",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -338,6 +393,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "git clone https://github.com/christophetd/damn-vulnerable-docker\ncd damn-vulnerable-docker\ndocker compose up -d",
       "codeLang": "bash",
       "imageUrl": "",
@@ -345,6 +404,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -352,7 +412,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9eb4deb9-4a00-4a09-8388-04504ed067e5",
+      "id": "f70c0c67-cbec-462d-832b-88f866bfcdc6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -367,6 +427,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "git clone https://github.com/madhuakula/kubernetes-goat\ncd kubernetes-goat\nbash setup-kubernetes-goat.sh",
       "codeLang": "bash",
       "imageUrl": "",
@@ -374,6 +438,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -381,7 +446,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0ea26051-2a7c-4dce-bc29-bfa71683efd8",
+      "id": "347aca0d-6570-4933-a7f8-7cd563e15d4d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -396,6 +461,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -403,6 +472,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -410,7 +480,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "56339a09-fcfe-4144-aec6-3eb15633d9f6",
+      "id": "aa5be28b-5dca-45e9-87ff-b22372ea303a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -425,6 +495,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "docker run --rm --net host --pid host --userns host --cap-add audit_control \\\n  -e DOCKER_CONTENT_TRUST=$DOCKER_CONTENT_TRUST \\\n  -v /etc:/etc:ro \\\n  -v /lib/systemd/system:/lib/systemd/system:ro \\\n  -v /usr/bin/containerd:/usr/bin/containerd:ro \\\n  -v /usr/bin/runc:/usr/bin/runc:ro \\\n  -v /usr/lib/systemd:/usr/lib/systemd:ro \\\n  -v /var/lib:/var/lib:ro \\\n  -v /var/run/docker.sock:/var/run/docker.sock:ro \\\n  --label docker_bench_security \\\n  docker/docker-bench-security",
       "codeLang": "bash",
       "imageUrl": "",
@@ -432,6 +506,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -439,7 +514,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "cc70a6bc-1d3c-406c-a851-d63f6c4df528",
+      "id": "4562ad4d-6279-4413-a199-2dfa8ab7c49a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -453,26 +528,74 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Container  ::  Focus  ::  Difficulty",
-        "Juice Shop  ::  Web / OWASP Top 10  ::  Beginner → Advanced",
-        "DVWA  ::  Web fundamentals  ::  Beginner",
-        "WebGoat  ::  Web / guided lessons  ::  Beginner",
-        "bWAPP  ::  Web breadth (100+ vulns)  ::  Beginner → Intermediate",
-        "Security Shepherd  ::  Web / mobile CTF  ::  Intermediate",
-        "Metasploitable 2  ::  Network services  ::  Beginner",
-        "VulnHub VMs  ::  Mixed  ::  Varies",
-        "Damn Vulnerable Docker  ::  Container security  ::  Intermediate",
-        "Kubernetes Goat  ::  Kubernetes security  ::  Intermediate → Advanced",
-        "Docker Bench  ::  Hardening audit  ::  All levels"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Container",
+          "Focus",
+          "Difficulty"
+        ],
+        "rows": [
+          [
+            "Juice Shop",
+            "Web / OWASP Top 10",
+            "Beginner → Advanced"
+          ],
+          [
+            "DVWA",
+            "Web fundamentals",
+            "Beginner"
+          ],
+          [
+            "WebGoat",
+            "Web / guided lessons",
+            "Beginner"
+          ],
+          [
+            "bWAPP",
+            "Web breadth (100+ vulns)",
+            "Beginner → Intermediate"
+          ],
+          [
+            "Security Shepherd",
+            "Web / mobile CTF",
+            "Intermediate"
+          ],
+          [
+            "Metasploitable 2",
+            "Network services",
+            "Beginner"
+          ],
+          [
+            "VulnHub VMs",
+            "Mixed",
+            "Varies"
+          ],
+          [
+            "Damn Vulnerable Docker",
+            "Container security",
+            "Intermediate"
+          ],
+          [
+            "Kubernetes Goat",
+            "Kubernetes security",
+            "Intermediate → Advanced"
+          ],
+          [
+            "Docker Bench",
+            "Hardening audit",
+            "All levels"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -480,7 +603,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "51fa5f60-be95-42a1-9431-94cfe5624c43",
+      "id": "83db1d6e-e8a3-4ce3-848f-327bdf2a2c48",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -494,19 +617,35 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Offensive tools for attacking these targets  ::  Red Team Tools",
-        "Tune your Arch host  ::  Arch Quality of Life",
-        "Back up your lab  ::  Backups"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Offensive tools for attacking these targets",
+            "Red Team Tools"
+          ],
+          [
+            "Tune your Arch host",
+            "Arch Quality of Life"
+          ],
+          [
+            "Back up your lab",
+            "Backups"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

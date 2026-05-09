@@ -4,7 +4,7 @@
   "source": "stego/README.md",
   "slides": [
     {
-      "id": "b375be28-23e0-4fa8-a991-fd8c237654f7",
+      "id": "77607a32-9f17-40ce-a036-a2eab8d900c4",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "a0e70ae4-4c90-4817-bc14-e5e0408f45ac",
+      "id": "1ab3fcc0-164e-4a49-97b0-118de480911d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "file image.png           # verify actual file type\nstrings image.png        # look for readable text/flags\nexiftool image.png       # check all metadata fields\nxxd image.png | tail -20 # check for appended data after EOF\nbinwalk image.png        # check for embedded files\nbinwalk -e image.png     # extract embedded files",
       "codeLang": "bash",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "fade"
     },
     {
-      "id": "a4c8a880-fc95-4895-8b7c-4e649094a80b",
+      "id": "d257acb7-6570-43ef-91c5-e2c0cfb91e44",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1283018e-717d-49ef-b363-5960f03aeebc",
+      "id": "fc87b5ce-5eac-49b5-97eb-779a4f518552",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# stegsolve — visual channel & LSB analysis (GUI)\njava -jar stegsolve.jar\n\n# zsteg — detects LSB stego in PNG and BMP\nzsteg image.png          # auto-detect\nzsteg -a image.png       # try all methods\nzsteg image.png -E \"b1,r,lsb,xy\"   # extract specific channel\n\n# stegoveritas — run many checks at once\nstegoveritas image.png",
       "codeLang": "bash",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "fade"
     },
     {
-      "id": "b06ab0fb-d8d2-4ad8-9fda-4192e5ea3854",
+      "id": "fa0c1b75-c586-4f71-81c6-822f6fe0be54",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Check for ZIP/RAR/other files appended after JPEG EOI (FFD9)\nxxd image.jpg | grep -A 2 \"ff d9\"\n# Or just try:\nunzip image.jpg -d output/\n7z x image.jpg\n\n# binwalk extraction\nbinwalk -e image.png",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "fade"
     },
     {
-      "id": "e1e4138b-1f51-4dfc-bb34-bfa2f16684a0",
+      "id": "bb1f64b2-ec7d-4c7a-93ce-70ab2425ae3e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -164,6 +189,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Extract without password\nsteghide extract -sf image.jpg\n\n# Extract with password\nsteghide extract -sf image.jpg -p \"password\"\n\n# Embed (for understanding)\nsteghide embed -cf image.jpg -sf secret.txt -p \"password\"\n\n# Check if data is embedded\nsteghide info image.jpg",
       "codeLang": "bash",
       "imageUrl": "",
@@ -171,6 +200,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +208,7 @@
       "transition": "fade"
     },
     {
-      "id": "7b664100-76b8-4791-86fd-abf6014cb9ee",
+      "id": "f43cd344-a28b-4fd0-9e37-f3feae7a2332",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -193,6 +223,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "outguess -r image.jpg output.txt\noutguess -k \"password\" -r image.jpg output.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -200,6 +234,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -207,7 +242,7 @@
       "transition": "fade"
     },
     {
-      "id": "23bd1c67-d329-48a6-9954-b477827f3341",
+      "id": "4eb4c437-c5bc-4b00-b6b2-e089073a86ff",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -225,6 +260,10 @@
         "GUI tool — openstego.com",
         "Also handles watermarking"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -232,6 +271,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -239,7 +279,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4e013bf3-ae6b-410d-8163-59b813886cd3",
+      "id": "7b61b739-1ce2-422a-8bcd-e856c6ee31d6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -254,6 +294,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Manual LSB extraction (PNG, channel R)\nfrom PIL import Image\n\nimg = Image.open('image.png')\npixels = list(img.getdata())\n\nbits = ''\nfor pixel in pixels:\n    for channel in pixel[:3]:   # R, G, B\n        bits += str(channel & 1)\n\n# Convert bits to bytes\nchars = [chr(int(bits[i:i+8], 2)) for i in range(0, len(bits), 8)]\nprint(''.join(chars)[:100])",
       "codeLang": "python",
       "imageUrl": "",
@@ -261,6 +305,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -268,7 +313,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7532816c-b71e-46ec-9a7b-751c9ff4dc49",
+      "id": "327a23af-e9d1-4a0e-88f0-c7e01de9844b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -283,6 +328,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Use zsteg for quick LSB extraction\nzsteg -a image.png\n\n# Use stegsolve → Data Extract → select LSB channels",
       "codeLang": "bash",
       "imageUrl": "",
@@ -290,6 +339,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -297,7 +347,7 @@
       "transition": "fade"
     },
     {
-      "id": "d3a3c697-42e2-46da-b328-b180cf901ee5",
+      "id": "43f2018b-31e1-45fb-828f-e666bbbe57c3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -312,6 +362,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -319,6 +373,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -326,7 +381,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ea36aa8b-3aa4-411b-80fd-8cc54e1821ea",
+      "id": "9bd33aae-0986-4b4e-b6a9-79402203fd76",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -341,6 +396,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Open in Audacity → View → Plot Spectrum\n# Or use sox / python\nsox audio.wav -n spectrogram -o spectrogram.png\n# Open spectrogram.png and look for text/morse/QR patterns\n\n# Online: https://www.dcode.fr/spectral-analysis",
       "codeLang": "bash",
       "imageUrl": "",
@@ -348,6 +407,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -355,7 +415,7 @@
       "transition": "fade"
     },
     {
-      "id": "f7afba1d-84b9-4fcf-9907-40924cae8674",
+      "id": "8e0d41ce-bf5c-4559-8e82-a6fb8228b98b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -370,6 +430,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# mp3stego\nMP3Stego -x output.txt stego.mp3\n\n# steghide also works on WAV/AU\nsteghide extract -sf audio.wav\n\n# OpenPuff (Windows) — supports many formats",
       "codeLang": "bash",
       "imageUrl": "",
@@ -377,6 +441,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -384,7 +449,7 @@
       "transition": "fade"
     },
     {
-      "id": "ef864c21-4cc8-409c-8570-f68a97a9bccb",
+      "id": "c2a4775e-0888-44b4-8e93-e363f3765a4c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -399,6 +464,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Listen to audio — short/long beeps = morse\n# Use: https://morsecode.world/international/decoder/audio-decoder-adaptive.html",
       "codeLang": "bash",
       "imageUrl": "",
@@ -406,6 +475,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -413,7 +483,7 @@
       "transition": "fade"
     },
     {
-      "id": "3b1aa989-d437-44e0-8ef5-94de3b814c51",
+      "id": "c91f83f8-d121-432f-90e0-f31db0a43793",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -428,6 +498,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Touch-tone phone numbers encoded in audio\nmultimon-ng -t wav -a DTMF audio.wav",
       "codeLang": "bash",
       "imageUrl": "",
@@ -435,6 +509,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -442,7 +517,7 @@
       "transition": "fade"
     },
     {
-      "id": "2b45deb6-1d8f-43be-9940-c562c33617b6",
+      "id": "4dab3ae2-6203-46a8-97dc-bb7007138879",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -457,6 +532,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Snow — whitespace stego (tabs/spaces at line endings)\nstegsnow -C stego.txt\n\n# Zero-width characters (Unicode steganography)\n# Look for: U+200B (ZWSP), U+FEFF (BOM), U+200D (ZWJ)\ncat -A stego.txt         # show non-printing chars\nhexdump -C stego.txt | grep \"e2 80\"   # zero-width in UTF-8\n\n# Unicode stego decoder:\n# https://330k.github.io/misc_tools/unicode_steganography.html",
       "codeLang": "bash",
       "imageUrl": "",
@@ -464,6 +543,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -471,7 +551,7 @@
       "transition": "fade"
     },
     {
-      "id": "b02d0a2e-8c6f-4c69-acd6-2a9517c01954",
+      "id": "02f5e279-dae3-47a7-8441-56a6d2aa3897",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -486,6 +566,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Extract all frames\nffmpeg -i video.mp4 frames/frame_%04d.png\n\n# Check audio track separately\nffmpeg -i video.mp4 -vn audio.wav\n\n# Look at first and last frames — sometimes flag is there\n# Analyse frames with zsteg / stegsolve",
       "codeLang": "bash",
       "imageUrl": "",
@@ -493,6 +577,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -500,7 +585,7 @@
       "transition": "fade"
     },
     {
-      "id": "97fe5b78-78cb-43fc-9930-0c5af852c5b9",
+      "id": "c379c647-38e4-4790-aa2a-c55963dbbf05",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -515,6 +600,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Highlight all text in PDF (sometimes white-on-white text)\n# Extract all text\npdftotext file.pdf -\n\n# Check all layers / metadata\nexiftool file.pdf\nstrings file.pdf | grep -i flag\n\n# Peepdf (Python tool for PDF analysis)\npeepdf -i file.pdf",
       "codeLang": "bash",
       "imageUrl": "",
@@ -522,6 +611,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -529,7 +619,7 @@
       "transition": "fade"
     },
     {
-      "id": "34955ba2-324d-4d25-a093-fe5ec382f4df",
+      "id": "019df872-5c1f-4164-9561-07f6e545658b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -544,6 +634,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -551,6 +645,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -558,7 +653,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7b7ec3dc-71a3-4748-a6a3-46d5f3b6742c",
+      "id": "0d7e0dad-8b26-46a1-993d-fcf9f8ff88e0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -573,6 +668,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from PIL import Image\n\nimg = Image.open('image.png').convert('RGBA')\ndata = img.getdata()\nalpha_vals = [p[3] for p in data]   # extract alpha channel\nprint(bytes(alpha_vals))",
       "codeLang": "python",
       "imageUrl": "",
@@ -580,6 +679,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -587,7 +687,7 @@
       "transition": "fade"
     },
     {
-      "id": "3c9194e2-941a-48c8-b085-34b00b0f8cbc",
+      "id": "eba1805e-88ee-43e9-b174-070ad1114bbc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -602,6 +702,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Check palette in GIMP or:\npython3 -c \"\nfrom PIL import Image\nimg = Image.open('image.gif')\nprint(img.getpalette())\n\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -609,6 +713,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -616,7 +721,7 @@
       "transition": "fade"
     },
     {
-      "id": "04857a93-c409-4289-a033-014060522b02",
+      "id": "35f2f8ae-079d-430b-81c9-5a4d7fd03d53",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -630,24 +735,64 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Type  ::  Notes",
-        "steghide  ::  JPEG, BMP, WAV  ::  Supports passwords",
-        "zsteg  ::  PNG, BMP  ::  LSB, multi-channel",
-        "stegsolve  ::  PNG, BMP, GIF  ::  Visual analysis",
-        "binwalk  ::  Any  ::  File carving",
-        "outguess  ::  JPEG  ::  Statistical stego",
-        "sox  ::  Audio  ::  Spectrogram",
-        "stegoveritas  ::  Multi  ::  Automated multi-check",
-        "OpenStego  ::  PNG  ::  GUI"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Type",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "steghide",
+            "JPEG, BMP, WAV",
+            "Supports passwords"
+          ],
+          [
+            "zsteg",
+            "PNG, BMP",
+            "LSB, multi-channel"
+          ],
+          [
+            "stegsolve",
+            "PNG, BMP, GIF",
+            "Visual analysis"
+          ],
+          [
+            "binwalk",
+            "Any",
+            "File carving"
+          ],
+          [
+            "outguess",
+            "JPEG",
+            "Statistical stego"
+          ],
+          [
+            "sox",
+            "Audio",
+            "Spectrogram"
+          ],
+          [
+            "stegoveritas",
+            "Multi",
+            "Automated multi-check"
+          ],
+          [
+            "OpenStego",
+            "PNG",
+            "GUI"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -655,7 +800,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2c1e5513-6a80-45f8-a837-140dbe64b0fa",
+      "id": "9fb9c0f7-4aac-4c8a-9254-3f9bc9532cc5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -670,6 +815,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "[ ] Check metadata (exiftool)\n[ ] Look for appended data (xxd tail, unzip)\n[ ] Run binwalk for embedded files\n[ ] Try zsteg -a (PNG/BMP)\n[ ] Open stegsolve and browse bit planes\n[ ] Try steghide extract (no password, then common wordlist)\n[ ] For audio: check spectrogram\n[ ] For text: check for whitespace / zero-width chars\n[ ] Check all colour channels individually\n[ ] Check alpha channel",
       "codeLang": "",
       "imageUrl": "",
@@ -677,6 +826,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -684,7 +834,7 @@
       "transition": "fade"
     },
     {
-      "id": "8e6754c1-45f2-44f6-b812-d209b63a393f",
+      "id": "100d37fb-bcad-417c-9306-b549906f0e19",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -705,6 +855,10 @@
         "dcode.fr stego tools",
         "zsteg GitHub"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -712,6 +866,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

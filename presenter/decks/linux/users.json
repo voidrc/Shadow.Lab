@@ -4,7 +4,7 @@
   "source": "linux/Users.md",
   "slides": [
     {
-      "id": "b9c03b8f-85fc-4943-867f-2bdce0cd4878",
+      "id": "daa3733e-9e54-4679-8794-ea7e8ceecc59",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "d9fc161b-aff9-4ed9-a5ec-5730cfaab69d",
+      "id": "c93bc33f-92cf-4ecc-9cbe-3b9d03f4adfb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,18 +52,40 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "User Type  ::  Home Directory  ::  UID  ::  Privileges  ::  Common Groups",
-        "root  ::  /root  ::  0  ::  Full, unrestricted  ::  root, wheel, sudo",
-        "Normal user  ::  /home/<username>  ::  ≥ 1000  ::  Limited to owned files  ::  users, sudo (if granted)"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "User Type",
+          "Home Directory",
+          "UID",
+          "Privileges",
+          "Common Groups"
+        ],
+        "rows": [
+          [
+            "root",
+            "/root",
+            "0",
+            "Full, unrestricted",
+            "root, wheel, sudo"
+          ],
+          [
+            "Normal user",
+            "/home/<username>",
+            "≥ 1000",
+            "Limited to owned files",
+            "users, sudo (if granted)"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -66,7 +93,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "375632a2-2e82-4420-9a1e-94a8382b9465",
+      "id": "91fc43ba-c1e9-4937-9719-f60a26058d01",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -85,6 +112,10 @@
         "Home: /root",
         "UID: 0"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -92,6 +123,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -99,7 +131,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "faa21a57-f9b4-4f10-bc0c-8098fbb7837c",
+      "id": "d2eb1948-8750-4d5d-8f94-422265ce35c0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -113,18 +145,31 @@
       "bodyText": "Different distributions use different group names for granting sudo access:\nUsers added to one of these groups can run administrative commands via sudo.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Group  ::  Used on",
-        "sudo  ::  Ubuntu, Debian",
-        "wheel  ::  Fedora, CentOS, RHEL, Arch"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Group",
+          "Used on"
+        ],
+        "rows": [
+          [
+            "sudo",
+            "Ubuntu, Debian"
+          ],
+          [
+            "wheel",
+            "Fedora, CentOS, RHEL, Arch"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -132,7 +177,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "89976e0f-3726-4a61-ae2d-9a1ea0f0bd11",
+      "id": "6776b0c3-3e5b-4d5b-8690-38698efa8744",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -147,6 +192,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo apt update\nsudo systemctl restart sshd",
       "codeLang": "bash",
       "imageUrl": "",
@@ -154,6 +203,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -161,7 +211,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9aba710c-d2b2-475d-8946-d8d126a11022",
+      "id": "78de20a7-995b-4cc1-9e86-6b392f9f644c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -176,6 +226,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo visudo",
       "codeLang": "bash",
       "imageUrl": "",
@@ -183,6 +237,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -190,7 +245,7 @@
       "transition": "fade"
     },
     {
-      "id": "9402ab88-9401-476c-8fed-cebd17952108",
+      "id": "38ecd992-95fb-4e4b-a768-ec484d87071a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -204,20 +259,39 @@
       "bodyText": "The - in su - loads the target user's full environment (profile, PATH, etc.). Without it you keep the calling user's environment.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Command  ::  What it does",
-        "su -  ::  Switch to root (full login shell)",
-        "su <username>  ::  Switch to another user",
-        "sudo -u <username> <command>  ::  Run one command as another user",
-        "whoami  ::  Print the current user"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Command",
+          "What it does"
+        ],
+        "rows": [
+          [
+            "su -",
+            "Switch to root (full login shell)"
+          ],
+          [
+            "su <username>",
+            "Switch to another user"
+          ],
+          [
+            "sudo -u <username> <command>",
+            "Run one command as another user"
+          ],
+          [
+            "whoami",
+            "Print the current user"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -225,7 +299,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b2e6e115-6554-4238-9d20-4935f0b62100",
+      "id": "5319e811-6453-4830-843b-ab7ef679db88",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -239,18 +313,31 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Understand how files and directories are structured  ::  The Filesystem",
-        "Go back to history commands  ::  Command History"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Understand how files and directories are structured",
+            "The Filesystem"
+          ],
+          [
+            "Go back to history commands",
+            "Command History"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

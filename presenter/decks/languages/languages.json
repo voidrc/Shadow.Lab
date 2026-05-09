@@ -4,7 +4,7 @@
   "source": "languages/Languages.md",
   "slides": [
     {
-      "id": "4bea6fb4-c103-4729-a6dc-311cce69f2e8",
+      "id": "3fadab70-708d-48d5-ad0a-b00f05bf1f84",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "5b0ea2a1-1987-40a5-a5c8-004331503516",
+      "id": "c45fda92-96c3-4567-9477-b083a5a7a1b5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -76,6 +81,10 @@
         "Swift",
         "Additional Resources"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -83,6 +92,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -90,7 +100,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "caeff90b-7e9c-479e-b51b-2c7e3d2b8c61",
+      "id": "bdd93bda-83e3-454c-9a40-35722c071e8a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -112,6 +122,10 @@
         "Intermediate: Log fetching, environment setup automation.",
         "Advanced: Post-exploitation automation, system enumeration."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -119,6 +133,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -126,7 +141,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0e666646-b170-498c-a8af-c63d2d4b865b",
+      "id": "a892db5c-ee03-4178-ab99-161b79dd3109",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -288,6 +303,10 @@
         "A Python implementation of a Python bytecode runner",
         "Create a Voice assistant using Python"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -295,6 +314,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -302,7 +322,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0ef7d0cc-c470-44a6-a8aa-4c7afb76eb59",
+      "id": "3564df1d-1fb8-4511-808a-e5828258a0e2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -325,6 +345,10 @@
         "Intermediate: Windows enumeration, user/group management automation.",
         "Advanced: Post-exploitation scripts, registry manipulation."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -332,6 +356,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -339,7 +364,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "afe313c0-e989-4f1e-ae6e-0d78c89cb8ba",
+      "id": "8c6c86b1-b619-42d6-b9ba-0f8e196725da",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -471,6 +496,10 @@
         "Handmade Hero",
         "How to Make Minecraft in C++/OpenGL (video)"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -478,6 +507,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -485,7 +515,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0134c082-6701-4e8a-969a-a321ca351416",
+      "id": "14a5bca4-14cc-46c0-a245-57b3e5fd5e1a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -508,6 +538,10 @@
         "Intermediate: Writing shellcode to spawn a shell or download files.",
         "Advanced: Reverse engineering challenges, malware dissection."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -515,6 +549,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -522,7 +557,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "256b3db6-ed4d-42aa-891e-2a3c7e56f4ba",
+      "id": "1d67960a-5ea8-40f8-a797-2f79153886f7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -552,6 +587,10 @@
         "Build a Simple Weather App With Vanilla JavaScript",
         "Build a Todo List App in JavaScript"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -559,6 +598,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -566,7 +606,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8a9fe20e-b05c-4ef7-85a0-40facb50b574",
+      "id": "7ddc92bd-e74c-4a05-bf5e-6738471ecc3b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -589,6 +629,10 @@
         "Intermediate: Database creation, manipulation.",
         "Advanced: Automating SQL injection attacks, working with vulnerable web apps."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -596,6 +640,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -603,7 +648,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a9a341c2-a059-458f-8020-0a6250ccba0d",
+      "id": "a9a74de5-f7e9-46ae-ba5b-9b32128b5bdc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -664,6 +709,10 @@
         "Building a BitTorrent client from the ground up in Go",
         "REST API masterclass with Go, PostgreSQL and Docker(video playlist)in progress"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -671,6 +720,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -678,7 +728,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a612e8c8-69e6-4691-a5bb-8c07dec40a7a",
+      "id": "669f5442-fc66-47af-ac5a-d1816426fe9c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -714,6 +764,10 @@
         "Build a Social Network using Rails",
         "How To Build a Ruby on Rails Application"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -721,6 +775,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -728,7 +783,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4d805323-e140-43ea-a15a-b0a71368e332",
+      "id": "60c7a842-2be1-49e8-9830-62927bd2ca13",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -743,6 +798,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -750,6 +809,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -757,7 +817,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b598556e-1a6c-4279-bdce-46237c252479",
+      "id": "09f47bb8-7a38-4e69-9590-727a505d73a1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -778,6 +838,10 @@
         "Build iOS Photo Library App with Xamarin and Visual Studio",
         "Building the CoreWiki This is a Wiki-style content management system that has been completely written in C# with ASP.NET Core and Razor Pages. You can find the source code here."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -785,6 +849,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -792,7 +857,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "720d35c9-7319-4968-9968-a3d1b8e680ba",
+      "id": "fa565ae8-992a-4700-9a09-f8e937c82197",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -813,6 +878,10 @@
         "Prototyping with Clojure",
         "Tetris in ClojureScript"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -820,6 +889,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -827,7 +897,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "95422a56-6354-406f-832b-05cbd1ae2dc3",
+      "id": "152bd19b-ef57-4a8b-a836-bf6dc5b5fae1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -842,6 +912,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -849,6 +923,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -856,7 +931,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "85d21f1d-d6f0-4018-bb45-532073f2c8d4",
+      "id": "7b4ce2ba-052e-4ad3-9412-46a133c41993",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -885,6 +960,10 @@
         "Zoom Clone",
         "Netflix Clone"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -892,6 +971,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -899,7 +979,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "da25051a-572e-4b8d-91eb-3fa25ec4bac5",
+      "id": "925401a2-57df-4194-a874-ba2072ff510e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -917,6 +997,10 @@
         "Building a Simple Chat App With Elixir and Phoenix",
         "How to write a super fast link shortener with Elixir, Phoenix, and Mnesia"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -924,6 +1008,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -931,7 +1016,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "04e0d4e9-4606-4946-844c-9c9f22c688d5",
+      "id": "459c32ce-f5e4-4752-b2a7-95519b78774c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -949,6 +1034,10 @@
         "ChatBus : build your first multi-user chat room app with Erlang/OTP",
         "Making a Chat App with Erlang, Rebar, Cowboy and Bullet"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -956,6 +1045,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -963,7 +1053,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "09da74c5-a248-41fe-9a11-2acda30da120",
+      "id": "d8125ba5-e56c-4c2b-b3aa-4bae06a1d413",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -980,6 +1070,10 @@
       "bullets": [
         "Write your own Excel in 100 lines of F#"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -987,6 +1081,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -994,7 +1089,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1461691d-e89f-47e0-8a66-522866b41d87",
+      "id": "261aa3ef-6b0b-4872-9d66-5ff46748a7a3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1014,6 +1109,10 @@
         "Build an Android Flashlight App (video)",
         "Build a Spring Boot App with User Authentication"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1021,6 +1120,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1028,7 +1128,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7a6060f7-3fd0-4b95-bf8b-9c23fb38e8a2",
+      "id": "d0b914b4-ba59-45bb-be9a-d96a7f538c43",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1047,6 +1147,10 @@
         "Build an HTML Calculator with JS",
         "Build Snake using only JavaScript, HTML & CSS"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1054,6 +1158,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1061,7 +1166,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e94c386f-f0c5-4a4e-8957-402107824d53",
+      "id": "2faf9964-4a04-4206-a5fd-a8e5fb7c1bbb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1079,6 +1184,10 @@
         "Build a React Native Todo Application",
         "Build a React Native Application with Redux Thunk"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1086,6 +1195,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1093,7 +1203,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "77bdc110-5ff2-4b81-bb81-b0ee73922f26",
+      "id": "4a7261e2-b8bd-4e4c-8228-4a71ac33c0aa",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1179,6 +1289,10 @@
         "Learn D3 using examples",
         "Learn To Make A Line Chart"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1186,6 +1300,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1193,7 +1308,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9b2b43bf-0bf2-4565-a524-2856a6e2fc53",
+      "id": "57d7e888-f51a-423a-9cb9-68bc5d55716e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1213,6 +1328,10 @@
         "Part 1",
         "Part 2"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1220,6 +1339,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1227,7 +1347,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "438253a8-30e9-4c04-a0e4-384f1f8dbceb",
+      "id": "de341152-0321-4aeb-a2bd-5a24df345e6b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1244,6 +1364,10 @@
       "bullets": [
         "Build A Desktop Chat App with React and Electron"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1251,6 +1375,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1258,7 +1383,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "df727841-656b-43ea-97d1-064ea4c9be06",
+      "id": "d3218e59-a0a9-401b-9293-9bc3a77987ba",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1278,6 +1403,10 @@
         "How to write your own Virtual DOM",
         "Build A Realtime Serverless GraphQL API with WebSockets on AWS"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1285,6 +1414,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1292,7 +1422,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "80906cf1-3a02-4440-9aab-fac7f8945def",
+      "id": "e4e2c5d2-4ad0-4019-b6ea-56622c092d4b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1309,6 +1439,10 @@
       "bullets": [
         "Keddit - Learn Kotlin While Developing an Android Application"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1316,6 +1450,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1323,7 +1458,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8870039d-5179-42ec-b4bb-57e48205c9cd",
+      "id": "495a1e59-aaf9-4e4b-b886-e2498bef7768",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1338,6 +1473,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1345,6 +1484,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1352,7 +1492,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8ef0d486-58b7-4121-885b-fbc1ab416406",
+      "id": "46bca7f6-2303-4c5a-8236-7a485d3a3ee2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1385,6 +1525,10 @@
         "Part 14: Console",
         "Part 15: Final"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1392,6 +1536,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1399,7 +1544,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1f825cc7-312a-4d88-804a-c28b21fa939b",
+      "id": "7cf5af5d-3148-42ad-9218-06df18a53f56",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1430,6 +1575,10 @@
         "Part 7: Deployment",
         "Build a Laravel CRUD Application From Scratch"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1437,6 +1586,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1444,7 +1594,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ab916a26-c444-4e94-be3c-88f05ef3dfb7",
+      "id": "6b0f7dc4-3853-46f8-a22b-6efe27bf3ead",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1462,6 +1612,10 @@
         "Implement a Language with LLVM in OCaml",
         "Writing a Game Boy Emulator in OCaml"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1469,6 +1623,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1476,7 +1631,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "15a77be5-0741-48da-b556-68dd33b26987",
+      "id": "9e44f415-499a-442a-852f-c8212a4daf9f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1498,6 +1653,10 @@
         "Making Movie Monad",
         "Making a Website with Haskell (outdated)"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1505,6 +1664,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1512,7 +1672,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8f04362d-7068-45e4-b7d5-a4d93b09bf87",
+      "id": "9b019b3f-8be1-490f-a369-a1b7365f4a5d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1531,6 +1691,10 @@
         "Build A Cryptocurrency Bot",
         "Learn Associate Rule Mining in R"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1538,6 +1702,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1545,7 +1710,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "3ff17ebd-3d9b-4f0c-b41a-5b079647c212",
+      "id": "4928c437-47a8-4780-ba79-68d82088a316",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1580,6 +1745,10 @@
         "Part 3",
         "Part 4"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1587,6 +1756,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1594,7 +1764,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8d1b1857-d2a1-4652-98f3-08367671a9e7",
+      "id": "08284404-4685-44a0-a09e-6f952a852dc2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1612,6 +1782,10 @@
         "Simple actor-based blockchain",
         "No Magic: Regular Expressions"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1619,6 +1793,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1626,7 +1801,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1b2976d5-a24a-4483-b901-c52a5237f0af",
+      "id": "f20086d5-dd33-4463-a0ff-dd50cb1d7898",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1644,6 +1819,10 @@
         "Hacking with Swift - Learn Swift by doing 39 projects",
         "Retro first-person shooter from scratch"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1651,6 +1830,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -1658,7 +1838,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "17945588-b7d1-4b4a-97e4-860d20c5ae5a",
+      "id": "2f7e2a73-a040-4a6e-9a22-6189c2525fbd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -1686,6 +1866,10 @@
         "Hack Club Workshops",
         "CodeCrafters"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1693,6 +1877,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

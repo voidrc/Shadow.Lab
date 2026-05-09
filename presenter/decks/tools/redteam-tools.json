@@ -4,7 +4,7 @@
   "source": "tools/RedTeam-Tools.md",
   "slides": [
     {
-      "id": "50f567a3-cae8-4265-94b2-85f62ff04385",
+      "id": "c1d822ca-9b9d-4963-b048-912f06bc6188",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -18,22 +18,54 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "nmap  ::  Network port scanner  ::  apt install nmap",
-        "masscan  ::  Fast mass port scanner  ::  apt install masscan",
-        "subfinder  ::  Passive subdomain enumeration  ::  go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest",
-        "amass  ::  Subdomain enumeration and mapping  ::  apt install amass",
-        "theHarvester  ::  Email/domain OSINT  ::  apt install theharvester",
-        "sherlock  ::  Username search across platforms  ::  pip install sherlock-project"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "nmap",
+            "Network port scanner",
+            "apt install nmap"
+          ],
+          [
+            "masscan",
+            "Fast mass port scanner",
+            "apt install masscan"
+          ],
+          [
+            "subfinder",
+            "Passive subdomain enumeration",
+            "go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest"
+          ],
+          [
+            "amass",
+            "Subdomain enumeration and mapping",
+            "apt install amass"
+          ],
+          [
+            "theHarvester",
+            "Email/domain OSINT",
+            "apt install theharvester"
+          ],
+          [
+            "sherlock",
+            "Username search across platforms",
+            "pip install sherlock-project"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -41,7 +73,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6c864b3f-1b8a-413e-8feb-e874bb6c1b58",
+      "id": "dae3b287-f89c-4048-93b5-e02e81dbbb23",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -55,21 +87,49 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "Burp Suite Pro  ::  HTTP proxy, scanner, intruder  ::  portswigger.net",
-        "ffuf  ::  Web fuzzing  ::  go install github.com/ffuf/ffuf/v2@latest",
-        "sqlmap  ::  SQL injection automation  ::  apt install sqlmap",
-        "nuclei  ::  Template-based vulnerability scanner  ::  go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest",
-        "nikto  ::  Web vulnerability scanner  ::  apt install nikto"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Burp Suite Pro",
+            "HTTP proxy, scanner, intruder",
+            "portswigger.net"
+          ],
+          [
+            "ffuf",
+            "Web fuzzing",
+            "go install github.com/ffuf/ffuf/v2@latest"
+          ],
+          [
+            "sqlmap",
+            "SQL injection automation",
+            "apt install sqlmap"
+          ],
+          [
+            "nuclei",
+            "Template-based vulnerability scanner",
+            "go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest"
+          ],
+          [
+            "nikto",
+            "Web vulnerability scanner",
+            "apt install nikto"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -77,7 +137,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a1e43a18-be08-4782-b1e0-54b9e64a2530",
+      "id": "456fbf6c-3241-43fc-916e-b7ed561576d0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -91,23 +151,59 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "impacket  ::  AD/SMB attack suite (psexec, secretsdump, etc.)  ::  pip install impacket",
-        "bloodhound-python  ::  BloodHound data collection  ::  pip install bloodhound",
-        "BloodHound  ::  AD attack path visualisation  ::  GitHub",
-        "evil-winrm  ::  WinRM shell  ::  gem install evil-winrm",
-        "responder  ::  LLMNR/NBT-NS poisoning  ::  apt install responder",
-        "crackmapexec  ::  AD Swiss-army knife  ::  apt install crackmapexec",
-        "kerbrute  ::  Kerberos user enumeration and bruteforce  ::  GitHub"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "impacket",
+            "AD/SMB attack suite (psexec, secretsdump, etc.)",
+            "pip install impacket"
+          ],
+          [
+            "bloodhound-python",
+            "BloodHound data collection",
+            "pip install bloodhound"
+          ],
+          [
+            "BloodHound",
+            "AD attack path visualisation",
+            "GitHub"
+          ],
+          [
+            "evil-winrm",
+            "WinRM shell",
+            "gem install evil-winrm"
+          ],
+          [
+            "responder",
+            "LLMNR/NBT-NS poisoning",
+            "apt install responder"
+          ],
+          [
+            "crackmapexec",
+            "AD Swiss-army knife",
+            "apt install crackmapexec"
+          ],
+          [
+            "kerbrute",
+            "Kerberos user enumeration and bruteforce",
+            "GitHub"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -115,7 +211,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4d84d7c9-fedb-4be5-bde1-b0d84207f109",
+      "id": "742ac823-cac7-4637-81bc-ade7c5823705",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -129,21 +225,49 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "Metasploit  ::  Exploitation and post-exploitation framework  ::  apt install metasploit-framework",
-        "Sliver  ::  Open-source C2 framework  ::  GitHub releases",
-        "msfvenom  ::  Payload generation  ::  bundled with Metasploit",
-        "chisel  ::  TCP/UDP tunnel over HTTP  ::  go install github.com/jpillora/chisel@latest",
-        "ligolo-ng  ::  Tunneling for pivoting  ::  GitHub"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Metasploit",
+            "Exploitation and post-exploitation framework",
+            "apt install metasploit-framework"
+          ],
+          [
+            "Sliver",
+            "Open-source C2 framework",
+            "GitHub releases"
+          ],
+          [
+            "msfvenom",
+            "Payload generation",
+            "bundled with Metasploit"
+          ],
+          [
+            "chisel",
+            "TCP/UDP tunnel over HTTP",
+            "go install github.com/jpillora/chisel@latest"
+          ],
+          [
+            "ligolo-ng",
+            "Tunneling for pivoting",
+            "GitHub"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -151,7 +275,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "26b4d6a9-020c-4182-a05d-1e2b7dab9684",
+      "id": "147ca0e8-70ba-4c01-ab65-5fb4167b398a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -165,20 +289,44 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "linpeas  ::  Linux privilege escalation enumeration  ::  GitHub",
-        "winpeas  ::  Windows privilege escalation enumeration  ::  GitHub",
-        "mimikatz  ::  Windows credential dumping  ::  GitHub",
-        "Rubeus  ::  Kerberos manipulation  ::  GitHub"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "linpeas",
+            "Linux privilege escalation enumeration",
+            "GitHub"
+          ],
+          [
+            "winpeas",
+            "Windows privilege escalation enumeration",
+            "GitHub"
+          ],
+          [
+            "mimikatz",
+            "Windows credential dumping",
+            "GitHub"
+          ],
+          [
+            "Rubeus",
+            "Kerberos manipulation",
+            "GitHub"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -186,7 +334,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ac843181-1f2a-462d-9705-902fe278a609",
+      "id": "8df9e145-6a17-402c-afa9-04a7f97f6b20",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -200,19 +348,34 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Guide",
-        "Defensive tooling  ::  Blue Team Tools",
-        "Run attack labs in containers  ::  Docker Setup",
-        "Full tool reference  ::  General Security Tools"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Guide"
+        ],
+        "rows": [
+          [
+            "Defensive tooling",
+            "Blue Team Tools"
+          ],
+          [
+            "Run attack labs in containers",
+            "Docker Setup"
+          ],
+          [
+            "Full tool reference",
+            "General Security Tools"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

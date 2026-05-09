@@ -4,7 +4,7 @@
   "source": "network/README.md",
   "slides": [
     {
-      "id": "53820003-e80e-480c-97af-78f8775b4419",
+      "id": "99cd931a-2414-481f-a32e-5dacfe5d4c63",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "23529a4c-b4d8-44c3-993d-bf5dd21b4627",
+      "id": "9d563c14-a522-4a46-b0a3-9067d54766a0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,17 +52,26 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Guide",
-        "← Previous  ::  Linux"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Guide"
+        ],
+        "rows": [
+          [
+            "← Previous",
+            "Linux"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

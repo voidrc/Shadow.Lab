@@ -4,7 +4,7 @@
   "source": "linux/Files.md",
   "slides": [
     {
-      "id": "46b6311b-358f-42b6-a190-31bcc8acfd81",
+      "id": "1612d65d-a174-43d6-9359-287058e49f9f",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "b1c9e058-ddf8-4c95-b508-1de676f722b7",
+      "id": "0a0aaec5-ffb6-4fee-a5f6-5466328024f2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,19 +52,39 @@
       "bodyText": "Every file tracks three timestamps:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Timestamp  ::  Abbrev  ::  Updated when...",
-        "Access time  ::  atime  ::  The file is read",
-        "Modified time  ::  mtime  ::  The file's content changes",
-        "Changed time  ::  ctime  ::  File metadata changes (permissions, ownership, links)"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Timestamp",
+          "Abbrev",
+          "Updated when..."
+        ],
+        "rows": [
+          [
+            "Access time",
+            "atime",
+            "The file is read"
+          ],
+          [
+            "Modified time",
+            "mtime",
+            "The file's content changes"
+          ],
+          [
+            "Changed time",
+            "ctime",
+            "File metadata changes (permissions, ownership, links)"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -67,7 +92,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "bcb858ca-9f8c-4c00-bc5a-706cd39d2ab7",
+      "id": "d153d816-17b2-46f1-88a7-3d4e74772ca8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -82,6 +107,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "stat file          # full timestamp details\nls -l              # standard listing (mtime)\nls -lt             # sort by mtime\nls -lu             # show atime\nls -ltu            # sort by atime\nls -lc             # show and sort by ctime\nls --full-time     # full timestamp format (ls may abbreviate)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -89,6 +118,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -96,7 +126,7 @@
       "transition": "fade"
     },
     {
-      "id": "cdc67201-2311-4c23-866f-00d3aa758741",
+      "id": "a859eb62-644d-4670-9959-d167daf76cbd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -111,6 +141,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "touch file                        # update atime and mtime to now\ntouch -a file                     # update atime only\ntouch -m file                     # update mtime only\ntouch -m -t 20251022110000 file   # set mtime to a specific time\ntouch -d \"2025-10-22 11:00:00\" file\ntouch target -r reference         # copy timestamps from another file",
       "codeLang": "bash",
       "imageUrl": "",
@@ -118,6 +152,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -125,7 +160,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ac852f2e-002f-4d70-b02b-881d33c5458d",
+      "id": "ad7afd3d-7ced-493a-a134-1a93d95d9d81",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -140,6 +175,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "file photo.jpg        # identify a single file\nfile /etc/*           # identify every file in a directory",
       "codeLang": "bash",
       "imageUrl": "",
@@ -147,6 +186,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -154,7 +194,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "da340c15-0129-4aef-aa18-ed9b7012bd3a",
+      "id": "35818271-1788-486f-8079-153215e17968",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -168,23 +208,51 @@
       "bodyText": "The first character of each line shows the file type:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Character  ::  Type",
-        "-  ::  Regular file",
-        "d  ::  Directory",
-        "l  ::  Symbolic link",
-        "b  ::  Block device",
-        "c  ::  Character device",
-        "s  ::  Socket",
-        "p  ::  Named pipe (FIFO)"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Character",
+          "Type"
+        ],
+        "rows": [
+          [
+            "-",
+            "Regular file"
+          ],
+          [
+            "d",
+            "Directory"
+          ],
+          [
+            "l",
+            "Symbolic link"
+          ],
+          [
+            "b",
+            "Block device"
+          ],
+          [
+            "c",
+            "Character device"
+          ],
+          [
+            "s",
+            "Socket"
+          ],
+          [
+            "p",
+            "Named pipe (FIFO)"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -192,7 +260,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "eb904ba2-8580-4945-935a-fbc551d100a6",
+      "id": "058c3bfb-ecc4-4a24-a27c-5887fb148fd9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -206,21 +274,44 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Symbol  ::  Type",
-        "/  ::  Directory",
-        "@  ::  Symbolic link",
-        "*  ::  Executable",
-        "=  ::  Socket",
-        "`\\  ::  `  ::  Named pipe"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Symbol",
+          "Type"
+        ],
+        "rows": [
+          [
+            "/",
+            "Directory"
+          ],
+          [
+            "@",
+            "Symbolic link"
+          ],
+          [
+            "*",
+            "Executable"
+          ],
+          [
+            "=",
+            "Socket"
+          ],
+          [
+            "`\\",
+            "`",
+            "Named pipe"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -228,7 +319,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "dd369f4f-32ff-4392-ade8-6fe88bda9bf0",
+      "id": "0401fac8-28ba-454f-8ca1-a91c43c6ee13",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -242,30 +333,79 @@
       "bodyText": "Most Linux configuration lives in plain text files under /etc, /var, and home directories. Knowing how to read them is essential.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Command  ::  Use it for",
-        "cat file  ::  Print a short file to the terminal",
-        "cat -n file  ::  Print with line numbers",
-        "cat file1 file2 > combined  ::  Merge files",
-        "less file  ::  Scroll up/down through a long file",
-        "more file  ::  Scroll forward only (older)",
-        "head file  ::  Show first 10 lines",
-        "head -n 20 file  ::  Show first 20 lines",
-        "tail file  ::  Show last 10 lines",
-        "tail -n 20 file  ::  Show last 20 lines",
-        "tail -n +20 file  ::  Show from line 20 onward",
-        "tail -f file  ::  Follow file in real time (great for logs)",
-        "watch command  ::  Re-run a command every 2 seconds",
-        "watch -n 5 command  ::  Re-run every 5 seconds",
-        "watch -d command  ::  Highlight changing output"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Command",
+          "Use it for"
+        ],
+        "rows": [
+          [
+            "cat file",
+            "Print a short file to the terminal"
+          ],
+          [
+            "cat -n file",
+            "Print with line numbers"
+          ],
+          [
+            "cat file1 file2 > combined",
+            "Merge files"
+          ],
+          [
+            "less file",
+            "Scroll up/down through a long file"
+          ],
+          [
+            "more file",
+            "Scroll forward only (older)"
+          ],
+          [
+            "head file",
+            "Show first 10 lines"
+          ],
+          [
+            "head -n 20 file",
+            "Show first 20 lines"
+          ],
+          [
+            "tail file",
+            "Show last 10 lines"
+          ],
+          [
+            "tail -n 20 file",
+            "Show last 20 lines"
+          ],
+          [
+            "tail -n +20 file",
+            "Show from line 20 onward"
+          ],
+          [
+            "tail -f file",
+            "Follow file in real time (great for logs)"
+          ],
+          [
+            "watch command",
+            "Re-run a command every 2 seconds"
+          ],
+          [
+            "watch -n 5 command",
+            "Re-run every 5 seconds"
+          ],
+          [
+            "watch -d command",
+            "Highlight changing output"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -273,7 +413,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "de4baf85-f638-4b69-b5fc-55295c2be36a",
+      "id": "e6a731c8-b986-4cae-afe0-cac1464df908",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -288,6 +428,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -295,6 +439,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -302,7 +447,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "591408a4-6b05-4fd5-a0a6-4265a0147e06",
+      "id": "14d5b2e2-f47d-4f1a-b939-be40e4f24ebb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -317,6 +462,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "touch file.txt          # create empty file (or update timestamps)\nmkdir dir               # create directory\nmkdir -v dir            # verbose\nmkdir -p parent/child   # create parent directories as needed\nmkdir dir1 dir2 dir3    # create multiple at once",
       "codeLang": "bash",
       "imageUrl": "",
@@ -324,6 +473,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -331,7 +481,7 @@
       "transition": "fade"
     },
     {
-      "id": "ef690ec7-360b-4fcc-ad1b-d5448d20cca5",
+      "id": "a34f3b2e-4239-4e49-a996-54427d2e4a3c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -346,6 +496,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "cp file1 file2          # copy file1 to file2 (overwrites if file2 exists)\ncp -v file1 file2       # verbose\ncp -i file1 file2       # prompt before overwrite\ncp -r dir1 dir2         # recursive (copy directory)\ncp -p file1 file2       # preserve ownership and timestamps\ncp file1 file2 dest/    # copy multiple files to a destination",
       "codeLang": "bash",
       "imageUrl": "",
@@ -353,6 +507,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -360,7 +515,7 @@
       "transition": "fade"
     },
     {
-      "id": "bf8ec738-de84-436b-9eae-5a532f7e18b3",
+      "id": "0446f254-c94c-407d-85fc-0c1712d68c3d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -375,6 +530,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "mv file1 file2          # rename file1 to file2\nmv file dir/            # move file into directory\nmv -i file1 file2       # prompt before overwrite\nmv -n file1 file2       # never overwrite (abort silently)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -382,6 +541,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -389,7 +549,7 @@
       "transition": "fade"
     },
     {
-      "id": "b3a5f456-d62f-4a4d-bb2c-caf4d5b36b4e",
+      "id": "8f200f64-5b1a-4cf8-a403-45830c396ec5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -404,6 +564,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "rm file                 # delete file\nrm -i file              # prompt before deleting\nrm -v file              # verbose\nrm -r dir               # recursive (delete directory and contents)\nrm -f file              # force (no prompt, no error if missing)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -411,6 +575,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -418,7 +583,7 @@
       "transition": "fade"
     },
     {
-      "id": "e98f1142-bee6-45df-b1a9-5e4f363b0550",
+      "id": "47d99441-a16e-458a-99cf-6ca50be02b6a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -432,19 +597,35 @@
       "bodyText": "rm only unlinks a file — the data remains on disk until overwritten. Use shred for sensitive files:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Flag  ::  Meaning",
-        "-v  ::  Verbose",
-        "-u  ::  Remove the file after overwriting",
-        "-n 100  ::  Overwrite 100 times"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Flag",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "-v",
+            "Verbose"
+          ],
+          [
+            "-u",
+            "Remove the file after overwriting"
+          ],
+          [
+            "-n 100",
+            "Overwrite 100 times"
+          ]
+        ]
+      },
       "codeText": "shred -vu -n 100 file",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -452,7 +633,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b8b6237f-8da0-41e7-87e4-db5baf3d0618",
+      "id": "98660ba6-6e9a-4917-927d-7334fdb34100",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -466,19 +647,35 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Review filesystem layout  ::  The Filesystem",
-        "Build your security lab  ::  Tools & Setup",
-        "Encrypt sensitive files  ::  GPG"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Review filesystem layout",
+            "The Filesystem"
+          ],
+          [
+            "Build your security lab",
+            "Tools & Setup"
+          ],
+          [
+            "Encrypt sensitive files",
+            "GPG"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

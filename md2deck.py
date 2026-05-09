@@ -89,18 +89,28 @@ def strip_md_inline(text):
     text = re.sub(r'_([^_]+)_', r'\1', text)               # italic alt
     return text.strip()
 
-def table_to_bullets(lines):
-    """Convert a markdown table into bullet strings."""
-    bullets = []
+def table_to_data(lines):
+    """Parse a markdown table into {headers: [], rows: [[]]}."""
+    headers = []
+    rows = []
+    header_done = False
     for line in lines:
         line = line.strip()
-        if not line or line.startswith('|---') or re.match(r'^\|[-| :]+\|$', line):
+        if not line:
             continue
-        cells = [c.strip() for c in line.strip('|').split('|')]
-        cells = [strip_md_inline(c) for c in cells if c.strip()]
-        if cells:
-            bullets.append('  ::  '.join(cells))
-    return bullets
+        # Separator row: | --- | :---: | etc.
+        if re.match(r'^\|[\s\-:]+([\|][\s\-:]+)+\|?\s*$', line):
+            header_done = True
+            continue
+        cells = [strip_md_inline(c.strip()) for c in line.strip('|').split('|') if c.strip()]
+        if not cells:
+            continue
+        if not header_done:
+            headers = cells
+            header_done = True  # first row = header
+        else:
+            rows.append(cells)
+    return {"headers": headers, "rows": rows}
 
 def default_slide(overrides=None):
     base = {
@@ -119,6 +129,7 @@ def default_slide(overrides=None):
         "bodyColor":    THEME["bodyColor"],
         "bodySize":     22,
         "bullets":      [],
+        "tableData":    {"headers": [], "rows": []},
         "codeText":     "",
         "codeLang":     "",
         "imageUrl":     "",
@@ -126,6 +137,7 @@ def default_slide(overrides=None):
         "showSubtitle": False,
         "showBody":     False,
         "showBullets":  False,
+        "showTable":    False,
         "showCode":     False,
         "showImage":    False,
         "textAlign":    THEME["textAlign"],
@@ -159,6 +171,7 @@ class MdParser:
         current = None          # slide being built
         pending_body = []       # plain text lines
         pending_bullets = []    # bullet lines
+        pending_tables = []     # table dicts
         in_code = False
         code_lines = []
         code_lang = ""
@@ -166,13 +179,18 @@ class MdParser:
         table_lines = []
 
         def flush_body_bullets(slide):
-            """Apply accumulated body/bullets to the slide."""
+            """Apply accumulated body/bullets/tables to the slide."""
             if not slide:
                 return
             if pending_bullets:
                 slide["bullets"] = list(pending_bullets)
                 slide["showBullets"] = True
                 pending_bullets.clear()
+            if pending_tables:
+                # Use the first table; subsequent tables become bullets fallback
+                slide["tableData"] = pending_tables[0]
+                slide["showTable"] = True
+                pending_tables.clear()
             if pending_body:
                 body = "\n".join(pending_body).strip()
                 if body:
@@ -257,8 +275,9 @@ class MdParser:
             else:
                 if in_table:
                     in_table = False
-                    bullets = table_to_bullets(table_lines)
-                    pending_bullets.extend(bullets)
+                    td = table_to_data(table_lines)
+                    if td["headers"] and td["rows"]:
+                        pending_tables.append(td)
                     table_lines = []
 
             # ── H1 — title card ──
@@ -266,6 +285,7 @@ class MdParser:
                 push(current)
                 pending_body.clear()
                 pending_bullets.clear()
+                pending_tables.clear()
                 title = strip_md_inline(line[2:].strip())
                 current = default_slide({
                     **TITLE_SLIDE_THEME,
@@ -279,6 +299,7 @@ class MdParser:
                 push(current)
                 pending_body.clear()
                 pending_bullets.clear()
+                pending_tables.clear()
                 title = strip_md_inline(line[3:].strip())
                 current = default_slide({
                     **SECTION_SLIDE_THEME,
@@ -293,6 +314,7 @@ class MdParser:
                 push(current)
                 pending_body.clear()
                 pending_bullets.clear()
+                pending_tables.clear()
                 title = strip_md_inline(line[4:].strip())
                 current = default_slide({
                     **SECTION_SLIDE_THEME,
@@ -336,7 +358,9 @@ class MdParser:
 
         # Flush table if file ended mid-table
         if in_table and table_lines:
-            pending_bullets.extend(table_to_bullets(table_lines))
+            td = table_to_data(table_lines)
+            if td["headers"] and td["rows"]:
+                pending_tables.append(td)
 
         push(current)
         return self.slides

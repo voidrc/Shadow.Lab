@@ -33,6 +33,7 @@ function defaultSlide(overrides = {}) {
       bodyColor: "#c8d8c0",
       bodySize: 22,
       bullets: [],
+      tableData: { headers: [], rows: [] },
       codeText: "",
       codeLang: "",
       imageUrl: "",
@@ -40,6 +41,7 @@ function defaultSlide(overrides = {}) {
       showSubtitle: true,
       showBody: false,
       showBullets: false,
+      showTable: false,
       showCode: false,
       showImage: false,
       textAlign: "center",
@@ -139,6 +141,8 @@ function renderSlideHTML(slide) {
       textParts += `<div class="slide-body" style="color:${slide.bodyColor};font-size:${slide.bodySize}px">${escapeHtml(slide.bodyText)}</div>`;
     if (slide.showBullets && slide.bullets.length)
       textParts += `<ul class="slide-bullets" style="color:${slide.bodyColor}">${slide.bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join("")}</ul>`;
+    if (slide.showTable && slide.tableData?.headers?.length)
+      textParts += renderTableHTML(slide);
 
     let imgPart = "";
     if (slide.showImage && slide.imageUrl)
@@ -157,6 +161,8 @@ function renderSlideHTML(slide) {
       parts += `<div class="slide-body" style="color:${slide.bodyColor};font-size:${slide.bodySize}px">${escapeHtml(slide.bodyText)}</div>`;
     if (slide.showBullets && slide.bullets.length)
       parts += `<ul class="slide-bullets" style="color:${slide.bodyColor}">${slide.bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join("")}</ul>`;
+    if (slide.showTable && slide.tableData?.headers?.length)
+      parts += renderTableHTML(slide);
     if (slide.showCode && slide.codeText)
       parts += `<pre class="slide-code">${escapeHtml(slide.codeText)}</pre>`;
     if (slide.showImage && slide.imageUrl)
@@ -164,6 +170,19 @@ function renderSlideHTML(slide) {
   }
 
   return `<div class="slide-content ${layoutClass}" style="${alignStyle}${fontStyle}">${parts}</div>`;
+}
+
+function renderTableHTML(slide) {
+  const td = slide.tableData;
+  const color = slide.bodyColor;
+  const ths = td.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join("");
+  const trs = td.rows
+    .map(
+      (row) =>
+        `<tr>${row.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`,
+    )
+    .join("");
+  return `<table class="slide-table" style="color:${color}"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
 }
 
 // ─── Mini thumbnail render ────────────────────────────────────────────────────

@@ -4,7 +4,7 @@
   "source": "rev/README.md",
   "slides": [
     {
-      "id": "eba92a86-995f-4f1e-b2b8-88258bd7fc59",
+      "id": "8e25cc19-6e5c-43a2-ad78-83fbb67c8eae",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "bfdcd7e3-a731-4984-a8b9-c33e98feef01",
+      "id": "519e2035-9e62-4637-894f-2746e3275f37",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. file / strings / exiftool → gather initial intel\n2. checksec → understand protections\n3. Open in Ghidra or IDA → static analysis, understand logic\n4. Run under GDB / strace / ltrace → dynamic analysis\n5. Patch or script the solution",
       "codeLang": "",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "fade"
     },
     {
-      "id": "73659a27-a5d5-4572-983c-d2505718072d",
+      "id": "57e44bdc-4e57-46af-bb0b-ebe861ca90c4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4208d3a8-70bb-4c9a-b549-816d694de606",
+      "id": "f0b70473-818c-4ced-b13b-95f57b986b1e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "file binary              # ELF, PE, Mach-O? 32/64-bit?\nstrings binary           # look for flags, URLs, keys, error messages\nstrings -n 6 binary      # min string length 6\nhexdump -C binary | head -20  # raw hex view\nobjdump -d binary        # disassemble all sections\nobjdump -d -M intel binary   # Intel syntax\nnm binary                # symbol table (if not stripped)\nreadelf -a binary        # ELF headers, sections, symbols",
       "codeLang": "bash",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "fade"
     },
     {
-      "id": "1be61ca9-45e2-447f-a495-e6316eeb847a",
+      "id": "2b232374-5d29-4d69-9d87-34b7c03f1b4e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Check if statically/dynamically linked\nldd binary\n\n# Identify library calls\nobjdump -d binary | grep \"call\"\nltrace ./binary          # trace library calls at runtime",
       "codeLang": "bash",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "fade"
     },
     {
-      "id": "c54a3405-6db7-4a49-9365-ec262789d65d",
+      "id": "9f2436f0-37e6-4610-9504-e1724d232e92",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -172,6 +197,10 @@
         "Re-type variables: right-click → Retype Variable",
         "Look for comparisons — strcmp, memcmp, custom loops"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -179,6 +208,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -186,7 +216,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ec3c86c7-a8eb-4ac3-896f-aa4a12d9e857",
+      "id": "3d8cbd80-c723-4c56-97da-349ebd89f9eb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -200,22 +230,47 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Key  ::  Action",
-        "G  ::  Go to address",
-        "L  ::  Rename label/variable",
-        "T  ::  Retype variable",
-        "F  ::  Find references to",
-        "Ctrl+F  ::  Search text",
-        "Ctrl+Shift+F  ::  Search memory"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Key",
+          "Action"
+        ],
+        "rows": [
+          [
+            "G",
+            "Go to address"
+          ],
+          [
+            "L",
+            "Rename label/variable"
+          ],
+          [
+            "T",
+            "Retype variable"
+          ],
+          [
+            "F",
+            "Find references to"
+          ],
+          [
+            "Ctrl+F",
+            "Search text"
+          ],
+          [
+            "Ctrl+Shift+F",
+            "Search memory"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -223,7 +278,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e7ded092-7e6e-48c3-ad50-2650dacd2427",
+      "id": "b4082c33-0502-49a5-a9d9-588ac9feb557",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -238,6 +293,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gdb ./binary\ngdb -q ./binary\n\n# Useful commands\nrun                      # run binary\nrun <<< \"input\"          # run with stdin\nbreak main               # break at main\nbreak *0x401234          # break at address\ninfo functions           # list all functions\ndisas main               # disassemble main\nx/s 0x402000             # examine string at address\nx/20wx $rsp              # 20 words at stack pointer\nfinish                   # run to end of function\nwatch *(int*)0x602010    # watchpoint on memory",
       "codeLang": "bash",
       "imageUrl": "",
@@ -245,6 +304,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -252,7 +312,7 @@
       "transition": "fade"
     },
     {
-      "id": "82795445-8a28-4121-bf73-ca9285ea9875",
+      "id": "e67bc9a5-09f3-4c18-98bf-7fd970702e4a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -267,6 +327,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -274,6 +338,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -281,7 +346,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "978cff91-d804-4332-81b3-76ba5df56a73",
+      "id": "307f4ef6-9230-4921-a9e8-b313634093ec",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -296,6 +361,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Common anti-debug: call ptrace on self\nif (ptrace(PTRACE_TRACEME, 0, 0, 0) == -1) exit(1);",
       "codeLang": "c",
       "imageUrl": "",
@@ -303,6 +372,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -310,7 +380,7 @@
       "transition": "fade"
     },
     {
-      "id": "fee1ae61-f0ba-48ac-ab90-413696b979a7",
+      "id": "55eada1a-85da-4501-9e5c-6b17846bf63b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -325,6 +395,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Detect slow execution (debugger overhead)\nclock_gettime(), gettimeofday()",
       "codeLang": "c",
       "imageUrl": "",
@@ -332,6 +406,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -339,7 +414,7 @@
       "transition": "fade"
     },
     {
-      "id": "215e23f4-f31c-4472-a495-10e1bd18cbc8",
+      "id": "50492271-98ef-4527-8996-a7aaa49b5bcf",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -357,6 +432,10 @@
         "XOR-encoded strings decoded at runtime",
         "Look for a decode loop → set breakpoint after it → read string from memory"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -364,6 +443,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -371,7 +451,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d4f30609-6798-465a-9e19-ca94829e7b32",
+      "id": "4c179d9d-6af5-4284-9dbd-d01c810b926e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -386,6 +466,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Check CPUID, /proc/cpuinfo, MAC address prefix, hostname\n# Usually safe to patch or ignore in CTFs",
       "codeLang": "bash",
       "imageUrl": "",
@@ -393,6 +477,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -400,7 +485,7 @@
       "transition": "fade"
     },
     {
-      "id": "e60cd984-17fe-4b86-b1a5-0496e8bd7035",
+      "id": "16e7c989-37b8-41d3-897e-74a6e715ab5c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -415,6 +500,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. Find the comparison function (strcmp, memcmp, custom)\n2. Set a breakpoint just before comparison\n3. Read both values from registers/memory\n4. Derive the correct input, or patch the jump",
       "codeLang": "",
       "imageUrl": "",
@@ -422,6 +511,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -429,7 +519,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8e0052d1-7ecf-45d7-b2a6-616e8678cc30",
+      "id": "5ade74c3-3fe2-4bb8-bb00-95fe1a5cf7da",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -444,6 +534,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# NOP out a conditional jump (replace bytes with 0x90)\nset {unsigned char[2]}0x401234 = {0x90, 0x90}",
       "codeLang": "bash",
       "imageUrl": "",
@@ -451,6 +545,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -458,7 +553,7 @@
       "transition": "fade"
     },
     {
-      "id": "8004e57e-9ce5-4038-8de6-5f1582e9c5d8",
+      "id": "cc932f92-d579-4f95-ad05-0b4de74d5765",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -473,6 +568,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "r2 -w binary          # open in write mode\ns 0x401234            # seek to address\npd 3                  # disassemble 3 instructions\nwa nop                # write nop at current address",
       "codeLang": "bash",
       "imageUrl": "",
@@ -480,6 +579,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -487,7 +587,7 @@
       "transition": "fade"
     },
     {
-      "id": "93303f69-fd21-4a6f-b21b-ea94c1f5f625",
+      "id": "b8a21178-677b-4518-8308-fd0fb1b1e05f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -502,6 +602,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -509,6 +613,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -516,7 +621,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "09c3546f-a54f-4d07-b4e6-8f9ab884a1d5",
+      "id": "e12d9356-94fd-4c6e-9909-016d104fe804",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -531,6 +636,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "data = bytes([0x41, 0x2b, 0x3f, 0x1a])  # encoded bytes\nkey  = 0x42\ndecoded = bytes([b ^ key for b in data])\nprint(decoded)",
       "codeLang": "python",
       "imageUrl": "",
@@ -538,6 +647,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -545,7 +655,7 @@
       "transition": "fade"
     },
     {
-      "id": "aea4760e-1a64-4d0a-8f8e-5cff8479117a",
+      "id": "fac0b818-3c6b-4161-aee7-c2564ee3fc88",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -560,6 +670,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\np = process('./binary')\ngdb.attach(p, gdbscript='''\nbreak *0x401234\ncontinue\n''')\np.interactive()",
       "codeLang": "python",
       "imageUrl": "",
@@ -567,6 +681,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -574,7 +689,7 @@
       "transition": "fade"
     },
     {
-      "id": "57a3dbc9-cbaa-4489-b2cf-38204169bc2a",
+      "id": "3ba36ade-3d4b-4371-a260-32b6b41b4f81",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -589,6 +704,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "import angr\n\nproj = angr.Project('./binary', auto_load_libs=False)\nstate = proj.factory.entry_state()\nsimgr = proj.factory.simulation_manager(state)\n\n# Find path that reaches success address, avoid failure\nsimgr.explore(find=0x401234, avoid=0x401567)\n\nif simgr.found:\n    print(simgr.found[0].posix.dumps(0))  # stdin that leads to success",
       "codeLang": "python",
       "imageUrl": "",
@@ -596,6 +715,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -603,7 +723,7 @@
       "transition": "fade"
     },
     {
-      "id": "0cc7dce1-ddf4-4256-ad25-d6f157398ac0",
+      "id": "1c96d27b-603d-4ea6-937d-9cfb850744b9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -618,6 +738,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# On Linux\nwine binary.exe           # run Windows binaries\nstrings binary.exe        # same as ELF\n\n# PE analysis tools\npestudio                  # static PE analysis (Windows)\nPEiD / Detect-It-Easy    # packer/compiler identification\nx64dbg / x32dbg          # Windows debugger",
       "codeLang": "bash",
       "imageUrl": "",
@@ -625,6 +749,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -632,7 +757,7 @@
       "transition": "fade"
     },
     {
-      "id": "aed5a814-300e-41d8-b928-44dd6e48effb",
+      "id": "0a8f0d53-1fbd-47bf-8af5-3a03f3f48a82",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -647,6 +772,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Detect packer\nfile binary\nstrings binary | grep -i \"upx\\|packer\"\nDetect-It-Easy (DIE)\n\n# Unpack UPX\nupx -d binary\n\n# Manual unpacking: run until OEP (Original Entry Point), dump process",
       "codeLang": "bash",
       "imageUrl": "",
@@ -654,6 +783,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -661,7 +791,7 @@
       "transition": "fade"
     },
     {
-      "id": "5475f729-8e82-473d-9fd0-eb5307cbe242",
+      "id": "8e1b7742-48de-49ed-94e4-164413c7dabd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -675,22 +805,47 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Type  ::  Approach",
-        "Password check  ::  Find strcmp/memcmp, read args at breakpoint",
-        "Serial / keygen  ::  Understand the algorithm, reverse the math",
-        "Obfuscated string  ::  Find decode loop, breakpoint after it",
-        "Flag XOR'd  ::  Find key in binary, XOR with ciphertext",
-        "Packed binary  ::  Detect & unpack, then analyze",
-        "VM / bytecode interpreter  ::  Map opcodes, write disassembler"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Type",
+          "Approach"
+        ],
+        "rows": [
+          [
+            "Password check",
+            "Find strcmp/memcmp, read args at breakpoint"
+          ],
+          [
+            "Serial / keygen",
+            "Understand the algorithm, reverse the math"
+          ],
+          [
+            "Obfuscated string",
+            "Find decode loop, breakpoint after it"
+          ],
+          [
+            "Flag XOR'd",
+            "Find key in binary, XOR with ciphertext"
+          ],
+          [
+            "Packed binary",
+            "Detect & unpack, then analyze"
+          ],
+          [
+            "VM / bytecode interpreter",
+            "Map opcodes, write disassembler"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -698,7 +853,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "77500f61-9adc-44df-9b93-95cbf078acb8",
+      "id": "deafdc3e-c44e-4604-a989-c5e033d4dbe1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -720,6 +875,10 @@
         "OpenSecurityTraining2 — deep RE courses",
         "Reverse Engineering for Beginners (free book)"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -727,6 +886,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

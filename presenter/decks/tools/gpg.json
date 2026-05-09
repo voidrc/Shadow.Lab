@@ -4,7 +4,7 @@
   "source": "tools/GPG.md",
   "slides": [
     {
-      "id": "d39a10b3-717a-4616-8246-3c64d1c416d6",
+      "id": "b0efa39e-22a4-422c-80f7-c33d3f05a951",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "bb9d2d1c-1be5-440b-a0be-9b7869d5528e",
+      "id": "2c67fbcc-a4d4-485f-95ec-5136d0f2279a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo pacman -S gnupg",
       "codeLang": "bash",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "fade"
     },
     {
-      "id": "adcbc490-8921-4fe4-b6e6-5f217ec56d72",
+      "id": "f86b0290-3823-4eaf-9c62-b7f33ef7236b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -76,21 +86,43 @@
       "bodyText": "When prompted:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Prompt  ::  Recommended value",
-        "Key type  ::  RSA and RSA (default)",
-        "Key size  ::  4096",
-        "Expiration  ::  0 (never)",
-        "Name / Email  ::  your alias",
-        "Passphrase  ::  strong and memorized"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Prompt",
+          "Recommended value"
+        ],
+        "rows": [
+          [
+            "Key type",
+            "RSA and RSA (default)"
+          ],
+          [
+            "Key size",
+            "4096"
+          ],
+          [
+            "Expiration",
+            "0 (never)"
+          ],
+          [
+            "Name / Email",
+            "your alias"
+          ],
+          [
+            "Passphrase",
+            "strong and memorized"
+          ]
+        ]
+      },
       "codeText": "gpg --full-generate-key",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -98,7 +130,7 @@
       "transition": "fade"
     },
     {
-      "id": "9d439674-f109-46d3-94c9-ca2ca2b63526",
+      "id": "e808ffde-e684-472b-844a-c2a4798d3d1b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -113,6 +145,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --encrypt --recipient \"user\" file.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -120,6 +156,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -127,7 +164,7 @@
       "transition": "fade"
     },
     {
-      "id": "68050dd0-6546-4de2-84ef-279ff6c1e855",
+      "id": "8897676b-f7dd-4d57-a1bb-87c8b84d3297",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -142,6 +179,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --decrypt file.txt.gpg > file.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -149,6 +190,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -156,7 +198,7 @@
       "transition": "fade"
     },
     {
-      "id": "c358615d-f5d5-4467-908b-2810df2c5681",
+      "id": "a2d9cd11-3566-4cb8-8974-62472d8a9522",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -171,6 +213,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --list-keys          # public keys\ngpg --list-secret-keys   # private keys",
       "codeLang": "bash",
       "imageUrl": "",
@@ -178,6 +224,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -185,7 +232,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "93aa0ca9-fbce-4e42-834e-8842c905c786",
+      "id": "f0e812b8-ef9e-4f27-a908-2e10991c3cc5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -200,6 +247,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --export --armor \"user\" > user_public.asc",
       "codeLang": "bash",
       "imageUrl": "",
@@ -207,6 +258,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -214,7 +266,7 @@
       "transition": "fade"
     },
     {
-      "id": "8c61191f-bd5f-4e3a-b0c0-e118ca4f6e47",
+      "id": "128eefdc-aca6-412a-b8f5-0352764b1121",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -229,6 +281,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --export-secret-keys --armor \"user\" > user_private.asc",
       "codeLang": "bash",
       "imageUrl": "",
@@ -236,6 +292,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -243,7 +300,7 @@
       "transition": "fade"
     },
     {
-      "id": "a50b7f2d-1d51-44b1-87c7-7f9737d2e372",
+      "id": "465c50d0-0b66-44e8-895a-6ce994eaefe0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -258,6 +315,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --sign file.txt          # binary signature embedded\ngpg --clearsign file.txt     # human-readable signed output\ngpg --detach-sign file.txt   # separate .sig file",
       "codeLang": "bash",
       "imageUrl": "",
@@ -265,6 +326,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -272,7 +334,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "019b0d11-5cd4-4a11-a908-c613aafa7c6e",
+      "id": "9b40c48e-d28c-42ea-9747-69e289127cb8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -287,6 +349,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "gpg --verify file.txt.sig file.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -294,6 +360,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -301,7 +368,7 @@
       "transition": "fade"
     },
     {
-      "id": "6e5f2436-9c2b-4e39-9492-09d60582b657",
+      "id": "70f76fbc-ea61-44d7-b05f-2e58dde12430",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -320,6 +387,10 @@
         "Store key backups offline (USB + printed copy as last resort).",
         "Practice encrypting and decrypting dummy files until it is second nature."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -327,6 +398,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -334,7 +406,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "948996d2-7f20-4914-955d-23556e69268a",
+      "id": "5087c91e-6587-44c6-b7bf-8dad2f533daa",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -348,17 +420,27 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Set up encrypted backups  ::  Backups"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Set up encrypted backups",
+            "Backups"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

@@ -4,7 +4,7 @@
   "source": "MD-FORMAT.md",
   "slides": [
     {
-      "id": "71be762a-2643-48b2-86e2-26f35ab427fc",
+      "id": "6875814a-b384-4552-a7e1-6ad4c54b7837",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "51f25dbf-a383-4a51-a3fa-f4c1f5cf483b",
+      "id": "31f150f3-1ca4-4db2-9b0a-e5f7df585342",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,24 +52,57 @@
       "bodyText": "Each .md file becomes one deck. Slides are generated from the heading structure:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Markdown element  ::  → Slide result",
-        "# H1  ::  Title card slide (centered, large, zoom transition)",
-        "## H2  ::  Section slide (title at top, content below)",
-        "### H3  ::  Treated as a sub-header bullet on the current slide",
-        "`code`  ::  Standalone code slide (dark bg, neon green mono text)",
-        "- item / * item  ::  Bullet points on the current section slide",
-        "`\\  ::  table \\  ::  `  ::  Each row → one bullet (col1  ::  col2  ::  col3)",
-        "> blockquote  ::  Subtitle text on the current slide",
-        "Plain paragraph  ::  Body text on the current slide"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Markdown element",
+          "→ Slide result"
+        ],
+        "rows": [
+          [
+            "# H1",
+            "Title card slide (centered, large, zoom transition)"
+          ],
+          [
+            "## H2",
+            "Section slide (title at top, content below)"
+          ],
+          [
+            "### H3",
+            "Treated as a sub-header bullet on the current slide"
+          ],
+          [
+            "`code`",
+            "Standalone code slide (dark bg, neon green mono text)"
+          ],
+          [
+            "- item / * item",
+            "Bullet points on the current section slide"
+          ],
+          [
+            "`\\",
+            "table \\",
+            "`",
+            "Each row → one bullet (col1  ::  col2  ::  col3)"
+          ],
+          [
+            "> blockquote",
+            "Subtitle text on the current slide"
+          ],
+          [
+            "Plain paragraph",
+            "Body text on the current slide"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -72,7 +110,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "93172c1f-b736-47a6-8ba9-1378e9464c97",
+      "id": "49fd0ef1-9a95-4852-a613-6dcb282689f1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -87,6 +125,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Topic Title\n> Short description or tagline (becomes subtitle on title card)\n\n## First Section\nShort intro paragraph (body text).\n\n- Point one\n- Point two\n- Point three\n\n## Second Section\n> Optional subtitle for this section\n\n| Tool     | Purpose          |\n|----------|------------------|\n| nmap     | Port scanning    |\n| gobuster | Dir enumeration  |\n\n## Code Example\n\n\\```bash\nnmap -sV -p- 10.10.10.1\n\\```",
       "codeLang": "`",
       "imageUrl": "",
@@ -94,6 +136,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -101,7 +144,7 @@
       "transition": "fade"
     },
     {
-      "id": "a911a011-05b6-4528-8b47-45119d3f8b80",
+      "id": "3d558189-0813-4e00-beb7-b6ad2be5498a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -116,6 +159,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -123,6 +170,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -130,7 +178,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "10d0fdd2-e358-4553-a8e7-6cae2a9403a8",
+      "id": "ab787a42-1b06-4833-87cb-f661ed111b92",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -150,6 +198,10 @@
         "### H3 is treated as a bullet prefix, not a new slide. Use it sparingly.",
         "Do not skip levels (e.g. jumping from # to ###)."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -157,6 +209,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -164,7 +217,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "8a8210d1-ec72-4138-982e-5502312b3896",
+      "id": "14e31c4d-6dff-40e2-bf80-fedec917e78f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -183,6 +236,10 @@
         "A > right after ## H2 becomes the subtitle on that section slide.",
         "Blockquotes elsewhere (e.g. navigation links like > ← Back) are ignored if they contain markdown links."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -190,6 +247,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -197,7 +255,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b531774d-21fc-4cc0-9ffc-5f7c6b1793d2",
+      "id": "4833d414-5d0c-4950-80d1-1d442eb67179",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -216,6 +274,10 @@
         "Keep bullets short — they render as single lines on the slide.",
         "Each ## H2 section gets its own set of bullets. Don't mix unrelated lists under one heading."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -223,6 +285,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -230,7 +293,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e9d16d97-6144-4325-9bd2-4eaa44e8e2ca",
+      "id": "e24c1d02-8460-4ee1-98b1-0450e5edc82e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -250,6 +313,10 @@
         "Separator rows (|---|---|) are ignored automatically.",
         "Best for: tool lists, command references, comparisons."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -257,6 +324,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -264,7 +332,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "08e920a5-703a-4536-be7d-28e2d0375b9d",
+      "id": "026cba90-c5ad-4fe5-bb51-b259c70166fa",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -285,6 +353,10 @@
         "If a section has multiple code blocks, each gets a separate slide.",
         "Keep code blocks focused — long blocks get clipped on small screens."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -292,6 +364,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -299,7 +372,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9396369a-fd42-4532-a9be-18f4e7dde1c3",
+      "id": "012cd93d-0455-48d7-a561-5df3595cfed8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -318,6 +391,10 @@
         "Body text and bullets on the same slide both render — body appears above bullets.",
         "Avoid long paragraphs; use bullets instead for readability in presentations."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -325,6 +402,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -332,7 +410,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1334be28-79b1-43b6-be3a-0b05a858ba2d",
+      "id": "dfbf4d50-d371-4884-b480-ab0afc45e2ee",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -347,6 +425,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -354,6 +436,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -361,7 +444,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4faaf222-592e-4c6f-b36f-9192c9316bd2",
+      "id": "d16a41ff-f81a-408f-b6b0-93d06806673f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -382,6 +465,10 @@
         "Multiple # H1 headings — only the first one becomes the title card; subsequent H1s start a new section slide.",
         "Leaving ## H2 with no content — an empty section produces no slide and is silently skipped."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -389,6 +476,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -396,7 +484,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f8014f36-1ef4-428c-89c5-ee97c5d8c118",
+      "id": "af9f3832-1ece-42ca-aa8a-73333798ead0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -411,6 +499,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# GPG Encryption\n\n> Encrypt, sign, and manage keys with GNU Privacy Guard\n\n## What is GPG?\n\nGPG is an open-source implementation of the OpenPGP standard.\n\n- Asymmetric encryption using public/private key pairs\n- Used for email signing, file encryption, and package verification\n- Pre-installed on most Linux distros\n\n## Generate a Key Pair\n\n\\```bash\ngpg --full-generate-key\n\\```\n\n## Key Management\n\n| Command                | Action               |\n| ---------------------- | -------------------- |\n| gpg --list-keys        | List all public keys |\n| gpg --list-secret-keys | List private keys    |\n| gpg --delete-key NAME  | Remove a public key  |",
       "codeLang": "`markdown",
       "imageUrl": "",
@@ -418,6 +510,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -425,7 +518,7 @@
       "transition": "fade"
     },
     {
-      "id": "fcc7a6b3-e4f6-44b7-a7ec-fba6b46fbb18",
+      "id": "a26f2aeb-0f1f-4311-a1a5-63e3055ebb89",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -440,6 +533,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Convert all .md files (skips already-existing decks)\npython3 md2deck.py\n\n# Convert a single file\npython3 md2deck.py tools/GPG.md\n\n# Force regenerate: delete the existing deck first\nrm presenter/decks/tools/gpg.json\npython3 md2deck.py tools/GPG.md",
       "codeLang": "bash",
       "imageUrl": "",
@@ -447,6 +544,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",

@@ -4,7 +4,7 @@
   "source": "tools/BlueTeam-Tools.md",
   "slides": [
     {
-      "id": "e51a7cd6-0aeb-43a4-b773-89521c557a99",
+      "id": "2a37430a-a715-43a2-9b09-5714d1f50a0d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -18,20 +18,44 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "Elastic Stack (ELK)  ::  Log ingestion, search, and visualisation  ::  Docker / APT",
-        "Splunk Free  ::  SIEM with 500MB/day free tier  ::  Installer",
-        "Wazuh  ::  Open-source SIEM + HIDS  ::  Install guide",
-        "sigma  ::  Convert generic detection rules to SIEM queries  ::  pip install sigma-cli"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Elastic Stack (ELK)",
+            "Log ingestion, search, and visualisation",
+            "Docker / APT"
+          ],
+          [
+            "Splunk Free",
+            "SIEM with 500MB/day free tier",
+            "Installer"
+          ],
+          [
+            "Wazuh",
+            "Open-source SIEM + HIDS",
+            "Install guide"
+          ],
+          [
+            "sigma",
+            "Convert generic detection rules to SIEM queries",
+            "pip install sigma-cli"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -39,7 +63,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f3b104e1-d0bd-4199-9dfc-dfc0345755b7",
+      "id": "573b7f50-66c7-4d2d-8add-7440fbf532f5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -53,21 +77,49 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "Sysmon  ::  Detailed Windows event logging  ::  Windows",
-        "Velociraptor  ::  DFIR and endpoint monitoring  ::  GitHub releases",
-        "Volatility 3  ::  Memory forensics  ::  pip install volatility3",
-        "Eric Zimmerman Tools  ::  Windows forensics utilities (PECmd, MFTECmd, etc.)  ::  Windows",
-        "autopsy  ::  Digital forensics GUI  ::  autopsy.com"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Sysmon",
+            "Detailed Windows event logging",
+            "Windows"
+          ],
+          [
+            "Velociraptor",
+            "DFIR and endpoint monitoring",
+            "GitHub releases"
+          ],
+          [
+            "Volatility 3",
+            "Memory forensics",
+            "pip install volatility3"
+          ],
+          [
+            "Eric Zimmerman Tools",
+            "Windows forensics utilities (PECmd, MFTECmd, etc.)",
+            "Windows"
+          ],
+          [
+            "autopsy",
+            "Digital forensics GUI",
+            "autopsy.com"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -75,7 +127,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ea952ab2-a04e-4fc4-9726-5ac4c09a11ec",
+      "id": "c668bd90-113b-426e-a3f0-e5ac6015d7a8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -89,20 +141,44 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "Zeek (Bro)  ::  Network traffic analysis and logging  ::  apt install zeek",
-        "Suricata  ::  Network IDS/IPS  ::  apt install suricata",
-        "Wireshark / tshark  ::  PCAP analysis  ::  apt install wireshark",
-        "zeek-cut  ::  Zeek log field extractor  ::  bundled with Zeek"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Zeek (Bro)",
+            "Network traffic analysis and logging",
+            "apt install zeek"
+          ],
+          [
+            "Suricata",
+            "Network IDS/IPS",
+            "apt install suricata"
+          ],
+          [
+            "Wireshark / tshark",
+            "PCAP analysis",
+            "apt install wireshark"
+          ],
+          [
+            "zeek-cut",
+            "Zeek log field extractor",
+            "bundled with Zeek"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -110,7 +186,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e5cc70ed-39bd-4548-83bc-d4ff74881505",
+      "id": "c2cc3f89-b0c5-4094-a5bb-e6a4d983494b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -124,23 +200,59 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "REMnux  ::  Linux malware analysis distro  ::  VM download",
-        "FlareVM  ::  Windows malware analysis toolkit  ::  Windows setup script",
-        "FLOSS  ::  Extract obfuscated strings from malware  ::  pip install flare-floss",
-        "pestudio  ::  PE file static analysis  ::  winitor.com",
-        "YARA  ::  Pattern-matching for malware detection  ::  apt install yara",
-        "Any.run  ::  Interactive online sandbox  ::  Browser",
-        "Hybrid-Analysis  ::  Automated online sandbox  ::  Browser"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "REMnux",
+            "Linux malware analysis distro",
+            "VM download"
+          ],
+          [
+            "FlareVM",
+            "Windows malware analysis toolkit",
+            "Windows setup script"
+          ],
+          [
+            "FLOSS",
+            "Extract obfuscated strings from malware",
+            "pip install flare-floss"
+          ],
+          [
+            "pestudio",
+            "PE file static analysis",
+            "winitor.com"
+          ],
+          [
+            "YARA",
+            "Pattern-matching for malware detection",
+            "apt install yara"
+          ],
+          [
+            "Any.run",
+            "Interactive online sandbox",
+            "Browser"
+          ],
+          [
+            "Hybrid-Analysis",
+            "Automated online sandbox",
+            "Browser"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -148,7 +260,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "772dc9b6-7fe6-47bb-90e6-251719f6bf9b",
+      "id": "b5203452-918c-4bff-b0a3-2da6f5d03966",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -162,18 +274,34 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Tool  ::  Purpose  ::  Install",
-        "MISP  ::  Threat intel sharing platform  ::  Install guide",
-        "OpenCTI  ::  Threat intel management  ::  Docker"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "MISP",
+            "Threat intel sharing platform",
+            "Install guide"
+          ],
+          [
+            "OpenCTI",
+            "Threat intel management",
+            "Docker"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -181,7 +309,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e2425f60-4bd9-4691-946b-f9ca14bffb62",
+      "id": "a90cfae8-2e84-4760-aca1-f6c4fb9ff6fc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -195,19 +323,34 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Guide",
-        "Offensive tooling  ::  Red Team Tools",
-        "Run services in containers  ::  Docker Setup",
-        "Full tool reference  ::  General Security Tools"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Guide"
+        ],
+        "rows": [
+          [
+            "Offensive tooling",
+            "Red Team Tools"
+          ],
+          [
+            "Run services in containers",
+            "Docker Setup"
+          ],
+          [
+            "Full tool reference",
+            "General Security Tools"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

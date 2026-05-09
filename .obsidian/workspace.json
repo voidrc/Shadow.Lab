@@ -141,12 +141,12 @@
   },
   "active": "5433c0565572f945",
   "lastOpenFiles": [
+    "presenter/decks/tools/readme.json",
     "presenter/decks/web/readme.json",
     "presenter/decks/web",
     "presenter/decks/tools/virtualbox-arch.json",
     "presenter/decks/tools/targets.json",
     "presenter/decks/tools/redteam-tools.json",
-    "presenter/decks/tools/readme.json",
     "presenter/decks/tools/qemu.json",
     "presenter/decks/tools/qol-vm.json",
     "presenter/decks/tools/generalsecurity-tools.json",

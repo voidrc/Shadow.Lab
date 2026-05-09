@@ -4,7 +4,7 @@
   "source": "linux/History.md",
   "slides": [
     {
-      "id": "24280339-6f9f-46f4-a391-fef32d64275d",
+      "id": "dd4755ff-2324-46db-be2d-6ab8a4b7b88c",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "4a61fb78-e1c7-4e15-939c-327671c15997",
+      "id": "7f14bd36-9559-45e6-881a-7dc172257064",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,22 +52,47 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Command  ::  Action",
-        "history  ::  List all recorded commands with their numbers",
-        "!<number>  ::  Re-run command by its history number",
-        "!-2  ::  Re-run the second-most-recent command",
-        "!grep  ::  Re-run the most recent command starting with grep",
-        "!grep:p  ::  Print that command without running it",
-        "history -c  ::  Clear the entire history for this session"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Command",
+          "Action"
+        ],
+        "rows": [
+          [
+            "history",
+            "List all recorded commands with their numbers"
+          ],
+          [
+            "!<number>",
+            "Re-run command by its history number"
+          ],
+          [
+            "!-2",
+            "Re-run the second-most-recent command"
+          ],
+          [
+            "!grep",
+            "Re-run the most recent command starting with grep"
+          ],
+          [
+            "!grep:p",
+            "Print that command without running it"
+          ],
+          [
+            "history -c",
+            "Clear the entire history for this session"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -70,7 +100,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1970ff18-6e8c-4f02-a6b7-e4141cf62958",
+      "id": "0c409e60-8485-46f3-ae53-d6a5a38f908b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -84,18 +114,31 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Shortcut  ::  Action",
-        "CTRL + R  ::  Reverse incremental search — start typing to find a past command",
-        "CTRL + G  ::  Exit search mode without running anything"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Shortcut",
+          "Action"
+        ],
+        "rows": [
+          [
+            "CTRL + R",
+            "Reverse incremental search — start typing to find a past command"
+          ],
+          [
+            "CTRL + G",
+            "Exit search mode without running anything"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -103,7 +146,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "9296862a-a35c-4be1-9e7b-20c98a41a9c0",
+      "id": "e00cbacb-8da1-4f5f-ad78-61a942dbf18e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -117,19 +160,35 @@
       "bodyText": "Prefix a command with a space to stop it from being recorded:\nThis behavior is controlled by HISTCONTROL:\nSet it in your shell config (e.g. ~/.zshrc or ~/.bashrc):",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Value  ::  Effect",
-        "ignorespace  ::  Skip commands prefixed with a space",
-        "ignoredups  ::  Skip consecutive duplicate commands",
-        "ignoreboth  ::  Both of the above"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Value",
+          "Effect"
+        ],
+        "rows": [
+          [
+            "ignorespace",
+            "Skip commands prefixed with a space"
+          ],
+          [
+            "ignoredups",
+            "Skip consecutive duplicate commands"
+          ],
+          [
+            "ignoreboth",
+            "Both of the above"
+          ]
+        ]
+      },
       "codeText": "secret-command --password=hunter2",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -137,7 +196,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "32085197-aca9-4023-bb02-95d0f210e641",
+      "id": "96c023f5-0848-4a30-a18a-654b2125c06e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -152,6 +211,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "HISTCONTROL=ignoreboth",
       "codeLang": "bash",
       "imageUrl": "",
@@ -159,6 +222,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -166,7 +230,7 @@
       "transition": "fade"
     },
     {
-      "id": "806628f4-c770-4623-bfa2-a10c117e828b",
+      "id": "45c2d423-2458-48d8-ba90-0625f11b9502",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -181,6 +245,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "HISTTIMEFORMAT=\"%d/%m/%Y %T \"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -188,6 +256,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -195,7 +264,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "feb58e87-2b60-4652-bd19-94d673ed4b3b",
+      "id": "a7c9010a-4993-456c-b93e-91b25e9d689a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -210,6 +279,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "120  22/10/2025 11:04:12 ls -la\n121  22/10/2025 11:05:01 ranger",
       "codeLang": "",
       "imageUrl": "",
@@ -217,6 +290,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -224,7 +298,7 @@
       "transition": "fade"
     },
     {
-      "id": "8b650461-753c-423f-b123-98a5bf5db27f",
+      "id": "c2ebf503-4c05-4e28-b7c4-037669e71ec6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -238,18 +312,31 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Understand users and sudo  ::  Users & Root",
-        "Go back to command basics  ::  The Terminal & Shell"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Understand users and sudo",
+            "Users & Root"
+          ],
+          [
+            "Go back to command basics",
+            "The Terminal & Shell"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

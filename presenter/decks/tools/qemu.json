@@ -4,7 +4,7 @@
   "source": "tools/Qemu.md",
   "slides": [
     {
-      "id": "560e284a-6556-4519-bfeb-5e32b3fcd59f",
+      "id": "a0476ca0-71e6-4e79-9af0-5a8a47656987",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "6feed0ec-a218-43e4-a4e8-e4f124b150d1",
+      "id": "d8e9f6d2-d5fa-4095-a81c-b985cd9c915f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,19 +52,34 @@
       "bodyText": "QEMU/KVM is a virtualization stack built into the Linux kernel.\nCompared to VirtualBox:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "QEMU/KVM",
-        "Performance  ::  Runs closer to native speed via hardware virtualization",
-        "Control  ::  Networking, snapshots, and storage are configurable at a low level",
-        "Interface  ::  CLI-first — managed with virsh and virt-install"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "QEMU/KVM"
+        ],
+        "rows": [
+          [
+            "Performance",
+            "Runs closer to native speed via hardware virtualization"
+          ],
+          [
+            "Control",
+            "Networking, snapshots, and storage are configurable at a low level"
+          ],
+          [
+            "Interface",
+            "CLI-first — managed with virsh and virt-install"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -67,7 +87,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "febd0736-d277-4e1e-8ae3-9e1b66648cd7",
+      "id": "c4c791a5-3bfd-4343-bf2c-5e6b07b8f179",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -81,23 +101,51 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Package  ::  Purpose",
-        "qemu-full  ::  Emulator/hypervisor core",
-        "virt-manager  ::  GUI frontend for managing VMs",
-        "libvirt  ::  Daemon that manages virtualization resources",
-        "dnsmasq  ::  DHCP and DNS for virtual networks",
-        "iptables-nft  ::  Firewall rules (required for NAT networking)",
-        "edk2-ovmf  ::  UEFI firmware support for VMs",
-        "virt-install  ::  CLI tool for creating VMs"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Package",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "qemu-full",
+            "Emulator/hypervisor core"
+          ],
+          [
+            "virt-manager",
+            "GUI frontend for managing VMs"
+          ],
+          [
+            "libvirt",
+            "Daemon that manages virtualization resources"
+          ],
+          [
+            "dnsmasq",
+            "DHCP and DNS for virtual networks"
+          ],
+          [
+            "iptables-nft",
+            "Firewall rules (required for NAT networking)"
+          ],
+          [
+            "edk2-ovmf",
+            "UEFI firmware support for VMs"
+          ],
+          [
+            "virt-install",
+            "CLI tool for creating VMs"
+          ]
+        ]
+      },
       "codeText": "sudo pacman -Syu qemu-full virt-manager libvirt dnsmasq ebtables iptables-nft edk2-ovmf virt-install",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -105,7 +153,7 @@
       "transition": "fade"
     },
     {
-      "id": "d4adc8ad-fc38-4381-b1ba-5d1d34430892",
+      "id": "81e04939-00bf-4511-9bf8-32faa421a210",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -120,6 +168,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo systemctl enable --now libvirtd",
       "codeLang": "bash",
       "imageUrl": "",
@@ -127,6 +179,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -134,7 +187,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ccedba04-6b96-415b-8080-ad092392b7ba",
+      "id": "b0404d4f-2130-402e-b9b1-b39c990da38d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -149,6 +202,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo usermod -aG libvirt $USER",
       "codeLang": "bash",
       "imageUrl": "",
@@ -156,6 +213,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -163,7 +221,7 @@
       "transition": "fade"
     },
     {
-      "id": "3d784abc-c6c2-4fad-bcb5-b1b09147fddc",
+      "id": "c67eae88-262e-4507-a0d4-de6a5279dced",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -178,6 +236,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "virsh --connect qemu:///system list --all",
       "codeLang": "bash",
       "imageUrl": "",
@@ -185,6 +247,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -192,7 +255,7 @@
       "transition": "fade"
     },
     {
-      "id": "e4fa01b4-17ca-4158-af8d-1facc9dcccba",
+      "id": "e9c9719c-9e30-4285-9640-becb02c43e85",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -207,6 +270,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "virsh net-list --all",
       "codeLang": "bash",
       "imageUrl": "",
@@ -214,6 +281,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -221,7 +289,7 @@
       "transition": "fade"
     },
     {
-      "id": "c8084634-a3bf-455b-af2e-7bdd1f52184b",
+      "id": "08d6b69b-8a02-488c-ae17-0665cce892cf",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -236,6 +304,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -243,6 +315,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -250,7 +323,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "c720da4e-67db-4d94-8bee-d9c37edbb5a3",
+      "id": "b809ebc3-1533-4a1c-b530-a7612b1a628c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -265,6 +338,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo vim /tmp/NAT.xml",
       "codeLang": "bash",
       "imageUrl": "",
@@ -272,6 +349,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -279,43 +357,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0c24fe0c-fdda-4876-8dad-3da81e82162c",
-      "layout": "top",
-      "bgType": "gradient",
-      "bgColor": "#080b08",
-      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
-      "bgImage": "",
-      "titleText": "Option A — NAT (NAT)",
-      "titleColor": "#00ff41",
-      "titleSize": 48,
-      "subtitleText": "",
-      "subtitleColor": "#2a6b3a",
-      "bodyText": "",
-      "bodyColor": "#7ab87a",
-      "bodySize": 22,
-      "bullets": [
-        "Setting  ::  Value",
-        "Network name  ::  NAT",
-        "Bridge interface  ::  virbr10",
-        "Internal domain  ::  shadow_lab",
-        "Gateway  ::  10.10.10.1",
-        "DHCP range  ::  10.10.10.2 – 10.10.10.200"
-      ],
-      "codeText": "<network>\n  <name>NAT</name>\n  <forward mode='nat'/>\n  <bridge name='virbr10' stp='on' delay='0'/>\n  <domain name='shadow_lab'/>\n  <ip address='10.10.10.1' netmask='255.255.255.0'>\n    <dhcp>\n      <range start='10.10.10.2' end='10.10.10.200'/>\n    </dhcp>\n  </ip>\n</network>",
-      "codeLang": "xml",
-      "imageUrl": "",
-      "showTitle": true,
-      "showSubtitle": false,
-      "showBody": false,
-      "showBullets": true,
-      "showCode": true,
-      "showImage": false,
-      "textAlign": "left",
-      "fontFamily": "'Courier New', 'Fira Mono', monospace",
-      "transition": "fade"
-    },
-    {
-      "id": "37e45d7f-d464-4d70-b50c-4438217f33ef",
+      "id": "ee5fc5ec-819a-400e-9f92-dafe0653fed6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -330,13 +372,42 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
-      "codeText": "sudo virsh net-define /tmp/NAT.xml\nsudo virsh net-start NAT\nsudo virsh net-autostart NAT",
-      "codeLang": "bash",
+      "tableData": {
+        "headers": [
+          "Setting",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Network name",
+            "NAT"
+          ],
+          [
+            "Bridge interface",
+            "virbr10"
+          ],
+          [
+            "Internal domain",
+            "shadow_lab"
+          ],
+          [
+            "Gateway",
+            "10.10.10.1"
+          ],
+          [
+            "DHCP range",
+            "10.10.10.2 – 10.10.10.200"
+          ]
+        ]
+      },
+      "codeText": "<network>\n  <name>NAT</name>\n  <forward mode='nat'/>\n  <bridge name='virbr10' stp='on' delay='0'/>\n  <domain name='shadow_lab'/>\n  <ip address='10.10.10.1' netmask='255.255.255.0'>\n    <dhcp>\n      <range start='10.10.10.2' end='10.10.10.200'/>\n    </dhcp>\n  </ip>\n</network>",
+      "codeLang": "xml",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -344,7 +415,41 @@
       "transition": "fade"
     },
     {
-      "id": "57a6d020-462b-4dc7-a8b3-ca0b42b2e5b3",
+      "id": "03f0b3e1-f5f1-46d6-b7f4-3579f737c158",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#020602 0%,#040d04 100%)",
+      "bgImage": "",
+      "titleText": "Option A — NAT (NAT)",
+      "titleColor": "#00ff41",
+      "titleSize": 48,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
+      "codeText": "sudo virsh net-define /tmp/NAT.xml\nsudo virsh net-start NAT\nsudo virsh net-autostart NAT",
+      "codeLang": "bash",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": false,
+      "showCode": true,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "fade"
+    },
+    {
+      "id": "ba7c7a47-45a9-4df8-b1ff-b4bbca65ba6e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -359,6 +464,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo ip link add virbr20 type bridge\nsudo ip link set eth0 master virbr20\nsudo ip link set virbr20 up",
       "codeLang": "bash",
       "imageUrl": "",
@@ -366,6 +475,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -373,7 +483,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "eddfc046-178b-42fe-b3fa-0ea032e92c7e",
+      "id": "978a61b0-2455-454e-9405-c5830461e347",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -388,6 +498,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo vim /tmp/LAN.xml",
       "codeLang": "bash",
       "imageUrl": "",
@@ -395,6 +509,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -402,7 +517,7 @@
       "transition": "fade"
     },
     {
-      "id": "8e95ee7f-19cc-4a72-a17c-a917e3034f0f",
+      "id": "f177ad48-044b-425d-a64f-683eecce189e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -416,20 +531,39 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Setting  ::  Value",
-        "Network name  ::  LAN",
-        "Bridge interface  ::  virbr20",
-        "Reserved range  ::  172.16.0.15 – 172.16.0.19",
-        "Gateway  ::  set on your router/host"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Setting",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Network name",
+            "LAN"
+          ],
+          [
+            "Bridge interface",
+            "virbr20"
+          ],
+          [
+            "Reserved range",
+            "172.16.0.15 – 172.16.0.19"
+          ],
+          [
+            "Gateway",
+            "set on your router/host"
+          ]
+        ]
+      },
       "codeText": "<network>\n  <name>LAN</name>\n  <forward mode='bridge'/>\n  <bridge name='virbr20'/>\n</network>",
       "codeLang": "xml",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -437,7 +571,7 @@
       "transition": "fade"
     },
     {
-      "id": "2b4d17a3-d740-4895-bee6-f7c962d5bcfe",
+      "id": "0eeab4bd-177b-4b96-a09d-155f93ade5d2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -452,6 +586,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo virsh net-define /tmp/LAN.xml\nsudo virsh net-start LAN\nsudo virsh net-autostart LAN",
       "codeLang": "bash",
       "imageUrl": "",
@@ -459,6 +597,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -466,7 +605,7 @@
       "transition": "fade"
     },
     {
-      "id": "d3116eb4-ccea-4813-a97e-536e1143f435",
+      "id": "06048401-c2ff-4801-98ca-bb576330083f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -481,6 +620,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Run inside the VM guest\nnmcli con mod \"Wired connection 1\" \\\n  ipv4.method manual \\\n  ipv4.addresses 172.16.0.15/24 \\\n  ipv4.gateway 172.16.0.1 \\\n  ipv4.dns \"1.1.1.1 8.8.8.8\"\nnmcli con up \"Wired connection 1\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -488,6 +631,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -495,7 +639,7 @@
       "transition": "fade"
     },
     {
-      "id": "67b3e807-8c8d-4de2-8c96-278bb83fa066",
+      "id": "7ceaacc0-52ec-4286-bcb6-0783fc7e9616",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -510,6 +654,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo virsh net-list --all\nsudo virsh net-info NAT\nsudo virsh net-info LAN",
       "codeLang": "bash",
       "imageUrl": "",
@@ -517,6 +665,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -524,7 +673,7 @@
       "transition": "fade"
     },
     {
-      "id": "cbaf57ac-ca87-41e1-b2c8-0d66aa7b397b",
+      "id": "b7942749-d1a1-4572-907a-d019cc7a3afe",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -538,19 +687,35 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Prefer a GUI-based hypervisor  ::  VirtualBox on Arch",
-        "Tune your VM after setup  ::  VM Quality of Life",
-        "Browse the full security toolkit  ::  General Security Tools"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Prefer a GUI-based hypervisor",
+            "VirtualBox on Arch"
+          ],
+          [
+            "Tune your VM after setup",
+            "VM Quality of Life"
+          ],
+          [
+            "Browse the full security toolkit",
+            "General Security Tools"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

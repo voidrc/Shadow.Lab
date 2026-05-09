@@ -4,7 +4,7 @@
   "source": "misc/README.md",
   "slides": [
     {
-      "id": "1a5f7687-870c-45a9-9aa8-76760d5dc83c",
+      "id": "5b1296a2-6853-42e4-8f44-067edd80d818",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "ee338e42-8f20-402f-8030-73bb5e7b53c2",
+      "id": "a541a568-a420-4eaf-a140-e6f11c4277ad",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,25 +52,59 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Type  ::  Description",
-        "Programming  ::  Write code to solve a math/logic puzzle, often with a server",
-        "Esoteric Languages  ::  Brainfuck, Malbolge, Piet, Whitespace, etc.",
-        "Jail Escape  ::  Python/Bash sandbox escape",
-        "CAPTCHA / OCR  ::  Read and solve text from images",
-        "Encoding Chains  ::  Multiple layers of encoding/obfuscation",
-        "QR Code / Barcode  ::  Decode visual codes",
-        "Music / Dance notation  ::  Non-standard data encodings",
-        "Git challenges  ::  Find secrets in git history",
-        "Docker / CI  ::  Read pipeline artifacts or container configs"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Type",
+          "Description"
+        ],
+        "rows": [
+          [
+            "Programming",
+            "Write code to solve a math/logic puzzle, often with a server"
+          ],
+          [
+            "Esoteric Languages",
+            "Brainfuck, Malbolge, Piet, Whitespace, etc."
+          ],
+          [
+            "Jail Escape",
+            "Python/Bash sandbox escape"
+          ],
+          [
+            "CAPTCHA / OCR",
+            "Read and solve text from images"
+          ],
+          [
+            "Encoding Chains",
+            "Multiple layers of encoding/obfuscation"
+          ],
+          [
+            "QR Code / Barcode",
+            "Decode visual codes"
+          ],
+          [
+            "Music / Dance notation",
+            "Non-standard data encodings"
+          ],
+          [
+            "Git challenges",
+            "Find secrets in git history"
+          ],
+          [
+            "Docker / CI",
+            "Read pipeline artifacts or container configs"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -73,7 +112,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f88b9537-11d8-40f0-9a5c-d0090a6ccb5a",
+      "id": "c8a70098-8d74-4bb1-af5b-e829376b2789",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -88,6 +127,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "from pwn import *\n\np = remote('ctf.example.com', 1337)\n\n# Read a math challenge and solve it\nline = p.recvline().decode()\n# e.g., \"What is 3421 * 98712? > \"\nimport re\nnums = re.findall(r'\\d+', line)\nresult = int(nums[0]) * int(nums[1])\np.sendline(str(result).encode())\n\np.interactive()",
       "codeLang": "python",
       "imageUrl": "",
@@ -95,6 +138,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -102,7 +146,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1fb86cca-e238-406e-9920-be9368a3f62b",
+      "id": "99a2c0e1-eee8-403b-a8a5-c6c47caa64ce",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -117,6 +161,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -124,6 +172,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -131,7 +180,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "426eae64-0eb7-4743-abdc-8aa746b3e075",
+      "id": "c14fdf80-e698-4539-97f2-52e497bc0b7e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -146,6 +195,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "Commands: > < + - . , [ ]\n# Online interpreter: https://brainfuck-online.org\n# Or: python3 -c \"import brainfuck; ...\"",
       "codeLang": "",
       "imageUrl": "",
@@ -153,6 +206,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -160,7 +214,7 @@
       "transition": "fade"
     },
     {
-      "id": "9f04f3ab-1460-43bf-960d-ec7e516d81a9",
+      "id": "6c948108-3b60-4cc5-8c85-c9b4118f4c05",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -175,6 +229,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Extremely complex, rarely hand-written in CTFs\n# Online: https://malbolge.doleczek.pl/",
       "codeLang": "",
       "imageUrl": "",
@@ -182,6 +240,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -189,7 +248,7 @@
       "transition": "fade"
     },
     {
-      "id": "1573a701-8c77-4677-86cb-d3c76821342a",
+      "id": "b8dca5a4-2f1f-4bb4-865c-babed8a3f675",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -204,6 +263,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Uses colored pixels as instructions\n# Interpreter: npiet, or online at https://www.bertnase.de/npiet/npiet-execute.php",
       "codeLang": "",
       "imageUrl": "",
@@ -211,6 +274,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -218,7 +282,7 @@
       "transition": "fade"
     },
     {
-      "id": "a79cd712-e544-444c-ba8e-8e271b9efbc6",
+      "id": "f6713d58-2611-4836-8fe6-43608da48542",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -233,6 +297,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Uses only spaces, tabs, and newlines\n# Online: https://vii5ard.github.io/whitespace/",
       "codeLang": "",
       "imageUrl": "",
@@ -240,6 +308,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -247,7 +316,7 @@
       "transition": "fade"
     },
     {
-      "id": "efe5c2cf-44fd-4831-ac1a-5afb3c6ec687",
+      "id": "c9b012d3-2858-49d0-83a5-3c3b605a3e3b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -262,6 +331,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// JSFuck: only uses []()!+\n// Paste in browser console or Node.js REPL to evaluate\n\n// JJEncode: decode at https://utf-8.jp/public/jjencode.html\n// AAencode: uses Japanese unicode art — paste in browser console",
       "codeLang": "javascript",
       "imageUrl": "",
@@ -269,6 +342,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -276,7 +350,7 @@
       "transition": "fade"
     },
     {
-      "id": "cec572d5-2425-4d25-bf72-b78694828e2a",
+      "id": "87ac0ce1-b3bf-4e56-8022-447d6a919a19",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -291,6 +365,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Common restricted globals/builtins\n# Bypass: recover __builtins__ from class hierarchy\n__builtins__ = {}    # common restriction\n\n# Get builtins back via subclasses\n().__class__.__mro__[-1].__subclasses__()\n\n# Find <class 'os._wrap_close'>\nimport_subclass = [c for c in ''.__class__.__mro__[-1].__subclasses__()\n                   if 'wrap_close' in str(c)][0]\nimport_subclass.__init__.__globals__['system']('id')\n\n# With f-strings in Python 3.12+\nf\"{ __import__('os').system('id') }\"\n\n# audit log bypass (CTF-specific, varies)",
       "codeLang": "python",
       "imageUrl": "",
@@ -298,6 +376,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -305,7 +384,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e87e03a3-824a-43ff-9b33-401ed4ba106f",
+      "id": "833b46e1-b809-48e7-9b10-41187fdaa4b0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -320,6 +399,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# underscore filtered → use vars()\n# quotes filtered → use chr() or bytes\n# import filtered → use __import__\n# space filtered → use /**/  or (for Python) use (    )\n\n# Concatenation bypass\n__import__('o'+'s').system('id')\n\n# Alternative import\nimport importlib\nimportlib.import_module('os').system('id')",
       "codeLang": "python",
       "imageUrl": "",
@@ -327,6 +410,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -334,7 +418,7 @@
       "transition": "fade"
     },
     {
-      "id": "010167a1-a262-40ac-9108-140dccfb9d9b",
+      "id": "863cd3b8-32e8-4113-ae6e-a125b4cfa0a0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -349,6 +433,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Restricted shell (rbash) bypasses\n# If vim is available: :!/bin/sh\n# If awk is available: awk 'BEGIN {system(\"/bin/sh\")}'\n# If python is available: python3 -c \"import os; os.system('/bin/sh')\"\n# If less is available: less /etc/passwd → !sh\n\n# Restricted character sets\n# Replace /bin/sh with $'\\x2f\\x62\\x69\\x6e\\x2f\\x73\\x68'  (hex escape)\n# Use env to find shell: env | grep SHELL\n\n# PATH manipulation\nexport PATH=/usr/local/bin:/bin:/usr/bin",
       "codeLang": "bash",
       "imageUrl": "",
@@ -356,6 +444,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -363,7 +452,7 @@
       "transition": "fade"
     },
     {
-      "id": "8caf0224-cdd5-4691-8960-e5f2ada5b1e5",
+      "id": "cf7b69d6-6f08-4bdb-82c4-650cce223e2d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -378,6 +467,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "Typical chain: Binary → Base64 → Hex → ROT13 → Morse",
       "codeLang": "",
       "imageUrl": "",
@@ -385,6 +478,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -392,7 +486,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "7b0516c7-53e2-408d-a7f6-3b91a6c0f12d",
+      "id": "c2bc7ac0-a688-4eae-a3f9-961a5f5eedd8",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -407,6 +501,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# CyberChef \"Magic\" operation → auto-detects and chains decodes\n# https://gchq.github.io/CyberChef/#recipe=Magic(3,false,false,'')\n\n# Manual check order:\n# 1. Is it printable ASCII? → Try Base64, Hex, ROT13\n# 2. Only 0 and 1? → Binary\n# 3. Dots and dashes? → Morse\n# 4. Numbers 0-7? → Octal\n# 5. Numbers with `:` or spaces? → Decimal ASCII",
       "codeLang": "bash",
       "imageUrl": "",
@@ -414,6 +512,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -421,7 +520,7 @@
       "transition": "fade"
     },
     {
-      "id": "db729384-601c-4b0e-a868-5052e2898167",
+      "id": "8f5e476c-a683-4e3c-a8ae-a0499cd9506d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -436,6 +535,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Binary to string\nbits = '01001000 01100101 01101100 01101100 01101111'\nresult = ''.join(chr(int(b, 2)) for b in bits.split())\n\n# Decimal to string\nnums = [72, 101, 108, 108, 111]\nresult = ''.join(chr(n) for n in nums)\n\n# Octal to string\noctal = ['110', '145', '154', '154', '157']\nresult = ''.join(chr(int(o, 8)) for o in octal)",
       "codeLang": "python",
       "imageUrl": "",
@@ -443,6 +546,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -450,7 +554,7 @@
       "transition": "fade"
     },
     {
-      "id": "19b0c9f8-be9f-4bdd-aedf-6172c325fb31",
+      "id": "36f7f326-8d02-48fb-aee8-7d71b115d107",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -465,6 +569,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Decode QR from image\nzbarimg image.png\nzbarimg -q --raw image.png   # just the data\n\n# Python\npip install pyzbar pillow\npython3 -c \"\nfrom pyzbar.pyzbar import decode\nfrom PIL import Image\nresult = decode(Image.open('qr.png'))\nprint(result[0].data)\n\"\n\n# Repair broken QR? Use online tools:\n# https://merri.cx/qrazybox/",
       "codeLang": "bash",
       "imageUrl": "",
@@ -472,6 +580,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -479,7 +588,7 @@
       "transition": "fade"
     },
     {
-      "id": "0baee94e-2ed3-4f68-b982-f1d9cba5317a",
+      "id": "41948518-f985-4d60-90df-27a95753c1c9",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -494,6 +603,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Look at all commits\ngit log --oneline --all\n\n# Check all branches\ngit branch -a\n\n# Look at stashed changes\ngit stash list\ngit stash show -p\n\n# Find deleted content\ngit log --all --full-history -- '*.txt'\ngit show HEAD~1:file.txt\n\n# Search commit messages and diffs for keywords\ngit log -p | grep -i \"flag\\|secret\\|password\\|key\"\n\n# Check git config for credentials\ncat .git/config",
       "codeLang": "bash",
       "imageUrl": "",
@@ -501,6 +614,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -508,7 +622,7 @@
       "transition": "fade"
     },
     {
-      "id": "a1bdfd81-a928-406e-a1a0-1f391796cdbe",
+      "id": "3046157c-bb1c-4d2a-aa77-91e21ead4c19",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -523,6 +637,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "A .-    B -...  C -.-.  D -..   E .\nF ..-.  G --.   H ....  I ..    J .---\nK -.-   L .-..  M --    N -.    O ---\nP .--.  Q --.-  R .-.   S ...   T -\nU ..-   V ...-  W .--   X -..-  Y -.--\nZ --..\n0 -----  1 .----  2 ..---  3 ...--  4 ....-\n5 .....  6 -....  7 --...  8 ---..  9 ----.",
       "codeLang": "",
       "imageUrl": "",
@@ -530,6 +648,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -537,7 +656,7 @@
       "transition": "fade"
     },
     {
-      "id": "19af3933-299e-4800-a3b9-47f684850acf",
+      "id": "b1b3f87d-5cb1-456d-b033-7eb35ce36e9a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -552,6 +671,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Decode morse\nmorse_table = {'.-':'A', '-...':'B', ... }\ncode = '.... . .-.. .-.. ---'\nprint(''.join(morse_table.get(c, '?') for c in code.split()))\n# Or use: https://morsedecoder.com",
       "codeLang": "python",
       "imageUrl": "",
@@ -559,6 +682,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -566,7 +690,7 @@
       "transition": "fade"
     },
     {
-      "id": "77491152-3fe1-4711-8e61-ba2a94e16c95",
+      "id": "2b836313-456f-4e38-ad31-e766d130f1dc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -581,6 +705,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "2=ABC  3=DEF  4=GHI  5=JKL  6=MNO\n7=PQRS  8=TUV  9=WXYZ",
       "codeLang": "",
       "imageUrl": "",
@@ -588,6 +716,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -595,7 +724,7 @@
       "transition": "fade"
     },
     {
-      "id": "27de9e75-daae-4f36-b4b1-cdc2232cd84e",
+      "id": "77a9cbf0-85f4-4244-8ef4-78d610a41a78",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -610,6 +739,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Flip binary string\necho \"01001000\" | rev\n\n# Count character frequency\necho \"hello\" | fold -w1 | sort | uniq -c | sort -rn\n\n# Base85 decode\npython3 -c \"import base64; print(base64.b85decode(b'Xk~0{Zv'))\"\n\n# HTML entity decode\npython3 -c \"import html; print(html.unescape('&lt;b&gt;hello&lt;/b&gt;'))\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -617,6 +750,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -624,7 +758,7 @@
       "transition": "fade"
     },
     {
-      "id": "92180a32-ddab-40c2-809d-541ee9b30d28",
+      "id": "69538e90-f97c-476d-ad86-6efbd1492fa1",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -645,6 +779,10 @@
         "Piet interpreter",
         "QRazyBox — QR code repair/analysis"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -652,6 +790,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

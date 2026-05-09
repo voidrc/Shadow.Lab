@@ -4,7 +4,7 @@
   "source": "tools/README.md",
   "slides": [
     {
-      "id": "0d8261f9-58b6-431e-8f02-a1849c32f30a",
+      "id": "cb173dc6-05dd-42bf-b2d9-1fbefcf8b429",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "182997c2-0ae2-4a7f-bca9-ecc8e9f3acc3",
+      "id": "97dfc65a-24f5-42ee-a0cf-f3e1fe47231b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,27 +52,79 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "#  ::  Guide  ::  What it covers",
-        "1  ::  Lab Environment Setup ← you are here  ::  Pick an OS, set up a VM",
-        "2  ::  VirtualBox on Arch / QEMU/KVM  ::  Hypervisor setup on Arch",
-        "3  ::  VM Quality of Life  ::  Tune your VM",
-        "4  ::  General Security Tools  ::  Full tool reference",
-        "6  ::  Red Team Tools  ::  Offensive tooling",
-        "6  ::  Blue Team Tools  ::  Defensive tooling",
-        "7  ::  Docker Setup  ::  Run lab services in containers",
-        "7.1  ::  Targets  ::  Practice targets (Juice Shop, DVWA, Metasploitable…)",
-        "8  ::  Arch Quality of Life  ::  Tune your Arch host",
-        "9  ::  GPG  ::  Encrypt files and keys",
-        "10  ::  Backups  ::  Protect your work"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "#",
+          "Guide",
+          "What it covers"
+        ],
+        "rows": [
+          [
+            "1",
+            "Lab Environment Setup ← you are here",
+            "Pick an OS, set up a VM"
+          ],
+          [
+            "2",
+            "VirtualBox on Arch / QEMU/KVM",
+            "Hypervisor setup on Arch"
+          ],
+          [
+            "3",
+            "VM Quality of Life",
+            "Tune your VM"
+          ],
+          [
+            "4",
+            "General Security Tools",
+            "Full tool reference"
+          ],
+          [
+            "6",
+            "Red Team Tools",
+            "Offensive tooling"
+          ],
+          [
+            "6",
+            "Blue Team Tools",
+            "Defensive tooling"
+          ],
+          [
+            "7",
+            "Docker Setup",
+            "Run lab services in containers"
+          ],
+          [
+            "7.1",
+            "Targets",
+            "Practice targets (Juice Shop, DVWA, Metasploitable…)"
+          ],
+          [
+            "8",
+            "Arch Quality of Life",
+            "Tune your Arch host"
+          ],
+          [
+            "9",
+            "GPG",
+            "Encrypt files and keys"
+          ],
+          [
+            "10",
+            "Backups",
+            "Protect your work"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -75,7 +132,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "0ff2e06c-2fef-4917-a92f-ca582366035c",
+      "id": "52835f05-e0de-4c09-86a2-a3464080d3c2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -90,6 +147,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -97,6 +158,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -104,7 +166,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4869680c-60bb-42d5-a37d-6e0d762b91fd",
+      "id": "3a4af319-eb30-4efd-9a57-74686cd4702f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -118,21 +180,49 @@
       "bodyText": "Security tools mostly run on Linux. You don't need to install Linux on your real machine — you'll run it inside a VM (explained in Step 2).\nIf you're a complete beginner → start with Kali Linux. It comes with everything preinstalled.",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "OS  ::  Best for  ::  Download",
-        "Kali Linux  ::  Beginners — 600+ security tools preinstalled, tons of guides online  ::  ISO / VM image",
-        "Parrot OS  ::  Beginners who want something lighter than Kali  ::  ISO / VM image",
-        "BlackArch  ::  Experienced users — 3000+ tools, Arch-based  ::  ISO / VM image",
-        "Garuda Linux  ::  Arch users who want a nice desktop and can add BlackArch tools  ::  ISO",
-        "Arch Linux  ::  Advanced users who want to build everything from scratch  ::  ISO / VM image"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "OS",
+          "Best for",
+          "Download"
+        ],
+        "rows": [
+          [
+            "Kali Linux",
+            "Beginners — 600+ security tools preinstalled, tons of guides online",
+            "ISO / VM image"
+          ],
+          [
+            "Parrot OS",
+            "Beginners who want something lighter than Kali",
+            "ISO / VM image"
+          ],
+          [
+            "BlackArch",
+            "Experienced users — 3000+ tools, Arch-based",
+            "ISO / VM image"
+          ],
+          [
+            "Garuda Linux",
+            "Arch users who want a nice desktop and can add BlackArch tools",
+            "ISO"
+          ],
+          [
+            "Arch Linux",
+            "Advanced users who want to build everything from scratch",
+            "ISO / VM image"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -140,7 +230,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f2129c2f-4f81-422f-8c29-d530df805a4e",
+      "id": "99ef2db9-cd24-43b2-98db-71c5f9e06974",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -154,22 +244,61 @@
       "bodyText": "A virtual machine lets you run a second operating system (like Kali Linux) as a window on your current computer. Your real system is never touched.\nPick the VM software for your computer:\n#### Installing VirtualBox\nOn Windows: Download the installer from virtualbox.org and run it like any other program.\nOn macOS:\n(If you don't have Homebrew yet: brew.sh)\nOn Ubuntu / Debian Linux:",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Software  ::  Your computer runs...  ::  Cost  ::  Best for",
-        "VirtualBox  ::  Windows, macOS, Linux  ::  Free  ::  Beginners — easiest to get started",
-        "VMware Workstation Pro  ::  Windows, Linux  ::  Free (personal)  ::  Slightly faster than VirtualBox",
-        "VMware Fusion  ::  macOS  ::  Free (personal)  ::  Mac users on Intel chips",
-        "Parallels Desktop  ::  macOS  ::  Paid  ::  Mac users on Apple Silicon (M1/M2/M3)",
-        "GNOME Boxes  ::  Linux  ::  Free  ::  Linux users who want the simplest option",
-        "Virt-Manager / KVM  ::  Linux  ::  Free  ::  Linux users who want maximum performance"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Software",
+          "Your computer runs...",
+          "Cost",
+          "Best for"
+        ],
+        "rows": [
+          [
+            "VirtualBox",
+            "Windows, macOS, Linux",
+            "Free",
+            "Beginners — easiest to get started"
+          ],
+          [
+            "VMware Workstation Pro",
+            "Windows, Linux",
+            "Free (personal)",
+            "Slightly faster than VirtualBox"
+          ],
+          [
+            "VMware Fusion",
+            "macOS",
+            "Free (personal)",
+            "Mac users on Intel chips"
+          ],
+          [
+            "Parallels Desktop",
+            "macOS",
+            "Paid",
+            "Mac users on Apple Silicon (M1/M2/M3)"
+          ],
+          [
+            "GNOME Boxes",
+            "Linux",
+            "Free",
+            "Linux users who want the simplest option"
+          ],
+          [
+            "Virt-Manager / KVM",
+            "Linux",
+            "Free",
+            "Linux users who want maximum performance"
+          ]
+        ]
+      },
       "codeText": "brew install --cask virtualbox",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -177,7 +306,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "4eb97e82-bdc0-44be-928f-8c577719be8f",
+      "id": "4b627e74-9f1d-4387-9b1d-f4bf37ebb571",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -192,6 +321,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo apt update && sudo apt install -y virtualbox",
       "codeLang": "bash",
       "imageUrl": "",
@@ -199,6 +332,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -206,7 +340,7 @@
       "transition": "fade"
     },
     {
-      "id": "1f3c1afc-3d3b-48f3-be09-880f06d5f769",
+      "id": "f6e379d4-24b9-458b-a2bb-e66f7ca4f443",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -223,14 +357,42 @@
       "bullets": [
         "Download the Kali Linux VirtualBox image — pick the VirtualBox version (.ova file).",
         "Open VirtualBox → File → Import Appliance → select the .ova file → click Import.",
-        "Select the new VM and click Start.",
-        "Setting  ::  What to set  ::  Why",
-        "System → Memory  ::  4096 MB (4 GB) or more  ::  Less than 4 GB and tools will be slow",
-        "System → Processors  ::  2 CPUs  ::  Keeps things responsive",
-        "Storage → Disk  ::  60 GB+ (dynamically allocated)  ::  Tools take up space quickly",
-        "Network → Adapter 1  ::  NAT  ::  Gives the VM internet access",
-        "General → Advanced → Clipboard  ::  Bidirectional  ::  Lets you copy/paste between VM and host"
+        "Select the new VM and click Start."
       ],
+      "tableData": {
+        "headers": [
+          "Setting",
+          "What to set",
+          "Why"
+        ],
+        "rows": [
+          [
+            "System → Memory",
+            "4096 MB (4 GB) or more",
+            "Less than 4 GB and tools will be slow"
+          ],
+          [
+            "System → Processors",
+            "2 CPUs",
+            "Keeps things responsive"
+          ],
+          [
+            "Storage → Disk",
+            "60 GB+ (dynamically allocated)",
+            "Tools take up space quickly"
+          ],
+          [
+            "Network → Adapter 1",
+            "NAT",
+            "Gives the VM internet access"
+          ],
+          [
+            "General → Advanced → Clipboard",
+            "Bidirectional",
+            "Lets you copy/paste between VM and host"
+          ]
+        ]
+      },
       "codeText": "sudo pacman -S virtualbox virtualbox-host-modules-arch",
       "codeLang": "bash",
       "imageUrl": "",
@@ -238,6 +400,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -245,7 +408,7 @@
       "transition": "fade"
     },
     {
-      "id": "7d1196be-009b-4ba0-9d78-ddec3c9afa54",
+      "id": "c61d4dfb-29aa-408d-9743-543bfcbf3a6f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -265,6 +428,10 @@
         "Reboot the computer, boot from USB (usually press F12 or F2 at startup), and follow the on-screen installer.",
         "After installation, open a terminal and run:"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sudo apt update && sudo apt full-upgrade -y && sudo reboot",
       "codeLang": "bash",
       "imageUrl": "",
@@ -272,6 +439,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -279,7 +447,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e676663b-5c1f-4465-b898-81e6198829d2",
+      "id": "bfa8db41-01aa-4867-ac0b-ef8b90e82e9f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -293,21 +461,43 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Set up VirtualBox on Arch  ::  VirtualBox on Arch",
-        "Use KVM for better performance  ::  QEMU/KVM Setup",
-        "Tune your VM after setup  ::  VM Quality of Life",
-        "Browse the full security toolkit  ::  General Security Tools",
-        "Learn Linux fundamentals  ::  Linux"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Set up VirtualBox on Arch",
+            "VirtualBox on Arch"
+          ],
+          [
+            "Use KVM for better performance",
+            "QEMU/KVM Setup"
+          ],
+          [
+            "Tune your VM after setup",
+            "VM Quality of Life"
+          ],
+          [
+            "Browse the full security toolkit",
+            "General Security Tools"
+          ],
+          [
+            "Learn Linux fundamentals",
+            "Linux"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

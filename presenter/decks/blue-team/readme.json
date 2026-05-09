@@ -4,7 +4,7 @@
   "source": "blue-team/README.md",
   "slides": [
     {
-      "id": "9d29fd2e-2103-4513-940c-bc659111d3dd",
+      "id": "a443438b-5168-474e-a0c9-368453b4f3aa",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "3c0501fa-14be-4ff0-bc78-a2f55e981d08",
+      "id": "1ddb98ea-7b3d-4301-b986-ec8a61c10f66",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,23 +52,51 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Discipline  ::  Role",
-        "SOC Analysis  ::  Monitor alerts, triage events, escalate confirmed incidents",
-        "Incident Response (IR)  ::  Contain, eradicate, and recover from security incidents",
-        "Digital Forensics (DFIR)  ::  Collect and analyse artefacts to reconstruct what happened",
-        "Threat Hunting  ::  Proactively search for threats not caught by automated tools",
-        "Malware Analysis  ::  Reverse-engineer malicious code to understand its behaviour",
-        "Threat Intelligence  ::  Gather, enrich, and operationalise adversary knowledge",
-        "Detection Engineering  ::  Write detection rules (SIEM, EDR, IDS) and tune false positives"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Discipline",
+          "Role"
+        ],
+        "rows": [
+          [
+            "SOC Analysis",
+            "Monitor alerts, triage events, escalate confirmed incidents"
+          ],
+          [
+            "Incident Response (IR)",
+            "Contain, eradicate, and recover from security incidents"
+          ],
+          [
+            "Digital Forensics (DFIR)",
+            "Collect and analyse artefacts to reconstruct what happened"
+          ],
+          [
+            "Threat Hunting",
+            "Proactively search for threats not caught by automated tools"
+          ],
+          [
+            "Malware Analysis",
+            "Reverse-engineer malicious code to understand its behaviour"
+          ],
+          [
+            "Threat Intelligence",
+            "Gather, enrich, and operationalise adversary knowledge"
+          ],
+          [
+            "Detection Engineering",
+            "Write detection rules (SIEM, EDR, IDS) and tune false positives"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -71,7 +104,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "48277ea7-45c1-4cfd-9b57-e06e24820b25",
+      "id": "9e7a3747-8e56-4fbf-8fd7-d650b0e50e1a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -86,6 +119,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. Preparation     → Build playbooks, deploy logging, train the team\n2. Detection       → Identify indicators of compromise (IOCs)\n3. Containment     → Short-term (isolate host) and long-term (patch, block)\n4. Eradication     → Remove malware, revoke credentials, close access\n5. Recovery        → Restore services, verify integrity, monitor closely\n6. Lessons Learned → Post-incident review, update playbooks and detections",
       "codeLang": "",
       "imageUrl": "",
@@ -93,6 +130,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -100,7 +138,7 @@
       "transition": "fade"
     },
     {
-      "id": "1e2d5c51-b6ff-4ce5-8fe1-1cf4c74a3cc3",
+      "id": "7249f314-904b-4ba4-af90-34f6d269a1bc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -115,6 +153,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -122,6 +164,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -129,7 +172,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "f2469a20-ba32-4d99-bdfb-73e4475021b8",
+      "id": "2e3c081c-30e9-49c8-a110-c3a80b0fe6b3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -143,24 +186,55 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Source  ::  What to Look For",
-        "Windows Security Events  ::  4624/4625 (logon), 4688 (process creation), 4648 (explicit logon), 4698 (scheduled task)",
-        "Sysmon  ::  Process creation, network connections, file creation, registry changes",
-        "PowerShell logs  ::  Script block logging (4104), module logging",
-        "Windows Defender / EDR  ::  Detection events, quarantine actions",
-        "Firewall / proxy logs  ::  Allowed/denied connections, unusual outbound traffic",
-        "DNS logs  ::  Suspicious domains, high-frequency queries, DGA patterns",
-        "Web server logs  ::  Error spikes, unusual URIs, encoding anomalies",
-        "Authentication logs  ::  Failed logins, off-hours access, impossible travel"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Source",
+          "What to Look For"
+        ],
+        "rows": [
+          [
+            "Windows Security Events",
+            "4624/4625 (logon), 4688 (process creation), 4648 (explicit logon), 4698 (scheduled task)"
+          ],
+          [
+            "Sysmon",
+            "Process creation, network connections, file creation, registry changes"
+          ],
+          [
+            "PowerShell logs",
+            "Script block logging (4104), module logging"
+          ],
+          [
+            "Windows Defender / EDR",
+            "Detection events, quarantine actions"
+          ],
+          [
+            "Firewall / proxy logs",
+            "Allowed/denied connections, unusual outbound traffic"
+          ],
+          [
+            "DNS logs",
+            "Suspicious domains, high-frequency queries, DGA patterns"
+          ],
+          [
+            "Web server logs",
+            "Error spikes, unusual URIs, encoding anomalies"
+          ],
+          [
+            "Authentication logs",
+            "Failed logins, off-hours access, impossible travel"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -168,7 +242,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "a9b2a398-29f1-40a8-83b5-03cc355214c9",
+      "id": "3e7ce5c6-7519-4e04-a122-e26f71eb96b5",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -183,6 +257,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "`comment(\"Failed logins\")`\nindex=windows EventCode=4625 | stats count by src_ip, user | sort -count\n\n`comment(\"Process creation - Sysmon Event 1\")`\nindex=sysmon EventCode=1 | table _time, host, user, Image, CommandLine, ParentImage\n\n`comment(\"PowerShell script block logging\")`\nindex=windows EventCode=4104 | search ScriptBlockText=\"*Invoke-*\" OR ScriptBlockText=\"*iex*\"\n\n`comment(\"Network connections to rare external IPs\")`\nindex=sysmon EventCode=3 DestinationIp!=\"10.*\" DestinationIp!=\"192.168.*\" DestinationIp!=\"172.16.*\"\n| stats count by DestinationIp, Image | sort -count\n\n`comment(\"Lateral movement via PsExec\")`\nindex=windows EventCode=7045 ServiceName=\"PSEXESVC\" | table _time, host, ServiceFileName\n\n`comment(\"DCSync detection\")`\nindex=windows EventCode=4662 OperationType=\"%%14674\" ObjectDN=\"*DC=*\"\n| where match(Properties, \"(?i)1131f6ad|1131f6aa\")",
       "codeLang": "splunk",
       "imageUrl": "",
@@ -190,6 +268,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -197,7 +276,7 @@
       "transition": "fade"
     },
     {
-      "id": "d1935351-6cae-44bb-a443-aba0ff20ae2f",
+      "id": "4515d779-bd8e-470d-92f7-a3187e4283a4",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -212,6 +291,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "// Process injection\nsequence by host.name\n  [process where process.name == \"powershell.exe\"]\n  [network where destination.port in (443, 80, 8080) and not destination.ip in (\"10.0.0.0/8\")]\n\n// Credential dumping via LSASS\nprocess where event.type == \"start\"\n  and process.name in (\"procdump.exe\", \"procdump64.exe\", \"rundll32.exe\")\n  and process.args : \"*lsass*\"",
       "codeLang": "eql",
       "imageUrl": "",
@@ -219,6 +302,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -226,7 +310,7 @@
       "transition": "fade"
     },
     {
-      "id": "0b058763-eae0-40f3-8abe-b31cce41c619",
+      "id": "e0c8323f-3945-458a-a90c-d2b1dd8aa652",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -241,6 +325,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Example Sigma rule — Suspicious PowerShell download cradle\ntitle: PowerShell Download Cradle\nstatus: experimental\nlogsource:\n  product: windows\n  category: ps_script\ndetection:\n  selection:\n    ScriptBlockText|contains:\n      - 'DownloadString'\n      - 'DownloadFile'\n      - 'IEX'\n      - 'Invoke-Expression'\n      - 'WebClient'\n  condition: selection\nfalsepositives:\n  - Legitimate admin scripts\nlevel: medium",
       "codeLang": "yaml",
       "imageUrl": "",
@@ -248,6 +336,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -255,7 +344,7 @@
       "transition": "fade"
     },
     {
-      "id": "02f66145-4810-450c-ab5c-be3101a7726e",
+      "id": "1a5d206f-15a5-477f-a623-1f5f36075bfb",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -270,6 +359,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "sigma convert -t splunk rules/windows/powershell/powershell_download_cradle.yml\nsigma convert -t elastic-lucene rules/windows/powershell/powershell_download_cradle.yml",
       "codeLang": "bash",
       "imageUrl": "",
@@ -277,6 +370,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -284,7 +378,7 @@
       "transition": "fade"
     },
     {
-      "id": "32f4215b-dfe8-4774-b801-18bd2bdb02ef",
+      "id": "8acecb8a-411e-4950-a6a3-c8798fac5730",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -299,6 +393,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -306,6 +404,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -313,7 +412,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "becb22f2-eb22-4962-90cf-91a0962ec09a",
+      "id": "ae02113f-e69d-4bb1-98e6-d032d4518795",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -328,6 +427,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "- Isolated VM (no host-only or bridged network — use internal-only)\n- Snapshots before and after execution\n- INetSim or FakeNet-NG for network simulation\n- Recommended VMs: FlareVM (Windows), REMnux (Linux)",
       "codeLang": "",
       "imageUrl": "",
@@ -335,6 +438,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -342,7 +446,7 @@
       "transition": "fade"
     },
     {
-      "id": "658e0661-0423-45c3-891e-e281bbe373c9",
+      "id": "81fe7db0-e381-4621-8b04-18ae6354317c",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -357,6 +461,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# File type and hashes\nfile malware.exe\nmd5sum malware.exe && sha256sum malware.exe\n# Submit hash to VirusTotal: https://www.virustotal.com\n\n# Strings\nstrings malware.exe\nstrings -el malware.exe    # Unicode strings\nFLOSS malware.exe          # deobfuscated strings (FLOSS tool)\n\n# PE analysis\npesign malware.exe         # check code signing\npecheck malware.exe        # imports, exports, sections\npestudio malware.exe       # GUI: strings, imports, entropy, IoCs\n\n# Detect packer\nDetect-It-Easy (DIE)\nExeinfoPE\n\n# Imports → reveals capabilities\n# CreateRemoteThread → process injection\n# VirtualAllocEx, WriteProcessMemory → classic injection\n# RegSetValueEx, CreateService → persistence\n# InternetOpenA, HttpSendRequest, WinHttpOpen → C2 comms\n# CryptEncrypt, CryptDecrypt → encryption (possibly ransomware)",
       "codeLang": "bash",
       "imageUrl": "",
@@ -364,6 +472,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -371,7 +480,7 @@
       "transition": "fade"
     },
     {
-      "id": "0aa39ba1-758c-4e77-9106-13ff7faeeaf0",
+      "id": "be149784-4b30-4f03-8830-26ed28c00228",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -386,6 +495,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Windows sandbox tools\nProcessMonitor (Procmon)   # file, registry, network activity\nProcessHacker / Process Explorer\nWireshark / FakeNet-NG     # network traffic capture\nRegShot                    # registry snapshot diff (before/after run)\nAPI Monitor                # trace API calls\n\n# Linux / automated sandboxes\ncuckoo sandbox             # automated dynamic analysis (self-hosted)\n# Online: https://any.run, https://app.any.run (interactive)\n# https://tria.ge, https://www.hybrid-analysis.com\n\n# Run with FakeNet-NG (simulates DNS, HTTP, SMTP)\nfakenet &\n.\\malware.exe\n\n# Monitor child processes\n.\\malware.exe &\nps auxf / Get-Process",
       "codeLang": "bash",
       "imageUrl": "",
@@ -393,6 +506,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -400,7 +514,7 @@
       "transition": "fade"
     },
     {
-      "id": "b8355308-9004-4ef5-9f23-cbbd511d267a",
+      "id": "8172bea1-6c27-4e0c-8687-014263109f7f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -415,6 +529,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Volatility 3\npython3 vol.py -f infected.dmp windows.malfind         # injected code regions\npython3 vol.py -f infected.dmp windows.pstree          # process tree anomalies\npython3 vol.py -f infected.dmp windows.netscan         # active connections\npython3 vol.py -f infected.dmp windows.dlllist --pid 1234\npython3 vol.py -f infected.dmp windows.handles --pid 1234\npython3 vol.py -f infected.dmp windows.dumpfiles --pid 1234  # dump process files\n\n# Extract and scan extracted code\npython3 vol.py -f infected.dmp windows.malfind | grep -v \"^Volatility\\|^$\" | awk '{print $1}' | sort -u\nyara -r malware_rules.yar extracted_files/",
       "codeLang": "bash",
       "imageUrl": "",
@@ -422,6 +540,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -429,7 +548,7 @@
       "transition": "fade"
     },
     {
-      "id": "1bc35a7c-ef98-4d85-ba89-08e499b0c0dc",
+      "id": "03dcae13-7548-4801-9b50-1a9047dcf5ed",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -444,6 +563,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "rule SuspiciousPowerShellDownload {\n    meta:\n        description = \"Detects PowerShell download cradles\"\n        author = \"Shadow.Lab\"\n    strings:\n        $s1 = \"DownloadString\" nocase\n        $s2 = \"IEX\" nocase\n        $s3 = \"WebClient\" nocase\n        $s4 = \"Invoke-Expression\" nocase\n    condition:\n        2 of ($s1, $s2, $s3, $s4)\n}\n\nrule SuspiciousImports {\n    meta:\n        description = \"PE with common injection imports\"\n    strings:\n        $a = \"VirtualAllocEx\"\n        $b = \"WriteProcessMemory\"\n        $c = \"CreateRemoteThread\"\n    condition:\n        all of them\n}",
       "codeLang": "yara",
       "imageUrl": "",
@@ -451,6 +574,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -458,7 +582,7 @@
       "transition": "fade"
     },
     {
-      "id": "b6c9b922-af3b-4ec0-99f9-717034f5bee2",
+      "id": "461d5f48-5961-4a19-bb71-99705679ef9b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -473,6 +597,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Scan with YARA\nyara -r rules/ suspicious_file.exe\nyara -r rules/ /path/to/scan/",
       "codeLang": "bash",
       "imageUrl": "",
@@ -480,6 +608,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -487,7 +616,7 @@
       "transition": "fade"
     },
     {
-      "id": "8152c767-4fd7-4977-985b-8dc59fe344bc",
+      "id": "45cb01a3-61e6-45fa-a523-7efef2e3df21",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -502,6 +631,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -509,6 +642,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -516,7 +650,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "d631f365-a660-484a-beac-a24a558aa5e1",
+      "id": "3e43f064-3bf4-4c78-a22c-4d0417a44e6a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -531,6 +665,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. Threat Intel → \"APT29 uses beacon over HTTPS with JA3 fingerprint X\"\n2. TTP-based    → \"Hunt for evidence of Kerberoasting in the last 30 days\"\n3. Anomaly-based → \"Find hosts making DNS queries to 50+ unique domains/hour\"\n4. Situational  → \"Hunt after red team engagement to validate detections\"",
       "codeLang": "",
       "imageUrl": "",
@@ -538,6 +676,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -545,7 +684,7 @@
       "transition": "fade"
     },
     {
-      "id": "76316885-08a0-4b77-93dc-97ed925a1295",
+      "id": "313469b2-0b80-4760-b647-2d7492296121",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -560,6 +699,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "index=windows EventCode=4698 OR EventCode=4702\n| rex field=TaskContent \"(?i)<Command>(?P<cmd>[^<]+)\"\n| where match(cmd, \"(?i)(powershell|wscript|mshta|regsvr32|certutil|bitsadmin)\")\n| table _time, host, user, TaskName, cmd",
       "codeLang": "splunk",
       "imageUrl": "",
@@ -567,6 +710,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -574,7 +718,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "50a58c3b-6c59-4677-b575-b5b9685fa06d",
+      "id": "19ba50e1-d325-4c7f-be4c-901ec339e277",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -589,6 +733,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "-- Identify hosts with very regular outbound connection intervals\nindex=network_traffic dest_port IN (80,443,8080)\n| bucket _time span=1h\n| stats count by _time, src_ip, dest_ip\n| eventstats avg(count) as avg_count, stdev(count) as stdev_count by src_ip, dest_ip\n| where stdev_count < 2   -- suspiciously regular = low stdev",
       "codeLang": "splunk",
       "imageUrl": "",
@@ -596,6 +744,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -603,7 +752,7 @@
       "transition": "fade"
     },
     {
-      "id": "e940fb63-1038-472a-a888-0eb25839f4cd",
+      "id": "fc5687ec-33c9-494e-8945-c2c7f5ac4b0e",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -618,6 +767,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "index=sysmon EventCode=1\n| where match(Image, \"(?i)(certutil|mshta|regsvr32|wscript|cscript|msiexec|rundll32)\")\n  AND match(CommandLine, \"(?i)(http|ftp|\\\\\\\\|base64|decode)\")\n| table _time, host, user, Image, CommandLine, ParentImage, ParentCommandLine",
       "codeLang": "splunk",
       "imageUrl": "",
@@ -625,6 +778,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -632,7 +786,7 @@
       "transition": "fade"
     },
     {
-      "id": "d1601cf5-82c0-4352-982c-8a67697b934e",
+      "id": "8af5ae89-aaf9-4dae-b2ca-a31df378d3b3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -647,6 +801,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "`comment(\"Logon Type 3 with NTLM instead of Kerberos\")`\nindex=windows EventCode=4624 LogonType=3 AuthenticationPackageName=NTLM\n| stats count by src_ip, TargetUserName, host\n| where count > 5",
       "codeLang": "splunk",
       "imageUrl": "",
@@ -654,6 +812,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -661,7 +820,7 @@
       "transition": "fade"
     },
     {
-      "id": "99e07286-c698-4c86-92e7-b146c166a42d",
+      "id": "04c58de9-7007-4f75-b32f-3a329c3e0e7b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -676,6 +835,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "`comment(\"High entropy domains in DNS queries\")`\nindex=dns query_type=A\n| eval domain_len=len(query)\n| eval char_freq=mvmap(split(query,\"\"), len(mvfilter(match(mvindex(split(query,\"\"),0), \".\")))),\n       entropy=-(sum(eval(f/domain_len * log(f/domain_len, 2))) over char_freq)\n| where entropy > 3.5 AND domain_len > 20\n| stats count by query, src_ip | sort -count",
       "codeLang": "splunk",
       "imageUrl": "",
@@ -683,6 +846,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -690,7 +854,7 @@
       "transition": "fade"
     },
     {
-      "id": "13b77b5f-a740-416d-b41d-a6e1998363a7",
+      "id": "3dab33f4-5486-4d66-b008-8e392b5fa5b7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -705,6 +869,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -712,6 +880,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -719,7 +888,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "1846908e-52bf-420b-955b-28dcc88b5cc1",
+      "id": "bc410462-2cf7-4c14-9ac1-14d229596164",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -734,6 +903,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "Hash values     → Trivial (attacker changes instantly)\nIP addresses    → Easy  (VPNs, proxies)\nDomain names    → Simple (new domain in minutes)\nNetwork artefacts → Annoying (JA3, URI patterns)\nHost artefacts  → Challenging (registry keys, file paths)\nTools           → Tough (recompile with changes)\nTTPs            → Hard  (fundamental behaviour)",
       "codeLang": "",
       "imageUrl": "",
@@ -741,6 +914,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -748,7 +922,7 @@
       "transition": "fade"
     },
     {
-      "id": "4289081f-e18c-40f8-ae41-3f4fde59852e",
+      "id": "4a5bccf0-58d0-48f2-ba54-4b6aaa8631dc",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -763,6 +937,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "Free:\n- https://otx.alienvault.com       AlienVault OTX — IoC sharing\n- https://threatfox.abuse.ch       Malware IOCs\n- https://urlhaus.abuse.ch         Malicious URLs\n- https://malwarebazaar.abuse.ch   Malware samples\n- https://www.virustotal.com       Hash/IP/domain reputation\n- https://shodan.io                Internet-wide scanning data\n- https://greynoise.io             Internet noise vs. targeted activity\n\nOSINT frameworks:\n- MISP (Malware Information Sharing Platform)\n- OpenCTI",
       "codeLang": "",
       "imageUrl": "",
@@ -770,6 +948,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -777,7 +956,7 @@
       "transition": "fade"
     },
     {
-      "id": "a82e97a9-58d6-4a22-ad4c-c11e7825d809",
+      "id": "3a15192a-f56c-4d09-b1db-0809cc273524",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -792,6 +971,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Search for known-bad hash in logs\ngrep -r \"44d88612fea8a8f36de82e1278abb02f\" /var/log/\n\n# Search for IP in firewall/proxy logs\ngrep \"185.220.101.34\" access.log\n\n# YARA scan for known malware families\nyara -r /opt/yara-rules/malware/ /path/to/scan/\n\n# Sigma rule deployment\npython3 sigmac -t splunk rule.yml >> custom_searches.conf",
       "codeLang": "bash",
       "imageUrl": "",
@@ -799,6 +982,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -806,7 +990,7 @@
       "transition": "fade"
     },
     {
-      "id": "480a0b74-6756-4d99-8497-2cf8442d9e52",
+      "id": "8a7cb753-bbbc-4236-8eb0-dcd6dd30fb59",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -821,6 +1005,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -828,6 +1016,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -835,7 +1024,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "e9eacb85-397d-49d8-af6c-9a382ae479d9",
+      "id": "ec0c3139-3829-4d14-87f4-31576ea79105",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -850,6 +1039,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. IMMEDIATE: Isolate affected hosts from network (disable NIC, not shutdown)\n2. Preserve memory dump before shutdown (lsass, suspicious processes)\n3. Identify patient zero — check file creation timestamps\n4. Check for lateral movement — event logs, network flow data\n5. Identify data exfiltration — DLP logs, proxy/firewall egress\n6. Identify ransomware family — submit sample to ID-Ransomware (https://id-ransomware.malwarehunterteam.com)\n7. Determine if decryptor exists (https://www.nomoreransom.org)\n8. Scope full affected systems — check all hosts for encrypted files, indicators\n9. Eradicate: rebuild from clean backups (verify backups pre-date infection)\n10. Recover and monitor closely for re-infection",
       "codeLang": "",
       "imageUrl": "",
@@ -857,6 +1050,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -864,7 +1058,7 @@
       "transition": "fade"
     },
     {
-      "id": "bb5e060f-f0a7-4f40-9192-b8ff6759cbc4",
+      "id": "21d291f3-b0f5-4b40-9f65-a723c5ed8216",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -879,6 +1073,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. Disable compromised account immediately\n2. Force password reset on all related accounts (shared passwords)\n3. Revoke all active sessions and OAuth tokens\n4. Check mailbox rules (auto-forwarding to external address is common)\n5. Review MFA registrations — attacker may have added their own device\n6. Audit email forwards and calendar sharing\n7. Check sent items and deleted items for data exfiltration\n8. Review sign-in logs for IP/device/location patterns\n9. Scope: check for lateral movement using compromised credentials\n10. Harden: enforce MFA, conditional access, credential monitoring",
       "codeLang": "",
       "imageUrl": "",
@@ -886,6 +1084,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -893,7 +1092,7 @@
       "transition": "fade"
     },
     {
-      "id": "08d9bae1-b338-4be4-87dc-f26eadc9c6f4",
+      "id": "e301d671-5be3-4123-8fec-03517634628a",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -908,6 +1107,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "1. Identify all affected hosts via C2 IOC (IP, domain, hash, JA3)\n2. Capture memory from affected hosts before isolation\n3. Isolate: remove from network, keep powered on for analysis\n4. Identify persistence mechanisms (scheduled tasks, services, registry run keys)\n5. Determine implant capability (keylogging, screenshot, lateral movement, exfil)\n6. Review 90-day log history for dwell time and full scope\n7. Eradicate: remove all persistence, rebuild compromised hosts\n8. Reset credentials accessed from or on compromised hosts\n9. Block IOCs at perimeter (firewall, proxy, DNS sinkhole)\n10. Improve detections based on observed TTPs",
       "codeLang": "",
       "imageUrl": "",
@@ -915,6 +1118,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -922,7 +1126,7 @@
       "transition": "fade"
     },
     {
-      "id": "9cbcf2a9-cbe8-4384-9220-f702dd78872a",
+      "id": "a5041684-b935-403c-b0f6-fe65e2523fc3",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -936,33 +1140,109 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Category  ::  Tool  ::  Purpose",
-        "SIEM  ::  Splunk  ::  Log aggregation and detection",
-        "SIEM  ::  Elastic Stack (ELK)  ::  Open-source log analysis",
-        "SIEM  ::  Microsoft Sentinel  ::  Cloud-native SIEM",
-        "EDR  ::  Velociraptor  ::  Open-source DFIR and endpoint monitoring",
-        "EDR  ::  Wazuh  ::  Open-source SIEM + HIDS",
-        "Endpoint logging  ::  Sysmon  ::  Detailed Windows process/network logging",
-        "Network  ::  Zeek (Bro)  ::  Network traffic analysis and logging",
-        "Network  ::  Suricata  ::  Network IDS/IPS and NSM",
-        "Malware analysis  ::  REMnux  ::  Linux distro for malware analysis",
-        "Malware analysis  ::  FlareVM  ::  Windows malware analysis toolkit",
-        "Sandbox  ::  Cuckoo  ::  Automated malware sandbox",
-        "Sandbox  ::  Any.run  ::  Interactive online sandbox",
-        "Forensics  ::  Autopsy  ::  Digital forensics GUI",
-        "Forensics  ::  Volatility 3  ::  Memory forensics",
-        "Threat intel  ::  MISP  ::  Threat intelligence sharing platform",
-        "Detection  ::  Sigma  ::  Generic SIEM detection rules",
-        "Detection  ::  YARA  ::  Pattern matching for malware"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Category",
+          "Tool",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "SIEM",
+            "Splunk",
+            "Log aggregation and detection"
+          ],
+          [
+            "SIEM",
+            "Elastic Stack (ELK)",
+            "Open-source log analysis"
+          ],
+          [
+            "SIEM",
+            "Microsoft Sentinel",
+            "Cloud-native SIEM"
+          ],
+          [
+            "EDR",
+            "Velociraptor",
+            "Open-source DFIR and endpoint monitoring"
+          ],
+          [
+            "EDR",
+            "Wazuh",
+            "Open-source SIEM + HIDS"
+          ],
+          [
+            "Endpoint logging",
+            "Sysmon",
+            "Detailed Windows process/network logging"
+          ],
+          [
+            "Network",
+            "Zeek (Bro)",
+            "Network traffic analysis and logging"
+          ],
+          [
+            "Network",
+            "Suricata",
+            "Network IDS/IPS and NSM"
+          ],
+          [
+            "Malware analysis",
+            "REMnux",
+            "Linux distro for malware analysis"
+          ],
+          [
+            "Malware analysis",
+            "FlareVM",
+            "Windows malware analysis toolkit"
+          ],
+          [
+            "Sandbox",
+            "Cuckoo",
+            "Automated malware sandbox"
+          ],
+          [
+            "Sandbox",
+            "Any.run",
+            "Interactive online sandbox"
+          ],
+          [
+            "Forensics",
+            "Autopsy",
+            "Digital forensics GUI"
+          ],
+          [
+            "Forensics",
+            "Volatility 3",
+            "Memory forensics"
+          ],
+          [
+            "Threat intel",
+            "MISP",
+            "Threat intelligence sharing platform"
+          ],
+          [
+            "Detection",
+            "Sigma",
+            "Generic SIEM detection rules"
+          ],
+          [
+            "Detection",
+            "YARA",
+            "Pattern matching for malware"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -970,7 +1250,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "b12b8876-c52b-4558-ae2e-57a0ed706068",
+      "id": "52e3441f-eda6-4188-b256-fc213b9a1faf",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -996,6 +1276,10 @@
         "The DFIR Report — real-world intrusion case studies",
         "Sigma Rules Repository — community detection rules"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -1003,6 +1287,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

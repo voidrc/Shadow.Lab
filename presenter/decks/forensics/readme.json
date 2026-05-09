@@ -4,7 +4,7 @@
   "source": "forensics/README.md",
   "slides": [
     {
-      "id": "eba79325-ca9e-42f3-bb8f-92a64daea819",
+      "id": "b431d34d-28d2-483a-9903-9645b2d59edb",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "0e8a5b96-eead-46ac-8cae-be43cab0be52",
+      "id": "8d4c300b-1d6a-4f59-8e64-7310f487f823",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -48,6 +53,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "file suspect_file          # what type is it really?\nstrings suspect_file       # printable ASCII strings\nxxd suspect_file | head -20  # magic bytes / raw hex\nexiftool suspect_file      # metadata\nbinwalk suspect_file       # embedded files",
       "codeLang": "bash",
       "imageUrl": "",
@@ -55,6 +64,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -62,7 +72,7 @@
       "transition": "fade"
     },
     {
-      "id": "f1765f98-ed36-473f-9715-3db5c23d3bdb",
+      "id": "a4b431cb-880a-45d6-aba8-6c37658590b7",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -76,25 +86,69 @@
       "bodyText": "Common magic bytes (file signatures):",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "File Type  ::  Magic Bytes (hex)  ::  ASCII",
-        "PNG  ::  89 50 4E 47 0D 0A 1A 0A  ::  ‰PNG....",
-        "JPEG  ::  FF D8 FF  ::  ÿØÿ",
-        "GIF  ::  47 49 46 38  ::  GIF8",
-        "PDF  ::  25 50 44 46  ::  %PDF",
-        "ZIP  ::  50 4B 03 04  ::  PK..",
-        "ELF  ::  7F 45 4C 46  ::  .ELF",
-        "PE (Windows)  ::  4D 5A  ::  MZ",
-        "RAR  ::  52 61 72 21  ::  Rar!",
-        "7-Zip  ::  37 7A BC AF  ::  7z.."
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "File Type",
+          "Magic Bytes (hex)",
+          "ASCII"
+        ],
+        "rows": [
+          [
+            "PNG",
+            "89 50 4E 47 0D 0A 1A 0A",
+            "‰PNG...."
+          ],
+          [
+            "JPEG",
+            "FF D8 FF",
+            "ÿØÿ"
+          ],
+          [
+            "GIF",
+            "47 49 46 38",
+            "GIF8"
+          ],
+          [
+            "PDF",
+            "25 50 44 46",
+            "%PDF"
+          ],
+          [
+            "ZIP",
+            "50 4B 03 04",
+            "PK.."
+          ],
+          [
+            "ELF",
+            "7F 45 4C 46",
+            ".ELF"
+          ],
+          [
+            "PE (Windows)",
+            "4D 5A",
+            "MZ"
+          ],
+          [
+            "RAR",
+            "52 61 72 21",
+            "Rar!"
+          ],
+          [
+            "7-Zip",
+            "37 7A BC AF",
+            "7z.."
+          ]
+        ]
+      },
       "codeText": "# Restore a renamed file by its magic bytes\nxxd mystery.dat | head -3\n# Then rename or use appropriate tool",
       "codeLang": "bash",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": true,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -102,7 +156,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "94f24f46-99a5-40ad-ad84-ecaa4942aa98",
+      "id": "637c1294-e9a9-4dd5-947e-7811fe945e47",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -117,6 +171,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Extract embedded files\nbinwalk -e archive.bin\nbinwalk --dd='.*' archive.bin     # extract everything\n\n# Alternative carvers\nforemost -t all -i suspect.img -o output/\nscalpel suspect.img -o output/\n\n# Carve specific type from raw image\nphotorec image.dd          # interactive, recovers many types",
       "codeLang": "bash",
       "imageUrl": "",
@@ -124,6 +182,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -131,7 +190,7 @@
       "transition": "fade"
     },
     {
-      "id": "f84648d6-df69-4842-9ec4-b82edaf2e2b6",
+      "id": "610a18aa-de32-42b6-95d4-f24790ca2514",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -146,6 +205,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Extract various formats\nunzip archive.zip\n7z x archive.7z\ntar -xvf archive.tar.gz\ngunzip file.gz\nbzip2 -d file.bz2\n\n# Crack password-protected ZIP\nzip2john protected.zip > hash.txt\njohn hash.txt --wordlist=/usr/share/wordlists/rockyou.txt\n\n# Or hashcat\nzip2john protected.zip > zip.hash\nhashcat -m 13600 zip.hash rockyou.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -153,6 +216,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -160,7 +224,7 @@
       "transition": "fade"
     },
     {
-      "id": "41cc928f-f22c-4e66-969b-523c79898e62",
+      "id": "771d0f6b-47fa-4a77-a0d5-2bfb9603aa17",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -175,6 +239,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Metadata\nexiftool image.jpg\n\n# Check for appended data after image EOF\nxxd image.jpg | tail -20\n\n# Steganography check → see stego guide\n# Hidden zip appended to JPEG (polyglot)\nbinwalk image.jpg\nunzip image.jpg -d output/",
       "codeLang": "bash",
       "imageUrl": "",
@@ -182,6 +250,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -189,7 +258,7 @@
       "transition": "fade"
     },
     {
-      "id": "fa78e4bc-f0fc-4e0f-914d-2f623b2dac0e",
+      "id": "7efdba8e-70de-4c9a-992a-a069362292c2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -204,6 +273,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "FFD8 = SOI (Start of Image)\nFFD9 = EOI (End of Image)\n# Anything after FFD9 is appended data — extract it",
       "codeLang": "",
       "imageUrl": "",
@@ -211,6 +284,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -218,7 +292,7 @@
       "transition": "fade"
     },
     {
-      "id": "b7ac3e08-b9bd-4a61-b9a8-a5f2d8c50674",
+      "id": "e97cd218-81e0-483e-807d-26ab4498d4ab",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -233,6 +307,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -240,6 +318,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -247,7 +326,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "caa85a31-4a3d-4dea-99a8-157549af9955",
+      "id": "417b5f18-d414-4265-a579-87925690b2c6",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -262,6 +341,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Open PCAP\nwireshark capture.pcap\n\n# Useful filters\ntcp                      # only TCP\nhttp                     # HTTP traffic\nhttp.request             # HTTP requests\ndns                      # DNS queries\nip.addr == 192.168.1.1   # traffic to/from IP\ntcp.stream eq 0          # follow TCP stream 0\nframe contains \"flag\"    # search packet content\n\n# Follow a stream: Right-click packet → Follow → TCP Stream\n# Export HTTP objects: File → Export Objects → HTTP",
       "codeLang": "",
       "imageUrl": "",
@@ -269,6 +352,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -276,7 +360,7 @@
       "transition": "fade"
     },
     {
-      "id": "27c0a83c-e56e-4944-9d9a-aea4236db00d",
+      "id": "1dade3cb-d605-4b24-8b1c-6040bc97ea94",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -291,6 +375,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# List all streams\ntshark -r capture.pcap -z conv,tcp\n\n# Extract HTTP URIs\ntshark -r capture.pcap -Y http.request -T fields -e http.request.uri\n\n# Extract all files via HTTP\ntshark -r capture.pcap --export-objects http,output_dir/\n\n# Decode specific stream\ntshark -r capture.pcap -q -z follow,tcp,ascii,0\n\n# Find credentials in HTTP Basic Auth\ntshark -r capture.pcap -Y 'http.authorization' -T fields -e http.authorization",
       "codeLang": "bash",
       "imageUrl": "",
@@ -298,6 +386,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -305,7 +394,7 @@
       "transition": "fade"
     },
     {
-      "id": "29f53beb-7e5d-4849-8e54-2a284f737742",
+      "id": "03d4b82f-9533-4f78-8342-fc1265f058bf",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -320,6 +409,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Look for unusually long subdomain queries → data encoded in DNS\ntshark -r capture.pcap -Y dns.qry.type==1 -T fields -e dns.qry.name | sort -u\n\n# Decode base32/hex from subdomain labels\necho \"aGVsbG8=\" | base64 -d",
       "codeLang": "bash",
       "imageUrl": "",
@@ -327,6 +420,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -334,7 +428,7 @@
       "transition": "fade"
     },
     {
-      "id": "b6fb167e-e330-457f-aa2b-ce9449b22bbe",
+      "id": "f3a898c6-4dce-4a98-a9c4-d7b0d4bc1cee",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -349,6 +443,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Install\npip install volatility3\n\n# Basic usage\npython3 vol.py -f memory.dmp <plugin>\n\n# OS detection\npython3 vol.py -f memory.dmp windows.info\npython3 vol.py -f memory.dmp linux.info\n\n# Common Windows plugins\nwindows.pslist           # running processes\nwindows.pstree           # process tree\nwindows.cmdline          # command line arguments\nwindows.filescan         # scan for file objects\nwindows.dumpfiles        # dump a file from memory\nwindows.hashdump         # dump NTLM hashes\nwindows.netscan          # network connections\nwindows.malfind          # find injected code\n\n# Dump a specific process\npython3 vol.py -f memory.dmp windows.dumpfiles --pid 1234\n\n# Search for a string in memory\npython3 vol.py -f memory.dmp windows.strings --strings-file strings.txt\nstrings memory.dmp | grep -i \"flag{\"",
       "codeLang": "bash",
       "imageUrl": "",
@@ -356,6 +454,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -363,7 +462,7 @@
       "transition": "fade"
     },
     {
-      "id": "24cac175-7400-4af7-85ea-c1064a042f8d",
+      "id": "d019e48c-8a9a-437d-9bd5-1c1e2ced2e95",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -378,6 +477,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Mount a raw disk image\nsudo mount -o loop,ro disk.img /mnt/forensics\n\n# List partitions\nfdisk -l disk.img\nmmls disk.img            # sleuthkit\n\n# Browse filesystem\nautopsy                  # GUI tool (starts web server)\n\n# Recover deleted files\nphotorec disk.img\ntestdisk disk.img        # recover partition table / lost files\n\n# Timeline\nfls -r -m / disk.img > bodyfile.txt\nmactime -b bodyfile.txt > timeline.txt",
       "codeLang": "bash",
       "imageUrl": "",
@@ -385,6 +488,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -392,7 +496,7 @@
       "transition": "fade"
     },
     {
-      "id": "09033843-34bb-44f4-a4b7-c3021bf5901a",
+      "id": "658854bb-d4ca-4e6f-b090-c0bc501cbdbd",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -407,6 +511,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Linux auth logs\ngrep \"Failed password\" /var/log/auth.log\ngrep \"Accepted password\" /var/log/auth.log\n\n# Apache/Nginx access log\nawk '{print $1}' access.log | sort | uniq -c | sort -rn | head  # top IPs\ngrep \"POST\" access.log | grep -v \"200\"\n\n# Windows Event logs (on Linux)\npython-evtx viewer or:\nevtxdump.py Security.evtx | grep -i \"EventID>4625\"   # failed logins\nEventID 4624 = Logon success\nEventID 4625 = Logon failure\nEventID 4688 = Process creation",
       "codeLang": "bash",
       "imageUrl": "",
@@ -414,6 +522,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -421,7 +530,7 @@
       "transition": "fade"
     },
     {
-      "id": "70d0d792-93ca-431b-9fb2-a9ccd9dcd86e",
+      "id": "34703ecc-7f09-4a16-bc31-328dfc4b4f37",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -436,6 +545,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "# Read raw bytes\nwith open('file.bin', 'rb') as f:\n    data = f.read()\n\n# Find all occurrences of pattern\nimport re\nmatches = re.findall(b'flag\\{.*?\\}', data)\n\n# XOR all bytes with key\nkey = 0x42\ndecoded = bytes([b ^ key for b in data])",
       "codeLang": "python",
       "imageUrl": "",
@@ -443,6 +556,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -450,7 +564,7 @@
       "transition": "fade"
     },
     {
-      "id": "fe261325-83dd-4e05-b4c8-4dd71096cf34",
+      "id": "7fcc2499-01ce-4544-983b-90d193a3a87f",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -471,6 +585,10 @@
         "Digital Corpora — sample forensics images",
         "13Cubed YouTube — forensics walkthroughs"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -478,6 +596,7 @@
       "showSubtitle": false,
       "showBody": false,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

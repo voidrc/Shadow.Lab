@@ -4,7 +4,7 @@
   "source": "linux/Filesystem.md",
   "slides": [
     {
-      "id": "0b537e84-a9d3-4215-97b9-a5e2dc4d47a9",
+      "id": "daa97c59-6414-4410-a9e6-41497c185274",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "fa3e394e-9368-4199-ba04-932a5bf4102d",
+      "id": "092a6fa1-2f9c-479a-ba62-4bdfe715f80d",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -53,6 +58,10 @@
         "Directories are a special type of file containing references to other files.",
         "If something isn't a file, it's a process."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -60,6 +69,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -67,7 +77,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "ae535d1d-404b-4b85-9d7b-aa4f3196259b",
+      "id": "57fc1816-c339-4499-81aa-e191ff49fbe0",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -82,6 +92,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "/\n├── bin\n├── etc\n├── home\n│   └── user\n├── var\n└── usr",
       "codeLang": "",
       "imageUrl": "",
@@ -89,6 +103,7 @@
       "showSubtitle": true,
       "showBody": true,
       "showBullets": false,
+      "showTable": false,
       "showCode": true,
       "showImage": false,
       "textAlign": "left",
@@ -96,7 +111,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "2927ae34-5c3d-4ee5-9aef-32c5e1b20164",
+      "id": "b0ec54e6-4ec4-4464-b3a2-b20893ca72f2",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -114,6 +129,10 @@
         "Directory — the traditional UNIX/Linux term, used in the terminal.",
         "Folder — a GUI term referring to the same concept."
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -121,6 +140,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -128,7 +148,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "cc521917-1b50-45c9-be1d-88bd00011a6d",
+      "id": "3e5e157c-db3b-4ab0-b1c6-961225045b39",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -142,35 +162,99 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "Directory  ::  Purpose",
-        "/  ::  Root — top of the hierarchy",
-        "/bin  ::  Essential user executables available to all users",
-        "/sbin  ::  System/admin binaries (superuser)",
-        "/boot  ::  Bootloader files and the Linux kernel",
-        "/home  ::  Home directories for regular users",
-        "/root  ::  Home directory for root",
-        "/dev  ::  Device files (hardware and peripherals)",
-        "/etc  ::  System-wide configuration files",
-        "/lib  ::  Shared libraries for essential binaries",
-        "/lib64  ::  64-bit libraries (architecture-specific)",
-        "/media  ::  Mount points for removable media (USB, external drives)",
-        "/mnt  ::  Temporary mount point for filesystems",
-        "/tmp  ::  Temporary files — often cleared on reboot",
-        "/proc  ::  Virtual filesystem exposing process and kernel info",
-        "/sys  ::  Virtual filesystem for kernel objects and hardware",
-        "/srv  ::  Data served by system services (web, FTP, etc.)",
-        "/run  ::  Runtime process data stored in RAM",
-        "/usr  ::  User applications, binaries, libraries, documentation",
-        "/var  ::  Variable data — logs, caches, spool files"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Directory",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "/",
+            "Root — top of the hierarchy"
+          ],
+          [
+            "/bin",
+            "Essential user executables available to all users"
+          ],
+          [
+            "/sbin",
+            "System/admin binaries (superuser)"
+          ],
+          [
+            "/boot",
+            "Bootloader files and the Linux kernel"
+          ],
+          [
+            "/home",
+            "Home directories for regular users"
+          ],
+          [
+            "/root",
+            "Home directory for root"
+          ],
+          [
+            "/dev",
+            "Device files (hardware and peripherals)"
+          ],
+          [
+            "/etc",
+            "System-wide configuration files"
+          ],
+          [
+            "/lib",
+            "Shared libraries for essential binaries"
+          ],
+          [
+            "/lib64",
+            "64-bit libraries (architecture-specific)"
+          ],
+          [
+            "/media",
+            "Mount points for removable media (USB, external drives)"
+          ],
+          [
+            "/mnt",
+            "Temporary mount point for filesystems"
+          ],
+          [
+            "/tmp",
+            "Temporary files — often cleared on reboot"
+          ],
+          [
+            "/proc",
+            "Virtual filesystem exposing process and kernel info"
+          ],
+          [
+            "/sys",
+            "Virtual filesystem for kernel objects and hardware"
+          ],
+          [
+            "/srv",
+            "Data served by system services (web, FTP, etc.)"
+          ],
+          [
+            "/run",
+            "Runtime process data stored in RAM"
+          ],
+          [
+            "/usr",
+            "User applications, binaries, libraries, documentation"
+          ],
+          [
+            "/var",
+            "Variable data — logs, caches, spool files"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": true,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -178,7 +262,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "24c0ef57-ab32-4273-b59f-230121a482ad",
+      "id": "9cab0e00-e68b-476a-a63b-0fdc17403574",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -192,18 +276,31 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "You want to...  ::  Go here",
-        "Create, view, copy, and delete files  ::  File Manipulation",
-        "Go back to users and permissions  ::  Users & Root"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "You want to...",
+          "Go here"
+        ],
+        "rows": [
+          [
+            "Create, view, copy, and delete files",
+            "File Manipulation"
+          ],
+          [
+            "Go back to users and permissions",
+            "Users & Root"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",

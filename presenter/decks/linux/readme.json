@@ -4,7 +4,7 @@
   "source": "linux/README.md",
   "slides": [
     {
-      "id": "d1d827c6-c232-4e6a-ab14-29a6aa4b0ff8",
+      "id": "4eb0407f-d8b4-4bab-b038-703f0c9c0f79",
       "layout": "center",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -19,6 +19,10 @@
       "bodyColor": "#7ab87a",
       "bodySize": 22,
       "bullets": [],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -26,6 +30,7 @@
       "showSubtitle": true,
       "showBody": false,
       "showBullets": false,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "center",
@@ -33,7 +38,7 @@
       "transition": "zoom"
     },
     {
-      "id": "19b13d0c-b4c6-487c-a974-d6a6fd3de388",
+      "id": "2dd05e8c-3a9a-40c3-b234-b3d699ba751b",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -47,22 +52,54 @@
       "bodyText": "",
       "bodyColor": "#7ab87a",
       "bodySize": 22,
-      "bullets": [
-        "#  ::  Guide  ::  What it covers",
-        "1  ::  The Terminal & Shell  ::  Terminals, shells, command structure, help, shortcuts",
-        "2  ::  Command History  ::  Recall, search, and manage shell history",
-        "3  ::  Users & Root  ::  Root vs normal users, sudo, switching users",
-        "4  ::  The Filesystem  ::  Hierarchy, FHS directory table, everything-is-a-file",
-        "5  ::  File Manipulation  ::  Timestamps, file types, viewing, create/copy/move/delete",
-        "6  ::  CLI Tools  ::  Modern Arch CLI replacements: bat, eza, zoxide, yazi, and more"
-      ],
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "#",
+          "Guide",
+          "What it covers"
+        ],
+        "rows": [
+          [
+            "1",
+            "The Terminal & Shell",
+            "Terminals, shells, command structure, help, shortcuts"
+          ],
+          [
+            "2",
+            "Command History",
+            "Recall, search, and manage shell history"
+          ],
+          [
+            "3",
+            "Users & Root",
+            "Root vs normal users, sudo, switching users"
+          ],
+          [
+            "4",
+            "The Filesystem",
+            "Hierarchy, FHS directory table, everything-is-a-file"
+          ],
+          [
+            "5",
+            "File Manipulation",
+            "Timestamps, file types, viewing, create/copy/move/delete"
+          ],
+          [
+            "6",
+            "CLI Tools",
+            "Modern Arch CLI replacements: bat, eza, zoxide, yazi, and more"
+          ]
+        ]
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
       "showTitle": true,
       "showSubtitle": false,
       "showBody": false,
-      "showBullets": true,
+      "showBullets": false,
+      "showTable": true,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
@@ -70,7 +107,7 @@
       "transition": "slide-r"
     },
     {
-      "id": "cc99ec0e-b4ab-4b9b-821c-72f8f77b9b7c",
+      "id": "3373f893-e53e-4357-b863-a51144945d62",
       "layout": "top",
       "bgType": "gradient",
       "bgColor": "#080b08",
@@ -87,6 +124,10 @@
       "bullets": [
         "Network — learn how internet works"
       ],
+      "tableData": {
+        "headers": [],
+        "rows": []
+      },
       "codeText": "",
       "codeLang": "",
       "imageUrl": "",
@@ -94,6 +135,7 @@
       "showSubtitle": false,
       "showBody": true,
       "showBullets": true,
+      "showTable": false,
       "showCode": false,
       "showImage": false,
       "textAlign": "left",
