@@ -11,15 +11,10 @@
             "id": "25f837a9d4351872",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tools/Arch-QOL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Arch-QOL"
+              "title": "New tab"
             }
           }
         ]
@@ -141,6 +136,20 @@
   },
   "active": "5433c0565572f945",
   "lastOpenFiles": [
+    "Set-Up/VirtualBox_Arch.md",
+    "Set-Up/Targets.md",
+    "Set-Up/RedTeam-Tools.md",
+    "Set-Up/README.md",
+    "Set-Up/Qemu.md",
+    "Set-Up/QOL-VM.md",
+    "Set-Up/GeneralSecurity-Tools.md",
+    "Set-Up/GPG.md",
+    "Set-Up/Docker.md",
+    "Set-Up/BlueTeam-Tools.md",
+    "Set-Up/BackUps.md",
+    "Set-Up/Arch-QOL.md",
+    "Set-Up",
+    "languages/sedmyRP0o",
     "presenter/decks/tools/readme.json",
     "presenter/decks/web/readme.json",
     "presenter/decks/web",
@@ -149,9 +158,6 @@
     "presenter/decks/tools/redteam-tools.json",
     "presenter/decks/tools/qemu.json",
     "presenter/decks/tools/qol-vm.json",
-    "presenter/decks/tools/generalsecurity-tools.json",
-    "presenter/decks/tools/gpg.json",
-    "presenter/decks/tools/docker.json",
     "linux/README.md",
     "tools/README.md",
     "README.md",
@@ -166,18 +172,7 @@
     "tools/QOL-VM.md",
     "tools/RedTeam-Tools.md",
     "tools/Targets.md",
-    "tools/VirtualBox_Arch.md",
-    "tools/Starter-Tools.md",
-    "tools/Arch-QOL II.md",
     "Untitled.canvas",
-    "linux/CLI-tools.md",
-    "languages/README.md",
-    "languages/Languages.md",
-    "2026-04-19.md",
-    "linux/Files.md",
-    "linux/Filesystem.md",
-    "linux/Users.md",
-    "linux/History.md",
     "Yeet/Nihongo/hiragana-chart-by-tofugu.jpg",
     "templates/5_Structure/Canvases/How to Use Links with Templates.canvas",
     "templates/5_Structure/Canvases/About - 5_Structure Notes.canvas",

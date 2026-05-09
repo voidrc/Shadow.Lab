@@ -14,17 +14,9 @@ New to Shadow.Wiki or building your lab for the first time, follow this path:
 
 | Step | Guide                                           | What you'll do                                       |
 | ---- | ----------------------------------------------- | ---------------------------------------------------- |
-| 1    | [🛠️ Tools & Setup](tools/README.md)             | Pick an OS, spin up a VM, install core tools         |
+| 1    | [🛠️ Tools & Setup](Set-Up/README.md)            | Pick an OS, spin up a VM, install core tools         |
 | 2    | [🐧 Linux](linux/README.md)                     | Learn Linux fundamentals for easy use of prefered OS |
 | 3    | [💻 Programming Languages](languages/README.md) | Scripting foundations for exploit dev and tooling    |
-| 4    | [🔐 Cryptography](crypto/README.md)             | Core crypto concepts every security person needs     |
-| 5    | Pick a track                                    | Red, Blue, or both — see the Knowledge Base below    |
-
-Already have a lab? Jump straight to a domain:
-
-- **Offensive** → [Red Teaming](red-team/README.md) · [Web](web/README.md) · [Pwn](pwn/README.md) · [Rev](rev/README.md)
-- **Defensive** → [Blue Teaming](blue-team/README.md) · [Forensics](forensics/README.md) · [Stego](stego/README.md)
-- **Recon** → [OSINT](osint/README.md)
 
 ---
 
@@ -55,9 +47,8 @@ Open the **`// Library`** panel to load any pre-built deck from the wiki, or cre
 
 1. Branch off `main` and add your guide or improvement
 2. Keep guides practical — commands, real-world examples, and tool references
-3. Tag content as `[RED]`, `[BLUE]`, or `[BOTH]` where the context isn't obvious
-4. Use consistent Markdown formatting
-5. Submit a PR
+3. Use consistent Markdown formatting
+4. Submit a PR
 
 ---
 
