@@ -1,0 +1,362 @@
+{
+  "title": "SIEM & Log Analysis",
+  "category": "Set-Up",
+  "source": "Set-Up/BlueTeam-Tools.md",
+  "slides": [
+    {
+      "id": "3d6f43dd-6841-4c08-b948-aa6aa7bece32",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgImage": "",
+      "titleText": "SIEM & Log Analysis",
+      "titleColor": "#00ff41",
+      "titleSize": 36,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Elastic Stack (ELK)",
+            "Log ingestion, search, and visualisation",
+            "Docker / APT"
+          ],
+          [
+            "Splunk Free",
+            "SIEM with 500MB/day free tier",
+            "Installer"
+          ],
+          [
+            "Wazuh",
+            "Open-source SIEM + HIDS",
+            "Install guide"
+          ],
+          [
+            "sigma",
+            "Convert generic detection rules to SIEM queries",
+            "pip install sigma-cli"
+          ]
+        ]
+      },
+      "codeText": "",
+      "codeLang": "",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": true,
+      "showCode": false,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "slide-r"
+    },
+    {
+      "id": "703f9165-5c7d-416e-b7b6-6d98046f82c2",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgImage": "",
+      "titleText": "Endpoint Detection & Forensics",
+      "titleColor": "#00ff41",
+      "titleSize": 36,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Sysmon",
+            "Detailed Windows event logging",
+            "Windows"
+          ],
+          [
+            "Velociraptor",
+            "DFIR and endpoint monitoring",
+            "GitHub releases"
+          ],
+          [
+            "Volatility 3",
+            "Memory forensics",
+            "pip install volatility3"
+          ],
+          [
+            "Eric Zimmerman Tools",
+            "Windows forensics utilities (PECmd, MFTECmd, etc.)",
+            "Windows"
+          ],
+          [
+            "autopsy",
+            "Digital forensics GUI",
+            "autopsy.com"
+          ]
+        ]
+      },
+      "codeText": "",
+      "codeLang": "",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": true,
+      "showCode": false,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "slide-r"
+    },
+    {
+      "id": "50e5d3e8-8236-4d70-b7f8-b1c830fe5926",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgImage": "",
+      "titleText": "Network Monitoring & Analysis",
+      "titleColor": "#00ff41",
+      "titleSize": 36,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "Zeek (Bro)",
+            "Network traffic analysis and logging",
+            "apt install zeek"
+          ],
+          [
+            "Suricata",
+            "Network IDS/IPS",
+            "apt install suricata"
+          ],
+          [
+            "Wireshark / tshark",
+            "PCAP analysis",
+            "apt install wireshark"
+          ],
+          [
+            "zeek-cut",
+            "Zeek log field extractor",
+            "bundled with Zeek"
+          ]
+        ]
+      },
+      "codeText": "",
+      "codeLang": "",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": true,
+      "showCode": false,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "slide-r"
+    },
+    {
+      "id": "73a3be4b-24f9-46e3-8725-b9eb8c5f8a4c",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgImage": "",
+      "titleText": "Malware Analysis",
+      "titleColor": "#00ff41",
+      "titleSize": 36,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "REMnux",
+            "Linux malware analysis distro",
+            "VM download"
+          ],
+          [
+            "FlareVM",
+            "Windows malware analysis toolkit",
+            "Windows setup script"
+          ],
+          [
+            "FLOSS",
+            "Extract obfuscated strings from malware",
+            "pip install flare-floss"
+          ],
+          [
+            "pestudio",
+            "PE file static analysis",
+            "winitor.com"
+          ],
+          [
+            "YARA",
+            "Pattern-matching for malware detection",
+            "apt install yara"
+          ],
+          [
+            "Any.run",
+            "Interactive online sandbox",
+            "Browser"
+          ],
+          [
+            "Hybrid-Analysis",
+            "Automated online sandbox",
+            "Browser"
+          ]
+        ]
+      },
+      "codeText": "",
+      "codeLang": "",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": true,
+      "showCode": false,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "slide-r"
+    },
+    {
+      "id": "9a312c72-6d40-49fe-8b1b-7fd0f530237a",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgImage": "",
+      "titleText": "Threat Intelligence",
+      "titleColor": "#00ff41",
+      "titleSize": 36,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Tool",
+          "Purpose",
+          "Install"
+        ],
+        "rows": [
+          [
+            "MISP",
+            "Threat intel sharing platform",
+            "Install guide"
+          ],
+          [
+            "OpenCTI",
+            "Threat intel management",
+            "Docker"
+          ]
+        ]
+      },
+      "codeText": "",
+      "codeLang": "",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": true,
+      "showCode": false,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "slide-r"
+    },
+    {
+      "id": "03c2f09c-d39d-450a-97b8-ce10d897b423",
+      "layout": "top",
+      "bgType": "gradient",
+      "bgColor": "#080b08",
+      "bgGradient": "linear-gradient(160deg,#030803 0%,#061206 100%)",
+      "bgImage": "",
+      "titleText": "Related Guides",
+      "titleColor": "#00ff41",
+      "titleSize": 48,
+      "subtitleText": "",
+      "subtitleColor": "#2a6b3a",
+      "bodyText": "",
+      "bodyColor": "#7ab87a",
+      "bodySize": 22,
+      "bullets": [],
+      "tableData": {
+        "headers": [
+          "Guide"
+        ],
+        "rows": [
+          [
+            "Offensive tooling",
+            "Red Team Tools"
+          ],
+          [
+            "Run services in containers",
+            "Docker Setup"
+          ],
+          [
+            "Full tool reference",
+            "General Security Tools"
+          ]
+        ]
+      },
+      "codeText": "",
+      "codeLang": "",
+      "imageUrl": "",
+      "showTitle": true,
+      "showSubtitle": false,
+      "showBody": false,
+      "showBullets": false,
+      "showTable": true,
+      "showCode": false,
+      "showImage": false,
+      "textAlign": "left",
+      "fontFamily": "'Courier New', 'Fira Mono', monospace",
+      "transition": "slide-r"
+    }
+  ],
+  "transition": "fade"
+}

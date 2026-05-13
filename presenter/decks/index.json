@@ -1,0 +1,91 @@
+{
+  "categories": {
+    "Set-Up": [
+      {
+        "title": "Quality of Life — Arch / Arch-based",
+        "category": "Set-Up",
+        "source": "Set-Up/Arch-QOL.md",
+        "slides": 35,
+        "path": "Set-Up/arch-qol.json"
+      },
+      {
+        "title": "Backups",
+        "category": "Set-Up",
+        "source": "Set-Up/BackUps.md",
+        "slides": 24,
+        "path": "Set-Up/backups.json"
+      },
+      {
+        "title": "SIEM & Log Analysis",
+        "category": "Set-Up",
+        "source": "Set-Up/BlueTeam-Tools.md",
+        "slides": 6,
+        "path": "Set-Up/blueteam-tools.json"
+      },
+      {
+        "title": "Docker",
+        "category": "Set-Up",
+        "source": "Set-Up/Docker.md",
+        "slides": 13,
+        "path": "Set-Up/docker.json"
+      },
+      {
+        "title": "General",
+        "category": "Set-Up",
+        "source": "Set-Up/GeneralSecurity-Tools.md",
+        "slides": 8,
+        "path": "Set-Up/generalsecurity-tools.json"
+      },
+      {
+        "title": "GPG",
+        "category": "Set-Up",
+        "source": "Set-Up/GPG.md",
+        "slides": 12,
+        "path": "Set-Up/gpg.json"
+      },
+      {
+        "title": "QEMU/KVM — Virtualization Setup",
+        "category": "Set-Up",
+        "source": "Set-Up/Qemu.md",
+        "slides": 18,
+        "path": "Set-Up/qemu.json"
+      },
+      {
+        "title": "VM Quality of Life",
+        "category": "Set-Up",
+        "source": "Set-Up/QOL-VM.md",
+        "slides": 11,
+        "path": "Set-Up/qol-vm.json"
+      },
+      {
+        "title": "🛠️ Tools & Setup",
+        "category": "Set-Up",
+        "source": "Set-Up/README.md",
+        "slides": 9,
+        "path": "Set-Up/readme.json"
+      },
+      {
+        "title": "Reconnaissance & OSINT",
+        "category": "Set-Up",
+        "source": "Set-Up/RedTeam-Tools.md",
+        "slides": 6,
+        "path": "Set-Up/redteam-tools.json"
+      },
+      {
+        "title": "Vulnerable Lab Containers",
+        "category": "Set-Up",
+        "source": "Set-Up/Targets.md",
+        "slides": 17,
+        "path": "Set-Up/targets.json"
+      },
+      {
+        "title": "VirtualBox on Arch",
+        "category": "Set-Up",
+        "source": "Set-Up/VirtualBox_Arch.md",
+        "slides": 12,
+        "path": "Set-Up/virtualbox-arch.json"
+      }
+    ]
+  },
+  "total": 12
+}
