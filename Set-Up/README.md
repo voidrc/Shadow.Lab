@@ -8,7 +8,7 @@
 
 | #   | Guide                                                          | What it covers                                       |
 | --- | -------------------------------------------------------------- | ---------------------------------------------------- |
-| 1   | [Lab Environment Setup](tools/README.md) ← you are here        | Pick an OS, set up a VM                              |
+| 1   | [Lab Environment Setup](Set-Up/README.md) ← you are here       | Pick an OS, set up a VM                              |
 | 2   | [VirtualBox on Arch](VirtualBox_Arch.md) / [QEMU/KVM](Qemu.md) | Hypervisor setup on Arch                             |
 | 3   | [VM Quality of Life](QOL-VM.md)                                | Tune your VM                                         |
 | 4   | [General Security Tools](GeneralSecurity-Tools.md)             | Full tool reference                                  |
