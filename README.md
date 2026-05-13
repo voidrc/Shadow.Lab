@@ -31,18 +31,6 @@ New to Shadow.Wiki or building your lab for the first time, follow this path:
 
 ---
 
-## 🖥️ Presenter
-
-Browse and present Shadow.Wiki knowledge as interactive slide decks — directly in your browser.
-
-[![Presenter](https://img.shields.io/badge/Presenter-Launch-00ff41?logo=github&logoColor=black)](https://voidrc.github.io/Shadow.Wiki/presenter/)
-
-> **https://voidrc.github.io/Shadow.Wiki/presenter/**
-
-Open the **`// Library`** panel to load any pre-built deck from the wiki, or create your own presentations from scratch.
-
----
-
 ## 🤝 Contributing
 
 1. Branch off `main` and add your guide or improvement
