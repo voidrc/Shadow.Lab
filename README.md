@@ -78,7 +78,20 @@ make restart SERVICE=<compose-service>
 
 The `SERVICE` value is the service key inside the add-on Compose file. Add-ons already running are not stopped by `make up`. `make down`, `make logs`, and `make config` also include all discovered add-ons.
 
-The excluded template can be launched separately with `make example-up`. Hermes can follow exactly this pattern later; once started with its management label, the panel discovers it automatically. Use the Make targets rather than bare `docker compose` commands when add-ons are present, because Docker Compose itself does not discover nested files.
+The excluded template can be launched separately with `make example-up`. Use the Make targets rather than bare `docker compose` commands when add-ons are present, because Docker Compose itself does not discover nested files.
+
+### Hermes setup
+
+Run the core stack before launching either interactive Hermes command:
+
+```sh
+make up
+make hermes-setup       # run the first-time `hermes setup` wizard
+make hermes-terminal    # open interactive Hermes chat; slash commands such as /setup work here
+make start SERVICE=hermes
+```
+
+Both interactive commands use the same persistent `/opt/data` mount as the gateway. Complete setup before starting the background service. The dashboard is then available over the tailnet at `http://shadow-lab:9119/`.
 
 ## Docker socket permission model
 

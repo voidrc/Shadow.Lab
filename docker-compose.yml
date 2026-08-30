@@ -9,7 +9,6 @@ services:
       TS_STATE_DIR: /var/lib/tailscale
       TS_SOCKET: /var/run/tailscale/tailscaled.sock
       TS_USERSPACE: "false"
-      TS_EXTRA_ARGS: ${TAILSCALE_EXTRA_ARGS:---accept-dns=true}
     volumes:
       - tailscale-state:/var/lib/tailscale
       - tailscale-socket:/var/run/tailscale

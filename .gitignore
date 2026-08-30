@@ -23,3 +23,6 @@ htmlcov/
 .idea/
 .vscode/
 *.swp
+
+# Service data directories
+data/
