@@ -41,8 +41,9 @@ def check_tailscale() -> dict:
         status = json.loads(result.stdout)
         backend_state = status.get("BackendState")
         self_node = status.get("Self") or {}
-        healthy = backend_state == "Running" and bool(self_node.get("TailscaleIPs"))
-        message = f"{backend_state}; {', '.join(self_node.get('TailscaleIPs', [])) or 'no tailnet IP'}"
+        tailscale_ips = self_node.get("TailscaleIPs") or []
+        healthy = backend_state == "Running" and bool(tailscale_ips)
+        message = f"{backend_state}; {', '.join(tailscale_ips) or 'no tailnet IP'}"
         return {"healthy": healthy, "message": message, "checked_at": checked_at}
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError) as exc:
         return {"healthy": False, "message": str(exc), "checked_at": checked_at}

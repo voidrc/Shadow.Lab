@@ -1,4 +1,4 @@
-# Tailnet-only shadow.lab
+# Shadow.Lab
 
 A Compose stack in which Tailscale owns the shared network namespace. SearXNG, the control panel, and future add-ons bind ports inside that namespace, so Compose publishes no host ports. Tailnet clients reach the services at the Tailscale node name/IP only.
 

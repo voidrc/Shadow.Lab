@@ -14,9 +14,11 @@ def test_check_tailscale_requires_running_and_ip():
 
 
 def test_check_tailscale_rejects_unauthenticated_node():
-    result = Mock(returncode=0, stdout='{"BackendState":"NeedsLogin","Self":{}}', stderr="")
+    result = Mock(returncode=0, stdout='{"BackendState":"NeedsLogin","Self":{"TailscaleIPs":null}}', stderr="")
     with patch("app.main.subprocess.run", return_value=result):
-        assert check_tailscale()["healthy"] is False
+        status = check_tailscale()
+    assert status["healthy"] is False
+    assert "no tailnet IP" in status["message"]
 
 
 def test_serialize_container_includes_health_and_labels():
