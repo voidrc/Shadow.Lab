@@ -1,9 +1,14 @@
-COMPOSE := docker compose -f docker-compose.yml
+CORE_SERVICES := tailscale socket-proxy searxng control-panel
+ADDON_FILES := $(filter-out services/example/docker-compose.yml,$(wildcard services/*/docker-compose.yml))
+COMPOSE := docker compose -f docker-compose.yml $(addprefix -f ,$(ADDON_FILES))
 
-.PHONY: up down logs config example-up
+.PHONY: up build down logs config services start stop restart example-up
 
-up:
-	$(COMPOSE) up -d --build
+up: build
+	$(COMPOSE) up -d --no-build $(CORE_SERVICES)
+
+build:
+	$(COMPOSE) build
 
 down:
 	$(COMPOSE) down
@@ -14,5 +19,20 @@ logs:
 config:
 	$(COMPOSE) config
 
+services:
+	@for file in $(ADDON_FILES); do echo $$file; done
+
+start:
+	@test -n "$(SERVICE)" || (echo "Usage: make start SERVICE=<compose-service-name>" && exit 1)
+	$(COMPOSE) up -d --build $(SERVICE)
+
+stop:
+	@test -n "$(SERVICE)" || (echo "Usage: make stop SERVICE=<compose-service-name>" && exit 1)
+	$(COMPOSE) stop $(SERVICE)
+
+restart:
+	@test -n "$(SERVICE)" || (echo "Usage: make restart SERVICE=<compose-service-name>" && exit 1)
+	$(COMPOSE) restart $(SERVICE)
+
 example-up:
-	$(COMPOSE) -f services/example/docker-compose.yml up -d --build
+	docker compose -f docker-compose.yml -f services/example/docker-compose.yml up -d --build example

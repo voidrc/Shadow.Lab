@@ -27,9 +27,11 @@ Requirements: Docker Engine with Compose v2, a Tailscale account, and a reusable
 ```sh
 cp .env.example .env
 # Edit .env and set TAILSCALE_AUTHKEY and SEARXNG_SECRET.
-docker compose config
-docker compose up -d --build
+make config
+make up
 ```
+
+`make config` validates the core stack together with every discovered add-on under `services/`. `make up` builds the complete stack, then starts only the core services. Use these Make targets instead of bare `docker compose` commands so add-on files are included automatically.
 
 With MagicDNS enabled, open:
 
@@ -62,15 +64,21 @@ Copy `services/example/docker-compose.yml` to `services/<name>/docker-compose.ym
 3. Do not add `ports:`.
 4. Add a real container `healthcheck:`.
 5. Add `shadow.lab.manage`, `shadow.lab.name`, `shadow.lab.description`, and optionally `shadow.lab.url` labels.
-6. Merge the files when operating the stack:
+6. Run `make up`.
+
+The Makefile automatically merges every `services/*/docker-compose.yml` except the example. `make up` builds all discovered services, but starts only Tailscale, the socket proxy, SearXNG, and the control panel. This keeps new add-ons available without enabling them automatically.
 
 ```sh
-docker compose -f docker-compose.yml -f services/<name>/docker-compose.yml up -d --build
+make services                         # show discovered add-on files
+make up                               # build everything, start only core
+make start SERVICE=<compose-service>  # build and start one add-on
+make stop SERVICE=<compose-service>
+make restart SERVICE=<compose-service>
 ```
 
-The example can be launched with `make example-up`. Hermes can follow exactly this pattern later; once its label is present, the panel discovers it automatically.
+The `SERVICE` value is the service key inside the add-on Compose file. Add-ons already running are not stopped by `make up`. `make down`, `make logs`, and `make config` also include all discovered add-ons.
 
-Always include every active `-f` file in later `up`, `down`, and `config` commands. A small site-specific wrapper or Make target is useful when several add-ons are enabled.
+The excluded template can be launched separately with `make example-up`. Hermes can follow exactly this pattern later; once started with its management label, the panel discovers it automatically. Use the Make targets rather than bare `docker compose` commands when add-ons are present, because Docker Compose itself does not discover nested files.
 
 ## Docker socket permission model
 
