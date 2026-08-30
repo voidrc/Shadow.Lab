@@ -1,0 +1,20 @@
+services:
+  example:
+    image: traefik/whoami:${EXAMPLE_IMAGE_TAG:-v1.11.0}
+    network_mode: service:tailscale
+    depends_on:
+      tailscale:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8090/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    command: ["--port", "8090"]
+    labels:
+      shadow.lab.manage: "true"
+      shadow.lab.name: "Example service"
+      shadow.lab.description: "Template showing dynamic control-panel discovery"
+      shadow.lab.url: "http://shadow-lab:8090/"

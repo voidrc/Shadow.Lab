@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shadow.lab Control Panel</title>
+  <style>
+    body { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; background: #111827; color: #e5e7eb; font: 16px system-ui, sans-serif; }
+    h1 { margin-bottom: .5rem; } .ok { color: #34d399; } .bad { color: #f87171; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    article { background: #1f2937; border: 1px solid #374151; border-radius: .5rem; padding: 1rem; }
+    button, a.button { display: inline-block; border: 0; border-radius: .3rem; padding: .5rem .75rem; margin: .15rem; color: white; background: #2563eb; text-decoration: none; cursor: pointer; }
+    button.stop { background: #b91c1c; } code { color: #93c5fd; } small { color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <h1>shadow.lab Control Panel</h1>
+  <p>Tailscale: <strong class="{{ 'ok' if tailscale.healthy else 'bad' }}">{{ 'healthy' if tailscale.healthy else 'unhealthy' }}</strong> — {{ tailscale.message }}</p>
+  <div class="grid">
+    {% for service in services %}
+    <article>
+      <h2>{{ service.display_name }}</h2>
+      <p>{{ service.description }}</p>
+      <p>State: <code>{{ service.status }}</code> · Health: <code>{{ service.health }}</code></p>
+      <form method="post" action="/services/{{ service.id }}/action">
+        <button name="action" value="start">Start</button>
+        <button class="stop" name="action" value="stop">Stop</button>
+        <button name="action" value="restart">Restart</button>
+        <a class="button" href="/services/{{ service.id }}/logs">Logs</a>
+        {% if service.url %}<a class="button" href="{{ service.url }}">Open</a>{% endif %}
+      </form>
+    </article>
+    {% else %}<p>No managed services found.</p>{% endfor %}
+  </div>
+</body>
+</html>
