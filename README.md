@@ -31,7 +31,7 @@ make config
 make up
 ```
 
-`make config` validates the core stack together with every discovered add-on under `services/`. `make up` builds the complete stack, then starts only the core services. Use these Make targets instead of bare `docker compose` commands so add-on files are included automatically.
+`make config` validates the core stack together with every discovered add-on under `services/`. `make up` builds the complete stack, starts only the core services, and creates stopped containers for add-ons so they immediately appear in the control panel. Use these Make targets instead of bare `docker compose` commands so add-on files are included automatically.
 
 With MagicDNS enabled, open:
 
@@ -66,11 +66,12 @@ Copy `services/example/docker-compose.yml` to `services/<name>/docker-compose.ym
 5. Add `shadow.lab.manage`, `shadow.lab.name`, `shadow.lab.description`, and optionally `shadow.lab.url` labels.
 6. Run `make up`.
 
-The Makefile automatically merges every `services/*/docker-compose.yml` except the example. `make up` builds all discovered services, but starts only Tailscale, the socket proxy, SearXNG, and the control panel. This keeps new add-ons available without enabling them automatically.
+The Makefile automatically merges every `services/*/docker-compose.yml` except the example. `make up` builds all discovered services, starts only Tailscale, the socket proxy, SearXNG, and the control panel, then creates each add-on container without starting it. Because the stopped container carries its management labels, it appears in the control panel and can be started there immediately.
 
 ```sh
 make services                         # show discovered add-on files
-make up                               # build everything, start only core
+make up                               # build all, start core, catalog stopped add-ons
+make catalog                          # create any missing stopped add-on containers
 make start SERVICE=<compose-service>  # build and start one add-on
 make stop SERVICE=<compose-service>
 make restart SERVICE=<compose-service>
