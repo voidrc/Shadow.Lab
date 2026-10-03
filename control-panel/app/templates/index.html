@@ -51,6 +51,22 @@
     .button.open { margin-left: auto; color: var(--lime); border-color: rgba(173,255,47,.35); }
     .button.open:hover { color: #071000; background: var(--lime); }
     .empty { padding: 40px; border: 1px dashed var(--line); color: var(--muted); text-align: center; text-transform: uppercase; }
+    .nav { display: flex; gap: 7px; margin-bottom: 26px; flex-wrap: wrap; }
+    .nav a { appearance: none; padding: 10px 16px; border: 1px solid rgba(0,245,255,.32); color: var(--cyan); background: rgba(0,245,255,.05); font: 700 10px/1 monospace; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
+    .nav a:hover { color: #051018; background: var(--cyan); box-shadow: 0 0 16px rgba(0,245,255,.32); }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 14px; margin-bottom: 34px; }
+    .stat-card { padding: 20px; border: 1px solid var(--line); background: linear-gradient(145deg, rgba(15,22,43,.96), rgba(7,11,23,.96)); clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%); }
+    .stat-card .label { color: var(--muted); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 6px; }
+    .stat-card .value { color: var(--cyan); font: 900 32px/1 system-ui, sans-serif; }
+    .stat-card .value.crit { color: var(--red); }
+    .stat-card .value.high { color: var(--pink); }
+    .stat-card .value.med { color: var(--amber); }
+    .stat-card .value.low { color: var(--lime); }
+    .recent-scans { margin-bottom: 34px; }
+    .scan-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 1px; padding: 10px 14px; border: 1px solid var(--line); margin-bottom: 4px; background: rgba(11,16,32,.6); }
+    .scan-row a { color: var(--cyan); text-decoration: none; }
+    .scan-row a:hover { text-decoration: underline; }
+    .scan-row .sev { font-weight: 700; }
     @keyframes pulse { 50% { opacity: .45; transform: scale(.75); } }
     @media (max-width: 680px) { main { width: min(100% - 20px, 1180px); padding-top: 28px; } .masthead { align-items: flex-start; flex-direction: column; } .node-id { text-align: left; } .network { align-items: flex-start; flex-wrap: wrap; } .network-detail { width: 100%; margin-left: 25px; } article { min-height: 0; padding: 20px; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
@@ -71,6 +87,40 @@
       <div><div class="network-label">Tailnet uplink</div><div class="network-state">{{ 'Online' if tailscale.healthy else 'Link failure' }}</div></div>
       <div class="network-detail">{{ tailscale.message }}</div>
     </section>
+
+    <nav class="nav">
+      <a href="/scans/new">New Scan</a>
+      <a href="/scans">Scans</a>
+      <a href="/findings">Findings</a>
+    </nav>
+
+    {% if stats %}
+    <div class="section-head"><h2>Scan overview</h2></div>
+    <section class="stats-grid">
+      <div class="stat-card"><div class="label">Total scans</div><div class="value">{{ stats.total_scans }}</div></div>
+      <div class="stat-card"><div class="label">Active scans</div><div class="value">{{ stats.active_scans }}</div></div>
+      <div class="stat-card"><div class="label">Critical</div><div class="value crit">{{ stats.findings_by_severity.CRITICAL }}</div></div>
+      <div class="stat-card"><div class="label">High</div><div class="value high">{{ stats.findings_by_severity.HIGH }}</div></div>
+      <div class="stat-card"><div class="label">Medium</div><div class="value med">{{ stats.findings_by_severity.MEDIUM }}</div></div>
+      <div class="stat-card"><div class="label">Low</div><div class="value low">{{ stats.findings_by_severity.LOW }}</div></div>
+      <div class="stat-card"><div class="label">Info</div><div class="value">{{ stats.findings_by_severity.INFO }}</div></div>
+    </section>
+
+    {% if stats.recent_scans %}
+    <div class="section-head"><h2>Recent scans</h2></div>
+    <section class="recent-scans">
+      {% for scan in stats.recent_scans %}
+      <div class="scan-row">
+        <span><a href="/scans/{{ scan.id }}">{{ scan.id }}</a></span>
+        <span>{{ scan.profile }}</span>
+        <span>{{ scan.status }}</span>
+        <span class="sev">{{ scan.findings_critical }}C {{ scan.findings_high }}H {{ scan.findings_medium }}M {{ scan.findings_low }}L</span>
+        <span>{{ scan.hosts_discovered }} hosts</span>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+    {% endif %}
 
     <div class="section-head"><h2>Service matrix <span class="count">[{{ services|length }}]</span></h2></div>
     <section class="grid">

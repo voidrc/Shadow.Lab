@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060812">
+  <title>shadow.lab // Scans</title>
+  <style>
+    :root { --void: #060812; --panel: #0b1020; --cyan: #00f5ff; --pink: #ff2a9d; --lime: #adff2f; --amber: #ffcc00; --red: #ff355e; --text: #d9f7ff; --muted: #71869d; --line: rgba(0,245,255,.2); }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; color: var(--text); font: 14px/1.5 "SFMono-Regular", Consolas, monospace; background: radial-gradient(circle at 15% 10%, rgba(255,42,157,.12), transparent 28rem), var(--void); }
+    main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0; }
+    nav a { display: inline-block; padding: 9px 14px; border: 1px solid rgba(0,245,255,.35); color: var(--cyan); background: rgba(0,245,255,.05); font-weight: 700; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; margin-bottom: 26px; }
+    h1 { color: white; font: 800 clamp(28px, 5vw, 48px)/1 system-ui, sans-serif; letter-spacing: -.03em; text-transform: uppercase; margin: 0 0 24px; }
+    h1 span { color: var(--cyan); }
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    td { padding: 10px 14px; border-bottom: 1px solid rgba(0,245,255,.08); }
+    tr:hover td { background: rgba(0,245,255,.04); }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .status { font-weight: 700; font-size: 11px; letter-spacing: .08em; }
+    .status.COMPLETE { color: var(--lime); }
+    .status.FAILED, .status.CANCELLED { color: var(--red); }
+    .status.PENDING { color: var(--muted); }
+    .status.DISCOVERING, .status.ENUMERATING, .status.ASSESSING, .status.VALIDATING, .status.PROCESSING { color: var(--amber); }
+    .sev-c { color: var(--red); font-weight: 700; }
+    .sev-h { color: var(--pink); font-weight: 700; }
+    .sev-m { color: var(--amber); font-weight: 700; }
+    .sev-l { color: var(--lime); font-weight: 700; }
+    .empty { padding: 40px; border: 1px dashed var(--line); color: var(--muted); text-align: center; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="/">< Back to dashboard</a></nav>
+    <h1>Scan <span>History</span></h1>
+    {% if scans %}
+    <table>
+      <thead>
+        <tr><th>Scan ID</th><th>Profile</th><th>Status</th><th>Hosts</th><th>Findings</th><th>Created</th></tr>
+      </thead>
+      <tbody>
+        {% for scan in scans %}
+        <tr>
+          <td><a href="/scans/{{ scan.id }}">{{ scan.id }}</a></td>
+          <td>{{ scan.profile }}</td>
+          <td><span class="status {{ scan.status }}">{{ scan.status }}</span></td>
+          <td>{{ scan.hosts_discovered }}</td>
+          <td>
+            {% if scan.findings_critical %}<span class="sev-c">{{ scan.findings_critical }}C </span>{% endif %}
+            {% if scan.findings_high %}<span class="sev-h">{{ scan.findings_high }}H </span>{% endif %}
+            {% if scan.findings_medium %}<span class="sev-m">{{ scan.findings_medium }}M </span>{% endif %}
+            {% if scan.findings_low %}<span class="sev-l">{{ scan.findings_low }}L </span>{% endif %}
+            {% if scan.findings_info %}{{ scan.findings_info }}I{% endif %}
+          </td>
+          <td>{{ scan.created_at.strftime("%Y-%m-%d %H:%M") }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <div class="empty">No scans yet. Start one from the dashboard.</div>
+    {% endif %}
+  </main>
+</body>
+</html>

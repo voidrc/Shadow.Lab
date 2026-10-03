@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060812">
+  <title>shadow.lab // New Scan</title>
+  <style>
+    :root { --void: #060812; --panel: #0b1020; --cyan: #00f5ff; --pink: #ff2a9d; --lime: #adff2f; --amber: #ffcc00; --red: #ff355e; --text: #d9f7ff; --muted: #71869d; --line: rgba(0,245,255,.2); }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; color: var(--text); font: 14px/1.5 "SFMono-Regular", Consolas, monospace; background: radial-gradient(circle at 15% 10%, rgba(255,42,157,.12), transparent 28rem), radial-gradient(circle at 85% 20%, rgba(0,245,255,.1), transparent 32rem), var(--void); }
+    main { width: min(780px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0; }
+    nav a { display: inline-block; padding: 9px 14px; border: 1px solid rgba(0,245,255,.35); color: var(--cyan); background: rgba(0,245,255,.05); font-weight: 700; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; margin-bottom: 26px; }
+    h1 { color: white; font: 800 clamp(28px, 5vw, 48px)/1 system-ui, sans-serif; letter-spacing: -.03em; text-transform: uppercase; margin: 0 0 24px; }
+    h1 span { color: var(--cyan); }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 6px; }
+    input, select, textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; font-size: 14px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--cyan); box-shadow: 0 0 12px rgba(0,245,255,.2); }
+    .hint { color: var(--muted); font-size: 11px; margin-top: 4px; }
+    .profile-desc { color: var(--muted); font-size: 12px; margin-top: 4px; padding: 8px 12px; border-left: 2px solid var(--cyan); background: rgba(0,245,255,.04); }
+    button { appearance: none; padding: 14px 28px; border: 1px solid rgba(0,245,255,.4); color: var(--cyan); background: rgba(0,245,255,.08); font: 800 12px/1 monospace; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; transition: all .15s; }
+    button:hover { color: #051018; background: var(--cyan); box-shadow: 0 0 20px rgba(0,245,255,.4); }
+    #scope-result { margin-top: 16px; padding: 16px; border: 1px solid var(--line); background: var(--panel); display: none; }
+    #scope-result.ok { border-color: var(--lime); box-shadow: inset 3px 0 0 var(--lime); }
+    #scope-result.err { border-color: var(--red); box-shadow: inset 3px 0 0 var(--red); }
+    #scope-result h3 { margin: 0 0 8px; color: var(--cyan); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+    #scope-result .cidrs { color: var(--lime); font-size: 13px; }
+    #scope-result .err-msg { color: var(--red); }
+    #confirm-section { display: none; margin-top: 20px; }
+    .warning { padding: 12px 16px; border: 1px solid rgba(255,42,157,.3); background: rgba(255,42,157,.06); color: var(--pink); font-size: 12px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="/">< Back to dashboard</a></nav>
+    <h1>New <span>Scan</span></h1>
+
+    <div class="warning">
+      Only scan networks for which you have explicit written authorization.
+      Shadow.Lab enforces scope at the backend — out-of-scope targets are rejected.
+    </div>
+
+    <form id="scan-form" onsubmit="return validateScope(event)">
+      <div class="form-group">
+        <label for="scope">Authorized scope (CIDR or IP, one per line)</label>
+        <textarea id="scope" name="scope" rows="3" placeholder="10.10.20.0/24" required></textarea>
+        <div class="hint">IPv4 and IPv6 supported. Minimum prefix /16 (IPv4) or /48 (IPv6).</div>
+      </div>
+
+      <div class="form-group">
+        <label for="profile">Scan profile</label>
+        <select id="profile" name="profile">
+          {% for p in profiles %}
+          <option value="{{ p.key }}">{{ p.label }}</option>
+          {% endfor %}
+        </select>
+        <div class="profile-desc" id="profile-desc"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Scan name (optional)</label>
+        <input type="text" id="name" name="name" placeholder="Quarterly assessment">
+      </div>
+
+      <div class="form-group">
+        <label for="worker">Worker host</label>
+        <select id="worker" name="worker">
+          <option value="medusa">medusa (ASUS — remote via Tailscale SSH)</option>
+          <option value="local">local (MacBook — container)</option>
+        </select>
+        <div class="hint">Heavy scans should use the ASUS. The MacBook worker is for lightweight scans.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="max_concurrency">Max concurrency (optional)</label>
+        <input type="number" id="max_concurrency" name="max_concurrency" min="1" max="64" placeholder="8 (default)">
+      </div>
+
+      <div class="form-group">
+        <label for="rps">Rate limit / requests per second (optional)</label>
+        <input type="number" id="rps" name="rps" min="1" max="1000" placeholder="5 (default)">
+      </div>
+
+      <button type="submit">Validate scope</button>
+    </form>
+
+    <div id="scope-result"></div>
+
+    <div id="confirm-section">
+      <div class="warning">Confirm the scope above is correct before starting the scan.</div>
+      <form id="confirm-form" onsubmit="return startScan(event)">
+        <input type="hidden" id="scope_id" name="scope_id">
+        <input type="hidden" id="c_profile" name="profile">
+        <input type="hidden" id="c_name" name="name">
+        <input type="hidden" id="c_worker" name="worker">
+        <input type="hidden" id="c_concurrency" name="max_concurrency">
+        <input type="hidden" id="c_rps" name="requests_per_second">
+        <button type="submit" style="border-color: rgba(173,255,47,.4); color: var(--lime); background: rgba(173,255,47,.08);">Start scan</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    const profiles = {
+      {% for p in profiles %}
+      "{{ p.key }}": "{{ p.description }}",
+      {% endfor %}
+    };
+
+    document.getElementById("profile").addEventListener("change", e => {
+      document.getElementById("profile-desc").textContent = profiles[e.target.value] || "";
+    });
+    document.getElementById("profile").dispatchEvent(new Event("change"));
+
+    async function validateScope(event) {
+      event.preventDefault();
+      const form = document.getElementById("scan-form");
+      const fd = new FormData(form);
+      const body = Object.fromEntries(fd);
+      const result = document.getElementById("scope-result");
+      result.style.display = "block";
+      result.className = "";
+
+      try {
+        const resp = await fetch("/api/scans/validate-scope", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify(body),
+        });
+        const data = await resp.json();
+
+        if (data.valid) {
+          result.className = "ok";
+          result.innerHTML = `<h3>Authorized scope</h3><div class="cidrs">${data.cidrs.join("<br>")}</div><div class="hint">${data.address_count} addresses</div>`;
+          document.getElementById("scope_id").value = data.scope_id;
+          document.getElementById("c_profile").value = body.profile;
+          document.getElementById("c_name").value = body.name || "";
+          document.getElementById("c_worker").value = body.worker || "medusa";
+          document.getElementById("c_concurrency").value = body.max_concurrency || "";
+          document.getElementById("c_rps").value = body.rps || "";
+          document.getElementById("confirm-section").style.display = "block";
+        } else {
+          result.className = "err";
+          result.innerHTML = `<h3>Scope rejected</h3><div class="err-msg">${data.error}</div>`;
+          document.getElementById("confirm-section").style.display = "none";
+        }
+      } catch (err) {
+        result.className = "err";
+        result.innerHTML = `<h3>Error</h3><div class="err-msg">${err}</div>`;
+      }
+      return false;
+    }
+
+    async function startScan(event) {
+      event.preventDefault();
+      const form = document.getElementById("confirm-form");
+      const fd = new FormData(form);
+      const body = Object.fromEntries(fd);
+      // Clean up empty optional fields
+      Object.keys(body).forEach(k => { if (body[k] === "") delete body[k]; });
+
+      try {
+        const resp = await fetch("/api/scans", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify(body),
+        });
+        if (resp.ok) {
+          const scan = await resp.json();
+          window.location.href = `/scans/${scan.id}`;
+        } else {
+          const err = await resp.json();
+          alert("Failed to start scan: " + JSON.stringify(err.detail || err));
+        }
+      } catch (err) {
+        alert("Error: " + err);
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

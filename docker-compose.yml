@@ -89,13 +89,30 @@ services:
         condition: service_healthy
       socket-proxy:
         condition: service_healthy
+      redis:
+        condition: service_healthy
     environment:
       DOCKER_HOST: tcp://socket-proxy:2375
       TAILSCALE_SOCKET: /var/run/tailscale/tailscaled.sock
       TAILSCALE_CHECK_INTERVAL: ${TAILSCALE_CHECK_INTERVAL:-15}
       LOG_TAIL_MAX: ${LOG_TAIL_MAX:-2000}
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///data/shadow-lab/shadow.db}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      CONTROL_PANEL_URL: ${CONTROL_PANEL_URL:-http://shadow-lab:8080}
+      SCANNER_MAX_CONCURRENCY: ${SCANNER_MAX_CONCURRENCY:-8}
+      SCANNER_RPS: ${SCANNER_RPS:-5}
+      SCANNER_CONNECT_TIMEOUT: ${SCANNER_CONNECT_TIMEOUT:-5}
+      SCANNER_COMMAND_TIMEOUT: ${SCANNER_COMMAND_TIMEOUT:-300}
+      SCANNER_SCAN_TIMEOUT: ${SCANNER_SCAN_TIMEOUT:-3600}
+      SCANNER_MAX_HOSTS: ${SCANNER_MAX_HOSTS:-65536}
+      SCANNER_EGRESS_NETWORK: ${SCANNER_EGRESS_NETWORK:-egress}
+      EVIDENCE_RETENTION_DAYS: ${EVIDENCE_RETENTION_DAYS:-90}
+      ENABLE_IPV6: ${ENABLE_IPV6:-true}
+      WORKER_REMOTE_HOST: ${WORKER_REMOTE_HOST:-medusa}
+      WORKER_REMOTE_USER: ${WORKER_REMOTE_USER:-}
     volumes:
       - tailscale-socket:/var/run/tailscale:ro
+      - shadow-data:/data/shadow-lab
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/healthz', timeout=3)"]
@@ -106,8 +123,63 @@ services:
     labels:
       shadow.lab.manage: "true"
       shadow.lab.name: "Control panel"
-      shadow.lab.description: "Manage labeled shadow.lab services"
+      shadow.lab.description: "Manage labeled shadow.lab services and scans"
       shadow.lab.url: ${CONTROL_PANEL_URL:-http://shadow-lab:8080/}
+
+  redis:
+    image: redis:7.4-alpine
+    networks:
+      - management
+    restart: unless-stopped
+    command: ["redis-server", "--maxmemory", "128mb", "--maxmemory-policy", "allkeys-lru", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+  scanner-worker:
+    build:
+      context: ./control-panel
+      args:
+        TAILSCALE_IMAGE_TAG: ${TAILSCALE_IMAGE_TAG:-v1.84.3}
+    network_mode: service:tailscale
+    depends_on:
+      tailscale:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///data/shadow-lab/shadow.db}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      CONTROL_PANEL_URL: ${CONTROL_PANEL_URL:-http://127.0.0.1:8080}
+      WORKER_ID: ${WORKER_ID:-worker-asus}
+      SCANNER_MAX_CONCURRENCY: ${SCANNER_MAX_CONCURRENCY:-8}
+      SCANNER_RPS: ${SCANNER_RPS:-5}
+      SCANNER_CONNECT_TIMEOUT: ${SCANNER_CONNECT_TIMEOUT:-5}
+      SCANNER_COMMAND_TIMEOUT: ${SCANNER_COMMAND_TIMEOUT:-300}
+      SCANNER_SCAN_TIMEOUT: ${SCANNER_SCAN_TIMEOUT:-3600}
+      SCANNER_MAX_HOSTS: ${SCANNER_MAX_HOSTS:-65536}
+      SCANNER_EGRESS_NETWORK: ${SCANNER_EGRESS_NETWORK:-egress}
+      EVIDENCE_RETENTION_DAYS: ${EVIDENCE_RETENTION_DAYS:-90}
+      ENABLE_IPV6: ${ENABLE_IPV6:-true}
+      WORKER_REMOTE_HOST: ${WORKER_REMOTE_HOST:-medusa}
+      WORKER_REMOTE_USER: ${WORKER_REMOTE_USER:-}
+    volumes:
+      - shadow-data:/data/shadow-lab
+    command: ["python", "-m", "app.worker"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import redis; redis.Redis.from_url('redis://redis:6379/0').ping()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    labels:
+      shadow.lab.manage: "true"
+      shadow.lab.name: "Scanner worker"
+      shadow.lab.description: "Executes scan jobs (nmap, httpx, nuclei, dnsx)"
 
 networks:
   egress:
@@ -118,3 +190,4 @@ volumes:
   tailscale-state:
   tailscale-socket:
   searxng-cache:
+  shadow-data:

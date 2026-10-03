@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060812">
+  <title>shadow.lab // Findings</title>
+  <style>
+    :root { --void: #060812; --panel: #0b1020; --cyan: #00f5ff; --pink: #ff2a9d; --lime: #adff2f; --amber: #ffcc00; --red: #ff355e; --text: #d9f7ff; --muted: #71869d; --line: rgba(0,245,255,.2); }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; color: var(--text); font: 14px/1.5 "SFMono-Regular", Consolas, monospace; background: radial-gradient(circle at 15% 10%, rgba(255,42,157,.12), transparent 28rem), var(--void); }
+    main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0; }
+    nav a { display: inline-block; padding: 9px 14px; border: 1px solid rgba(0,245,255,.35); color: var(--cyan); background: rgba(0,245,255,.05); font-weight: 700; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; margin-bottom: 26px; }
+    h1 { color: white; font: 800 clamp(28px, 5vw, 48px)/1 system-ui, sans-serif; letter-spacing: -.03em; text-transform: uppercase; margin: 0 0 24px; }
+    h1 span { color: var(--cyan); }
+    .filters { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .filters select { padding: 8px 12px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; font-size: 12px; }
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; color: var(--muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    td { padding: 10px 14px; border-bottom: 1px solid rgba(0,245,255,.08); font-size: 13px; }
+    tr:hover td { background: rgba(0,245,255,.04); }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .sev { font-weight: 800; font-size: 10px; letter-spacing: .08em; padding: 2px 8px; border: 1px solid; }
+    .sev.CRITICAL { color: var(--red); border-color: var(--red); }
+    .sev.HIGH { color: var(--pink); border-color: var(--pink); }
+    .sev.MEDIUM { color: var(--amber); border-color: var(--amber); }
+    .sev.LOW { color: var(--lime); border-color: var(--lime); }
+    .sev.INFO { color: var(--muted); border-color: var(--muted); }
+    .conf { font-size: 10px; color: var(--muted); letter-spacing: .08em; }
+    .empty { padding: 40px; border: 1px dashed var(--line); color: var(--muted); text-align: center; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="/">< Back to dashboard</a></nav>
+    <h1><span>Findings</span></h1>
+
+    <div class="filters">
+      <select id="f-severity" onchange="applyFilters()">
+        <option value="">All severities</option>
+        <option value="CRITICAL">Critical</option>
+        <option value="HIGH">High</option>
+        <option value="MEDIUM">Medium</option>
+        <option value="LOW">Low</option>
+        <option value="INFO">Info</option>
+      </select>
+      <select id="f-source" onchange="applyFilters()">
+        <option value="">All sources</option>
+        <option value="nuclei">nuclei</option>
+        <option value="exposure-check">exposure-check</option>
+        <option value="nmap">nmap</option>
+        <option value="httpx">httpx</option>
+      </select>
+      <select id="f-status" onchange="applyFilters()">
+        <option value="">All statuses</option>
+        <option value="OPEN">Open</option>
+        <option value="CONFIRMED">Confirmed</option>
+        <option value="FALSE_POSITIVE">False positive</option>
+        <option value="FIXED">Fixed</option>
+        <option value="ACCEPTED">Accepted</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Severity</th><th>Title</th><th>Asset</th><th>Source</th><th>Confidence</th><th>Status</th><th>Last seen</th></tr>
+      </thead>
+      <tbody id="findings-body">
+        {% for f in findings %}
+        <tr>
+          <td><span class="sev {{ f.severity }}">{{ f.severity }}</span></td>
+          <td><a href="/findings/{{ f.id }}">{{ f.title }}</a></td>
+          <td>{{ f.affected_asset or '' }}</td>
+          <td>{{ f.source }}</td>
+          <td><span class="conf">{{ f.confidence }}</span></td>
+          <td>{{ f.status }}</td>
+          <td>{{ f.last_seen.strftime("%Y-%m-%d %H:%M") if f.last_seen else '' }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="7" class="empty">No findings recorded.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </main>
+
+  <script>
+    async function applyFilters() {
+      const sev = document.getElementById("f-severity").value;
+      const src = document.getElementById("f-source").value;
+      const stat = document.getElementById("f-status").value;
+      let url = "/api/findings?limit=200";
+      if (sev) url += `&severity=${sev}`;
+      if (src) url += `&source=${src}`;
+      if (stat) url += `&status=${stat}`;
+      const resp = await fetch(url);
+      const findings = await resp.json();
+      const tbody = document.getElementById("findings-body");
+      tbody.innerHTML = findings.map(f => `
+        <tr>
+          <td><span class="sev ${f.severity}">${f.severity}</span></td>
+          <td><a href="/findings/${f.id}">${f.title}</a></td>
+          <td>${f.affected_asset || ''}</td>
+          <td>${f.source}</td>
+          <td><span class="conf">${f.confidence}</span></td>
+          <td>${f.status}</td>
+          <td>${f.last_seen ? f.last_seen.split('T')[0] + ' ' + f.last_seen.split('T')[1].split('.')[0] : ''}</td>
+        </tr>
+      `).join('') || '<tr><td colspan="7" class="empty">No findings match the filter.</td></tr>';
+    }
+  </script>
+</body>
+</html>

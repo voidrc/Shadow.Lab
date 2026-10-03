@@ -2,20 +2,40 @@
 
 A Compose stack in which Tailscale owns the shared network namespace. SearXNG, the control panel, and future add-ons bind ports inside that namespace, so Compose publishes no host ports. Tailnet clients reach the services at the Tailscale node name/IP only.
 
+Shadow.Lab also includes an authorised bug-bounty reconnaissance and vulnerability-assessment platform: enter an authorised IP/CIDR scope, confirm it, and the system performs host discovery, service enumeration, HTTP fingerprinting, and template-based vulnerability assessment — all scope-enforced, evidence-backed, and reportable.
+
+**Only scan networks for which you have explicit written authorization.**
+
 ## Layout
 
 ```text
 .
 ├── docker-compose.yml              # mandatory core stack
 ├── .env.example                    # configuration template
-├── Makefile                        # common Compose commands
+├── Makefile                        # common Compose + scanner commands
 ├── searxng/settings.yml
 ├── control-panel/
-│   ├── Dockerfile
+│   ├── Dockerfile                  # control panel + scanner worker image
 │   ├── requirements.txt
 │   ├── requirements-dev.txt
-│   ├── app/                        # FastAPI UI and API
+│   ├── app/                        # FastAPI UI, API, scanner pipeline, CLI
+│   │   ├── main.py                 # control panel app (existing + extended)
+│   │   ├── config.py               # settings
+│   │   ├── database.py             # SQLAlchemy setup
+│   │   ├── models.py               # asset graph models
+│   │   ├── scope.py                # Scope Manager (safety gate)
+│   │   ├── profiles.py             # scan profiles (safe, thorough, recon)
+│   │   ├── queue.py                # Redis job queue
+│   │   ├── events.py               # event system
+│   │   ├── normalize.py            # finding normalization + dedup
+│   │   ├── reports.py              # Markdown/JSON/HTML report generation
+│   │   ├── worker.py               # worker process
+│   │   ├── cli.py                  # shadow CLI
+│   │   ├── api/                    # REST API routers
+│   │   ├── scanner/               # scanner tool runners + pipeline
+│   │   └── templates/              # Jinja2 dashboard templates
 │   └── tests/
+├── docs/                           # architecture, deployment, scanning, scope-safety
 └── services/
     └── example/docker-compose.yml  # add-on template
 ```
@@ -54,6 +74,49 @@ The browser UI and JSON API discover containers carrying `shadow.lab.manage=true
 The panel has no separate login because its intended security boundary is Tailscale plus tailnet ACLs. Add application authentication before exposing it beyond a tightly controlled tailnet.
 
 Stopping Tailscale from the panel immediately removes access to the entire node, including the panel. Recovery then requires Docker access on the host (`docker compose start tailscale`).
+
+## Scanner platform
+
+The control panel also serves the scanner dashboard and API. Available scanner API routes:
+
+- `POST /api/scans/validate-scope` — validate and normalise a scope
+- `POST /api/scans` — create and enqueue a scan
+- `GET /api/scans` — list scans
+- `GET /api/scans/{id}` — scan detail with stages and logs
+- `POST /api/scans/{id}/cancel` — cancel a running scan
+- `GET /api/findings` — list findings (filterable)
+- `GET /api/findings/{id}` — finding detail
+- `POST /api/findings/{id}/status` — update finding status (audit trail)
+- `POST /api/findings/{id}/notes` — add a note
+- `GET /api/hosts` — list discovered hosts
+- `GET /api/services` — list discovered services
+- `GET /api/web-targets` — list web targets
+- `GET /api/reports/{scan_id}?format=markdown|json|html` — generate report
+
+### Quick start
+
+```sh
+make up
+# Open http://shadow-lab:8080/ over the tailnet
+# Click "New Scan", enter 10.10.20.0/24, select a profile, confirm, start.
+```
+
+### CLI
+
+```sh
+make scan SCOPE=10.10.20.0/24 PROFILE=safe   # start a scan
+make scans                                     # list scans
+make report SCAN=scan-2026-000042 FORMAT=markdown
+```
+
+The CLI uses the same backend API as the dashboard.
+
+### Documentation
+
+- [Architecture](docs/architecture.md) — two-host model, networking, services, data model
+- [Deployment](docs/deployment.md) — single-host and two-host setup
+- [Scanning](docs/scanning.md) — pipeline stages, profiles, findings, reports
+- [Scope safety](docs/scope-safety.md) — why and how scope enforcement works
 
 ## Add a service
 
